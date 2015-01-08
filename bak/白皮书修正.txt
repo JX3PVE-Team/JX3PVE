@@ -1,0 +1,4 @@
+1.修正h4>span 宽度单词
+2.给每个条目书名后面加个 | 
+3.给每个具体文章的li，也就是module下的li 设置50px的高度，字体用24px的行高,鼠标li:hover加个背景色#f2f2f2  这些li的nobreak去掉，但保留一个overflow:hidden
+4.冰心和云裳的内容调用反了

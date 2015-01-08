@@ -1,0 +1,42 @@
+//云端宏
+//2014.12.17 - By iRuxu
+//http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&filter=sortid&sortid=18&searchsort=1&k_type=1
+
+.macro-list{
+	width:100%;.clip;table-layout:fixed;
+	.item{
+		height:28px;.fz(12px,28px);border-bottom:1px dashed #ccc;
+		&.even{background-color:#f2f2f2;}
+		.role{width:40px;color:#777;padding-left:2px;}
+		.title{
+			a{.fz(12px,28px);font-weight:normal;}
+			span{font-size:12px;color:#cc0000;font-weight:normal;background: url("jx3pve/star/star_i1.png") no-repeat 0 2px;padding-left:20px;}
+		}
+		.author{
+			width:140px;.nobreak;.x(right);padding-right:2px;
+			span{margin-left:5px;a{margin-left:2px;}}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+//delete the download icon & avt
+//<td class="star_it4"><a href="{downurl_value}"  target="_blank"><img src="http://static.jx3pve.com/cssjsimg/jx3pve/star/icon-download.png" alt="立刻下载" title="快到碗里来>_<"/></a></td>
+//<td class="avt"><a href="{author_url}" class="star_listicon"><img src="{avatar_small}"/></a></td>
+
+//html tags
+//<table class="macro-list">
+//[loop]
+//<tr class="macro-list-item">
+//<td class="role">适用职业：{k_mp_value}</td>
+//<td class="title"><a href="{subject_url}">{subject}</a> <span>{views}</span></td>
+//<td class="author">{author} <span>{author_verify}</span></td>
+//</tr>
+//[/loop]
+//</table>
