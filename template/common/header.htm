@@ -62,7 +62,7 @@
 
 <!-- 公共顶部 -->
 <div class="header">
-	<!-- 快捷菜单 -->
+		<!-- 提醒菜单 -->
 		<!--{if !IS_ROBOT}-->
 			<!--{if $_G['uid']}-->
 			<ul id="myprompt_menu" class="p_pop" style="display: none;">				
@@ -81,8 +81,9 @@
 					<li class="ignore_noticeli"><a href="javascript:;" onclick="setcookie('ignore_notice', 1);hideMenu('myprompt_menu')" title="{lang temporarily_to_remind}"><em class="ignore_notice"></em></a></li>
 				<!--{/if}-->
 			</ul>
-			
 			<!--{/if}-->
+
+			<!-- 快捷菜单 -->
 			<!--{if $_G['uid'] && !empty($_G['style']['extstyle'])}-->
 				<div id="sslct_menu" class="cl p_pop" style="display: none;">
 					<!--{if !$_G[style][defaultextstyle]}--><span class="sslct_btn" onclick="extstyle('')" title="{lang default}"><i></i></span><!--{/if}-->
@@ -92,6 +93,7 @@
 				</div>
 			<!--{/if}-->
 			
+			<!-- 用户中心菜单 -->
 			<!--{if $_G['uid']}-->
 				<ul id="myitem_menu" class="p_pop" style="display: none;">
 					<li><a href="home.php?mod=spacecp" id="userpanel-setup">{lang mysetup}</a></li>
@@ -117,120 +119,187 @@
 		<!--{ad/headerbanner/wp a_h}-->
 
 	<!-- 导航区 -->
-		<div class="wp">
-			<!-- nav -->
-			<div class="mod-nav">
-				<!-- fav -->
-				<a class="fav" id="i-fav" href="http://www.jx3pve.com/" onclick="addFavorite(this.href, '剑网3PVE');return false;" _orighref="http://www.jx3pve.com/" _tkworked="true" _hover-ignore="1"></a>
+		<div class="nav">
+			<div class="wp">
 
-				<!-- logo -->
 				<h1 class="logo">
-					<a href="{if $_G['setting']['domain']['app']['default']}http://{$_G['setting']['domain']['app']['default']}/{else}./{/if}" title="$_G['setting']['bbname']"></a>
-					<i></i>
+					<!-- fav -->
+					<a class="fav" id="fav" href="http://www.jx3pve.com/" onclick="addFavorite(this.href, '剑网3PVE');return false;" _orighref="http://www.jx3pve.com/" _tkworked="true" _hover-ignore="1" title="收藏"></a>
+
+					<!-- logo -->
+					<a class="logo-icon" title="JX3PVE.COM - 首页" href="{if $_G['setting']['domain']['app']['default']}http://{$_G['setting']['domain']['app']['default']}/{else}./{/if}" title="$_G['setting']['bbname']"></a>
+
+					<!-- folder -->
+					<i class="folder" id="nav-folder" title="展开/折叠菜单">&#xe623;</i>
+
 				</h1>
 
 				<!-- app -->
 				<p class="app">
 					关注微信号
 					<span>jx3love</span>
+					<i></i>
 				</p>
 
 				<!-- afk -->
-				<!-- wait -->
-			</div>
+				<div class="afk">
+					<!--{block/975}-->
+					<!--{block/976}-->
+				</div>
 			
-			<!-- panel -->
-			<div class="mod-panel">
-				<!--{template common/header_userstatus}-->
-			</div>
+				<!-- panel -->
+				<div class="panel">
+					<!--{template common/header_userstatus}-->
+				</div>
 
-			<!-- diy -->
-			<div class="y diytop">
-			<!--<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="{lang switch_blind}" class="switchblind">{lang switch_blind}</a>-->
-			<!--{hook/global_cpnav_extra2}-->
-			<!--{loop $_G['setting']['topnavs'][1] $nav}-->
-				<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
-			<!--{/loop}-->
-			<!--{if empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']}-->
-				<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="{if widthauto()}{lang switch_narrow}{else}{lang switch_wide}{/if}" class="switchwidth"><!--{if widthauto()}-->{lang switch_narrow}<!--{else}-->{lang switch_wide}<!--{/if}--></a>
-			<!--{/if}-->
-			<!--{if $_G['uid'] && !empty($_G['style']['extstyle'])}--><a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});">{lang changestyle}</a><!--{/if}-->
-			<!--{if check_diy_perm($topic)}-->
-				$diynav
-			<!--{/if}-->
+				<!-- diy -->
+				<div class="y diytop">
+				<!--<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="{lang switch_blind}" class="switchblind">{lang switch_blind}</a>-->
+				<!--{hook/global_cpnav_extra2}-->
+				<!--{loop $_G['setting']['topnavs'][1] $nav}-->
+					<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
+				<!--{/loop}-->
+				<!--{if empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']}-->
+					<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="{if widthauto()}{lang switch_narrow}{else}{lang switch_wide}{/if}" class="switchwidth"><!--{if widthauto()}-->{lang switch_narrow}<!--{else}-->{lang switch_wide}<!--{/if}--></a>
+				<!--{/if}-->
+				<!--{if $_G['uid'] && !empty($_G['style']['extstyle'])}--><a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});">{lang changestyle}</a><!--{/if}-->
+				<!--{if check_diy_perm($topic)}-->
+					$diynav
+				<!--{/if}-->
+				</div>
+
 			</div>
-			
 		</div>
 
 	<!-- 菜单区 -->
-		<div class="wp">
-			<!-- menu -->
-			<div class="mod-menu">
-				<ul>
-					<li><a href="http://www.jx3pve.com" title="网站首页"><span class="iconfont">&#xe613;</span>首页</a></li>
-					<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&sortid=18&sortid=18&filter=sortid&searchsort=1&k_type=1&page=1" title="云端宏"><span class="iconfont">&#xe614;</span>宏库</a></li>
-					<li><a target="_blank" href="http://jx3dps.com" title="DPS计算器"><span class="iconfont">&#xe61a;</span>DPS</a></li>
-					<li><a target="_blank" href="http://j3pz.com" title="在线配装"><span class="iconfont">&#xe604;</span>配装</a></li>
-					<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&filter=sortid&sortid=18&searchsort=1&k_type=4" title="工具箱"><span class="iconfont">&#xe607;</span>工具</a></li>
-					<li><a href="http://www.jx3pve.com/bps" title="全职业白皮书"><span class="iconfont">&#xe608;</span>白皮书</a></li>
-					<!-- <li><a href="http://www.jx3pve.com/exam"   title="JET题库"><span class="iconfont">&#xe610;</span>题库</a></li> -->
-					<li><a href="http://www.jx3pve.com/fb/"  title="剑三历代副本专题"><span class="iconfont">&#xe603;</span>副本</a></li>
-					<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=67" title="团队招募"><span class="iconfont">&#xe606;</span>团队</a></li>
-					<li><a href="http://www.jx3pve.com/group.php" title="作者/帮会/团队专栏"><span class="iconfont">&#xe611;</span>群组</a></li>
-					<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=283"  title="宠物"><span class="iconfont">&#xe605;</span>宠物</a></li>
-					<li><a href="http://www.jx3pve.com/forum-92-1.html"  title="捏脸"><span class="iconfont">&#xe60d;</span>捏脸</a></li>
-					<li><a href="http://www.jx3pve.com/snow"  title="小雪读条皮肤"><span class="iconfont">&#xe602;</span>皮肤</a></li>
-					<li><a href="http://www.jx3pve.com/news/" title="新闻资讯"><span>&#xe609;</span>动态</a></li>
-					<li><a href="http://www.jx3pve.com/bbs"  title="论坛交流"><span class="iconfont">&#xe612;</span>论坛</a></li>
-					<li><a href="http://www.jx3pve.com/misc.php?mod=faq" title="帮助中心"><span class="iconfont">&#xe60a;</span>帮助</a></li>
-					<div class="clear"></div>
+		<div class="menu" id="menu">
+			<div class="wp">
+				<!-- menu -->
+				<ul class="menu-list" id="menu-list">
+					<!-- index+lang -->
+					<li>
+						<a href="http://www.jx3pve.com">
+							<span class="iconfont">&#xe613;</span>首页
+						</a>
+					</li>
+					<!-- macro -->
+					<li>
+						<a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&sortid=18&sortid=18&filter=sortid&searchsort=1&k_type=1&page=1">
+							<span class="iconfont" style="font-size:22px;">&#xe614;</span>宏库
+						</a>
+						<ul>
+							<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&sortid=18&sortid=18&filter=sortid&searchsort=1&k_type=1&page=1"><span class="iconfont" style="font-size:22px">&#xe627;</span>官方宏（新）</a></li>
+							<li><a target="_blank" href="http://www.jx3pve.com/cloud"><span class="iconfont">&#xe616;</span>超级宏（旧）</a></li>
+							<li><a target="_blank" href="http://www.jx3pve.com/article-920-1.html"><span class="iconfont" style="font-size:20px;margin-right:10px;position:relative;left:1px;">&#xe625;</span>宏语法手册</a></li>
+						</ul>
+					</li>
+					<!-- tools -->
+					<li>
+						<a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&filter=sortid&sortid=18&searchsort=1&k_type=4">
+							<span class="iconfont" style="font-size:20px;">&#xe607;</span>工具
+						</a>
+						<ul>
+							<li><a target="_blank" href="http://jx3dps.com"><span class="iconfont" style="font-size:20px;">&#xe61a;</span>DPS预期</a></li>
+							<li><a target="_blank" href="http://j3pz.com"><span class="iconfont" style="font-size:18px;">&#xe604;</span>配装模拟</a></li>
+							<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294&filter=sortid&sortid=18&searchsort=1&k_type=2"><span class="iconfont" style="font-size:20px;">&#xe626;</span>按键辅助</a></li>
+							<li><a href="http://www.jx3pve.com/thread-6601-1-1.html"><span class="iconfont" style="font-size:20px;">&#xe60b;</span>宠物助手</a></li>
+							<li><a href="http://www.jx3pve.com/snow"><span class="iconfont" style="font-size:20px;">&#xe602;</span>小雪皮肤</a></li>
+						</ul>
+					</li>
+					<!-- role -->
+					<li>
+						<a href="http://www.jx3pve.com/bps">
+							<span class="iconfont" style="font-size:19px;">&#xe608;</span>职业
+						</a>
+						<ul>
+							<li><a href="http://www.jx3pve.com/bps"><span class="iconfont" style="font-size:19px;">&#xe608;</span>白皮书</a></li>
+							<li><a href="http://www.jx3pve.com/exam"><span class="iconfont" style="font-size:20px;">&#xe610;</span>题库</a></li>
+						</ul>
+					</li>
+					<!-- raid -->
+					<li>
+						<a href="http://www.jx3pve.com/fb/">
+							<span class="iconfont"  style="font-size:23px;position:relative;top:2px;">&#xe60f;</span>副本
+						</a>
+						<ul>
+							<li><a href="http://www.jx3pve.com/fb/"><span class="iconfont" style="font-size:20px;">&#xe60f;</span>副本专题</a></li>
+							<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=67"><span class="iconfont" style="font-size:20px;">&#xe606;</span>团队招募</a></li>
+							<li><a href="http://www.jx3pve.com/group.php"><span class="iconfont" style="font-size:20px;">&#xe611;</span>团队私版</a></li>
+						</ul>
+					</li>
+					<!-- pvx -->
+					<li>
+						<a href="http://www.jx3pve.com/x">
+							<span class="iconfont" style="position:relative;top:2px;">&#xe605;</span>休闲
+						</a>
+						<ul>
+							<li><a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=283"><span class="iconfont">&#xe605;</span>宠物</a></li>
+							<li><a href="http://www.jx3pve.com/forum-92-1.html"><span class="iconfont" style="font-size:18px;position:relative;left:4px;margin-right:9px;">&#xe60d;</span>捏脸</a></li>
+							<!-- <li><a href="http://www.jx3pve.com/plugin.php?id=smart_video"><span class="iconfont">&#xe60d;</span>视频</a></li> -->
+						</ul>
+					</li>
+					<!-- biz -->
+					<li>
+						<a href="javascript:void(0)">
+							<span class="iconfont" style="position:relative;top:2px;">&#xe61e;</span>商城
+						</a>
+						<ul>
+							<li><a href="http://www.pk200.com/suoyou/4-------0-------" target="_blank"><span class="iconfont" style="font-size:20px;">&#xe62d;</span>游戏币</a></li>
+						</ul>
+					</li>
+					<!-- bbs -->
+					<li>
+						<a href="http://www.jx3pve.com/bbs"  title="论坛交流">
+							<span class="iconfont" style="position:relative;top:2px;">&#xe612;</span>论坛
+						</a>
+						<ul>
+							<li><a href="http://www.jx3pve.com/forum-55-1.html"><span class="iconfont" style="font-size:20px;">&#xe62a;</span>反馈建议</a></li>
+							<li><a href="http://www.jx3pve.com/misc.php?mod=faq"><span class="iconfont" style="font-size:20px;">&#xe60a;</span>帮助中心</a></li>
+						</ul>
+					</li>
 				</ul>
-				<!--{hook/global_nav_extra}-->
-			</div>
 
-			<!-- search -->
-			<div class="mod-search-itop">
-				<SCRIPT language=javascript>
-					function g(formname)    {
-					var url = "http://www.baidu.com/baidu";
-					if (formname.s[1].checked) {
-					formname.ct.value = "2097152";
-					}
-					else {
-					formname.ct.value = "0";
-					}
-					formname.action = url;
-					return true;
-					}
-				</SCRIPT>
-				<form name="f1" onsubmit="return g(this)" target="_blank">
-					<table style="font-size:9pt;">
-						<tr height="28">
-							<td>
-								<p class="mt10">
-									<input name=word  class="fixed-search-text" size="42" maxlength="60">
-									<input name=s type=radio class="none"> <span class="search-mode"></span>
-									<input name=s type=radio class="none" checked > <span class="search-mode"></span>
-									<input class="search-topbt" type="submit" value=" " id="footer-search-button">
-									<input name=tn type=hidden value="bds">
-									<input name=cl type=hidden value="3">
-									<input name=ct type=hidden>
-									<input name=si type=hidden value="www.jx3pve.com">
-								</p>
-							</td>
-						</tr>
-					</table>
-				</form>
+				<!-- search -->
+				<div class="search">
+					<SCRIPT language=javascript>
+						function g(formname)    {
+						var url = "http://www.baidu.com/baidu";
+						if (formname.s[1].checked) {
+						formname.ct.value = "2097152";
+						}
+						else {
+						formname.ct.value = "0";
+						}
+						formname.action = url;
+						return true;
+						}
+					</SCRIPT>
+					<form name="f1" onsubmit="return g(this)" target="_blank">
+						<table style="font-size:9pt;">
+							<tr height="28">
+								<td>
+									<p class="mt10">
+										<input class="search-text" name="word" placeholder=" 搜索.." >
+										<input name=s type=radio class="none"> <span class="search-mode"></span>
+										<input name=s type=radio class="none" checked > <span class="search-mode"></span>
+										<input class="search-topbt" type="submit" value=" " >
+										<input name=tn type=hidden value="bds">
+										<input name=cl type=hidden value="3">
+										<input name=ct type=hidden>
+										<input name=si type=hidden value="www.jx3pve.com">
+									</p>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
 			</div>
 		</div>
+
 </div>
 <!--{/if}-->
 <!--{hook/global_header}-->
 
-
-<div id="box">
-<div id="page" class="yz-page">		
-
-	<div id="wp">
+<div class="box">
 					
 

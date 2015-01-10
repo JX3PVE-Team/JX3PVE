@@ -1,0 +1,218 @@
+/*
+* Channel : 公共顶部导航模块
+* By iRuxu
+*/
+
+
+/* Header
+-------------------------------------------------------------- */
+
+
+	.header{
+		width:100%;position:fixed;top:0;left:0;z-index:300;
+		line-height:38px;color:#ccc;
+		a{color:#ccc;}
+		a:hover{color:@blue;}
+		.wp{height:100%;}
+
+		//主导航
+		.nav{
+			.clear;border-bottom:1px solid #888;height:@header-height;background-color:#2f2d2d;
+
+			//Logo
+			.logo{
+				//默认
+				height:100%;.fl;.pr;border-right:1px solid #888;
+				//hover
+				&:hover{
+					.fav{background-position:0 -38px;}
+				}
+				//收藏
+				.fav{
+					background:url('@{url}/sprite.png') no-repeat 0 0;
+					.db;.fl;width:26px;height:100%;transition:background 0.2s ease-in;
+					&.i{
+						background-position:0 -114px;
+					}
+				}
+				//Logo
+				.logo-icon{
+					.fl;width:94px;height:100%;
+					.fl;background:url('@{url}/logo.png') no-repeat 0 center;
+				}
+				//folder
+				.folder{
+					.iconfont;
+					font-size:22px;width:32px;.x;.fl;.db;
+					color:@blue;.pointer;
+					&.gray{color:#888;}
+				}
+			}
+			//微信
+			.app{
+				.fl;padding:0 15px 0 50px;border-right:1px solid #888;.pointer;.pr;.z(400);
+				background:url('@{url}/sprite.png') no-repeat -32px 5px;
+				&:hover{
+					color:#fff;
+					span{color:lighten(#00ccff,20%);}
+					i{.db;animation:slideDown 0.3s ease-in forwards;}
+				}
+				span{font-family:Verdana;color:@blue;margin-left:5px;}
+				i{
+					background:url('@{url}/i_wx128.png') no-repeat center center;
+					.none;width:128px;height:128px;.pa;left:6px;top:@header-height+6px;
+					padding:10px;border-radius:4px;background-color:rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.3);
+				}
+			}
+			//AFK
+			.afk{
+				.fl;height:@header-height;margin-left:20px;
+				color:#ff0000;
+			}
+
+			//用户控制板
+			.panel{
+				.fr;height:100%;
+				//未登录
+				.nologin{
+					line-height:@header-height;height:100%;
+					p{.fl;}
+					.login-qc{
+						.fl;height:100%;
+						a{.dbi;width:33px;height:100%;background:url('@{url}/login.png') no-repeat;
+							&.qq{background-position:0 0;}
+							&.wb{background-position:-33px 0;}
+							&.wx{background-position:-66px 0;}
+						}
+					}
+					.login-fz{
+						margin-left:20px;
+					}
+				}
+				//已登录
+				.onlogin{
+					height:100%;line-height:@header-height;
+					//头像
+					.avt{
+						width:@header-height;height:@header-height;
+						a{.db;padding:5px;}
+						img{.full;padding:0;}
+					}
+					//用户名
+					.username{
+						font-weight:bold;
+					}
+					//组图标
+					.groupicon{
+
+					}
+					//用户中心
+					.useros{
+						color:@blue;
+						&:hover{color:#ffff00;}
+					}
+					//消息提醒
+					.msg{
+						background-repeat:no-repeat;
+						padding-left:20px;
+					}
+					//分割线
+					.pipe{color:#686666;}
+				}
+			}
+
+		}
+
+		.menu{
+			.clear;height:@header-height;background-color:#333;
+			transition:display 0.2s ease-in;
+
+			//菜单列表
+			.menu-list{
+				.fl;
+				li{
+					.fl;margin-right:22px;.pr;
+					a{
+						.db;.full;transition:color 0.3s ease-in;line-height:@header-height;
+						&.cur{
+							color:@blue;
+						}
+					}
+					span{
+						margin-right:8px;
+						font-size:24px;
+						width:24px;
+						.dbi;
+						.iconfont;
+						&.cur{
+							animation:navIcon 0.2s ease-in forwards;
+						}
+					}
+				}
+				ul{
+					.pa;top:38px;left:0;.none;
+					background-color:#333;border-radius:0 0 4px 4px;box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+					li{
+						float:none;margin:0;width:200px;border-bottom:1px solid #444;padding:0 10px;
+						&:last-child{border-radius:0 0 4px 4px;}
+						&:hover{background-color:#222;}
+					}
+				}
+			}
+
+			//搜索
+			.search{
+				.fr;.pr;top:5px;.clip;
+				&:hover{
+					.search-topbt{animation:goUp 0.3s ease-in forwards;}
+					.search-text{width:200px;}
+				}
+				.search-text{
+					height:20px;line-height:20px;border-radius:4px;
+					width:165px;padding:4px 30px 4px 5px;transition:width 0.3s ease-in;
+					border:none;
+				}
+				.search-topbt{
+					.pa;right:0;top:0;width:30px;height:28px;cursor:pointer;background:none;border:none;.db;
+					background:url('@{url}/sprite.png') no-repeat 0 -118px;
+				}
+			}
+
+		}
+
+
+		//提醒菜单
+		.p_pop{
+			background:#444;border-radius:4px;border:1px solid #222;padding:0;
+			li {
+				.db;padding:0 4px;border-bottom:1px solid #555;
+				&:last-child {border-bottom:none;}
+				&:hover{background:#333;}
+				a{.db;width:220px;height:24px;line-height:24px;border-bottom:none;
+					em{height:100%;margin:0;.pr;top:5px;margin-right:5px;
+						&.ignore_notice{height:12px;}
+					}
+				}
+				a:hover{color:@blue;background:#333;}
+			}
+		}
+
+		//diy
+		.diytop{
+			z-index:300;float:right;
+		}
+
+	}
+
+	
+/* DIY
+-------------------------------------------------------------- */
+#controlpanel {
+	z-index:800 !important;
+}
+	
+/* 菜单
+-------------------------------------------------------------- */
+
+	
+
