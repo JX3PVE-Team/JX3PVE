@@ -73,7 +73,8 @@
 				height:20px;width:auto;
 				margin-right:5px;
 				background-image:url('@{bbs-view}/icon.png');background-repeat:no-repeat;
-				span{}
+				.tm(0.6);transition:0.2s ease-in;
+				&:hover{.tm(1);}
 			}
 			.icon-support{
 				background-position:2px -20px;
@@ -82,7 +83,7 @@
 			}
 			.icon-home{
 				background-position:2px -60px;
-				&:hover{color:#9fe36d;}
+				&:hover{color:#7fd341;}
 			}
 			.icon-top{
 				background-position:2px -40px;
