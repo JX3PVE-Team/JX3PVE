@@ -1,0 +1,476 @@
+/* 首页
+* By Yuhan
+-------------------------------------------------------------- */
+.zHome {
+  background: url("jx3pve/face/bgx.png") repeat;
+}
+.zHomePage {
+  padding-bottom: 10px;
+  background: url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") top center no-repeat;
+}
+.zHomeMain {
+  margin: 0 auto;
+  width: 950px;
+  padding-bottom: 60px;
+}
+.zHSegmentation {
+  background: url("jx3pve/index/2014/hr.png") no-repeat center;
+  width: 100%;
+  height: 23px;
+}
+.zHomeTop {
+  padding-top: 50px;
+}
+.zHTopLeft,
+.zHTopCenter,
+.zHTopRight {
+  float: left;
+}
+.zHomeLogo a {
+  background: url("jx3pve/index/2014/i_logo.png") no-repeat;
+  display: block;
+  height: 150px;
+  width: 200px;
+}
+.zHomeWinxin {
+  text-align: center;
+}
+.zHomeWinxin p {
+  padding-top: 10px;
+}
+.zHomeFocus {
+  width: 402px;
+  height: 308px;
+  padding: 0 10px 10px 10px;
+  margin-left: 30px;
+}
+.zHomeFocus a {
+  color: #575c62;
+}
+.zHomeFocusH1 ul li {
+  font-size: 18px;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  font-weight: bold;
+}
+.zHomeFocusH1 .module.cl.xl.xl1 ul li {
+  border: none;
+  letter-spacing: 0;
+  height: auto;
+  padding: 8px 0 2px 10px;
+}
+.zHomeFocusH2 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.zHomeFocusH2 .module.cl.xl.xl1 ul li {
+  line-height: 23px;
+  height: 23px;
+  padding-left: 10px;
+}
+.zHPage1H2 {
+  background: url("jx3pve/index/2014/h2_1.png") no-repeat;
+  height: 40px;
+}
+.zHomeBps,
+.zHomeTools {
+  float: left;
+}
+.zHomeBps {
+  margin-top: 6px;
+  width: 620px;
+}
+.zHomeBps ul {
+  padding: 15px 0 0 12px;
+}
+.zHomeBps ul li {
+  float: left;
+  height: 28px;
+  width: 118px;
+  margin-right: 17px;
+  margin-bottom: 12px;
+}
+.zHomeBps ul li:hover {
+  background: url("jx3pve/201407/bps_li_bg.png") no-repeat right center;
+}
+.zHomeBps ul li a {
+  display: block;
+  line-height: 28px;
+  text-indent: 45px;
+}
+.zHomeBps ul li a:hover {
+  color: #000;
+}
+.zHBpsBX {
+  background: url("img/role.png") no-repeat 0 0;
+}
+.zHBpsHJ {
+  background: url("img/role.png") no-repeat 0 -28px;
+}
+.zHBpsDJ {
+  background: url("img/role.png") no-repeat 0 -56px;
+}
+.zHBpsAX {
+  background: url("img/role.png") no-repeat 0 -84px;
+}
+.zHBpsFY {
+  background: url("img/role.png") no-repeat 0 -112px;
+}
+.zHBpsYJ {
+  background: url("img/role.png") no-repeat 0 -140px;
+}
+.zHBpsQC {
+  background: url("img/role.png") no-repeat 0 -168px;
+}
+.zHBpsJC {
+  background: url("img/role.png") no-repeat 0 -196px;
+}
+.zHBpsTL {
+  background: url("img/role.png") no-repeat 0 -224px;
+}
+.zHBpsJY {
+  background: url("img/role.png") no-repeat 0 -252px;
+}
+.zHBpsCJ {
+  background: url("img/role.png") no-repeat 0 -280px;
+}
+.zHBpsGB {
+  background: url("img/role.png") no-repeat 0 -308px;
+}
+.zHBpsFS {
+  background: url("img/role.png") no-repeat 0 -336px;
+}
+.zHBpsYS {
+  background: url("img/role.png") no-repeat 0 -364px;
+}
+.zHBpsLJ {
+  background: url("img/role.png") no-repeat 0 -392px;
+}
+.zHBpsBT {
+  background: url("img/role.png") no-repeat 0 -420px;
+}
+.zHBpsTC {
+  background: url("img/role.png") no-repeat 0 -448px;
+}
+.zHBpsMZ {
+  background: url("img/role.png") no-repeat 0 -476px;
+}
+.zHBpsXS {
+  background: url("img/role.png") no-repeat 0 -504px;
+}
+.zHBpsTY {
+  background: url("img/role.png") no-repeat 0 -532px;
+}
+.zHToolsCH {
+  color: #111;
+}
+.zHToolsEN {
+  color: #666;
+  font-size: 10px;
+}
+.zHomeTools ul li {
+  display: block;
+  background: url("jx3pve/index/2014/tool_raw.png") no-repeat 10px 50%;
+  height: 30px;
+  line-height: 30px;
+  clear: both;
+}
+.zHomeTools ul li a {
+  text-indent: 10px;
+  float: left;
+}
+.zHomeTools ul li a:hover {
+  color: #333333;
+}
+.zHomeTools span {
+  padding-left: 10px;
+}
+.zHTools4DIY {
+  background: url("jx3pve/index/2014/diy.png") no-repeat;
+  width: 28px;
+  height: 11px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.zHTools2 {
+  font-weight: bold;
+}
+.zHomeTools ul li p {
+  padding-left: 20px;
+  float: left;
+}
+.zHPage2H2 {
+  background: url("jx3pve/index/2014/h2_2.png") no-repeat;
+  height: 40px;
+}
+.zHPage2H2 ul {
+  margin-left: 310px;
+  padding-top: 7px;
+}
+.zHPage2H2 ul li {
+  margin-left: 12px;
+  float: left;
+  width: 72px;
+}
+.zHPage2H2 a {
+  display: block;
+  background: url("jx3pve/index/2014/raidbtn.png") no-repeat;
+  height: 26px;
+  text-indent: 22px;
+  line-height: 26px;
+}
+.zHPage2H2 a:hover {
+  background: url("jx3pve/index/2014/raidbtn.png") no-repeat 0 -26px;
+  color: #444;
+}
+.zHRaiders {
+  float: left;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.zHRaiders li {
+  background: url("jx3pve/index/2014/fb_raw.png") no-repeat;
+  background-position: 5px 50%;
+  height: 22px;
+  line-height: 22px;
+  text-indent: 20px;
+}
+.zHomeFb {
+  float: right;
+}
+.zHomeFb ul li a {
+  width: 281px;
+  height: 58px;
+  display: block;
+  margin-bottom: 3px;
+}
+.zHomeFbItem1 {
+  background: url("jx3pve/201407/fb-nav-1.png") no-repeat 0 0;
+}
+.zHomeFbItem2 {
+  background: url("jx3pve/201407/fb-nav-1.png") no-repeat 0 -58px;
+}
+.zHomeFbItem3 {
+  background: url("jx3pve/201407/fb-nav-1.png") no-repeat 0 -116px;
+}
+.zHomeFbItem4 {
+  background: url("jx3pve/201407/fb-nav-1.png") no-repeat 0 -174px;
+}
+.zHomeFbItem1:hover {
+  background: url("jx3pve/201407/fb-nav-2.png") no-repeat 0 0;
+}
+.zHomeFbItem2:hover {
+  background: url("jx3pve/201407/fb-nav-2.png") no-repeat 0 -58px;
+}
+.zHomeFbItem3:hover {
+  background: url("jx3pve/201407/fb-nav-2.png") no-repeat 0 -116px;
+}
+.zHomeFbItem4:hover {
+  background: url("jx3pve/201407/fb-nav-2.png") no-repeat 0 -174px;
+}
+.zHPage3H2 {
+  background: url("jx3pve/index/2014/h2_3.png") no-repeat;
+  height: 40px;
+}
+.zHomePVX {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.zHPvx,
+.zHMagazine {
+  float: left;
+}
+.zHPvx {
+  background: url("jx3pve/index/2014/pvx-1.png") no-repeat;
+  height: 250px;
+  width: 530px;
+  margin-left: 35px;
+}
+.zHPvx ul {
+  padding-top: 2px;
+  padding-left: 3px;
+}
+.zHPvx ul li {
+  margin-bottom: 17px;
+  margin-right: 29px;
+  float: left;
+}
+.zHPvx ul li a {
+  display: block;
+  width: 101px;
+  height: 101px;
+}
+.zHPvxFace:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -3px -2px;
+}
+.zHPvxPet:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -133px -2px;
+}
+.zHPvxProps:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -263px -2px;
+}
+.zHPvxClothes:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -393px -2px;
+}
+.zHPvxVideo:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -3px -120px;
+}
+.zHPvxMusic:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -133px -120px;
+}
+.zHPvxStory:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -263px -120px;
+}
+.zHPvxSkill:hover {
+  background: url("jx3pve/index/2014/pvx-2.png") no-repeat -393px -120px;
+}
+.zHPvx li {
+  position: relative;
+}
+.zHPvx span {
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  left: 36px;
+  top: 77px;
+}
+.zHMagazine {
+  margin-left: 80px;
+}
+.zHMagazine h1 {
+  font-size: 25px;
+}
+.zHPage4H2 {
+  background: url("jx3pve/index/2014/h2_4.png") no-repeat;
+  height: 40px;
+}
+.zHPage4H2Biz {
+  background: url("jx3pve/index/2014/biz_tips.png") no-repeat;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 320px;
+}
+.zTraCommodity {
+  margin-top: 20px;
+}
+.zTraCommodity ul {
+  padding-left: 40px;
+}
+.zTraCommodity ul li {
+  float: left;
+  height: 24px;
+  width: 140px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.zTraCommodity ul li a {
+  display: block;
+  line-height: 24px;
+  text-indent: 32px;
+}
+.zCom1 {
+  background: url("jx3pve/biz-trans/1.png") no-repeat;
+}
+.zCom2 {
+  background: url("jx3pve/biz-trans/2.png") no-repeat;
+}
+.zCom3 {
+  background: url("jx3pve/biz-trans/3.png") no-repeat;
+}
+.zCom4 {
+  background: url("jx3pve/biz-trans/4.png") no-repeat;
+}
+.zCom5 {
+  background: url("jx3pve/biz-trans/5.png") no-repeat;
+}
+.zCom6 {
+  background: url("jx3pve/biz-trans/6.png") no-repeat;
+}
+.zCom7 {
+  background: url("jx3pve/biz-trans/7.png") no-repeat;
+}
+.zCom8 {
+  background: url("jx3pve/biz-trans/8.png") no-repeat;
+}
+.zCom9 {
+  background: url("jx3pve/biz-trans/9.png") no-repeat;
+}
+.zCom10 {
+  background: url("jx3pve/biz-trans/10.png") no-repeat;
+}
+.zCom11 {
+  background: url("jx3pve/biz-trans/11.png") no-repeat;
+}
+.zCom12 {
+  background: url("jx3pve/biz-trans/12.png") no-repeat;
+}
+.zCom13 {
+  background: url("jx3pve/biz-trans/13.png") no-repeat;
+}
+.zCom14 {
+  background: url("jx3pve/biz-trans/14.png") no-repeat;
+}
+.zCom16 {
+  background: url("jx3pve/biz-trans/15.png") no-repeat;
+}
+.zCom17 {
+  background: url("jx3pve/biz-trans/16.png") no-repeat;
+}
+.zCom18 {
+  background: url("jx3pve/biz-trans/17.png") no-repeat;
+}
+.zCom19 {
+  background: url("jx3pve/biz-trans/18.png") no-repeat;
+}
+.zHSegmentation {
+  margin: 20px 0;
+}
+.zHomeTools ul li {
+  border: 1px solid transparent;
+  padding-left: 16px;
+  padding-right: 10px;
+}
+.zHomeTools ul li:hover {
+  cursor: pointer;
+  border: 1px solid #999;
+  box-shadow: 0 0 2px #fff;
+}
+.zHMagazine h1 {
+  font-family: 微软雅黑;
+  visibility: hidden;
+}
+.zHMagazineList {
+  visibility: hidden;
+}
+.zHomeTools {
+  padding-top: 20px;
+}
+.zHRaiders ul {
+  padding-top: 10px;
+}
+.zHRaiders ul li {
+  width: 520px;
+  height: 24px;
+}
+.zHome {
+  text-shadow: 1px 1px 0px #fff;
+}
+.zHPvx ul {
+  text-shadow: none;
+}
+.zHomeFocusH2 ul li a {
+  color: #333;
+}
+.zHomeFocusH2 ul li a:hover {
+  color: #cc0000;
+}
+.zHomeFocusH1 ul li a {
+  color: #222;
+}
+.zHTools4DIY:hover {
+  background: url("jx3pve/index/2014/diy.png") no-repeat 0 -11px;
+}
+.zHTools2:hover,
+.zHToolsCH:hover {
+  color: #cc0000 !important;
+}

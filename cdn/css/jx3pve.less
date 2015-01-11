@@ -9,10 +9,16 @@ Description: FOR [JX3PVE.COM]
 @import url('base/base.less');
 @import url('base/animation.less');
 @import url('base/common.less');
+@import url('base/ui.less');
 
 //模块组件
 @import url('module/header.less');
 @import url('module/footer.less');
+@import url('module/banner.less');
+@import url('module/bbs.less');
+@import url('module/bbs-sidebar.less');
+@import url('module/bbs-view.less');
+@import url('module/bbs-dialog.less');
 
 //页面
 @import url('page/index.less');
@@ -82,12 +88,10 @@ Description: FOR [JX3PVE.COM]
 -------------------------------------------------------------- */
 	body {padding:0;margin:0;color: #444;background:#f9f9f9;font-family: Helvetica,'宋体',"Microsoft Yahei","微软雅黑", Arial, sans-serif;text-rendering: optimizeLegibility;}
 	body#nv_forum .frame,body#nv_forum .frame-tab{margin:0;}
-	a {outline: none;text-decoration:none;color:#444;}
-	a:hover {color:#ff0000;text-decoration:none;}
-	#box{width:100%;min-width:1180px; } 
+	
 	#header,#footer,#page{width:100%;margin:0 auto;}
 	#page{}
-	.main,.yz-main{width:1180px;margin:0 auto;}
+	.yz-main{width:1180px;margin:0 auto;}
 	.wp{margin:0 auto;}
 	.dzwp{width:1140px;margin:0 auto;}
 	#box-sp{width:100%;min-width:1180px;}
@@ -253,7 +257,7 @@ Description: FOR [JX3PVE.COM]
 -------------------------------------------------------------- */
 	.jx3bbs{}
 	.exfm .pn {font-size: 12px;width:60px;border-radius:4px;}
-	.pn {color:#fff;vertical-align: middle;overflow: hidden;margin-right: 3px;padding: 0;min-height: 24px;border: 1px solid #eee;background: #E5E5E5 url(../../static/image/common/pn.png) repeat-x 0 -32px;cursor: pointer;-moz-box-shadow: 0 1px 0 #E5E5E5;-webkit-box-shadow: 0 1px 0 #E5E5E5;box-shadow: 0 1px 0 #E5E5E5;border-radius:4px;font-weight:bold;}
+	//.pn {color:#fff;vertical-align: middle;overflow: hidden;margin-right: 3px;padding: 0;min-height: 24px;border: 1px solid #eee;background: #E5E5E5 url(../../static/image/common/pn.png) repeat-x 0 -32px;cursor: pointer;-moz-box-shadow: 0 1px 0 #E5E5E5;-webkit-box-shadow: 0 1px 0 #E5E5E5;box-shadow: 0 1px 0 #E5E5E5;border-radius:4px;font-weight:bold;}
 	.bbsviewmypost{width:940px;}
 
 	.mtw.mbw{display:none;} /*默认相关文章*/
@@ -381,7 +385,6 @@ Description: FOR [JX3PVE.COM]
 	div.bm dt.xs2 a {font-size:14px;font-weight:normal;color:#111;font-family:'Microsoft YaHei','Hiragino Sans GB','STHeiti',Tahoma,'SimHei',sans-serif;}
 	div.bm dt.xs2 a:hover {color:#cc0000;text-decoration:none;border-bottom:1px dashed #999;}
 	.xs2.cl {color:#999;font-size:12px !Important;padding:10px;}
-	#ct {background-color:#fff;border:1px solid #ccc;padding:10px;}
 	.ct2 .sd {}
 	.single > .bm {border:none;}
 	.bm_h.cl.single,.xs2.cl.single{display:none;}
@@ -666,7 +669,6 @@ Description: FOR [JX3PVE.COM]
 	.zpt{background:url("jx3pve/raid/raid_trt2.png") no-repeat;height:31px;margin-top:10px;}
 	.zpt p,.zpt2 p {text-indent:160px;line-height:30px;height:31px;}
 	.zpt2{background:url("jx3pve/raid/raid_trt3.png") no-repeat;height:31px;margin-top:10px;}
-	#postlist{border-top:none !important;}
 
 
 	.raidbox .bbs.bm_c.pns.mfm.cl{position:relative;left:0;top:0;}
@@ -678,7 +680,6 @@ Description: FOR [JX3PVE.COM]
 	.raidbox .bbs.bm_c.pns.mfm.cl span{padding-right:0 !important;}
 	.raidbox .ptn.pbn.mbm.bbs{margin-bottom:0 !important;}
 	.raidbox-content{padding:0 !important;}
-	.zTDSearch{padding:0 20px;}
 
 	.zTDList{background:url("jx3pve/raid/raid_trt.png") no-repeat;height:31px;}
 	.zTDList p {text-indent:160px;line-height:30px;}
@@ -1270,7 +1271,6 @@ Description: FOR [JX3PVE.COM]
 	.snow-pub2:hover{background:url("jx3pve/snow/snow-pub.png") no-repeat -143px -52px ;cursor:pointer;}
 
 
-	.pls{background: #fafdff;border-right: 1px solid #aad3ea;}
 	.pcb.snow-pcb{border-bottom:1px dashed #ccc;margin-bottom:10px;}
 	.snowpost{}
 	#select_snowcolor ul li{width:15%;}
@@ -1282,15 +1282,7 @@ Description: FOR [JX3PVE.COM]
 	.snowbar{width: 540px;padding: 10px;margin-left:20px;}
 	.snow-sidebar{width:350px;padding-top:10px;}
 	.snow-sidebar p{text-align:center;background:#f2f2f2;border-radius:24px;padding:0 10px;line-height:26px;height:26px;}
-	.icon-juanzeng{background:url(jx3pve/img/icon/icon-juanzeng.png) no-repeat 4px 50%;}
-	.icon-juanzeng:hover{color:#fe438e;}
-	.icon-zhuye{background:url(jx3pve/img/icon/icon-zhuye.png) no-repeat 4px 50%;}
-	.icon-zhuye:hover{color:#9fe36d;}
-	.icon-zhiding{background:url(jx3pve/img/icon/icon-zhiding.png) no-repeat 4px 50%;}
-	.icon-zhiding:hover{color:#00ccff;}
-	.icon-gaoliang{background:url(jx3pve/img/icon/icon-gaoliang.png) no-repeat 4px 50%;}
-	.icon-gaoliang:hover{color:#d387ff;}
-	.icon-juanzeng,.icon-zhiding,.icon-gaoliang,.icon-zhuye{padding:5px 10px 5px 30px;}
+	
 
 	.addon-sidebar{float:right;}
 	.addon-content{float:left;}
@@ -1838,88 +1830,7 @@ Description: FOR [JX3PVE.COM]
 
 /* 论坛修改 COMMON二次定制
 -------------------------------------------------------------- */
-	body#nv_portal  .bm.bw0{padding:10px;}
-	.nolicense{display:none;}
-	.thread_tips{line-height:32px;}
-	.server_tips{display:inline;}
-	.heituan{margin-left:20px;}
-	.heituan:hover{color:#feb009 !important;text-decoration:none;}
-	.baotuan{color:#99cc00;font-weight:bold;}
-	.heituan a:hover{text-decoration:none !important;color:#fe8a01 !important;}
-	.xw0{font-weight:bold;color:#ff0000;}
-	div#pt {background:url("bbs/position-bg2.png") repeat-x;
-	-webkit-border-top-left-radius: 6px;
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;}
-	.bm.bmw.fl.flg{border:none;border-bottom:1px solid #ccc !Important;background:url("bbs/bbs-nav.png") repeat;}
-	.bm.bmw.fl.flg a:hover{color:#0664b7;text-decoration:none;}
-	.fl .bm_h {background:#fff;}
-	td.fl_g  dd{display:none !Important;}
-	#subforum_2.bm_c{}
-	/* #ct.wp.cl {background:url("bbs/bg-sea2.png") no-repeat;}  小雪读条预留*/
-	#pgt,.bm.bw0.pgs.cl,.pgs.mtm.mbm.cl{padding:10px;}
-	#thread_types{padding-left:10px;padding-right:10px;border-top:1px dashed #ccc;}
-	.bm{border:none;}
-	.xw1.a{color:#0099ff;}
-	.xg1.num{display:none;}
-	.tl .th{border:none;}
-	.th,.th a{color:#777;}
-	#threadlisttableid{margin-top:10px;}
-	.um{line-height:24px;}
-	#atarget{font-weight:bold;color:#3d8cd1;}
-
-
-	#separatorline a{line-height:22px;font-family:Verdana;color:#336699;}
-	#separatorline th{text-align:center;}
-
-	.xi2.mbm.pbm.bbs{padding:0 10px;}
-	#f_pst .pls{background: transparent !important;border: none;}
-	#f_pst .avatar img{border-radius: 4px;background-color: #fafdff;border: 1px solid #aad3ea;padding:5px;}
-	.bbs-author {width:32px;}
-	.bbs-author img{border-radius:4px;width:24px;height:24px;}
-	.bbs-author-name {width:120px;white-space:nowrap;overflow:hidden;}
-	.bbs-author-name a{color:#336699;padding-right:2px;}
-	span.bbs-author-verify a{padding-right:2px;}
-	.bbs-author-group{width:4px;}
-	th.common em {letter-spacing:1px;}
-	td.bbs-post-date{width:100px;text-align:right;}
-	#category_1.bm_c {border-bottom:1px dotted #ccc;}
-	.modact,.modact a{color:#ccc;font-size:12px;}
-	/* .tl th  a:visited,.tl td.fn a:visited  {color:#444 !important;} */
-	#forumnewshow{} /*提示更新*/
-	#topbbsac {float:right;position:relative;top:-28px;}
-	.newthread{display:none;}
-	#postbox{padding:10px;}
-	.exfm{background-color: #fafdff !important;border: 1px solid #aad3ea !important;}
-	.md_ctrl img {padding-right:6px;margin-bottom:6px;} /*勋章调整*/
-	#bdsharesg{float:right;padding-left:10px;position:relative;top:-5px;}
-	#chart.bm.bw0.cl{padding:10px;}
-	#waterfall .xg1.y{display:none;}
-	.bbs-ac{border-bottom:1px dotted #ccc;line-height:24px;}
-	.bbs-ac img{position:relative;top:4px;}
-	.bbs-ac em{color:#777;font-size:8px;padding-left:10px;}
-	.dr,.ds{background-image:none !important;}
-	#ct.ct1.wp.cl{border-top:none !Important;}
-	p.tbms.mtm  {background-image:none !important;}
-	/*.card_gender_2{background: #fce0df url(http://dz.yylmacro.com/static/image/common//ladybg.png) no-repeat bottom right;}*/
-	.bm.bmw.fl.flg .bm_h.cl{display:none;}
-	.bm.bml.pbn{margin-bottom:0;}
-	#modmenu{padding:10px;}
-	#postlist{border-top:1px solid #ccc;}
-	.typeoption caption{display:none;}
-	.cgtl td, .cgtl th, .cgtl caption{border-bottom:1px dotted #ccc;}
-	.typeoption{margin-bottom:10px;}
-	.t_f a {color:#5878ef;}
-	.t_f a:hover{color:#fbb803;}
-	.p_pop a {border-bottom:1px dotted #ccc;}
-	.t_f img{max-width:800px;}
-	#nv_search  #ct{border:none;}
-	.authicn{width:auto !important;}
-	.authi .xw1{display:block;}
-	.pls.favatar .pi{height: auto !important;}
+	
 
 /* 题库系统
 -------------------------------------------------------------- */ 
@@ -2051,101 +1962,12 @@ Description: FOR [JX3PVE.COM]
 	.pk200{margin-top:15px;box-shadow:0px 0px 4px #555;display:block;border-radius:8px;}
 	td#article_content table td {line-height:26px;}
 
-/* 黑科技
--------------------------------------------------------------- */ 
-
-	.star #f_pst {background:transparent;}
-	.star #post_replytmp{display:none;}
-	.star .ad .pls,.star .ad .plc{background:transparent;}
-	.star_postlist{box-shadow:4px 4px 0px #ddd;background:#fff;}
-	.star .pls{background:transparent;border:none;}
-	.star_tzbox{margin-bottom:20px;border-bottom:1px dotted #ccc;}
-	.star_boxshare{line-height:32px;margin-bottom:20px;display:none;}
-	.star_boxshare p{float:right;}
-	.star_boxshare .star_info2 {background: url("jx3pve/star/star_i2.png") no-repeat 0 50%;}
-	.star_boxshare .star_info1 {background: url("jx3pve/star/star_i1.png") no-repeat 0 50%;}
-	.star_boxshare .bdsharebuttonbox{}
-	//.star_tzbox .pi{display:none;}
-
-	.star_primary{border-bottom:1px solid #ddd;padding:10px;margin-bottom:10px;}
-	.star_primary ul,.star_primary .star_infoqc{float:left;}
-	.star_primary ul{width:368px;}
-	.star_primary ul li{line-height:28px;height:28px;}
-	.star_primary ul li span{color:#666;}
-	.star_downx {border:1px solid #ddd;margin-bottom:10px;background:url("jx3pve/star/icon-download.png") #f9f9f9 no-repeat 10px 5px;}
-	.star_downx a{display:block;padding:5px 36px 5px 56px;height:48px;line-height:24px;}
-	.star_downx span{font-size:10px;color:#888;}
-
-	/*黑科技·列表*/
-	.star{}
-
-	.star_hd{height:50px;line-height:50px;border-bottom:3px solid #ffaa4f;position:relative;padding-top:20px;margin-bottom:20px;}
-	.star_hd h1{font-size:30px;font-family:微软雅黑;font-weight:normal;width:900px;overflow:hidden;white-space:nowrap;}
-	.star_hd h1 a:hover{color:#000;}
-	.star_hd h1 span{font-family:Trebuchet MS,Helvetica,Tahoma;text-transform:uppercase;font-size:18px;padding-left:10px;color:#888;}
-	.star_hd h1 span a{font-size:12px;}
-	.star_hd p{position:absolute;font-size:18px;font-family:微软雅黑;top:25px;right:0px;}
-	.star_hd p a{color:#333;display:block;width:90px;height:95%;background:url("jx3pve/star/upload.png") no-repeat 0 50%;padding-left:26px;}
-	.star_hd p a:hover{color:#000;}
-
-	.star_sd{float:left;width:220px;padding:20px;background:#474748;color:#ccc;margin-right:20px;}
-	.star_sd a{color:#ccc;}
-	.star_sd h3{margin-bottom:15px;}
-	.star_sd ul{margin-bottom:20px;}
-	.star_sd ul li{text-shadow:1px 1px 0px #111;}
-	.star_sd ul li a{display:block;}
-	.star_sd ul li:hover{background:#333;border-radius:4px;}
-	.star_sdct1{padding:0 10px;}
-	.star_sdct1 li{float:left;width:33%;height:26px;line-height:26px;text-indent:10px;}
-	.star_sdct2 li{line-height:32px;padding-left:20px;}
-	.star_sdct2 li a:hover{color:#eee;}
-
-	.star_sd .star_1{color:#ffff00;}
-	.star_sd .star_2{color:#ff9ce0;}
-	.star_sd .star_3{color:#d5adfe;}
-	.star_sd .star_4{color:#93a1fb;}
-	.star_sd .star_5{color:#fc8585;}
-	.star_sd .star_6{color:#fca882;}
-	.star_sd .star_7{color:#fad1b0;}
-	.star_sd .star_8{color:#84f0fd;}
-	.star_sd .star_9{color:#a5f482;}
-	.star_sd .star_10{color:#fee16f;}
-	.star_sd .star_11{color:#d0ea69;}
-	.star_sd .star_12{color:#ffffff;}
-
-	#ct.star_bbslist{background:transparent;border:none;width:760px;float:left;padding:0;}
-
-	.star_bbslist .bm.bml.pbn,.star_bbslist #thread_types,.star_bbslist .zTDSearch{display:none;}
-
-	.star_bbslist #threadlist.bm{background:transparent;}
-	.star_listitem{min-height:80px;background:#fff;box-shadow:3px 3px 0px #ddd;margin-bottom:10px;display:block;width:100%;padding:10px;}
-	.star_listicon img{border-radius:4px;margin-right:10px;}
-	.star_listtitle{font-size:14px;font-weight:bold;line-height:38px;font-family:微软雅黑;display:block;max-width:438px;overflow:hidden;white-space:nowrap;}
-	.star_info{width:100px;padding-right:40px;color:#777;}
-
-	.star_it1{width:60px;}
-	.star_it2{width:480px;overflow:hidden;white-space:nowrap;}
-	.star_it3{width:80px;line-height:24px;overflow:hidden;white-space:nowrap;}
-	.star_it3 a{padding-right:4px;}
-	.star_it4{width:100px;text-align:center;}
-	.star_info0{padding-right:40px;color:#777}
-	.star_info1,.star_info2,.star_info3{display:inline-block;padding-left:15px;width:60px;color:#666;}
-	.star_info1{background:url("jx3pve/star/star_i1.png") no-repeat 0 2px;}
-	.star_info2{background:url("jx3pve/star/star_i2.png") no-repeat 0 2px;}
-	.star_info3{background:url("jx3pve/star/star_i3.png") no-repeat 0 2px;}
-
-
-	.i_macrocloud{background:#ffaa00;width:180px;height:80px;margin:10px auto;text-align:center;}
-	.i_macrocloud a{display:block;color:#333;font-size:24px;font-family:微软雅黑;text-shadow:none;line-height:80px;}
-	.i_macrocloud:hover{background:#fff;}
-
 /* 新版论坛
 -------------------------------------------------------------- */ 
 	#thread_types {padding-top:10px;}
 
 	.bbs_ct #f_pst{border:1px solid #ddd;border-radius:4px;box-shadow:0 0 2px #ddd;}
 	#f_pst .bm_h{background:#f9f9f9;border-bottom:1px solid #ddd;}
-	#autopbn,.pgbtn a {border:1px solid #ddd;box-shadow:0 0 2px #ddd;background:#f2f2f2;}
 
 
 
