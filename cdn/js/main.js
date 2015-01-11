@@ -7,11 +7,6 @@ jQuery(function($){
 	$('#nav-folder').click(function(event) {
 		$(this).toggleClass('gray');
 		$('#menu').slideToggle().toggleClass('menufolder');;
-		if($('#menu').is('.menufolder')){
-			$('.box').css('margin-top','38px');
-		}else{
-			$('.box').css('margin-top','76px');
-		}
 	});
 
 	//菜单

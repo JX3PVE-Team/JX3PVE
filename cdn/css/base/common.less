@@ -6,6 +6,9 @@
 
 //path
 @url:'common';
+@zt:'zt';
+@bps:'zt/bps';
+@index:'page/index';
 
 //size
 @header-height:38px;
@@ -33,4 +36,10 @@
 }
 
 //Layout
-.box{margin-top:76px;}
+.box{
+    margin-top:76px;
+    transition:margin-top 0.4s;
+  &.menufolder{
+    margin-top:38px;
+  }
+}
