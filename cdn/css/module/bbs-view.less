@@ -8,7 +8,10 @@
 		border:none;
 	}
 	.ad{
-		.pls{background-color:#E5EDF2;}
+		.pls,.plc{background:none;}
+	}
+	&>div{
+		border-bottom:1px solid #cceafe;
 	}
 	.pls{
 		background: #fafdff;border-right: 1px solid #cceafe;
@@ -31,7 +34,7 @@
 		background-color:#e3f5ff;
 		border:1px solid #c9eafd;
 		padding:20px;.pr;
-		margin-bottom:20px;
+		margin-bottom:10px;
 
 		.info-list{
 			li{
@@ -96,6 +99,42 @@
 		}
 	}
 
+	//文章内容
+	.t_fsz{
+		.pr;line-height:1.5;
+		img{max-width:720px;}
+
+		//快速回复
+		#vfastpostform{
+			.ct(x);top:10px;
+			.fullvfastpost{
+				border:1px solid @blue;
+				margin:0;
+				border-radius:3px;
+				box-shadow:0 0 4px rgba(0,204,255,0.5);
+				&.tipsforfastpost{
+					animation:fastpostborder 0.5s ease-in 1s 4;
+				}
+			}
+
+		}
+		
+		//回复可见
+		.showhide{
+			border:1px dashed #cceafe;
+			background-color:#fafdff;
+			font-size:12px;line-height:2;letter-spacing:0.5px;color:#555;
+			h4{color:#049abf;border-bottom:1px solid #cceafe;line-height:26px;height:26px;
+				a{
+					.dbi;text-indent:-100%;.pr;top:5px;margin:0 3px;
+					width:84px;height:16px;
+					background:url('@{url}/vip/vip.gif') no-repeat 0 0;
+				}
+			}
+		}
+
+	}
+
 
 }
 
@@ -143,7 +182,7 @@
 }
 
 //发帖与回帖按钮
-#newspecial,#post_replytmp{
+#newspecial,#newspecialtmp,#post_replytmp,#post_reply{
 	.shark;
 }
 
