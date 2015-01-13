@@ -29,13 +29,13 @@
 			<a href="http://www.jx3pve.com/jx3/tools/"><span class="iconfont">&#xe607;</span>工具</a>
 			<span>JX3 TOOLS</span>
 			<div class="banner s960-60 top-banner">
-				<!--{block/980}-->
+				<!--{block/977}-->
 			</div>
 		</div>
 
 	<!-- sidebar -->
 		<div class="sidebar-wrap">
-			<!--{block/979}-->
+			<!--{block/980}-->
 		</div>
 
 	<!-- content -->
@@ -47,7 +47,7 @@
 				</h1>
 
 				<!--顶部翻页-->
-				<div id="pgt" class="none pgs mbm cl {if $modmenu['thread']}pbm bbs{/if}">
+				<div id="pgt" class="pgs mbm cl {if $modmenu['thread']}pbm bbs{/if}">
 					<div class="pgt">$multipage</div>
 					<span class="y pgb"{if $_G['setting']['visitedforums']} id="visitedforums" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'34'})"{/if}><a href="$upnavlink">{lang return_forumdisplay}</a></span>
 					<!--{if $_G['forum']['threadsorts'] && $_G['forum']['threadsorts']['templatelist']}-->
@@ -58,7 +58,7 @@
 						<!--{if !$_G['forum_thread']['is_archived']}--><a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} href="javascript:;" title="{lang send_posts}"><img src="{IMGDIR}/pn_post.png" alt="{lang send_posts}" /><i></i></a><!--{/if}-->
 					<!--{/if}-->
 					<!--{if $allowpostreply && !$_G['forum_thread']['archiveid']}-->
-						<a id="post_reply" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]')" href="javascript:;" title="{lang reply}"><img src="{IMGDIR}/pn_reply.png" alt="{lang reply}" /></a>
+						<a id="post_reply" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]')" href="javascript:;" title="{lang reply}"><img src="{IMGDIR}/pn_reply.png" alt="{lang reply}" /><i></i></a>
 					<!--{/if}-->
 					<!--{hook/viewthread_postbutton_top}-->
 				</div>
@@ -125,7 +125,7 @@
 					<!--{/if}-->
 
 					<!--{if $modmenu['thread']}-->
-						<div id="modmenu" class="none xi2 pbm">
+						<div id="modmenu" class="xi2 pbm">
 							<!--{eval $modopt=0;}-->
 							<!--{if $_G['forum']['ismoderator']}-->
 								<!--{if $_G['group']['allowdelpost']}--><!--{eval $modopt++}--><a href="javascript:;" onclick="modthreads(3, 'delete')">{lang modmenu_deletethread}</a><span class="pipe">|</span><!--{/if}-->

@@ -29,7 +29,7 @@
 				}
 				//收藏
 				.fav{
-					background:url('@{url}/sprite.png') no-repeat 0 0;
+					background:url('@{url}/common/sprite.png') no-repeat 0 0;
 					.db;.fl;width:26px;height:100%;transition:background 0.2s ease-in;
 					&.i{
 						background-position:0 -114px;
@@ -38,20 +38,20 @@
 				//Logo
 				.logo-icon{
 					.fl;width:94px;height:100%;
-					.fl;background:url('@{url}/logo.png') no-repeat 0 center;
+					.fl;background:url('@{url}/common/logo.png') no-repeat 0 center;
 				}
 				//folder
 				.folder{
 					.iconfont;
 					font-size:22px;width:32px;.x;.fl;.db;
-					color:@blue;.pointer;
+					color:@blue;.pointer;transition:0.3s ease-in;
 					&.gray{color:#888;}
 				}
 			}
 			//微信
 			.app{
 				.fl;padding:0 15px 0 50px;border-right:1px solid #888;.pointer;.pr;.z(400);
-				background:url('@{url}/sprite.png') no-repeat -32px 5px;
+				background:url('@{url}/common/sprite.png') no-repeat -32px 5px;
 				&:hover{
 					color:#fff;
 					span{color:lighten(#00ccff,20%);}
@@ -59,7 +59,7 @@
 				}
 				span{font-family:Verdana;color:@blue;margin-left:5px;}
 				i{
-					background:url('@{url}/i_wx128.png') no-repeat center center;
+					background:url('@{url}/common/i_wx128.png') no-repeat center center;
 					.none;width:128px;height:128px;.pa;left:6px;top:@header-height+6px;
 					padding:10px;border-radius:4px;background-color:rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.3);
 				}
@@ -79,7 +79,7 @@
 					p{.fl;}
 					.login-qc{
 						.fl;height:100%;
-						a{.dbi;width:33px;height:100%;background:url('@{url}/login.png') no-repeat;
+						a{.dbi;width:33px;height:100%;background:url('@{url}/common/login.png') no-repeat;
 							&.qq{background-position:0 0;}
 							&.wb{background-position:-33px 0;}
 							&.wx{background-position:-66px 0;}
@@ -160,21 +160,21 @@
 				}
 			}
 
-			//搜索(旧)
+			//搜索
 			.search{
 				.fr;.pr;top:5px;.clip;
 				&:hover{
-					.search-topbt{animation:goUp 0.3s ease-in forwards;}
-					.search-text{width:200px;}
+					.bdcs-search-form-submit{animation:goUp 0.3s ease-in forwards;}
+					.bdcs-search-form-input{width:200px;}
 				}
-				.search-text{
+				.bdcs-search-form-input{
 					height:20px;line-height:20px;border-radius:4px;
 					width:165px;padding:4px 30px 4px 5px;transition:width 0.3s ease-in;
 					border:none;
 				}
-				.search-topbt{
+				.bdcs-search-form-submit{
 					.pa;right:0;top:0;width:30px;height:28px;cursor:pointer;background:none;border:none;.db;
-					background:url('@{url}/sprite.png') no-repeat 0 -118px;
+					background:url('@{url}/common/sprite.png') no-repeat 0 -118px;
 				}
 			}
 
@@ -211,18 +211,6 @@
 		z-index:800 !important;
 	}
 	
-/* 百度搜索
--------------------------------------------------------------- */
-	#BAIDU_DUP_wrapper_u1902006_0{
-		.pr;
-		width:285px;
-		iframe{
-			width:285px;height:28px !important;
-			#search_box{
-				border-radius:4px;
-			}
-		}
-	}
 
 	
 

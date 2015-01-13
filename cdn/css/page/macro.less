@@ -51,6 +51,15 @@
 				.star_12{color:#ffffff;}
 			}
 		}
+
+		.qc-tools{
+			li{
+				.gray-btn;margin-bottom:5px;
+				a{.db;.full;}
+				&:hover{a{color:#049abf;}}
+			}
+		}
+
 	}
 
 	//内容区
@@ -79,20 +88,24 @@
 		.macro-list{
 			width:100%;.clip;table-layout:fixed;
 			.item{
-				height:28px;.fz(12px,28px);border-bottom:1px dashed #ccc;
+				height:32px;.fz(12px,32px);border-bottom:1px dashed #ccc;
 				a:hover{color:#1b7acb;}
 				&:hover{background-color:#e4f3ff;}
 				&.even{background-color:#f7f7f7;
 					&:hover{background-color:#e4f3ff;}
 				}
+				.item-avt{width:40px;
+					img{border-radius:3px;}
+				}
 				.role{width:40px;color:#777;padding-left:2px;}
-				.title{
-					width:716px;.nobreak;
-					a{.fz(12px,28px);font-weight:normal;}
-					span{font-size:12px;color:#cc0000;font-weight:normal;background: url("jx3pve/star/star_i1.png") no-repeat 0 2px;padding-left:20px;}
+				.atitle{
+					width:716px !important;.nobreak;
+					a{font-weight:normal;}
+					.downcord{font-size:12px;color:#cc0000;font-weight:normal;background: url("@{url}/page/bbs-list/star_i1.png") no-repeat 0 2px;padding-left:20px;}
 				}
 				.author{
 					width:140px;.nobreak;.x(right);padding-right:2px;
+					a{color:#777;}
 					span{margin-left:5px;a{margin-left:2px;}}
 				}
 			}
@@ -103,7 +116,6 @@
 			.fz(18px,2);font-family:"微软雅黑";
 			width:100%;.nobreak;border-bottom:1px dashed #ddd;margin-bottom:10px;
 		}
-
 
 	}
 }
