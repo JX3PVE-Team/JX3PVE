@@ -4,49 +4,71 @@
 */
 @import url('../base/reset.less');
 @import url('../base/base.less');
+@import url('../base/common.less');
 @import url('../base/animation.less');
 @import url('../module/search.less');
-
 @url:'../../img';
-
-html,body{.full;}
-.error{
-	a{color:#369;}
+html,
+body{.full;}
+.error{a{color:#369;}
 	a:hover{color:#ff0000;}
-	.container{
-		background-image: url("@{url}/page/error/bgx.png"); .full;
-		.main{
-			/*background-image: url("@{url}/bgx2.jpg");*/
-			background:url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") no-repeat 0 0;
-			.full;
-
-			.error-content{
-				width:760px;height:420px;.ct(o,760px,420px);
+	.container{background-image:url("@{url}/page/error/bgx.png");.full;
+		.main{/* background-image:url("@{url}/bgx2.jpg"); */
+			background:url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") no-repeat 0 0;.full;
+			.error-content{width:760px;height:420px;.ct(o,
+				760px,
+				420px);
 				//logo
-				.index-logo{
-					height:150px;width:400px;.auto(x);
-					a{
-						.full;.db;padding-left:200px;color:#111;
-						.fz(45px,200px); font-family:"Trebuchet MS";
-						background:url('@{url}/common/i_logo.png') no-repeat 0 0;
-					}
+				.index-logo{height:150px;width:400px;.auto(x);
+					a{.full;.db;padding-left:200px;color:#111;.fz(45px,200px);font-family:"Trebuchet MS";background:url('@{url}/common/i_logo.png') no-repeat 0 0;}
 				}
 				//search
-				.search{ 
-					.mod-search(480px,48px);
+				.search{
+					@s-height:48px;
+					@bt-width:70px;
+					margin:0 auto;width:480px;.pr;
+					box-shadow:0 0 4px #888;
+					animation:fastpostborder 2s ease-in 2;
+					border-radius:4px;background-color:#fff;
+					border:2px solid rgba(0,204,255,0.6);
+					&:after{
+						content:'\e600';
+						.yhicon;
+						font-size:28px;
+						color:#777;
+						.pa;
+						right:10px;top:10px;
+					}
+					&:hover{
+						.bdcs-search-form-submit{}
+						.bdcs-search-form-input{
+						}
+					}
+					.bdcs-search-form-input{
+						line-height:@s-height;height:@s-height;padding:4px @bt-width 4px 5px;
+						border:none;border-radius:4px;width:480px - @bt-width - 6px;
+						font-size:16px;
+						&:focus{
+							border:none;outline:0;
+							//box-shadow:0 0 4px #00ccff inset,0 0 2px #ddd;
+						}
+					}
+					.bdcs-search-form-submit{
+						.pa;.db;top:0;right:32px;width:@bt-width;height:@s-height;cursor:pointer;
+						border:none;background:none;
+						font-weight:bold;color:#666;
+						font-family: '微软雅黑';
+					}
 				}
 				//描述
-				p{
-					.fz(18px,36px); font-family:"微软雅黑"; text-align:center;
-					margin:5px 0;
-					.acolor(#369,#ff0000);
+				p{.fz(18px,
+					36px);font-family:"微软雅黑";text-align:center;margin:5px 0;.acolor(#369,
+					#ff0000);
+					a{font-weight: bold;}
 					a:hover{text-decoration:underline;}
-					&.more{
-						font-size:14px;
-					}
+					&.more{font-size:14px;}
 				}
 			}
 		}
 	}
 }
-
