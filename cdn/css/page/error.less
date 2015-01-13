@@ -2,4 +2,51 @@
 * 错误跳转页
 * By Yuhan
 */
+@import url('../base/reset.less');
+@import url('../base/base.less');
+@import url('../base/animation.less');
+@import url('../module/search.less');
+
+@url:'../../img';
+
+html,body{.full;}
+.error{
+	a{color:#369;}
+	a:hover{color:#ff0000;}
+	.container{
+		background-image: url("@{url}/page/error/bgx.png"); .full;
+		.main{
+			/*background-image: url("@{url}/bgx2.jpg");*/
+			background:url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") no-repeat 0 0;
+			.full;
+
+			.error-content{
+				width:760px;height:420px;.ct(o,760px,420px);
+				//logo
+				.index-logo{
+					height:150px;width:400px;.auto(x);
+					a{
+						.full;.db;padding-left:200px;color:#111;
+						.fz(45px,200px); font-family:"Trebuchet MS";
+						background:url('@{url}/common/i_logo.png') no-repeat 0 0;
+					}
+				}
+				//search
+				.search{ 
+					.mod-search(480px,48px);
+				}
+				//描述
+				p{
+					.fz(18px,36px); font-family:"微软雅黑"; text-align:center;
+					margin:5px 0;
+					.acolor(#369,#ff0000);
+					a:hover{text-decoration:underline;}
+					&.more{
+						font-size:14px;
+					}
+				}
+			}
+		}
+	}
+}
 
