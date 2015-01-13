@@ -486,8 +486,22 @@ a:hover {
   /* IE9*/
   /* iOS 4.1- */
 }
+@font-face {
+  font-family: 'yhicon';
+  src: url('http://at.alicdn.com/t/font_1421169244_920332.eot');
+  src: url('http://at.alicdn.com/t/font_1421169244_920332.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1421169244_920332.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1421169244_920332.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('http://at.alicdn.com/t/font_1421169244_920332.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
 .iconfont {
   font-family: "iconfont";
+}
+.yhicon {
+  font-family: "yhicon";
+}
+.iconfont,
+.yhicon {
   font-style: normal;
   display: inline-block;
   -webkit-font-smoothing: antialiased;
@@ -2585,7 +2599,7 @@ body {
   height: 100%;
 }
 .error .container .main {
-  /*background-image: url("@{url}/bgx2.jpg");*/
+  /* background-image:url("@{url}/bgx2.jpg"); */
   background: url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") no-repeat 0 0;
   width: 100%;
   height: 100%;
@@ -2617,29 +2631,39 @@ body {
   background: url('../../img/common/i_logo.png') no-repeat 0 0;
 }
 .error .container .main .error-content .search {
-  float: right;
-  *display: inline;
+  margin: 0 auto;
+  width: 480px;
   position: relative;
-  top: 5px;
-  overflow: hidden;
   *zoom: 1;
+  -webkit-box-shadow: 0 0 4px #888;
+  box-shadow: 0 0 4px #888;
+  -webkit-animation: fastpostborder 2s ease-in 2;
+  animation: fastpostborder 2s ease-in 2;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 2px solid rgba(0, 204, 255, 0.6);
 }
-.error .container .main .error-content .search:hover .bdcs-search-form-submit {
-  -webkit-animation: goUp 0.3s ease-in forwards;
-  animation: goUp 0.3s ease-in forwards;
-}
-.error .container .main .error-content .search:hover .bdcs-search-form-input {
-  width: 200px;
+.error .container .main .error-content .search:after {
+  content: '\e600';
+  font-family: "yhicon";
+  font-style: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  font-size: 28px;
+  color: #777;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 .error .container .main .error-content .search .bdcs-search-form-input {
-  width: 480px;
-  height: 48px;
   line-height: 48px;
-  padding: 4px 30px 4px 5px;
-  -webkit-transition: width 0.3s ease-in;
-  transition: width 0.3s ease-in;
+  height: 48px;
+  padding: 4px 70px 4px 5px;
   border: none;
   border-radius: 4px;
+  width: 404px;
+  font-size: 16px;
 }
 .error .container .main .error-content .search .bdcs-search-form-input:focus {
   border: none;
@@ -2647,15 +2671,17 @@ body {
 }
 .error .container .main .error-content .search .bdcs-search-form-submit {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 30px;
-  height: 28px;
-  cursor: pointer;
-  background: none;
-  border: none;
   display: block;
-  background: url('../../img/common/sprite.png') no-repeat 0 -118px;
+  top: 0;
+  right: 32px;
+  width: 70px;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #666;
+  font-family: '微软雅黑';
 }
 .error .container .main .error-content p {
   font-size: 18px;
@@ -2669,6 +2695,9 @@ body {
 }
 .error .container .main .error-content p a:hover {
   color: #ff0000;
+}
+.error .container .main .error-content p a {
+  font-weight: bold;
 }
 .error .container .main .error-content p a:hover {
   text-decoration: underline;
