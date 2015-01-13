@@ -36,6 +36,9 @@
 			border:1px solid #c9eafd;
 			padding:20px;.pr;
 			margin-bottom:10px;
+			&:hover{
+				.honey{.tm(1);}
+			}
 
 			.info-list{
 				li{
@@ -73,12 +76,12 @@
 			}
 			.honey{
 				.pa;bottom:26px;right:20px;
+				.tm(0.6);transition:0.2s ease-in;
 				a{
 					padding:2px 0 2px 25px;
 					height:20px;width:auto;
 					margin-right:5px;
 					background-image:url('@{bbs-view}/icon.png');background-repeat:no-repeat;
-					.tm(0.6);transition:0.2s ease-in;
 					&:hover{.tm(1);}
 				}
 				.icon-support{
@@ -124,34 +127,35 @@
 				}
 
 			//回复可见
-				.showhide{
+				.showhide,.locked{
 					border:1px dashed #cceafe;
 					background-color:#fafdff;
-					font-size:12px;line-height:2;letter-spacing:0.5px;color:#555;
-					h4{color:@bluex;border-bottom:1px solid #cceafe;line-height:26px;height:26px;
-						a{
-							.dbi;text-indent:-100%;.pr;top:5px;margin:0 3px;
+					font-size:12px !important;line-height:2;letter-spacing:0.5px;
+				}
+				//回复可见
+					.showhide{
+						color:#555;
+						h4{color:@bluex;border-bottom:1px solid #cceafe;line-height:26px;height:26px;
+							a{
+								.dbi;text-indent:-2000px;.pr;top:5px;margin:0 3px;
+								width:84px;height:16px;
+								background:url('@{url}/common/vip/vip.gif') no-repeat 0 0;
+							}
+						}
+					}
+
+				//需回复可见
+					.locked{
+						color:@bluex;
+						a{color:@bluex;}
+						.tobevip{
+							.dbi;text-indent:-2000px;.pr;top:5px;margin:0 3px;
 							width:84px;height:16px;
 							background:url('@{url}/common/vip/vip.gif') no-repeat 0 0;
 						}
 					}
-				}
-
-			//需回复可见
-				.locked{
-					border:1px dashed #cceafe;
-					background-color:#fafdff;
-					font-size:12px;line-height:2;letter-spacing:0.5px;color:#555;color:@bluex;
-					a{color:@bluex;}
-					.tobevip{
-						.dbi;text-indent:-100%;.pr;top:5px;margin:0 3px;
-						width:84px;height:16px;
-						background:url('@{url}/common/vip/vip.gif') no-repeat 0 0;
-					}
-				}
 
 		}
-
 }
 
 //印戳
@@ -165,8 +169,31 @@
 	}
 
 //点评
-.psth{
-	background-color:#cceafe;
+.content-wrap{
+	.psth,.cm.psth{
+		background-color:#cceafe;color:@bluex;
+		
+		.icon_ring{
+			background-color:#fff ;border-color:@bluex;
+			&:hover{
+				background-color:@bluex;border-color:#fff;
+			}
+		}
+	}
+	.pstl{
+		border-bottom:1px dotted #ddd;
+		//点评a
+		.psta{
+			a:link{font-weight: normal;color:#444;}
+		}
+	}
+	.ratl{
+		.xw1 {
+			.xi1{
+				background-color:#cceafe;
+			}
+		}
+	} 
 }
 
 //快速下一页

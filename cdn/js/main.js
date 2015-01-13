@@ -25,10 +25,17 @@ jQuery(function($){
 		$('#bdcs').find('#bdcs-search-form-submit').val('');
 
 		//二级菜单
-		$('#menu-list').children('li').hover(function() {
-			$(this).children('ul').slideDown();
+		$('#menu-list').children('li').hover(
+		function() {
+			var self = $(this);
+			setTimeout(function(){
+				self.children('ul').slideDown();
+			},150);
 		}, function() {
-			$(this).children('ul').slideUp();
+			var self = $(this);
+			setTimeout(function(){
+				self.children('ul').slideUp();
+			},150);
 		});
 
 	//BBS-VIEW
