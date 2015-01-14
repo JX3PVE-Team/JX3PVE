@@ -1,6 +1,7 @@
 梳理css文件
 PHP文件改动与注释
 require.js
+cdn开放
 
 【全局】
 右侧小帮助交互

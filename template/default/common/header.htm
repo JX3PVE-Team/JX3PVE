@@ -30,6 +30,18 @@
 
 <body id="nv_{$_G[basescript]}" class="pg_{CURMODULE}{if $_G['basescript'] === 'portal' && CURMODULE === 'list' && !empty($cat)} {$cat['bodycss']}{/if}" onkeydown="if(event.keyCode==27) return false;">
 
+	<!-- dialog + mask-->
+	<div class="mask" id="mask" style="display:none"></div>
+	<div class="dialog-wrap" id="dialog-important" style="display:none">
+		<div class="dialog-important">
+			<h2>提示</h2>
+			<span class="close" id="dialog-close"></span>
+			<div class="content">
+				<!--{block/985}-->
+			</div>
+		</div>
+	</div>
+
  	
 	<div id="append_parent"></div><div id="ajaxwaitid"></div>
 	<!--{if $_GET['diy'] == 'yes' && check_diy_perm($topic)}-->

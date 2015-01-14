@@ -3,7 +3,6 @@ jQuery.noConflict();
 
 jQuery(function($){
 
-
 	//Header
 	//------------------------------------------
 		//导航
@@ -36,6 +35,14 @@ jQuery(function($){
 			setTimeout(function(){
 				self.children('ul').slideUp();
 			},150);
+		});
+
+		//警告框
+		if($('#dialog-important .content').html().length>30){
+			$('#dialog-important,#mask').css('display','block');
+		}
+		$('#dialog-close').on('click',function(){
+			$('#dialog-important,#mask').hide();
 		});
 
 	//BBS-VIEW
