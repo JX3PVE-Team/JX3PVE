@@ -7,7 +7,7 @@
 @import url('../base/common.less');
 @import url('../base/animation.less');
 @import url('../module/search.less');
-@url:'../../img';
+@url:'http://static.jx3pve.com/cdn/img';
 html,
 body{.full;}
 .error{a{color:#369;}
@@ -15,22 +15,21 @@ body{.full;}
 	.container{background-image:url("@{url}/page/error/bgx.png");.full;
 		.main{/* background-image:url("@{url}/bgx2.jpg"); */
 			background:url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") no-repeat 0 0;.full;
-			.error-content{width:760px;height:420px;.ct(o,
-				760px,
-				420px);
+			.error-content{width:760px;height:380px;.ct(o,760px,380px);
+				text-shadow:-1px -1px 0 #fff;
 				//logo
-				.index-logo{height:150px;width:400px;.auto(x);
-					a{.full;.db;padding-left:200px;color:#111;.fz(45px,200px);font-family:"Trebuchet MS";background:url('@{url}/common/i_logo.png') no-repeat 0 0;}
+				.index-logo{height:150px;width:200px;.auto(x);
+					a{.full;.db;/*padding-left:200px;*/color:#111;.fz(45px,200px);font-family:"Trebuchet MS";background:url('@{url}/common/i_logo.png') no-repeat 0 0;}
 				}
 				//search
 				.search{
 					@s-height:48px;
 					@bt-width:70px;
 					margin:0 auto;width:480px;.pr;
-					box-shadow:0 0 4px #888;
-					animation:fastpostborder 2s ease-in 2;
+					box-shadow:0 0 4px rgba(0,204,255,0.6);
+					animation:sharkborder 0.5s ease-in-out 1s 1;
 					border-radius:4px;background-color:#fff;
-					border:2px solid rgba(0,204,255,0.6);
+					border:2px solid rgba(0,204,255,0.5);
 					&:after{
 						content:'\e600';
 						.yhicon;
@@ -38,11 +37,13 @@ body{.full;}
 						color:#777;
 						.pa;
 						right:10px;top:10px;
+						animation:goUp 0.3s ease-in 1s 1;
 					}
 					&:hover{
 						.bdcs-search-form-submit{}
-						.bdcs-search-form-input{
-						}
+						.bdcs-search-form-input{}
+						&:after{color:#111;}
+						border:2px solid rgba(0,204,255,0.8);
 					}
 					.bdcs-search-form-input{
 						line-height:@s-height;height:@s-height;padding:4px @bt-width 4px 5px;
@@ -61,12 +62,13 @@ body{.full;}
 					}
 				}
 				//描述
-				p{.fz(18px,
-					36px);font-family:"微软雅黑";text-align:center;margin:5px 0;.acolor(#369,
-					#ff0000);
+				p{font-family:"微软雅黑";text-align:center;margin:10px 0;.acolor(#369,
+					#ff3399);
 					a{font-weight: bold;}
 					a:hover{text-decoration:underline;}
-					&.more{font-size:14px;}
+					&.tips{.fz(22px,36px);color:#333;}
+					&.more{.fz(14px,1.8);margin-top:20px;}
+					&.copy{.fz(12px,2);}
 				}
 			}
 		}

@@ -1,0 +1,38 @@
+/*
+* 全局提示公告警告框
+* By iRuxu
+*/
+
+.dialog-wrap{
+	border:1px solid rgba(0,204,255,0.4);border-radius:6px;box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	width:600px;height:300px;.fixed(o,600,300);.z(100);
+	.dialog-important{
+		width:600px - 20px;
+		height:300px - 20px;
+		background-color:@bg-blue;
+		border:10px solid fade(@bo-blue,50%);
+		border-radius:6px;
+
+		h2{
+			font-family:'微软雅黑';border-bottom:1px dashed #ddd;
+			text-indent:10px;.fz(16px,1.8);color:#049abf;cursor:default;
+		}
+		span.close{
+			.pa;top:8px;right:8px;.size(30px,30px);.x;.pointer;transition:0.3s ease-in;
+			&:before{
+				content:'\e632';.iconfont;color:#888;line-height:30px;
+			}
+			&:hover{
+				&:before{color:#555;animation:closeit 0.5s ease-in forwards;}
+			}
+		}
+		.content{
+			color:#555;.fz(12px,1.8);padding:10px;
+			height:300px - 20px - 50px;.clip;
+		}
+
+	}
+}
+
+
+
