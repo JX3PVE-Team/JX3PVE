@@ -1,14 +1,14 @@
 /* 首页
 * By Yuhan
 -------------------------------------------------------------- */
-	.zHome{background:url("jx3pve/face/bgx.png") repeat;}
+	.zHome{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/bgx.png") repeat;}
 	.zHomePage {padding-bottom:10px;background:url("http://ww4.sinaimg.cn/large/bcc700eegw1eikbevbsu1j21hc0ip4cf.jpg") top center no-repeat;}
 	.zHomeMain{margin:0 auto;width:950px;padding-bottom:60px;}
-	.zHSegmentation{background:url("jx3pve/index/2014/hr.png") no-repeat center;width:100%;height:23px;}
+	.zHSegmentation{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/hr.png") no-repeat center;width:100%;height:23px;}
 
 	.zHomeTop {padding-top:50px;}
 	.zHTopLeft,.zHTopCenter,.zHTopRight {float:left;}
-	.zHomeLogo a {background:url("jx3pve/index/2014/i_logo.png") no-repeat;display:block;height:150px;width:200px;}
+	.zHomeLogo a {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/i_logo.png") no-repeat;display:block;height:150px;width:200px;}
 	.zHomeWinxin {text-align:center;}
 	.zHomeWinxin p {padding-top:10px;}
 
@@ -20,85 +20,85 @@
 	.zHomeFocusH2 .module.cl.xl.xl1 ul li{line-height:23px;height:23px;padding-left:10px;}
 
 
-	.zHPage1H2 {background:url("jx3pve/index/2014/h2_1.png") no-repeat;height:40px;}
+	.zHPage1H2 {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/h2_1.png") no-repeat;height:40px;}
 	.zHomeBps,.zHomeTools {float:left;}
 
 	.zHomeBps{margin-top:6px;width:620px;}
 	.zHomeBps ul {padding:15px 0 0 12px;}
 	.zHomeBps ul li{float:left;height:28px;width:118px;margin-right:17px;margin-bottom:12px;}
-	.zHomeBps ul li:hover{background:url("jx3pve/201407/bps_li_bg.png") no-repeat right center;}
+	.zHomeBps ul li:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/bps_li_bg.png") no-repeat right center;}
 	.zHomeBps ul li a {display:block;line-height:28px;text-indent:45px;}
 	.zHomeBps ul li a:hover{color:#000;}
 	
-	.zHBpsBX{background:url("img/role.png") no-repeat 0 0;}
-	.zHBpsHJ{background:url("img/role.png") no-repeat 0 -28px;}
-	.zHBpsDJ{background:url("img/role.png") no-repeat 0 -56px;}
-	.zHBpsAX{background:url("img/role.png") no-repeat 0 -84px;}
-	.zHBpsFY{background:url("img/role.png") no-repeat 0 -112px;}
-	.zHBpsYJ{background:url("img/role.png") no-repeat 0 -140px;}
-	.zHBpsQC{background:url("img/role.png") no-repeat 0 -168px;}
-	.zHBpsJC{background:url("img/role.png") no-repeat 0 -196px;}
-	.zHBpsTL{background:url("img/role.png") no-repeat 0 -224px;}
-	.zHBpsJY{background:url("img/role.png") no-repeat 0 -252px;}
-	.zHBpsCJ{background:url("img/role.png") no-repeat 0 -280px;}
-	.zHBpsGB{background:url("img/role.png") no-repeat 0 -308px;}
-	.zHBpsFS{background:url("img/role.png") no-repeat 0 -336px;}
-	.zHBpsYS{background:url("img/role.png") no-repeat 0 -364px;}
-	.zHBpsLJ{background:url("img/role.png") no-repeat 0 -392px;}
-	.zHBpsBT{background:url("img/role.png") no-repeat 0 -420px;}
-	.zHBpsTC{background:url("img/role.png") no-repeat 0 -448px;}
-	.zHBpsMZ{background:url("img/role.png") no-repeat 0 -476px;}
-	.zHBpsXS{background:url("img/role.png") no-repeat 0 -504px;}
-	.zHBpsTY{background:url("img/role.png") no-repeat 0 -532px;}
+	.zHBpsBX{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 0;}
+	.zHBpsHJ{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -28px;}
+	.zHBpsDJ{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -56px;}
+	.zHBpsAX{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -84px;}
+	.zHBpsFY{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -112px;}
+	.zHBpsYJ{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -140px;}
+	.zHBpsQC{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -168px;}
+	.zHBpsJC{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -196px;}
+	.zHBpsTL{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -224px;}
+	.zHBpsJY{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -252px;}
+	.zHBpsCJ{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -280px;}
+	.zHBpsGB{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -308px;}
+	.zHBpsFS{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -336px;}
+	.zHBpsYS{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -364px;}
+	.zHBpsLJ{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -392px;}
+	.zHBpsBT{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -420px;}
+	.zHBpsTC{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -448px;}
+	.zHBpsMZ{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -476px;}
+	.zHBpsXS{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -504px;}
+	.zHBpsTY{background:url("http://static.jx3pve.com/cssjsimg/img/role.png") no-repeat 0 -532px;}
 	
 	.zHToolsCH {color:#111;}
 	.zHToolsEN {color:#666;font-size:10px;}
-	.zHomeTools ul li {display:block;background:url("jx3pve/index/2014/tool_raw.png") no-repeat 10px 50%;height:30px;line-height:30px;clear:both;}
+	.zHomeTools ul li {display:block;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/tool_raw.png") no-repeat 10px 50%;height:30px;line-height:30px;clear:both;}
 	.zHomeTools ul li a {text-indent:10px;float:left;}
 	.zHomeTools ul li a:hover {color:#333}
 	.zHomeTools span {padding-left:10px;}
-	.zHTools4DIY {background:url("jx3pve/index/2014/diy.png") no-repeat;width:28px;height:11px;margin-top:8px;margin-left:10px;}
+	.zHTools4DIY {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/diy.png") no-repeat;width:28px;height:11px;margin-top:8px;margin-left:10px;}
 	.zHTools2 {font-weight:bold;}
 	.zHomeTools ul li p {padding-left:20px;float:left;}
 
-	.zHPage2H2 {background:url("jx3pve/index/2014/h2_2.png") no-repeat;height:40px;}
+	.zHPage2H2 {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/h2_2.png") no-repeat;height:40px;}
 	.zHPage2H2 ul {margin-left:310px;padding-top:7px;}
 	.zHPage2H2 ul li {margin-left:12px;float:left;width:72px;}
-	.zHPage2H2 a {display:block;background:url("jx3pve/index/2014/raidbtn.png") no-repeat;height:26px;text-indent:22px;line-height:26px;}
-	.zHPage2H2 a:hover {background:url("jx3pve/index/2014/raidbtn.png") no-repeat 0 -26px;color:#444;}
+	.zHPage2H2 a {display:block;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/raidbtn.png") no-repeat;height:26px;text-indent:22px;line-height:26px;}
+	.zHPage2H2 a:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/raidbtn.png") no-repeat 0 -26px;color:#444;}
 
 
 	.zHRaiders {float:left;padding-top:10px;margin-left:20px;}
-	.zHRaiders li {background:url("jx3pve/index/2014/fb_raw.png") no-repeat;background-position:5px 50%;height:22px;line-height:22px;text-indent:20px;}
+	.zHRaiders li {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/fb_raw.png") no-repeat;background-position:5px 50%;height:22px;line-height:22px;text-indent:20px;}
 
 	.zHomeFb {float:right;}
 	.zHomeFb ul li a{width:281px;height:58px;display:block;margin-bottom:3px;}
-	.zHomeFbItem1{background:url("jx3pve/201407/fb-nav-1.png") no-repeat 0 0;}
-	.zHomeFbItem2{background:url("jx3pve/201407/fb-nav-1.png") no-repeat 0 -58px;}
-	.zHomeFbItem3{background:url("jx3pve/201407/fb-nav-1.png") no-repeat 0 -116px;}
-	.zHomeFbItem4{background:url("jx3pve/201407/fb-nav-1.png") no-repeat 0 -174px;}
-	.zHomeFbItem1:hover{background:url("jx3pve/201407/fb-nav-2.png") no-repeat 0 0;}
-	.zHomeFbItem2:hover{background:url("jx3pve/201407/fb-nav-2.png") no-repeat 0 -58px;}
-	.zHomeFbItem3:hover{background:url("jx3pve/201407/fb-nav-2.png") no-repeat 0 -116px;}
-	.zHomeFbItem4:hover{background:url("jx3pve/201407/fb-nav-2.png") no-repeat 0 -174px;}
+	.zHomeFbItem1{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-1.png") no-repeat 0 0;}
+	.zHomeFbItem2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-1.png") no-repeat 0 -58px;}
+	.zHomeFbItem3{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-1.png") no-repeat 0 -116px;}
+	.zHomeFbItem4{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-1.png") no-repeat 0 -174px;}
+	.zHomeFbItem1:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-2.png") no-repeat 0 0;}
+	.zHomeFbItem2:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-2.png") no-repeat 0 -58px;}
+	.zHomeFbItem3:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-2.png") no-repeat 0 -116px;}
+	.zHomeFbItem4:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/201407/fb-nav-2.png") no-repeat 0 -174px;}
 
 
-	.zHPage3H2 {background:url("jx3pve/index/2014/h2_3.png") no-repeat;height:40px;}
+	.zHPage3H2 {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/h2_3.png") no-repeat;height:40px;}
 	.zHomePVX {padding-top:40px;padding-bottom:15px;}
 	.zHPvx,.zHMagazine {float:left;}
-	.zHPvx {background:url("jx3pve/index/2014/pvx-1.png") no-repeat;height:250px;width:530px;margin-left:35px;}
+	.zHPvx {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-1.png") no-repeat;height:250px;width:530px;margin-left:35px;}
 	.zHPvx ul {padding-top:2px;padding-left:3px;}
 	.zHPvx ul li {margin-bottom:17px;margin-right:29px;float:left;}
 	.zHPvx ul li a {display:block;width:101px;height:101px;}
 
-	.zHPvxFace:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -3px -2px;}
-	.zHPvxPet:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -133px -2px;}
-	.zHPvxProps:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -263px -2px;}
-	.zHPvxClothes:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -393px -2px;}
-	.zHPvxVideo:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -3px -120px;}
-	.zHPvxMusic:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -133px -120px;}
-	.zHPvxStory:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -263px -120px;}
-	.zHPvxSkill:hover {background:url("jx3pve/index/2014/pvx-2.png") no-repeat -393px -120px;}
+	.zHPvxFace:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -3px -2px;}
+	.zHPvxPet:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -133px -2px;}
+	.zHPvxProps:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -263px -2px;}
+	.zHPvxClothes:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -393px -2px;}
+	.zHPvxVideo:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -3px -120px;}
+	.zHPvxMusic:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -133px -120px;}
+	.zHPvxStory:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -263px -120px;}
+	.zHPvxSkill:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/pvx-2.png") no-repeat -393px -120px;}
 
 	.zHPvx li {position:relative;}
 	.zHPvx span {font-size:14px;font-weight:800;color:#fff;position:absolute;left:36px;top:77px;}
@@ -106,30 +106,30 @@
 	.zHMagazine {margin-left:80px;}
 	.zHMagazine h1 {font-size:25px}
 
-	.zHPage4H2 {background:url("jx3pve/index/2014/h2_4.png") no-repeat;height:40px;}
-	.zHPage4H2Biz {background:url("jx3pve/index/2014/biz_tips.png") no-repeat;height:30px;margin-top:5px;margin-left:320px;}
+	.zHPage4H2 {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/h2_4.png") no-repeat;height:40px;}
+	.zHPage4H2Biz {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/biz_tips.png") no-repeat;height:30px;margin-top:5px;margin-left:320px;}
 	.zTraCommodity{margin-top:20px;}
 	.zTraCommodity ul {padding-left:40px;}
 	.zTraCommodity ul li {float:left;height:24px;width:140px;margin-right:30px;margin-bottom:20px;}
 	.zTraCommodity ul li a {display:block;line-height:24px;text-indent:32px;}
-	.zCom1{background:url("jx3pve/biz-trans/1.png") no-repeat;}
-	.zCom2{background:url("jx3pve/biz-trans/2.png") no-repeat;}
-	.zCom3{background:url("jx3pve/biz-trans/3.png") no-repeat;}
-	.zCom4{background:url("jx3pve/biz-trans/4.png") no-repeat;}
-	.zCom5{background:url("jx3pve/biz-trans/5.png") no-repeat;}
-	.zCom6{background:url("jx3pve/biz-trans/6.png") no-repeat;}
-	.zCom7{background:url("jx3pve/biz-trans/7.png") no-repeat;}
-	.zCom8{background:url("jx3pve/biz-trans/8.png") no-repeat;}
-	.zCom9{background:url("jx3pve/biz-trans/9.png") no-repeat;}
-	.zCom10{background:url("jx3pve/biz-trans/10.png") no-repeat;}
-	.zCom11{background:url("jx3pve/biz-trans/11.png") no-repeat;}
-	.zCom12{background:url("jx3pve/biz-trans/12.png") no-repeat;}
-	.zCom13{background:url("jx3pve/biz-trans/13.png") no-repeat;}
-	.zCom14{background:url("jx3pve/biz-trans/14.png") no-repeat;}
-	.zCom16{background:url("jx3pve/biz-trans/15.png") no-repeat;}
-	.zCom17{background:url("jx3pve/biz-trans/16.png") no-repeat;}
-	.zCom18{background:url("jx3pve/biz-trans/17.png") no-repeat;}
-	.zCom19{background:url("jx3pve/biz-trans/18.png") no-repeat;}
+	.zCom1{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/1.png") no-repeat;}
+	.zCom2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/2.png") no-repeat;}
+	.zCom3{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/3.png") no-repeat;}
+	.zCom4{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/4.png") no-repeat;}
+	.zCom5{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/5.png") no-repeat;}
+	.zCom6{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/6.png") no-repeat;}
+	.zCom7{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/7.png") no-repeat;}
+	.zCom8{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/8.png") no-repeat;}
+	.zCom9{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/9.png") no-repeat;}
+	.zCom10{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/10.png") no-repeat;}
+	.zCom11{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/11.png") no-repeat;}
+	.zCom12{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/12.png") no-repeat;}
+	.zCom13{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/13.png") no-repeat;}
+	.zCom14{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/14.png") no-repeat;}
+	.zCom16{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/15.png") no-repeat;}
+	.zCom17{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/16.png") no-repeat;}
+	.zCom18{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/17.png") no-repeat;}
+	.zCom19{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz-trans/18.png") no-repeat;}
 
 	.zHSegmentation {margin:20px 0;}
 	.zHomeTools ul li{border:1px solid transparent;padding-left:16px;padding-right:10px;}
@@ -144,13 +144,13 @@
 	.zHomeFocusH2 ul li a{color:#333;}
 	.zHomeFocusH2 ul li a:hover{color:#cc0000;}
 	.zHomeFocusH1 ul li a{color:#222;}
-	.zHTools4DIY:hover {background: url("jx3pve/index/2014/diy.png") no-repeat 0 -11px;}
+	.zHTools4DIY:hover {background: url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/diy.png") no-repeat 0 -11px;}
 	.zHTools2:hover,.zHToolsCH:hover{color:#cc0000 !important;}
 
 /* =LS
 -------------------------------------------------------------- */
-	#some {background:url("addon/ico/addon_newico.gif") no-repeat  32px 35px;} /*最新*/
-	.icohr{background:url("jx3pve/editor/hr.gif") !important;}
+	#some {background:url("http://static.jx3pve.com/cssjsimg/addon/ico/addon_newico.gif") no-repeat  32px 35px;} /*最新*/
+	.icohr{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/editor/hr.gif") !important;}
 	#aliyun_cnzz_tui_1000069890{margin-top:10px;}
 	#tabwGI634 #tabwGI634_title{height:34px;line-height:34px;}
 	.wk{background:url("http://ww3.sinaimg.cn/large/bcc700eegw1eijneslbo7j21hc0mf7lj.jpg") repeat-x top center;}
@@ -238,13 +238,13 @@
 	.user-os{width:100%;float:left;margin-bottom:20px;font-size:12px;line-height:32px;letter-spacing:2px;}
 	.user-os-1{float:left;height:400px;width:740px;}
 	.user-os-name{font-weight:bold;}
-	.user-os-editnic{background:url("jx3pve/useros/nic1.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
-	.user-os-editnic:hover{background:url("jx3pve/useros/nic2.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
+	.user-os-editnic{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nic1.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
+	.user-os-editnic:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nic2.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
 	.user-os-groupicon{position:relative;top:5px;}
-	.user-os-vipbt{background:url("jx3pve/useros/vipbt.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
+	.user-os-vipbt{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/vipbt.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
 	.user-os-cre{color:#ff0000;font-weight:bold;}
-	.user-os-crebt{background:url("jx3pve/useros/cre1.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
-	.user-os-crebt:hover{background:url("jx3pve/useros/cre2.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
+	.user-os-crebt{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/cre1.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
+	.user-os-crebt:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/cre2.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
 	.user-os-verf a{padding-right:3px;}
 	.user-os-verfnavlist a{color:#777;border:1px solid transparent;}
 	.user-os-verfnavlist a:hover{color:#db86fe;border:1px solid #db86fe;}
@@ -254,22 +254,22 @@
 	.user-os-mynavmini ul li a{padding-left:2px;}
 	.user-os-2{margin:10px 0;}
 	.user-os-2 ul li{float:left;padding:0 2px 0 0;}
-	.useros-nav1{background:url("jx3pve/useros/nav2/1.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav1:hover{background:url("jx3pve/useros/nav2/1a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav2{background:url("jx3pve/useros/nav2/2.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav2:hover{background:url("jx3pve/useros/nav2/2a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav3{background:url("jx3pve/useros/nav2/3.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav3:hover{background:url("jx3pve/useros/nav2/3a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav4{background:url("jx3pve/useros/nav2/4.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav4:hover{background:url("jx3pve/useros/nav2/4a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav5{background:url("jx3pve/useros/nav2/5.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav5:hover{background:url("jx3pve/useros/nav2/5a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav6{background:url("jx3pve/useros/nav2/6.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav6:hover{background:url("jx3pve/useros/nav2/6a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav7{background:url("jx3pve/useros/nav2/7.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav7:hover{background:url("jx3pve/useros/nav2/7a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav8{background:url("jx3pve/useros/nav2/8.png") no-repeat ;width:181px;height:75px;display:inline-block;}
-	.useros-nav8:hover{background:url("jx3pve/useros/nav2/8a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav1{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/1.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav1:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/1a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/2.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav2:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/2a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav3{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/3.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav3:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/3a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav4{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/4.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav4:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/4a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav5{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/5.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav5:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/5a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav6{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/6.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav6:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/6a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav7{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/7.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav7:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/7a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav8{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/8.png") no-repeat ;width:181px;height:75px;display:inline-block;}
+	.useros-nav8:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/8a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
 
 	.cre-tips{display:block;padding:10px;background:#fafdff;border:1px solid #aad3ea;border-top:none;}
 	.redtips{font-weight:bold;color:#ff0000 !important;}
@@ -284,7 +284,7 @@
 	.tbmu .xi1 {color:#c780fe;font-weight:bold;}
 
 	.user-os-sidebar{float:right;width:200px;height:auto;min-height:300px;line-height:24px;letter-spacing:1px;}
-	.useros-help{background:url("jx3pve/useros/nav2/help.png") no-repeat top center;padding-top:44px;padding-bottom:10px;border-bottom:1px dashed #ccc;margin-bottom:10px;}
+	.useros-help{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/help.png") no-repeat top center;padding-top:44px;padding-bottom:10px;border-bottom:1px dashed #ccc;margin-bottom:10px;}
 	.useros-help ul li{}
 	.user-os-bottom{clear:both;margin-top:20px;}
 	.user-os-label{padding-right:20px;}
@@ -294,8 +294,8 @@
 	#td_sightml a{color:#ff0000;font-weight:bold;}
 	input#addfundamount{width:68px !important;}
 	.chongzhitips{padding-top:5px ;color:#fc7e02;}
-	.buy-cre{color:#fff;font-weight:bold;width: 82px;height:32px;line-height:32px;border: none;display: block;background: url("jx3pve/vip/buy-cre.png") no-repeat 0 0;text-align: center;cursor:pointer;}
-	.buy-cre:hover{cursor:pointer;background: url("jx3pve/vip/buy-cre.png") no-repeat 0 -32px;}
+	.buy-cre{color:#fff;font-weight:bold;width: 82px;height:32px;line-height:32px;border: none;display: block;background: url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/buy-cre.png") no-repeat 0 0;text-align: center;cursor:pointer;}
+	.buy-cre:hover{cursor:pointer;background: url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/buy-cre.png") no-repeat 0 -32px;}
 	.magiclogs{background:#eee;border-radius:20px;margin-top:10px !important;border-bottom:none;}
 	.magiclogs.tb a{border:none;background:none;}
 
@@ -325,8 +325,8 @@
 	.jh-vip img{vertical-align:middle;margin-right:2px;}
 	h3.flb,.f_c p.o.pns{text-align:center;}
 
-	.open_vip{width:306px;height:28px;display:block;font-size:12px;color:#444 !important;text-align:center;background:url("jx3pve/vip/button1.png") no-repeat left top;margin:5px 0;}
-	.open_vip:hover{display:block;background:url("jx3pve/vip/button2.png") no-repeat left top;text-decoration:none !important;color:#fff !important;}
+	.open_vip{width:306px;height:28px;display:block;font-size:12px;color:#444 !important;text-align:center;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/button1.png") no-repeat left top;margin:5px 0;}
+	.open_vip:hover{display:block;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/button2.png") no-repeat left top;text-decoration:none !important;color:#fff !important;}
 
 	.vip-page{padding:10px 0;}
 	.vfvipb1{margin-bottom:10px;}
@@ -335,16 +335,16 @@
 	.vip-myinfo ul li{height:24px;line-height:24px;}
 	.vip-creleft{margin-bottom:10px;}
 	.vip-left{height:28px !important;line-height:28px !important;}
-	.vip-banner-top{float:left;width:770px;height:125px;background:url("jx3pve/vip/banner/vip1.png") no-repeat left top;}
+	.vip-banner-top{float:left;width:770px;height:125px;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/banner/vip1.png") no-repeat left top;}
 	.vip-tips{border:1px solid #f0ea8e;background:#fffddf;padding:10px;margin:10px 0;}
 	.getvip{line-height:28px;height:28px;background:#f2f2f2;border-radius:20px;padding-left:20px;color:#999;font-weight:normal;margin-bottom:10px;}
 	.getvip span{float:right;padding-right:20px;text-transform:uppercase;font-family:Trebuchet MS;letter-spacing:0.5px;}
 
-	.vipindex-main{margin-bottom:20px;background:url("jx3pve/vip/vipbg.png") no-repeat 20px 22px;}
+	.vipindex-main{margin-bottom:20px;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/vipbg.png") no-repeat 20px 22px;}
 	.vip-vipcontent{width:220px;height:160px;float:left;padding-left:240px;padding-top:5px;}
 	.vip-vipcontent ul li{line-height:26px;height:26px;}
-	.vip-buybt{cursor:pointer;color:#fff;width:87px;height:38px;line-height:38px !important;background:url("jx3pve/vip/vipbuy-bt.png") no-repeat left top;float:left;border:none;box-shadow:none;}
-	.vip-qiehuan{width:87px;height:87px;border:none;float:left;display:block;background:url("jx3pve/vip/svipbuy-bt.png") no-repeat top left;text-align:center;}
+	.vip-buybt{cursor:pointer;color:#fff;width:87px;height:38px;line-height:38px !important;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/vipbuy-bt.png") no-repeat left top;float:left;border:none;box-shadow:none;}
+	.vip-qiehuan{width:87px;height:87px;border:none;float:left;display:block;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/svipbuy-bt.png") no-repeat top left;text-align:center;}
 	.vip-qiehuan a{width:87px;height:38px;line-height:38px !important;border:none;display:block;color:#fff;}
 
 	.vipindex{margin-bottom:20px;}
@@ -355,22 +355,22 @@
 	.vipindex-main table {width:98%;}
 	.vipindex-main table td{}
 	.vipindex-main table select[name="days"] {width:80px;}
-	.vip-crebt{background:url("jx3pve/useros/cre1.png") no-repeat ;width:78px;height:24px;display:inline-block;}
-	.vip-crebt:hover{background:url("jx3pve/useros/cre2.png") no-repeat ;width:78px;height:24px;display:inline-block;}
+	.vip-crebt{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/cre1.png") no-repeat ;width:78px;height:24px;display:inline-block;}
+	.vip-crebt:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/cre2.png") no-repeat ;width:78px;height:24px;display:inline-block;}
 	.vipindex-main{margin-bottom:10px;}
 	.vipindex-right{width:230px;height:180px;float:right;border-radius:8px;}
 	.vipindex-right p{padding-top:155px;padding-left:118px;}
 	input[name="days"]{width:48px;}
 	.vip-nav{margin:10px 0 20px 0;}
 	.vip-nav h2{margin:5px 0;}
-	.vip-nav ul{background:url("jx3pve/vip/nav/nav-bg.png") no-repeat center bottom;min-height:109px;margin-top:20px;}
+	.vip-nav ul{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/nav/nav-bg.png") no-repeat center bottom;min-height:109px;margin-top:20px;}
 
 	.vip-sp{width:96%;color:#666;margin:0 auto;}
 	.vip-sp table td{border:1px solid #eee;height:24px;line-height:24px;padding:2px 5px;}
 	.vip-sp table{width:100%;}
 	.puptips{color:#b218ea;}
 
-	.vip-mogu{background:url("jx3pve/vip/nav/mogubg.png") no-repeat top left;height:304px;}
+	.vip-mogu{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/vip/nav/mogubg.png") no-repeat top left;height:304px;}
 
 /* 综合论坛
 -------------------------------------------------------------- */
@@ -408,11 +408,7 @@
 
 
 
-	/* 发帖页面（一键转载）*/
-	.tb.cl.mbw{margin-bottom:0px !Important;}
-	.zhuanzai{background:#fafdff;border:1px dotted #aad3ea;padding:10px;height:25px;}
-	.pbt.cl .z {background:url("bbs/title.png") no-repeat left center;padding-left:80px;height:24px;}
-	.pbt.cl .z input {width:600px !important;}
+	
 
 	/* 论坛列表页*/
 	span.xs1.xw0.i{display:none;}
@@ -422,13 +418,7 @@
 	.bbs-qcpost a:hover{color:#00ccff;border-bottom:2px solid #00ccff;text-shadow:1px 1px 0px #020c52;}
 
 
-	/* 论坛单页 */
-	div#pt {background-color: #eee;border:1px solid #ccc;border-bottom:none !important;margin:20px auto 0 auto;padding:2px 5px;}
-	div.tshare.cl{display:none;}
-	#p_btn .followp,#p_btn .sharep,#p_btn #recommend_add,#p_btn #recommend_subtract {display:none;}
-	#toptb .pipe {display: none; }
-	#toptb,#toptb div.z{display: none;}
-	.tb .o, .tb .o a{background: #06C url(http://static.jx3pve.com/static/image/common/pn.png) repeat-x 0 -38px;}
+	
 
 
 /* 视频栏目
@@ -439,7 +429,7 @@
 	.smart_ping{width:500px; margin:2px 2px 2px 1px; display:inline-block;}
 	.smart_ping ul,.smart_ping ul li{ float:left; height:24px; font-size:20px;}
 	.smart_ping ul{ width:160px;}
-	.smart_ping ul .smart_x{ width:24px; background:0 0 no-repeat url(jx3pve/video/ping.png);}
+	.smart_ping ul .smart_x{ width:24px; background:0 0 no-repeat url("http://static.jx3pve.com/cssjsimg/jx3pve/video/ping.png");}
 	.smart_ping:after{clear:both;}
 	.smart_ping ul .hover{ background-position:0 -26px;}
 	.smart_ping ul .hover_le{background-position:0 -26px;}
@@ -450,17 +440,17 @@
 	.selectbox .handle.current{background:#06a7e1 !important;padding:0 5px !important;}
 	.selectbox .handle,.yk-filter .yk-filter-panel .item label, .yk-filter .yk-filter-panel .item a, .yk-filter .yk-filter-panel .item span,.yk-sort-label,.yk-filter label,.yk-filter,.yk-filter a,.p-meta-title a{font-family:宋体 !Important;font-size:12px !important;}
 	.video-pipe .z {width:600px;overflow:hidden;white-space:nowrap;}
-	.b_bg{background:url("jx3pve/b_bg.png") repeat top left;}
+	.b_bg{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/b_bg.png") repeat top left;}
 	.video-page{padding:20px 0;background:url("http://ww3.sinaimg.cn/large/bcc700eegw1eib4am2hi8j21hc18gkjl.jpg") no-repeat top center;min-height:1080px;}
 	.video-pipe{width:1040px;margin:0 auto;color:#76adc1;background:#fff;border-radius:6px; margin-top:0 !important;height:30px;padding:1px 10px 2px 10px;font-family:Helvetica,宋体;}
 	.video-pipe .z{word-spacing:10px;height:30px;}
 	.video-pipe .z em {padding:0 5px;width: 20px;line-height: 30px;overflow: hidden;}
 	.video-pipe a{color:#444;}
 	.video-pipe .smart_form input{border:1px solid #ccc;border-radius:20px;width:180px;padding:0 10px;margin-top:2px;}
-	.video-pipe .smart_search_ico,.video-pipe .smart_search_ico:hover{background:url("jx3pve/video/v_search.png") no-repeat left top;width:29px;height:30px;margin-right:10px;margin-top:2px;}
+	.video-pipe .smart_search_ico,.video-pipe .smart_search_ico:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_search.png") no-repeat left top;width:29px;height:30px;margin-right:10px;margin-top:2px;}
 	.video-pipe a:hover{text-decoration:none;cursor:pointer;}
-	.video-pipe .smart_add_ico{background:url("jx3pve/video/v_pub.png") no-repeat 0 0;width:98px;height:24px;}
-	.video-pipe .smart_add_ico:hover{background:url("jx3pve/video/v_pub.png") no-repeat 0 -24px;width:98px;height:24px;}
+	.video-pipe .smart_add_ico{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_pub.png") no-repeat 0 0;width:98px;height:24px;}
+	.video-pipe .smart_add_ico:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_pub.png") no-repeat 0 -24px;width:98px;height:24px;}
 	.smart_form{padding-top:3px;}
 
 	.ap .tl a{color:#555 !important;}
@@ -526,33 +516,33 @@
 -------------------------------------------------------------- */
 	.zFace{background:url("http://ww1.sinaimg.cn/large/bcc700eegw1eidjqyjfckj21hc0cutif.jpg") no-repeat top center;}
 
-	.zFaceMain{background:url("jx3pve/face/bgx.png") repeat;}
+	.zFaceMain{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/bgx.png") repeat;}
 
 	.zBackFace{padding-top:170px;}
 	.zBackFace a {display:block;height:130px;width:270px;margin-left:800px;}
 	.zFaceTop{width:1095px;margin:0 auto;}
-	.zFaceTop ul {background:url("jx3pve/face/face_sort.png") no-repeat top center;height:162px;}
+	.zFaceTop ul {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_sort.png") no-repeat top center;height:162px;}
 	.zFaceTop ul li {padding-left:40px;width:224px;float:left;}
 	.zFaceTop ul li a{display:block;height:162px;}
-	.zFMan:hover{background:url("jx3pve/face/face_sort.png") no-repeat 0 -162px;}
-	.zFBoy:hover{background:url("jx3pve/face/face_sort.png") no-repeat -264px -162px;}
-	.zFWoman:hover{background:url("jx3pve/face/face_sort.png") no-repeat -528px -162px;}
-	.zFGirl:hover{background:url("jx3pve/face/face_sort.png") no-repeat -792px -162px;}
+	.zFMan:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_sort.png") no-repeat 0 -162px;}
+	.zFBoy:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_sort.png") no-repeat -264px -162px;}
+	.zFWoman:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_sort.png") no-repeat -528px -162px;}
+	.zFGirl:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_sort.png") no-repeat -792px -162px;}
 
 
-	.zFaceOptions{background:url("jx3pve/face/face_navbg.png") no-repeat top center;}
+	.zFaceOptions{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_navbg.png") no-repeat top center;}
 	.zFaceOpt{width:1030px;margin:0 auto;height:80px;}
 	.zFaceOpt ul {padding-top:16px;margin-left:38px;width:780px;float:left;}
 	.zFaceOpt ul li{float:left;width:114px;font:14px bold "Microsoft YaHei";text-indent:30px;line-height:43px;margin-left:20px;}
 	.zFaceOpt ul li a {color:#ffffff;display:block;height:43px;}
-	.zFaceOpt ul li a:hover{background:url("jx3pve/face/face_current.png") no-repeat;}
+	.zFaceOpt ul li a:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_current.png") no-repeat;}
 
-	.zFaceHere{background:url("jx3pve/face/face_current.png") no-repeat;}
+	.zFaceHere{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_current.png") no-repeat;}
 
 	.zFBackHome{color:#ccc;float:right;padding-top:29px;}
 	.zFBackHome:hover {color:#fff;font:13px;}
 
-	.zFacePubtt{background:url("jx3pve/face/face_pubtt.png") no-repeat top center;height:81px;}
+	.zFacePubtt{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_pubtt.png") no-repeat top center;height:81px;}
 
 	.zFaceRig{width:1120px;margin:0 auto;}
 	.zFaceRig li {width:350px;}
@@ -564,8 +554,8 @@
 
 	.zFaceDown1{width:133px;}
 	.zFaceDown1:hover {background:#ffddf5;border-color:#111;}
-	.zFaceDown2{background:url("jx3pve/face/face_down.png") no-repeat;width:127px;height:25px;color:#555;line-height:25px;}
-	.zFaceDown2:hover{background:url("jx3pve/face/face_down2.png") no-repeat;color:#674902;}
+	.zFaceDown2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_down.png") no-repeat;width:127px;height:25px;color:#555;line-height:25px;}
+	.zFaceDown2:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_down2.png") no-repeat;color:#674902;}
 
 	.zFaceListImg,.zFaceListA {float:left;}
 	.zFaceListA{padding-top:50px;margin-left:22px;width:180px;}
@@ -576,25 +566,25 @@
 	.zFaceRig .tb.cl.mbw li {width:80px;}
 	.zFaceRig .tb.cl.mbw li a {background:none;border-left:none;border-bottom:none;font-weight:bold;}
 	.zFaceRig .ftid a {background-color:transparent;}
-	.zFaceRig .pbt.cl .z {background:url("http://www.jx3pve.com/cssjsimg/jx3pve/raid/raid_title.png") no-repeat left center;}
+	.zFaceRig .pbt.cl .z {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_title.png") no-repeat left center;}
 	.zFaceRig .px {background-color:transparent;border:1px solid #ababab !important;}
 	.zFaceRig #postbox .exfm.cl {background-color:transparent !important;border:none !important;}
 	.zFaceRig #select_faceshot ,.zFaceRig #select_facedown {width:139px;float:left;}
 	.zFaceRig .exfm.cl .ptm.pbm.bbda .d {float:left;width:100px;clear:right;line-height:27px;margin-left:40px;}
-	.zFaceRig #select_faceshot .pn,.zFaceRig #select_facedown .pn {background:url("jx3pve/face/face_pub.png") no-repeat;width:139px;height:37px;font-size:14px;border:none;}
+	.zFaceRig #select_faceshot .pn,.zFaceRig #select_facedown .pn {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_pub.png") no-repeat;width:139px;height:37px;font-size:14px;border:none;}
 
 	/*捏脸修订*/
 	/*列表页*/
 	.zFaceList .bm.bml.pbn,.zFaceList  .bm.bw0.pgs.cl.clear,.zFaceList #thread_types,.zFaceList  .zTDList{display:none;}
-	.zFaceList .bottom-pgt{clear:both;background:url("jx3pve/face/face_hr.png") no-repeat center 10px;padding:30px 380px 20px 10px !important;}
+	.zFaceList .bottom-pgt{clear:both;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_hr.png") no-repeat center 10px;padding:30px 380px 20px 10px !important;}
 	.zFaceList .wp.mtn{margin:0 !important;}
 	.zFaceList .bottom-pgt a,.zFaceList .bottom-pgt strong,.zFaceList .bottom-pgt label{text-shadow:1px 1px 0px #fff;box-shadow:1px 1px 0px #fff;}
 	.zFaceList .pg a,.zFaceList .pg strong,.zFaceList .pgb a, .zFaceList .pg label{border:1px solid #aaa;background:none;}
 	.zFaceList .pg a:hover,.zFaceList .pgb a:hover {border-color: #666;color: #333;background:#ccc;}
 	.zFaceList .pg strong {background-color: #ccc;}
-	.zFaceList .pgb a ,.zFaceList .pgb a:hover{padding-left: 25px;background: url(../../static/image/common/arw_l.gif) no-repeat 10px 50%; }
-	.zFaceList .pg a.nxt,.zFaceList .pg a.nxt:hover{padding-right: 25px;background: url(../../static/image/common/arw_r.gif) no-repeat 90% 50%;}
-	.zFaceList .pg a.prev {background: url(../../static/image/common/arw_l.gif) no-repeat 50% 50%;}
+	.zFaceList .pgb a ,.zFaceList .pgb a:hover{padding-left: 25px;background: url("http://static.jx3pve.com/static/image/common/arw_l.gif") no-repeat 10px 50%; }
+	.zFaceList .pg a.nxt,.zFaceList .pg a.nxt:hover{padding-right: 25px;background: url("http://static.jx3pve.com/static/image/common/arw_r.gif") no-repeat 90% 50%;}
+	.zFaceList .pg a.prev {background: url("http://static.jx3pve.com/static/image/common/arw_l.gif") no-repeat 50% 50%;}
 	.zFaceList .xl.xl1{background:#fff;width:140px;}
 	.zFaceList .xl.xl1 li a {display:block;border-bottom:1px dotted #ccc;width:100%;}
 
@@ -622,14 +612,14 @@
 	.face_info{padding-top:10px;width:468px;padding-left:28px;line-height:38px;}
 	.face_info ul li{border-bottom:1px dotted #aaa;width:100%;}
 	.face_info ul li span{margin-right:20px;}
-	.face_info .face_btn{display:inline-block;text-align:center;background: url("jx3pve/face/face_pub.png") no-repeat;width: 139px;height: 37px;font-size: 12px;border: none;}
+	.face_info .face_btn{display:inline-block;text-align:center;background: url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_pub.png") no-repeat;width: 139px;height: 37px;font-size: 12px;border: none;}
 	.face_info .face_btn:hover{color:#fb1b88;}
 	.face_info ul{position:relative;}
 	.face_share{position:absolute;top:122px;left:80px;}
 	.face_content{text-shadow:1px 1px 0px #fff;}
-	.editp{background: url(http://static.jx3pve.com/static/image/common//edit.gif) no-repeat 4px 50%;}
+	.editp{background: url("http://static.jx3pve.com/static/image/common//edit.gif") no-repeat 4px 50%;}
 
-	.info_replytop{/*background:url("jx3pve/face/face_cmtbg.png") no-repeat top center;height:41px;clear:both;*/}
+	.info_replytop{/*background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_cmtbg.png") no-repeat top center;height:41px;clear:both;*/}
 	.info_reply{border-bottom:1px dotted #aaa;font-size:12px !important;line-height:24px;}
 	.info_replyavt img{width:18px;height:18px;border-radius:3px;}
 	.info_replyname{color:#fb1b88 !important;text-decoration:none !important;margin-right:5px;}
@@ -658,39 +648,39 @@
 	.zTDTopa{display:block;height:182px;width:360px;}
 
 	.zTDLeft{width:220px;float:left;}
-	.zTDRelease{background:url(jx3pve/raid/raid_pub.png) no-repeat;height:175px;margin-left:2px;}
+	.zTDRelease{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_pub.png") no-repeat;height:175px;margin-left:2px;}
 	.zTDRelease ul li{margin-bottom:12px;}
 	.zTDRelease ul li a{display:block;width:206px;height:81px;}
 
-	.zTDRecH{background:url("jx3pve/raid/raid_gh.png") no-repeat;height:38px;margin-top:20px;}
+	.zTDRecH{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_gh.png") no-repeat;height:38px;margin-top:20px;}
 	.zTDRecList{background:#ffffff;width:204px;height:450px;border:solid 1px #ccc;border-radius:4px;margin-top:8px;}
 	.zTDRecListDIY{height:450px;overflow:hidden;}
-	.zTDRaid-us{background:url("jx3pve/raid/raid_us.png") no-repeat;height:155px;margin-top:15px;}
+	.zTDRaid-us{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_us.png") no-repeat;height:155px;margin-top:15px;}
 	.zTDRecListDIY .module.cl.ml.mls li {width:48px;height:48px;margin:0 10px 5px 0;}
 	#diy1044 .module,#diy1044 a{margin:10px 10px 0;}
 	#diy1044 .zdiy1044 a{display:block;}
-	#diy1044 .xl1 li {padding-left:10px;background:url(http://www.jx3pve.com/static/image/common/dot.gif) no-repeat 0 50%;}
+	#diy1044 .xl1 li {padding-left:10px;background:url("http://static.jx3pve.com/static/image/common/dot.gif") no-repeat 0 50%;}
 	#diy1044 .xl1 a {margin:0;}
 
 	.zTDRight{float:left;}
 	.zTDRig{padding:12px 12px 11px 14px;overflow:hidden;}
 
-	.zpt{background:url("jx3pve/raid/raid_trt2.png") no-repeat;height:31px;margin-top:10px;}
+	.zpt{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_trt2.png") no-repeat;height:31px;margin-top:10px;}
 	.zpt p,.zpt2 p {text-indent:160px;line-height:30px;height:31px;}
-	.zpt2{background:url("jx3pve/raid/raid_trt3.png") no-repeat;height:31px;margin-top:10px;}
+	.zpt2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_trt3.png") no-repeat;height:31px;margin-top:10px;}
 
 
 	.raidbox .bbs.bm_c.pns.mfm.cl{position:relative;left:0;top:0;}
 	.raidbox .px.vm{border:#ccc solid 1px ;background:none;}
-	.raidbox .pn.pnc {background:url("jx3pve/raid/raid_search.png") no-repeat 0 0;height:25px;width:66px;position:absolute;left:270px;top:8px;}
-	.raidbox .pn.pnc:hover{background:url("jx3pve/raid/raid_search.png") no-repeat 0 -25px;}
+	.raidbox .pn.pnc {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_search.png") no-repeat 0 0;height:25px;width:66px;position:absolute;left:270px;top:8px;}
+	.raidbox .pn.pnc:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_search.png") no-repeat 0 -25px;}
 	.raidbox .pn.pnc em{visibility:hidden;}
 	.raidbox .ptm.cl{padding-top:0 !important;width:66px;float:left;}
 	.raidbox .bbs.bm_c.pns.mfm.cl span{padding-right:0 !important;}
 	.raidbox .ptn.pbn.mbm.bbs{margin-bottom:0 !important;}
 	.raidbox-content{padding:0 !important;}
 
-	.zTDList{background:url("jx3pve/raid/raid_trt.png") no-repeat;height:31px;}
+	.zTDList{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_trt.png") no-repeat;height:31px;}
 	.zTDList p {text-indent:160px;line-height:30px;}
 	.zTDList p a {padding:0 10px;}
 	.zTDList .raidtype-sel{color:#8B0000;background:none;border:none;}
@@ -728,22 +718,22 @@
 
 
 	.zTDRight  .exfm{background:none !important;border:none !important;padding:0;}
-	.zTDRight  .pbt.cl .z{background: url("jx3pve/raid/raid_title.png") no-repeat left center;}
+	.zTDRight  .pbt.cl .z{background: url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_title.png") no-repeat left center;}
 	.zTDRight #select_raidlogo{float:left;width:140px;margin-right:20px;}
 	.zTDRight .ptm.pbm.bbda .d{float:left;width:200px;clear:right;}
-	.zTDRight #select_raidlogo .pn{border:none;background: #fff url(jx3pve/raid/raid_upload.png) no-repeat 0 0;width:140px;height:26px;color:#976a09;border-radius:0 !important;box-shadow:none !important;}
-	.zTDRight #select_raidlogo .pn:hover{background: #fff url(jx3pve/raid/raid_upload.png) no-repeat 0 -26px;}
+	.zTDRight #select_raidlogo .pn{border:none;background: #fff url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_upload.png") no-repeat 0 0;width:140px;height:26px;color:#976a09;border-radius:0 !important;box-shadow:none !important;}
+	.zTDRight #select_raidlogo .pn:hover{background: #fff url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_upload.png") no-repeat 0 -26px;}
 	.zTDRight  #select_myrole ul li{width:32%;}
 	.zTDRight  .edt .pt {height:380px;}
 	.zTDRight .ptg.mbm.mtn{display:none;}
 
-	.raid-dianping{background:url("jx3pve/raid/raid_dp.png") no-repeat 0 0;width:192px;height:27px;display:block;}
-	.raid-dianping:hover{background:url("jx3pve/raid/raid_dp.png") no-repeat 0 -27px;}
+	.raid-dianping{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_dp.png") no-repeat 0 0;width:192px;height:27px;display:block;}
+	.raid-dianping:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_dp.png") no-repeat 0 -27px;}
 	.zTDRight .raidpage-content-primary th{color:#777;}
 	.zTDRight  .xi2.mbm.pbm.bbs{text-align:center;border-top:1px dotted #ccc;padding-top:5px;}
 	.zTDRight  .xi2.mbm.pbm.bbs a{color:#777;}
 	.zTDRight div.cm{height:480px;overflow-y:auto;}
-	.raid_teamname{margin-top:10px;text-align:center;height:27px;background:url("jx3pve/raid/raid_teamname.png") no-repeat center top;color:#8c5e06;font-weight:bold;letter-spacing:2px;line-height:26px;}
+	.raid_teamname{margin-top:10px;text-align:center;height:27px;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_teamname.png") no-repeat center top;color:#8c5e06;font-weight:bold;letter-spacing:2px;line-height:26px;}
 	.zTDRight .t_f, .zTDRight  .t_f td{font-size:12px;width:720px;}
 	.raid_czx{border-top:1px solid #eee;border-bottom:1px solid #eee;text-align:center;}
 	.raid_cz{margin-right:10px;line-height:22px;color:#777;}
@@ -857,8 +847,8 @@
 	#nv_group .zGroupMain #pt{display:none;}
 	#nv_group .zGroupMain #ct{border-radius:6px;}
 	.g_creatmore{text-align:right;background:#f2f2f2;height:24px;line-height:24px;display:block;text-decoration:underline;}
-	#nv_group .zGroup .ptm.pbm button.pn,#nv_group .zGroup .xi1 button.pn{background:url("jx3pve/group/g_join.png") no-repeat 0 0;width:144px;height:39px;line-height:39px;border:none;}
-	#nv_group .zGroup .ptm.pbm button.pn:hover,#nv_group .zGroup .xi1 button.pn:hover{background:url("jx3pve/group/g_join.png") no-repeat 0 -39px;}
+	#nv_group .zGroup .ptm.pbm button.pn,#nv_group .zGroup .xi1 button.pn{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_join.png") no-repeat 0 0;width:144px;height:39px;line-height:39px;border:none;}
+	#nv_group .zGroup .ptm.pbm button.pn:hover,#nv_group .zGroup .xi1 button.pn:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_join.png") no-repeat 0 -39px;}
 
 /* 宠物栏目
 -------------------------------------------------------------- */
@@ -866,33 +856,33 @@
 	.zFace #ct.wp.cl, .zPet #ct.wp.cl{margin-bottom:0 !important;}
 	.zPet{background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eijcbo2m3xj21hc0jganb.jpg") no-repeat top center;}
 
-	.zPetMain{background:url("jx3pve/face/bgx.png") repeat;}
+	.zPetMain{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/bgx.png") repeat;}
 
 	.zBackPet{padding-top:130px;padding-bottom:40px;}
 	.zBackPet a {display:block;height:130px;width:300px;margin-left:815px;}
 	.zPetTop{width:1095px;margin:0 auto;}
-	.zPetTop ul {background:url("pet/pet_sort.png") no-repeat top center;height:155px;}
+	.zPetTop ul {background:url("http://static.jx3pve.com/cssjsimg/pet/pet_sort.png") no-repeat top center;height:155px;}
 	.zPetTop ul li {padding-left:40px;width:224px;float:left;}
 	.zPetTop ul li a{display:block;height:155px;}
-	.zPAquarium:hover{background:url("pet/pet_sort.png") no-repeat 0 -155px;}
-	.zPBeast:hover{background:url("pet/pet_sort.png") no-repeat -264px -155px;}
-	.zPBirds:hover{background:url("pet/pet_sort.png") no-repeat -528px -155px;}
-	.zPOrgan:hover{background:url("pet/pet_sort.png") no-repeat -792px -155px;}
+	.zPAquarium:hover{background:url("http://static.jx3pve.com/cssjsimg/pet/pet_sort.png") no-repeat 0 -155px;}
+	.zPBeast:hover{background:url("http://static.jx3pve.com/cssjsimg/pet/pet_sort.png") no-repeat -264px -155px;}
+	.zPBirds:hover{background:url("http://static.jx3pve.com/cssjsimg/pet/pet_sort.png") no-repeat -528px -155px;}
+	.zPOrgan:hover{background:url("http://static.jx3pve.com/cssjsimg/pet/pet_sort.png") no-repeat -792px -155px;}
 
 
-	.zPetOptions{background:url("jx3pve/face/face_navbg.png") no-repeat top center;}
+	.zPetOptions{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_navbg.png") no-repeat top center;}
 	.zPetOpt{width:1030px;margin:0 auto;height:80px;}
 	.zPetOpt ul {padding-top:16px;margin-left:38px;width:900px;float:left;}
 	.zPetOpt ul li{float:left;width:114px;font:14px bold "Microsoft YaHei";text-indent:30px;line-height:43px;}
 	.zPetOpt ul li a {color:#ffffff;display:block;height:43px;}
-	.zPetOpt ul li a:hover{background:url("jx3pve/face/face_current.png") no-repeat;}
+	.zPetOpt ul li a:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_current.png") no-repeat;}
 
-	.zPetHere{background:url("jx3pve/face/face_current.png") no-repeat;}
+	.zPetHere{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_current.png") no-repeat;}
 
 	.zPBackHome{color:#ccc;float:right;padding-top:29px;}
 	.zPBackHome:hover {color:#fff;font:13px;}
 
-	.zPetPubtt{background:url("jx3pve/face/face_pubtt.png") no-repeat top center;height:81px;}
+	.zPetPubtt{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_pubtt.png") no-repeat top center;height:81px;}
 
 	.zPetRig{width:1120px;margin:0 auto;}
 	.zPetRig li {width:350px;}
@@ -910,29 +900,29 @@
 	.zPetListImg,.zPetDetail {float:left;}
 	.zPetDetail{padding-top:25px;margin-left:22px;width:150px;}
 	.zPetDetail p {padding:8px 0;color:#777;text-shadow:1px 1px 0px #fff;}
-	.zPetRaiders {background:url("pet/pet_more.png") no-repeat 0 0;width:142px;height:36px;margin-top:10px;color:#fff;line-height:36px;text-indent:35px;}
-	.zPetRaiders:hover {background:url("pet/pet_more.png") no-repeat 0 -36px;color:#fff;}
+	.zPetRaiders {background:url("http://static.jx3pve.com/cssjsimg/pet/pet_more.png") no-repeat 0 0;width:142px;height:36px;margin-top:10px;color:#fff;line-height:36px;text-indent:35px;}
+	.zPetRaiders:hover {background:url("http://static.jx3pve.com/cssjsimg/pet/pet_more.png") no-repeat 0 -36px;color:#fff;}
 
 	.zPetRig #moderate li p img {height:14px;width:auto;}
 	.zPetRig #ct {background:none;border:none;}
 	.zPetRig .tb.cl.mbw li {width:80px;}
 	.zPetRig .tb.cl.mbw li a {background:none;border-left:none;border-bottom:none;font-weight:bold;}
 	.zPetRig .ftid a {background-color:transparent;}
-	.zPetRig .pbt.cl .z {background:url("http://www.jx3pve.com/cssjsimg/jx3pve/raid/raid_title.png") no-repeat left center;}
+	.zPetRig .pbt.cl .z {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid_title.png") no-repeat left center;}
 	.zPetRig .px {background-color:transparent;border:1px solid #ababab !important;}
 	.zPetRig #postbox .exfm.cl {background-color:transparent !important;border:none !important;}
 	.zPetRig #select_faceshot ,.zPetRig #select_facedown {width:139px;float:left;}
 	.zPetRig .exfm.cl .ptm.pbm.bbda .d {float:left;width:100px;clear:right;line-height:27px;margin-left:40px;}
-	.zPetRig #select_faceshot .pn,.zPetRig #select_facedown .pn {background:url("jx3pve/face/face_pub.png") no-repeat;width:139px;height:37px;font-size:14px;border:none;}
+	.zPetRig #select_faceshot .pn,.zPetRig #select_facedown .pn {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_pub.png") no-repeat;width:139px;height:37px;font-size:14px;border:none;}
 
 	.zPetRig .bm.bml.pbn,.zPetRig #pgt,.zPetRig #thread_types,.zPetRig .zTDSearch {display:none;}
 
-	.zPetRig .bottom-pgt {clear:both;background:url("jx3pve/face/face_hr.png") no-repeat center 10px;padding:30px 380px 20px 10px !important;}
+	.zPetRig .bottom-pgt {clear:both;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_hr.png") no-repeat center 10px;padding:30px 380px 20px 10px !important;}
 	.zPetRig .pg strong {background-color:#ccc;}
 	.zPetList .bottom-pgt a, .zPetList .bottom-pgt strong, .zPetList .bottom-pgt label {text-shadow:1px 1px 0px #fff;box-shadow:1px 1px 0px #fff;}
 	.zPetList .pg a,.zPetList .pg strong,.zPetList .pgb a,.zPetList .pg label {border:1px solid #aaa;background:none;}
 	.zPetList .pg a:hover, .zPetList .pgb a:hover {border-color:#666;color:#333;background:#ccc;}
-	.zPetList .pg a.prev {background:url("http://www.jx3pve.com/static/image/common/arw_l.gif") no-repeat 50% 50%;}
+	.zPetList .pg a.prev {background:url("http://static.jx3pve.com/static/image/common/arw_l.gif") no-repeat 50% 50%;}
 
 	.zPetRig .infobox {position:relative;background:transparent;}
 	.zPetRig .pls,.zPetRig .pi {display:none;}
@@ -945,14 +935,14 @@
 	.pet_info ul li span {margin-right:10px;}
 	.pet_info .pet_dw {position:relative;padding-top:10px;}
 	.pet_share {position:absolute;top:14px;left:80px;}
-	.pet_my {display:block;background:url("pet/pet_show.png") no-repeat 0 0;position:absolute;top:10px;left:280px;width:193px;height:34px;}
-	.pet_my:hover {background:url("pet/pet_show.png") no-repeat 0 -34px;}
+	.pet_my {display:block;background:url("http://static.jx3pve.com/cssjsimg/pet/pet_show.png") no-repeat 0 0;position:absolute;top:10px;left:280px;width:193px;height:34px;}
+	.pet_my:hover {background:url("http://static.jx3pve.com/cssjsimg/pet/pet_show.png") no-repeat 0 -34px;}
 	.zPetRig .info_fav {position:relative;top:-12px;}
 	.zPetRig .infobox .ts a {font-size:15px;}
 	.pet_diy {width:160px;}
 	.pet_info h1 span {position:absolute;left:45px;}
 
-	.zPetct {background:url("pet/pet_ct.png") no-repeat top center;height:44px;margin-top:20px;}
+	.zPetct {background:url("http://static.jx3pve.com/cssjsimg/pet/pet_ct.png") no-repeat top center;height:44px;margin-top:20px;}
 	.zPetRig .t_fsz .ptg.mbm.mtn,.zPetRig .t_fsz #vfastpostform,.zPetRig .info_option,.zPetRig .pgs.mtm.mbm.cl {display:none;}
 	.zPetRig #f_pst.pl.bm.bmw {padding:0 20px;background:transparent;}
 	.zPetRig #f_pst table {width:100%;}
@@ -966,9 +956,9 @@
 
 /* 头条推送
 -------------------------------------------------------------- */
-	.zPush {background:url("jx3pve/news/bgx.png") repeat;}
+	.zPush {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/news/bgx.png") repeat;}
 	.zPush .zPushMain {padding-top:45px;}
-	.zPush #ct {background:url("jx3pve/news/news_tsbg.png") no-repeat;height:640px;border:none;}
+	.zPush #ct {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/news/news_tsbg.png") no-repeat;height:640px;border:none;}
 	.zccll .bm .pbt.cl{display:none;}
 
 	.zPush .zccll .mn{margin:0 auto;width:770px;padding-top:100px;}
@@ -996,8 +986,8 @@
 	.zPush #pt{display:none;}
 	.zPush h1{font-family:微软雅黑;font-weight:normal;}
 	.zPush .px.p_fre{width:420px !important;}
-	.zPush .news_tsbtn{background:url("jx3pve/news/news_pubbtn2.png") no-repeat 0 0 !important;width:180px;height:42px;color:#fff;}
-	.zPush .news_tsbtn:hover{cursor:pointer;background:url("jx3pve/news/news_pubbtn2.png") no-repeat 0 -42px  !important;}
+	.zPush .news_tsbtn{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/news/news_pubbtn2.png") no-repeat 0 0 !important;width:180px;height:42px;color:#fff;}
+	.zPush .news_tsbtn:hover{cursor:pointer;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/news/news_pubbtn2.png") no-repeat 0 -42px  !important;}
 	.zPush .zPushMain{padding-bottom:45px;}
 
 /* 帮助栏目
@@ -1013,12 +1003,12 @@
 
 	.zFBMain{width:1180px;margin:0 auto;padding-top:30px;}
 
-	.zFBNews{background:url("fb/fb_news_bg2.png") no-repeat;height:324px;width:588px;}
+	.zFBNews{background:url("http://static.jx3pve.com/cssjsimg/fb/fb_news_bg2.png") no-repeat;height:324px;width:588px;}
 
 	.zFBContent{}
 	.zFBLeft{width:590px;float:left;}
 
-	.zFBLeft-90{background:url("fb/zlp/fb-nd1.png") no-repeat;}
+	.zFBLeft-90{background:url("http://static.jx3pve.com/cssjsimg/fb/zlp/fb-nd1.png") no-repeat;}
 	.zFBLeft-90 ul {padding-top:100px;margin-top:50px;}
 	.zFBLeft-90 ul li {padding-left:98px;margin-bottom:28px;}
 	.zFBLeft-90 ul li a {display:block;width:493px;height:195px;}
@@ -1030,7 +1020,7 @@
 	.zFBDmg{background:url("http://ww4.sinaimg.cn/mw690/bcc700eegw1ei8oeibwngg20dp04g3zc.gif") no-repeat;}
 	.zFBZbjxk{background:url("http://ww2.sinaimg.cn/mw690/bcc700eegw1ei8oeiz5dqg20dp04gq45.gif") no-repeat;}
 
-	.zFBLeft-80{background:url("fb/zlp/fb-nd2.png") no-repeat;}
+	.zFBLeft-80{background:url("http://static.jx3pve.com/cssjsimg/fb/zlp/fb-nd2.png") no-repeat;}
 	.zFBLeft-80 ul{padding-top:100px;}
 	.zFBLeft-80 ul li {padding-left:98px;margin-bottom:28px;}
 	.zFBLeft-80 ul li a {display:block;width:493px;height:195px;}
@@ -1042,7 +1032,7 @@
 	.zFBDhsd{background:url("http://ww2.sinaimg.cn/mw690/bcc700eegw1ei8oepvrl9g20dp04fmy2.gif") no-repeat;}
 	.zFBDhdk{background:url("http://ww4.sinaimg.cn/mw690/bcc700eegw1ei8oeqhlbsg20dp04gq3x.gif") no-repeat;}
 
-	.zFBLeft-70{background:url("fb/zlp/fb-nd3.png") no-repeat;}
+	.zFBLeft-70{background:url("http://static.jx3pve.com/cssjsimg/fb/zlp/fb-nd3.png") no-repeat;}
 	.zFBLeft-70 ul {padding-top:100px;}
 	.zFBLeft-70 ul li {padding-left:98px;margin-bottom:28px;}
 	.zFBLeft-70 ul li a {display:block;width:493px;height:195px;}
@@ -1058,20 +1048,20 @@
 	.zFBTime ul {padding-top:140px;}
 	.zFBTime ul li {display:block;margin-left:50px;}
 	.zFBDate ul li img{padding-left:35px;padding-top:11px;}
-	.zFBDate1{background:url("fb/time0.png") no-repeat;height:530px;margin-top:320px;}
-	.zFBDate2{background:url("fb/time.png") no-repeat;height:365px;}
-	.zFBDate3{background:url("fb/time.png") no-repeat;height:450px;}
-	.zFBDate4{background:url("fb/time.png") no-repeat;height:460px;}
-	.zFBDate5{background:url("fb/time.png") no-repeat;height:240px;}
-	.zFBDate6{background:url("fb/time.png") no-repeat;height:230px;}
-	.zFBDate7{background:url("fb/time.png") no-repeat;height:470px;}
-	.zFBDate8{background:url("fb/time.png") no-repeat;height:130px;}
-	.zFBDate9{background:url("fb/time.png") no-repeat;height:180px;}
-	.zFBDate10{background:url("fb/time.png") no-repeat;height:220px;}
-	.zFBDate11{background:url("fb/time.png") no-repeat;height:240px;}
-	.zFBDate12{background:url("fb/time.png") no-repeat;height:135px;}
-	.zFBDate13{background:url("fb/time.png") no-repeat;height:220px;}
-	.zFBDate14{background:url("fb/time.png") no-repeat;height:200px;}
+	.zFBDate1{background:url("http://static.jx3pve.com/cssjsimg/fb/time0.png") no-repeat;height:530px;margin-top:320px;}
+	.zFBDate2{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:365px;}
+	.zFBDate3{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:450px;}
+	.zFBDate4{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:460px;}
+	.zFBDate5{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:240px;}
+	.zFBDate6{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:230px;}
+	.zFBDate7{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:470px;}
+	.zFBDate8{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:130px;}
+	.zFBDate9{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:180px;}
+	.zFBDate10{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:220px;}
+	.zFBDate11{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:240px;}
+	.zFBDate12{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:135px;}
+	.zFBDate13{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:220px;}
+	.zFBDate14{background:url("http://static.jx3pve.com/cssjsimg/fb/time.png") no-repeat;height:200px;}
 
 	.zFBNews .frame{border:none;background:none;padding-top:68px;padding-left:40px;}
 	.zFBNews li {background:none !important;line-height:22px;height:22px;}
@@ -1091,7 +1081,7 @@
 	box-shadow: 0px 0px 3px #777;}
 	.oldfb-dl{}
 	.oldfb-content{float:left;width:800px;padding:20px 0 20px 28px;}
-	.oldfb-author{background:#f2f2f2 /*url("jx3pve/img/alpha/al6.png") repeat top left*/;border:1px solid #ccc;border-radius:24px;height:20px;margin-bottom:10px;text-align:right;line-height:20px;padding:6px 10px 6px 0;}
+	.oldfb-author{background:#f2f2f2 ;/*url("http://static.jx3pve.com/cssjsimg/jx3pve/img/alpha/al6.png") repeat top left*/;border:1px solid #ccc;border-radius:24px;height:20px;margin-bottom:10px;text-align:right;line-height:20px;padding:6px 10px 6px 0;}
 	.oldfb-author .frame{background:transparent;border:none;}
 	.oldfb-author .frame,.oldfb-author .block{margin:0;}
 	.oldfb-primary{min-height:500px;padding-top:20px;}
@@ -1126,12 +1116,12 @@
 	.zCMMnav ul li {margin-bottom:21px;}
 
 	.zCMMBoss0 ul li a ,.zCMMnav ul li a{display:block;width:185px;height:51px;}
-	.zCMMnav-1{background:url("jx3pve/fb/cmm/a1.png") no-repeat;}
-	.zCMMnav-2{background:url("jx3pve/fb/cmm/b1.png") no-repeat;}
-	.zCMMnav-3{background:url("jx3pve/fb/cmm/c1.png") no-repeat;}
-	.zCMMnav-1:hover,.crBOSS1{background:url("jx3pve/fb/cmm/a2.png") no-repeat;}
-	.zCMMnav-2:hover,.crBOSS2{background:url("jx3pve/fb/cmm/b2.png") no-repeat;}
-	.zCMMnav-3:hover,.crBOSS3{background:url("jx3pve/fb/cmm/c2.png") no-repeat;}
+	.zCMMnav-1{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/fb/cmm/a1.png") no-repeat;}
+	.zCMMnav-2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/fb/cmm/b1.png") no-repeat;}
+	.zCMMnav-3{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/fb/cmm/c1.png") no-repeat;}
+	.zCMMnav-1:hover,.crBOSS1{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/fb/cmm/a2.png") no-repeat;}
+	.zCMMnav-2:hover,.crBOSS2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/fb/cmm/b2.png") no-repeat;}
+	.zCMMnav-3:hover,.crBOSS3{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/fb/cmm/c2.png") no-repeat;}
 
 	.zCMMdiy{background:#ffffff;width:762px;height:490px;border-radius:5px;float:left;}
 	.zCMMdiy .frame-tab{border:none;}
@@ -1146,10 +1136,10 @@
 	.fbnav-qhl-ct{width:855px;padding-top:120px;margin:0 auto;}
 	.fbnav-qhl-item{}
 	.fbnav-qhl-item a{display:inline-block;margin-right:10px;}
-	.fbnav-qhl-nogl{background:url("fb/qhl/nogl.png") no-repeat 0 0;width:184px;height:52px;}
-	.fbnav-qhl-gl{background:url("fb/qhl/gl.png") no-repeat 0 0;width:184px;height:52px;}
-	.fbnav-qhl-nodata{background:url("fb/qhl/nodata.png") no-repeat 0 0;width:184px;height:52px;}
-	.fbnav-qhl-data{background:url("fb/qhl/data.png") no-repeat 0 0;width:184px;height:52px;}
+	.fbnav-qhl-nogl{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/nogl.png") no-repeat 0 0;width:184px;height:52px;}
+	.fbnav-qhl-gl{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/gl.png") no-repeat 0 0;width:184px;height:52px;}
+	.fbnav-qhl-nodata{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/nodata.png") no-repeat 0 0;width:184px;height:52px;}
+	.fbnav-qhl-data{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/data.png") no-repeat 0 0;width:184px;height:52px;}
 	.fbnav-qhl-1{padding:168px 0 0 20px;height:115px;margin-bottom:80px;}
 	.fbnav-qhl-2,.fbnav-qhl-3{padding:168px 0 0 20px;height:115px;}
 	.fbnav-qhl-2{margin-bottom:58px;}
@@ -1178,35 +1168,35 @@
 	.fb-qhl-cmt  .portal-cmtli{width:640px;}
 	.fb-qhl-cmt {color:#888;}
 	.fb-qhl-cmt .portal-cmt .bbda {border-bottom:1px dotted #444;}
-	.fb-qhl-cmt .portal-cmbt{background: url("fb/qhl/portal-cmtbt.png") no-repeat left top;cursor:pointer;vertical-align: middle;width:70px;height: 28px;overflow: hidden;border-radius: 4px;border:none;font-weight: bold;float:right;margin-right:8px;margin-top:-6px;} 
-	.fb-qhl-cmt .portal-cmbt:hover{background:url("fb/qhl/portal-cmtbt.png") no-repeat -75px 0px;cursor: pointer;} 
+	.fb-qhl-cmt .portal-cmbt{background: url("http://static.jx3pve.com/cssjsimg/fb/qhl/portal-cmtbt.png") no-repeat left top;cursor:pointer;vertical-align: middle;width:70px;height: 28px;overflow: hidden;border-radius: 4px;border:none;font-weight: bold;float:right;margin-right:8px;margin-top:-6px;} 
+	.fb-qhl-cmt .portal-cmbt:hover{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/portal-cmtbt.png") no-repeat -75px 0px;cursor: pointer;} 
 	.fb-qhl .frame,.fb-qhl .frame-tab{background:transparent;border:none;}
 
 	.fb-qhl  .block .xl1 ul li {background:none;}
 	.fb-qhl-bt a{width:233px;height:106px;display:block;}
-	.fb-qhl-bossnav{background:url("fb/qhl/fb-qhl-bqn.png") no-repeat top left;padding-top:1px;}
+	.fb-qhl-bossnav{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-bqn.png") no-repeat top left;padding-top:1px;}
 	.fb-qhl-bossnav ul li a{width:234px;height:55px;display:block;}
-	.qhl-boss-1{background:url("fb/qhl/fb-qhl-bqx.png") no-repeat 0 0;}
-	.qhl-boss-2{background:url("fb/qhl/fb-qhl-bqx.png") no-repeat 0 -55px;}
-	.qhl-boss-3{background:url("fb/qhl/fb-qhl-bqx.png") no-repeat 0 -110px;}
-	.qhl-boss-4{background:url("fb/qhl/fb-qhl-bqx.png") no-repeat 0 -165px;}
-	.qhl-boss-5{background:url("fb/qhl/fb-qhl-bqx.png") no-repeat 0 -220px;}
+	.qhl-boss-1{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-bqx.png") no-repeat 0 0;}
+	.qhl-boss-2{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-bqx.png") no-repeat 0 -55px;}
+	.qhl-boss-3{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-bqx.png") no-repeat 0 -110px;}
+	.qhl-boss-4{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-bqx.png") no-repeat 0 -165px;}
+	.qhl-boss-5{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-bqx.png") no-repeat 0 -220px;}
 
 	.fb-qhl-sdmisc{color:#999;text-align:right;}
-	.qhl-fabu-bt{margin-top:20px;margin-left:80px;background:url("fb/qhl/fb-qhl-fj.png") no-repeat 0 0;display:block;width:135px;height:46px;}
-	.qhl-fabu-bt:hover{background:url("fb/qhl/fb-qhl-fj.png") no-repeat 0 -46px;}
+	.qhl-fabu-bt{margin-top:20px;margin-left:80px;background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-fj.png") no-repeat 0 0;display:block;width:135px;height:46px;}
+	.qhl-fabu-bt:hover{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-fj.png") no-repeat 0 -46px;}
 	.fb-qhl-fabu{padding-right:20px;margin-bottom:10px;line-height:30px;}
 
 	.fb-qhl-rz{width:250px;}
 	.fb-qhl-rz a{width:121px;height:44px;display:block;float:left;margin-right:2px;margin-bottom:2px;}
-	.fb-qhl-rz1{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 0;}
-	.fb-qhl-rz1:hover{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -44px;}
-	.fb-qhl-rz2{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -88px;}
-	.fb-qhl-rz2:hover{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -132px;}
-	.fb-qhl-rz3{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -176px;}
-	.fb-qhl-rz3:hover{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -220px;}
-	.fb-qhl-rz4{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -264px;}
-	.fb-qhl-rz4:hover{background:url("fb/qhl/fb-qhl-rz.png") no-repeat 0 -308px;}
+	.fb-qhl-rz1{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 0;}
+	.fb-qhl-rz1:hover{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -44px;}
+	.fb-qhl-rz2{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -88px;}
+	.fb-qhl-rz2:hover{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -132px;}
+	.fb-qhl-rz3{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -176px;}
+	.fb-qhl-rz3:hover{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -220px;}
+	.fb-qhl-rz4{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -264px;}
+	.fb-qhl-rz4:hover{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-rz.png") no-repeat 0 -308px;}
 
 	.fb-qhl-sdother{}
 
@@ -1218,8 +1208,8 @@
 	.fb-qhl-primary .tab-title ul {padding-left:0;}
 	.fb-qhl-primary  .frame-tab .tb .a a {background:transparent;}
 	.fb-qhl-primary  .tb a{border:none;}
-	.fb-qhl-primary .frame-tab .tb li{background:url("fb/qhl/fb-qhl-label.png") no-repeat 0 0;width:184px;height:52px;line-height:52px;font-family:"楷体";font-size:22px;text-align:center;font-weight:700;}
-	.fb-qhl-primary .frame-tab .tb li.a{background:url("fb/qhl/fb-qhl-label.png") no-repeat 0 -52px;line-height:52px;}
+	.fb-qhl-primary .frame-tab .tb li{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-label.png") no-repeat 0 0;width:184px;height:52px;line-height:52px;font-family:"楷体";font-size:22px;text-align:center;font-weight:700;}
+	.fb-qhl-primary .frame-tab .tb li.a{background:url("http://static.jx3pve.com/cssjsimg/fb/qhl/fb-qhl-label.png") no-repeat 0 -52px;line-height:52px;}
 
 	.fb-qhl-primary .fb table td{border:1px solid #444;}
 	.fb-qhl-author{padding:5px;color:#999;width:722px;background:#252525;margin:10px auto;}
@@ -1230,29 +1220,29 @@
 	.fb-dxc{background:url("http://ww4.sinaimg.cn/large/bcc700eegw1efzp4805eqj21hc16u7e3.jpg") #fff no-repeat center top;padding-bottom:20px;min-height:1200px;}
 	.fb-dxc-main{width:1180px;margin:0 auto;}
 	.fb-dxc-author{padding:235px 0 0 410px;margin-bottom:40px;height:26px;line-height:26px;}
-	.fb-dxc-sidebar{float:left;width:230px;background:url("fb/dxc/fb-fxdxc-boss-label1.png") no-repeat right top;}
+	.fb-dxc-sidebar{float:left;width:230px;background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss-label1.png") no-repeat right top;}
 	.fb-dxc-sidebar ul {padding-left:55px;}
 	.fb-dxc-sidebar ul li a{width:176px;height:47px;margin-bottom:2px;display:block;}
-	.dxc-s-1{background:url("fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 0;}
-	.dxc-s-2{background:url("fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 -49px;}
-	.dxc-s-3{background:url("fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 -98px;}
-	.dxc-s-4{background:url("fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 -147px;}
+	.dxc-s-1{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 0;}
+	.dxc-s-2{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 -49px;}
+	.dxc-s-3{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 -98px;}
+	.dxc-s-4{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss-label2.png") no-repeat 0 -147px;}
 	.fb-dxc-content{float:left;width:878px;border:4px solid #343f75;min-height:800px;padding-top:226px;background-color:#fff;line-height:24px;}
-	.dxc-c-1{background:url("fb/dxc/fb-fxdxc-boss1.png") #fff no-repeat top left;}
-	.dxc-c-2{background:url("fb/dxc/fb-fxdxc-boss2.png") #fff no-repeat top left;}
-	.dxc-c-3{background:url("fb/dxc/fb-fxdxc-boss3.png") #fff no-repeat top left;}
-	.dxc-c-4{background:url("fb/dxc/fb-fxdxc-boss4.png") #fff no-repeat top left;}
+	.dxc-c-1{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss1.png") #fff no-repeat top left;}
+	.dxc-c-2{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss2.png") #fff no-repeat top left;}
+	.dxc-c-3{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss3.png") #fff no-repeat top left;}
+	.dxc-c-4{background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-boss4.png") #fff no-repeat top left;}
 	.fb-dxc .frame, .fb-dxc .frame-tab{border:none;background:transparent none;}
 	.fb-dxc .tab-title{padding-left:270px;background:transparent ;padding-top:8px;width:auto !important;}
 	.fb-dxc .tab-title ul{border-bottom:4px solid #343f75;}
 	.fb-dxc .title{height:59px;}
 	.fb-dxc .frame-tab .tb{padding:0;}
-	.fb-dxc .frame-tab .tb li.a{width:160px;height:53px;background:url("fb/dxc/fb-fxdxc-label.png") no-repeat 0 0;}
+	.fb-dxc .frame-tab .tb li.a{width:160px;height:53px;background:url("http://static.jx3pve.com/cssjsimg/fb/dxc/fb-fxdxc-label.png") no-repeat 0 0;}
 	.fb-dxc .frame-tab .tb li{width:160px;height:53px;}
 	.fb-dxc .frame-tab .tb .a a{background:none;color:#fff;}
 	.fb-dxc .tb a{border:none;padding:0;text-align:center;font-family:楷体;font-size:22px;line-height:45px;font-weight:bold;}
 	#commentsubmit_btn{vertical-align: middle;width: 70px;height: 28px;overflow: hidden;border-radius: 4px;border: none;font-weight: bold;float: right;margin-right: 8px;margin-top: -6px;background: url("fb/qhl/portal-cmtbt.png") no-repeat left top;cursor: pointer;}
-	#commentsubmit_btn:hover{background: url("fb/qhl/portal-cmtbt.png") no-repeat -75px 0;}
+	#commentsubmit_btn:hover{background: url("http://static.jx3pve.com/cssjsimg/fb/qhl/portal-cmtbt.png") no-repeat -75px 0;}
 
 /* 小雪读条
 -------------------------------------------------------------- */
@@ -1260,8 +1250,8 @@
 	.snow-top{min-height:358px;background:url("http://ww1.sinaimg.cn/large/bcc700eegw1efem0fdt5uj20vd09y40c.jpg") #fff no-repeat center top;border:1px solid #ccc;border-bottom:none;}
 	.snow-search{margin:0 auto;}
 	.snow-searchct2{padding-left:400px;padding-top:30px;}
-	.snow-searchbt button{background:url("jx3pve/snow/snow-searchbt.png") no-repeat 0 0;border:none  !important;width:82px;height:33px;display:block;position:relative;top:-5px;}
-	.snow-searchbt button:hover{background:url("jx3pve/snow/snow-searchbt.png") no-repeat 0 -33px;border:none  !important;width:82px;height:33px;display:block;position:relative;top:-5px;cursor:pointer;}
+	.snow-searchbt button{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/snow-searchbt.png") no-repeat 0 0;border:none  !important;width:82px;height:33px;display:block;position:relative;top:-5px;}
+	.snow-searchbt button:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/snow-searchbt.png") no-repeat 0 -33px;border:none  !important;width:82px;height:33px;display:block;position:relative;top:-5px;cursor:pointer;}
 	.snow-searchct{padding:0 0 0 250px;position:relative;top:-13px;}
 	.snow-searchnav{}
 	.snow-nav{}
@@ -1274,10 +1264,10 @@
 	.snow-nav ul li a:hover{border-bottom:1px dotted #ccc;}
 	.snow-pub{float:left;}
 	.snow-pub a{width:136px;height:52px;display:inline-block;}
-	.snow-pub1{background:url("jx3pve/snow/snow-pub.png") no-repeat 0 0;}
-	.snow-pub2{background:url("jx3pve/snow/snow-pub.png") no-repeat -143px 0;}
-	.snow-pub1:hover{background:url("jx3pve/snow/snow-pub.png") no-repeat 0 -52px ;cursor:pointer;}
-	.snow-pub2:hover{background:url("jx3pve/snow/snow-pub.png") no-repeat -143px -52px ;cursor:pointer;}
+	.snow-pub1{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/snow-pub.png") no-repeat 0 0;}
+	.snow-pub2{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/snow-pub.png") no-repeat -143px 0;}
+	.snow-pub1:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/snow-pub.png") no-repeat 0 -52px ;cursor:pointer;}
+	.snow-pub2:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/snow-pub.png") no-repeat -143px -52px ;cursor:pointer;}
 
 
 	.pcb.snow-pcb{border-bottom:1px dashed #ccc;margin-bottom:10px;}
@@ -1296,18 +1286,18 @@
 	.addon-sidebar{float:right;}
 	.addon-content{float:left;}
 	.snow-pcb .snow-t_fsz .t_f{font-size:12px;}
-	#snowmenu{/*background:url("jx3pve/trans28.png") repeat; */margin-bottom:10px;}
+	#snowmenu{/*background:url("http://static.jx3pve.com/cssjsimg/jx3pve/trans28.png") repeat; */margin-bottom:10px;}
 	#waterfall li{background:#fff;border:1px solid #eee;}
 	#waterfall li a{color:#666;font-weight:normal;}
 	.waterfall .c, .waterfall h3{background:#fff;}
 	#waterfall .c.cl img{width:350px;height:100px;}
 	#waterfall  .auth.cl{display:none;}
 	.nopic{max-height:100px !important;max-width:350px !important;}
-	.waterfall .c .nopic{background:url("http://www.jx3pve.com/static/image/common/pink-medal%20(5).gif") #fee5ea no-repeat 50% 50%;}
+	.waterfall .c .nopic{background:url("http://static.jx3pve.com/static/image/common/pink-medal%20(5).gif") #fee5ea no-repeat 50% 50%;}
 
 	.snow-pcb{}
 	.snowtype{width:740px;background:#fafdff;border:1px solid #aad3ea;padding:10px;}
-	.snowdown {background:url("img/download-addon.png") no-repeat left top;}
+	.snowdown {background:url("http://static.jx3pve.com/cssjsimg/img/download-addon.png") no-repeat left top;}
 	.snowdown.tattl{width:200px;height:auto !important;}
 	.snow-pattl{width:200px;}
 	.snowdown  dt,.snowdown p.xg2{display:none;}
@@ -1321,15 +1311,15 @@
 
 	#frameX9GjTb .blocktitle.title{border-radius:20px;}
 
-	#portal_block_352_content ul li {background: url(jx3pve/snow/list-hot-2.png) no-repeat 0 40%;}
-	#portal_block_352_content ul li:hover{background: url(jx3pve/snow/list-hot.png) no-repeat 0 40%;}
-	#portal_block_353_content ul li{background: url(jx3pve/snow/list-new-2.png) no-repeat 0 40%;}
-	#portal_block_353_content ul li:hover{background: url(jx3pve/snow/list-new-x.png) no-repeat 0 40%;}
+	#portal_block_352_content ul li {background: url(http://static.jx3pve.com/cssjsimg/jx3pve/snow/list-hot-2.png) no-repeat 0 40%;}
+	#portal_block_352_content ul li:hover{background: url(http://static.jx3pve.com/cssjsimg/jx3pve/snow/list-hot.png) no-repeat 0 40%;}
+	#portal_block_353_content ul li{background: url(http://static.jx3pve.com/cssjsimg/jx3pve/snow/list-new-2.png) no-repeat 0 40%;}
+	#portal_block_353_content ul li:hover{background: url(http://static.jx3pve.com/cssjsimg/jx3pve/snow/list-new-x.png) no-repeat 0 40%;}
 	#portal_block_353_content ul li a:hover {color:#d200ff}
 
-	.snow-daoju{margin-left:10px;border:1px solid #ccc;border-radius:16px;padding:2px 0 2px 16px;background: url(jx3pve/snow/list-hot-2.png) no-repeat 8px 40%;}
+	.snow-daoju{margin-left:10px;border:1px solid #ccc;border-radius:16px;padding:2px 0 2px 16px;background: url(http://static.jx3pve.com/cssjsimg/jx3pve/snow/list-hot-2.png) no-repeat 8px 40%;}
 	.snow-daoju a{padding: 0 15px 0 5px;}
-	.snow-daoju:hover{background:#eee;background: url(jx3pve/snow/list-hot.png) no-repeat 8px 40%;}
+	.snow-daoju:hover{background:#eee;background: url(http://static.jx3pve.com/cssjsimg/jx3pve/snow/list-hot.png) no-repeat 8px 40%;}
 	.snow-daoju a:hover{text-decoration:none;color:#f50a8f;}
 
 /* 插件站
@@ -1348,12 +1338,12 @@
 	#addon-content1{padding:0 10px;}
 	.addon-list-index{list-style:none;position:relative;padding:10px;border-bottom:1px dashed #ccc;}
 
-	#addon-1 {background:url("img/addon-icon-1.png") no-repeat 10px 16px;}
-	#addon-2 {background:url("img/addon-icon-2.png") no-repeat 10px 16px;}
-	#addon-3 {background:url("img/addon-icon-3.png") no-repeat 10px 16px;}
-	#addon-4 {background:url("img/addon-icon-4.png") no-repeat 10px 16px;}
-	#addon-5 {background:url("img/addon-icon-5.png") no-repeat 10px 16px;}
-	#addon-6 {background:url("img/addon-icon-6.png") no-repeat 10px 16px;}
+	#addon-1 {background:url("http://static.jx3pve.com/cssjsimg/img/addon-icon-1.png") no-repeat 10px 16px;}
+	#addon-2 {background:url("http://static.jx3pve.com/cssjsimg/img/addon-icon-2.png") no-repeat 10px 16px;}
+	#addon-3 {background:url("http://static.jx3pve.com/cssjsimg/img/addon-icon-3.png") no-repeat 10px 16px;}
+	#addon-4 {background:url("http://static.jx3pve.com/cssjsimg/img/addon-icon-4.png") no-repeat 10px 16px;}
+	#addon-5 {background:url("http://static.jx3pve.com/cssjsimg/img/addon-icon-5.png") no-repeat 10px 16px;}
+	#addon-6 {background:url("http://static.jx3pve.com/cssjsimg/img/addon-icon-6.png") no-repeat 10px 16px;}
 	.addon-list-index p{z-index:0;font-size:18px;position:absolute;top:20px;right:10px;color:#eee;font-family:Verdana;}
 	.addon-list-index h2{width:32px;font-size:14px;font-family:微软雅黑;font-weight:bold;position:absolute;top:15px;left:60px;color:#cc0000;display:block;padding-right:20px;}
 	.addon-list-index ul{padding:0 0 0 110px;}
@@ -1367,7 +1357,7 @@
 	#addon-title a{line-height:30px;}
 
 	#addon-meta{margin:10px 0;position:relative;}
-	#addon-down{position:absolute;right:15px;top:0;width:200px;height:60px;background:url("img/down/download-addon.png") no-repeat top left;}
+	#addon-down{position:absolute;right:15px;top:0;width:200px;height:60px;background:url("http://static.jx3pve.com/cssjsimg/img/down/download-addon.png") no-repeat top left;}
 	#addon-down a{display:block;width:200px;height:60px;}
 	#addon-content2{width:860px;float:left;padding:20px 10px;line-height:26px;letter-spacing:0.5px;color:#555;}
 	#addon-content2 a{color:#cc0000;}
@@ -1385,16 +1375,16 @@
 	-moz-border-radius: 8px;
 	border-radius: 8px;}
 	#addon-qcin ul li a{display:block;width:180px;height:80px;text-align:center;font-family:微软雅黑;font-size:18px;color:#fff;}
-	#addon-qcin-1{background:url("img/addon-qcin-1.png") no-repeat top left;}
-	#addon-qcin-1 a:hover{background:url("img/addon-qcin-1-light.png") no-repeat top left;}
-	#addon-qcin-2{background:url("img/addon-qcin-6.png") no-repeat top left;}
-	#addon-qcin-2 a:hover{background:url("img/addon-qcin-6-light.png") no-repeat top left;}
-	#addon-qcin-3{background:url("img/addon-qcin-3.png") no-repeat top left;}
-	#addon-qcin-3 a:hover{background:url("img/addon-qcin-3-light.png") no-repeat top left;}
-	#addon-qcin-4{background:url("img/addon-qcin-4.png") no-repeat top left;}
-	#addon-qcin-4 a:hover{background:url("img/addon-qcin-4-light.png") no-repeat top left;}
-	#addon-qcin-5{background:url("img/addon-qcin-5.png") no-repeat top left;}
-	#addon-qcin-5 a:hover{background:url("img/addon-qcin-5-light.png") no-repeat top left;}
+	#addon-qcin-1{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-1.png") no-repeat top left;}
+	#addon-qcin-1 a:hover{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-1-light.png") no-repeat top left;}
+	#addon-qcin-2{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-6.png") no-repeat top left;}
+	#addon-qcin-2 a:hover{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-6-light.png") no-repeat top left;}
+	#addon-qcin-3{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-3.png") no-repeat top left;}
+	#addon-qcin-3 a:hover{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-3-light.png") no-repeat top left;}
+	#addon-qcin-4{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-4.png") no-repeat top left;}
+	#addon-qcin-4 a:hover{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-4-light.png") no-repeat top left;}
+	#addon-qcin-5{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-5.png") no-repeat top left;}
+	#addon-qcin-5 a:hover{background:url("http://static.jx3pve.com/cssjsimg/img/addon-qcin-5-light.png") no-repeat top left;}
 
 	#fav-heart{color:#ff0000;}
 	#interface_docments{float:right;background-color:#f9f9f9;padding:20px 20px 20px 0;list-style-type:square;}
@@ -1402,7 +1392,7 @@
 	/* #addon-1,#addon-3,#addon-5{background-color:#f9f9f9;} */
 
 	.ptg.mbm.mtn{font-size:12px;}
-	.addonload{background:url("jx3pve/snow/nodownload.png") no-repeat 0 0;width:200px;position:absolute;right:0;top:0px;border:none;padding-top:80px;}
+	.addonload{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/snow/nodownload.png") no-repeat 0 0;width:200px;position:absolute;right:0;top:0px;border:none;padding-top:80px;}
 	.attach_nopermission p{text-align:center;width:180px;padding:10px;border:1px dotted #ccc;color:#777;}
 	.snow-t_fsz {color:#555;}
 
@@ -1418,9 +1408,9 @@
 	.sidebar-block h3{background:#555;height:26px;color:#fff;line-height:26px;font-size:12px;padding-left:20px;border-radius:24px;}
 	.macro-skin h3{margin-bottom:5px;}
 	.cloudmacro{padding:10px;font-size:12px;line-height:24px;border:1px dashed #ccc;background:#fff;margin-bottom:10px;}
-	.cloudmacro ul{float:left;/*background:url("jx3pve/img/icon/macro-ar.png") no-repeat left 50%;*/padding:0 20px;border-right:1px solid #eee;}
+	.cloudmacro ul{float:left;/*background:url("http://static.jx3pve.com/cssjsimg/jx3pve/img/icon/macro-ar.png") no-repeat left 50%;*/padding:0 20px;border-right:1px solid #eee;}
 	.cloudmacro{color:#ccc;}
-	.cloudmacro ul li{height: 24px;line-height: 24px;padding-left: 16px;background: url("jx3pve/index/list-icon1.png") no-repeat 0 50%;}
+	.cloudmacro ul li{height: 24px;line-height: 24px;padding-left: 16px;background: url("http://static.jx3pve.com/cssjsimg/jx3pve/index/list-icon1.png") no-repeat 0 50%;}
 	.cloudapi{padding:10px;line-height:30px;font-size:14px;font-family:Trebuchet MS,'Microsoft Yahei';}
 	.cloudid-tips{padding:10px;border:1px dotted #ccc;}
 
@@ -1462,7 +1452,7 @@
 
 	.yz-page.fb-xz  .wp.mtn{display:none;}
 	.xzboss-ashina{color:#990000 !important;}
-	#xuezhanboss-nav{display:inline-block;background:url("http://www.jx3pve.com/cssjsimg/fb/xz-boss.png") no-repeat left center;width:480px;height:50px;}
+	#xuezhanboss-nav{display:inline-block;background:url("http://static.jx3pve.com/cssjsimg/fb/xz-boss.png") no-repeat left center;width:480px;height:50px;}
 	#xuezhanboss-nav li{float:left;display:block;width:53px;height:50px;}
 	#xuezhanboss-nav li a{display:block;width:53px;height:50px;}
 
@@ -1514,24 +1504,24 @@
 	.xz-navpage-item8 a:hover{background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eefsbxd18ej20bl0bk75i.jpg") no-repeat -146px -292px;}
 	.xz-navpage-item9 a:hover{background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eefsbxd18ej20bl0bk75i.jpg") no-repeat -292px -292px;}
 
-	.sd-fb-verf{background:url("fb/fb-verf.png") no-repeat left top;}
+	.sd-fb-verf{background:url("http://static.jx3pve.com/cssjsimg/fb/fb-verf.png") no-repeat left top;}
 	.sd-fb-verf ul li,.sd-fb-verf ul li a{float:left;width:38px;height:38px;padding-right:14px;display:block;}
 
 	/*血战迷你小导航*/
-	.index-nav-xz {background:url("img/index/index-nav-xz.png") no-repeat ;height:59px;}
+	.index-nav-xz {background:url("http://static.jx3pve.com/cssjsimg/img/index/index-nav-xz.png") no-repeat ;height:59px;}
 	.index-nav-xz ul {}
 	.index-nav-xz ul li{float:left;}
 	.index-nav-xz ul li a{display:block;width:55px;height:55px;padding-right:10px;}
 	#index-nav-item-xz0 a{width:140px;}
 	#index-nav-item-xz10 a{width:100px;}
 
-	.btverf{width:540px;margin:0 auto;height:34px;background:url("bbs/bt/bt-verf.png") no-repeat left top;}
+	.btverf{width:540px;margin:0 auto;height:34px;background:url("http://static.jx3pve.com/cssjsimg/bbs/bt/bt-verf.png") no-repeat left top;}
 	.btverf ul li,.btverf ul li a{display:block;height:30px;width:120px;float:left;}
 	.btverf ul li a{padding-right:18px;}
 
 /* 超级宏栏目
 -------------------------------------------------------------- */
-	#frameiK17yz{background: url("bbs/bbs-nav.png") repeat;padding-bottom:10px;}
+	#frameiK17yz{background: url("http://static.jx3pve.com/cssjsimg/bbs/bbs-nav.png") repeat;padding-bottom:10px;}
 	#frameiK17yz_center .frame,#frameiK17yz_center .frame-tab{text-align:center;background:transparent;}
 	#frameiK17yz_center .block{margin:0;}
 	#frame73I47T{background:transparent;}
@@ -1567,12 +1557,12 @@
 
 	.raidlist-pub{display:block;}
 	.raidlist-pub a{display:block;width:137px;height:41px;float:left;}
-	.raid-kt {background:url("jx3pve/raid/raid-pubkt.png") no-repeat left top;margin-right:6px;}
-	.raid-zt {background:url("jx3pve/raid/raid-pubzt.png") no-repeat left top;}
-	.raid-kt:hover{background:url("jx3pve/raid/raid-pubkt2.png") no-repeat left top;margin-right:6px;}
-	.raid-zt:hover{background:url("jx3pve/raid/raid-pubzt2.png") no-repeat left top;}
-	.raid-biz{background:url("jx3pve/biz/pub1.png") no-repeat left top;}
-	.raid-biz:hover{background:url("jx3pve/biz/pub2.png") no-repeat left top;}
+	.raid-kt {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid-pubkt.png") no-repeat left top;margin-right:6px;}
+	.raid-zt {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid-pubzt.png") no-repeat left top;}
+	.raid-kt:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid-pubkt2.png") no-repeat left top;margin-right:6px;}
+	.raid-zt:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/raid/raid-pubzt2.png") no-repeat left top;}
+	.raid-biz{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz/pub1.png") no-repeat left top;}
+	.raid-biz:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/biz/pub2.png") no-repeat left top;}
 
 
 	.raidlist-type {display:block;border-top:2px solid #0467ac;}
@@ -1618,11 +1608,11 @@
 	.raidpage-content-verf a{padding-right:2px;}
 	.raidpage-content-lv span{position:relative;top:-5px;}
 	.raidpage-content-lv span,.raidpage-content-verf span{padding-right:10px;font-weight:bold;}
-	.raidpage-content-dianping{display:block;width:180px;height:24px;padding:0 5px;border:1px solid #C2D5E3;background:#fafdff url(jx3pve/misc/dianping.png) no-repeat 40% 50%;border-radius:20px;text-align:center;line-height:24px;text-indent:30px;}
+	.raidpage-content-dianping{display:block;width:180px;height:24px;padding:0 5px;border:1px solid #C2D5E3;background:#fafdff url(http://static.jx3pve.com/cssjsimg/jx3pve/misc/dianping.png) no-repeat 40% 50%;border-radius:20px;text-align:center;line-height:24px;text-indent:30px;}
 	.raidpage-content-dianping:hover{text-decoration:none;}
 
 	.raidpage-content .cm .psth {background-color: #f9e9fe;color: #c24be9;}
-	.raidpage-content .psth{background: #f9e9fe url(../../static/image/common/arw.gif) no-repeat 100% 50%;}
+	.raidpage-content .psth{background: #f9e9fe url(http://static.jx3pve.com/static/image/common/arw.gif) no-repeat 100% 50%;}
 	.raidpage-content .icon_ring{background: #f9e9fe ;border: 2px solid #c24be9;}
 
 
@@ -1659,8 +1649,8 @@
 	.bizpage-content-primary{width:680px;}
 	.bizpage-content-sidebar{border:1px dotted #ccc;border-left:none;width:200px;float:left;margin-right:10px;padding-left:10px;height:146px;}
 	.bizpage-content-sidebar .raidpage-content-dianping{width:180px;}
-	.biz-bt-zd{padding: 5px 10px 5px 25px;background: url(../../static/image/magic/stick.small.gif) no-repeat 4px 50%;}
-	.biz-bt-gl{padding: 5px 10px 5px 25px;background: url(../../static/image/magic/highlight.small.gif) no-repeat 4px 50%;}
+	.biz-bt-zd{padding: 5px 10px 5px 25px;background: url(http://static.jx3pve.com/static/image/magic/stick.small.gif) no-repeat 4px 50%;}
+	.biz-bt-gl{padding: 5px 10px 5px 25px;background: url(http://static.jx3pve.com/static/image/magic/highlight.small.gif) no-repeat 4px 50%;}
 
 	.bizpage-content .plhin .plc{width:100%;}
 	.bizpage-content .pcb{margin-top:10px;}
@@ -1676,7 +1666,7 @@
 	.accol2{width:auto;padding:0 10px;}
 	.accol3{width:50px;}
 	.bbs-ac-warning,.bbs-report{font-weight:bold;color:#ff0000;}
-	.bbs-report{background:url(http://dz.yylmacro.com/static/image/common//notice.gif) no-repeat;padding:0 5px 0 15px;margin-left:10px;}
+	.bbs-report{background:url(http://static.jx3pve.com/static/image/common//notice.gif) no-repeat;padding:0 5px 0 15px;margin-left:10px;}
 	.bbs-daoju{}
 	.bizclass {height:28px !important;padding: 4px 8px 1px !important;}
 	.accol2 h2{font-size:16px;font-weight:bold;color:#cc00cc;}
@@ -1699,7 +1689,7 @@
 
 /* 发宏单页
 -------------------------------------------------------------- */
-	.share-main{background: url("img/bg4.png") repeat top left;}
+	.share-main{background: url("http://static.jx3pve.com/cssjsimg/img/bg4.png") repeat top left;}
 	.share{}
 	#share-top{height:330px;border-bottom:1px solid #ccc;}
 	#share-top-content{width:1040px;margin:0 auto;position:relative;height:330px;}
@@ -1708,11 +1698,11 @@
 	#share-info{color:#000;font-family:Arial;font-size:60px;position:absolute;left:20px;top:220px;word-spacing:6px;}
 	#share-info a{color:#000;}
 	#share-info a:hover{color:#ff0000;}
-	#share-sub a{display:block;background:url("img/pub.png") no-repeat top left;width:249px;height:95px;right:40px;top:200px;position:absolute;}
-	#share-center{background:url("img/share-ex.jpg") no-repeat center center;background-color:#fff;height:500px;border-bottom:1px solid #ccc;}
+	#share-sub a{display:block;background:url("http://static.jx3pve.com/cssjsimg/img/pub.png") no-repeat top left;width:249px;height:95px;right:40px;top:200px;position:absolute;}
+	#share-center{background:url("http://static.jx3pve.com/cssjsimg/img/share-ex.jpg") no-repeat center center;background-color:#fff;height:500px;border-bottom:1px solid #ccc;}
 	#share-doc{padding-bottom:20px;}
 	#share-doc-content{width:1040px;margin:0 auto;position:relative;}
-	#share-doc-button{background:url("img/share-docbg.png") no-repeat top left;width:179px;height:179px;position:absolute;left:0;top:30px;color:#fff;text-align:center;}
+	#share-doc-button{background:url("http://static.jx3pve.com/cssjsimg/img/share-docbg.png") no-repeat top left;width:179px;height:179px;position:absolute;left:0;top:30px;color:#fff;text-align:center;}
 	#share-text-doc{font-family:Arial;font-size:60px;display:block;margin-top:10px;}
 	#share-text-sub{font-family:"Microsoft Yahei";font-size:30px;}
 	#share-doc-table{padding-top:30px;font-size:12px !important;font-family:宋体;width: 830px !important;
@@ -1735,7 +1725,7 @@
 	#view-next{font-weight:bold;position:absolute;right:0;top:0;padding-right:20px;width:100px;}
 	#tech-content2{position:relative;font-family:宋体 !important;font-size:12px !important;}
 	#tech-bak{position:absolute;right:10px;top:10px;}
-	#tech-content h2{margin-top:10px;height:35px;line-height:35px;font-size:12px;font-weight:bold;font-family:宋体;padding:5px 0;border-bottom:1px dotted #ccc;text-indent:45px;background:url("img/h2.jpg") no-repeat center left;}
+	#tech-content h2{margin-top:10px;height:35px;line-height:35px;font-size:12px;font-weight:bold;font-family:宋体;padding:5px 0;border-bottom:1px dotted #ccc;text-indent:45px;background:url("http://static.jx3pve.com/cssjsimg/img/h2.jpg") no-repeat center left;}
 	#tech-content li{font-size:12px;height:24px;line-height:24px;letter-spacing:1px;list-style-type:circle !important;border-bottom:1px dashed #ccc;display:block;}
 	#tech-content ul{padding:0 20px;}
 	#page-comment{}
@@ -1744,17 +1734,17 @@
 	#tech-content2 td{border:1px solid #ccc;font-size:12px !important;padding:0 5px;font-family:宋体 !important;}
 	#tech-list-title{text-align:center;font-size:14px;padding:10px 0;}
 
-	#shelfbg{background:url("img/shelf-bg.jpg") repeat center center;}
+	#shelfbg{background:url("http://static.jx3pve.com/cssjsimg/img/shelf-bg.jpg") repeat center center;}
 	#study-content{padding:20px;}
-	#study-content ul{background:url("img/shelf-c.png") no-repeat bottom left;width:1000px;height:256px;padding:0 60px;margin:0 auto;}
+	#study-content ul{background:url("http://static.jx3pve.com/cssjsimg/img/shelf-c.png") no-repeat bottom left;width:1000px;height:256px;padding:0 60px;margin:0 auto;}
 	#study-content ul li{list-style:none;float:left;width:162px;height:208px;margin-right:36px;}
 	#study-content ul li a,#study-content ul li a:hover{display:block;width:162px;height:208px;}
-	#book-cjh{background:url("img/book-cjh.png") no-repeat top left;}
-	#book-tdjk{background:url("img/book-tdjk.png") no-repeat top left;}
+	#book-cjh{background:url("http://static.jx3pve.com/cssjsimg/img/book-cjh.png") no-repeat top left;}
+	#book-tdjk{background:url("http://static.jx3pve.com/cssjsimg/img/book-tdjk.png") no-repeat top left;}
 	#study-content p{color:#888;width:340px;height:25px;line-height:25px;background-color:#f9f9f9;border:1px dashed #ccc;font-size:12px;margin:20px auto;}
 
 
-	#bookbg{min-height:799px;margin:0 auto;background:url("img/book-1.png") no-repeat top center;}
+	#bookbg{min-height:799px;margin:0 auto;background:url("http://static.jx3pve.com/cssjsimg/img/book-1.png") no-repeat top center;}
 	.tech-page-book{text-shadow:rgba(255,255,255,.5) 0 1px 0;font-size:12px;font-family:宋体;line-height:24px !important;width:1180px;margin:0 auto;position:relative;}
 	.tech-list-title-book{color:#990000;font-size:16px;line-height:30px;font-family:微软雅黑;font-weight:bold;text-align:center;border-bottom:1px solid #ccc;margin:0 auto 10px auto;}
 	.tech-list-title-book2{text-align:center;position:relative;text-transform:uppercase;border-bottom:1px solid #ccc;font-size:12px;line-height:30px;font-family:Verdana;color:#777;}
@@ -1767,7 +1757,7 @@
 	.tech-page-book h2,.tech-page-book h3,.tech-page-book h4,.tech-page-book h5,.tech-page-book h6{font-size:12px;font-weight:bold;}
 	#book-meta{position:absolute;left:180px;bottom:55px;color:#6e5c57;}
 
-	#bookbg2{min-height:799px;margin:0 auto;background:url("img/book-1.png") no-repeat top center;}
+	#bookbg2{min-height:799px;margin:0 auto;background:url("http://static.jx3pve.com/cssjsimg/img/book-1.png") no-repeat top center;}
 	#book2-content-right{height:548px;overflow-y:auto;}
 	#book-2-right{overflow:hidden !important;}
 
@@ -1799,15 +1789,15 @@
 
 /* 微信APP
 -------------------------------------------------------------- */
-	div.webapp {background: url("img/bg4.png") repeat top left;font-size:12px;line-height:20px;}
-	.webapp-content{width:1000px;min-height:500px;margin:0 auto;padding:80px 0;background:url("img/webapp-bg.png") no-repeat ;}
+	div.webapp {background: url("http://static.jx3pve.com/cssjsimg/img/bg4.png") repeat top left;font-size:12px;line-height:20px;}
+	.webapp-content{width:1000px;min-height:500px;margin:0 auto;padding:80px 0;background:url("http://static.jx3pve.com/cssjsimg/img/webapp-bg.png") no-repeat ;}
 	.webapp-content ul{padding:80px 0 0 620px;}
 	.app-list {padding:20px 0px 50px 0;}
 	.app-list span{font-weight:bold;}
 	.app-list span a{color:#000000;}
 	.app-list span a:hover{color:#ff0000;}
 	#app-list-item-ios{padding-top:5px !Important;}
-	#otherpages {background:url("img/bg9.png") repeat top left;}
+	#otherpages {background:url("http://static.jx3pve.com/cssjsimg/img/bg9.png") repeat top left;}
 
 /* 捐赠页面
 -------------------------------------------------------------- */
@@ -1829,7 +1819,7 @@
 	.trade-spvimg-2{float: left;position: relative;max-width: 600px;min-height:260px;padding-right:20px;border-right:1px solid #eee;margin-right:20px;}
 	div.spi.cl >dl {font-size:12px !important;}
 	.trade-pn {vertical-align: middle;overflow: hidden;margin-right: 3px;padding:0 10px;width: 167px;height: 33px;line-height: 33px;color: #fff;font-size: 14px;font-weight: 200;
-	font-family: 'Microsoft Yahei';text-align: center;background: #c41b00 url("img/tjdd.png") no-repeat center center;cursor: pointer;border-radius:4px;box-shadow:none;}
+	font-family: 'Microsoft Yahei';text-align: center;background: #c41b00 url("http://static.jx3pve.com/cssjsimg/img/tjdd.png") no-repeat center center;cursor: pointer;border-radius:4px;box-shadow:none;}
 	.trade-pn-tenpay{position:relative;left:10px;top:-2px;letter-spacing:0.6px;}
 
 /* 下载栏目·新
@@ -1851,13 +1841,13 @@
 	.exam_sd .tree{text-align:left;}
 	.exam_sd .tree ul{padding-left:10px;}
 	.exam_sd .all_paper a:hover{color:#fff;}
-	.exam_sd .tree_three{list-style: none;line-height: 24px;cursor: pointer;list-style: none;background: url(../../source/plugin/tp_exam/static/images/st_node.gif) 10px 48%;background-repeat: no-repeat;padding: 0 0 3px 36px;margin:2px 0 2px 0;}
-	.exam_sd .tree_three:hover{background: url(../../source/plugin/tp_exam/static/images/st_node.gif) #333 no-repeat 10px 48%;border-radius:4px;}
+	.exam_sd .tree_three{list-style: none;line-height: 24px;cursor: pointer;list-style: none;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/st_node.gif) 10px 48%;background-repeat: no-repeat;padding: 0 0 3px 36px;margin:2px 0 2px 0;}
+	.exam_sd .tree_three:hover{background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/st_node.gif) #333 no-repeat 10px 48%;border-radius:4px;}
 	.exam_sd .tree_three a:hover{color:#eee;}
-	.exam_sd .my_item{list-style: none;line-height: 24px;cursor: pointer;list-style: none;background: url(../../source/plugin/tp_exam/static/images/st_folder_open.gif) no-repeat 20px 48%;padding: 0 0 3px 46px;}
-	.exam_sd .my_item:hover{background: url(../../source/plugin/tp_exam/static/images/st_folder_open.gif) #333 no-repeat 20px 48%;border-radius:4px;}
+	.exam_sd .my_item{list-style: none;line-height: 24px;cursor: pointer;list-style: none;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/st_folder_open.gif) no-repeat 20px 48%;padding: 0 0 3px 46px;}
+	.exam_sd .my_item:hover{background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/st_folder_open.gif) #333 no-repeat 20px 48%;border-radius:4px;}
 	.exam_sd .my_item a:hover{color:#eee;}
-	.exam_sd .all_paper{background: url(../../source/plugin/tp_exam/static/images/st_folder_open.gif);background-repeat: no-repeat;padding: 0 0 3px 20px;margin: 2px 20px 2px 35px;}
+	.exam_sd .all_paper{background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/st_folder_open.gif);background-repeat: no-repeat;padding: 0 0 3px 20px;margin: 2px 20px 2px 35px;}
 
 	.exam_tips{position:absolute;top:29px;right:2px;}
 	.exam_tips a{display:inline-block;background:#484848;color:#fff;margin-left:10px;height:32px;line-height:32px;padding:0 10px;border-top-left-radius:4px;border-top-right-radius:4px;box-shadow:3px 0px 0px #ddd;}
@@ -1882,42 +1872,42 @@
 	.les_shop_b em {padding-right: 5px;}
 	.les_shop_b .txt a {color: #FF0000;}
 	.les_shop_b {width: 100%;float: left;padding: 10px 0;overflow: hidden;position: relative;border-bottom: #D9D9D9 1px dashed;}
-	.free {width: 34px;height: 15px;position: absolute;background: url(../../source/plugin/tp_exam/static/images/mk-main.png) no-repeat -77px -674px;overflow: hidden;clear: both;top: 3px;}
+	.free {width: 34px;height: 15px;position: absolute;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/mk-main.png) no-repeat -77px -674px;overflow: hidden;clear: both;top: 3px;}
 
 	.ks-toolbar {width: 100%;height: 53px;margin-top: -7px;position: relative;z-index: 99;}
 	.lf {float: left;}
 	.ks-toolbar .side_a {width: 1px;height: 55px;position: relative;margin-left: -1px;margin-top: -2px;}
 	.kslogo {position: relative;margin-top: 8px;margin-left: 7px;}
-	.Ttime .tm1 {margin-left: 8px;margin-top: 4px;font-family: Microsoft Yahei;color: #484c53;font-size: 22px;font-weight: bold;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) no-repeat -170px 0px;padding-left: 40px;line-height: 30px;padding-right: 10px;display: inline;padding-bottom: 4px;}
-	.Ttime .Ttimey {width: 43px;height: 38px;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) no-repeat -74px -51px;text-indent: -9999px;font-size: 0px;}
+	.Ttime .tm1 {margin-left: 8px;margin-top: 4px;font-family: Microsoft Yahei;color: #484c53;font-size: 22px;font-weight: bold;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat -170px 0px;padding-left: 40px;line-height: 30px;padding-right: 10px;display: inline;padding-bottom: 4px;}
+	.Ttime .Ttimey {width: 43px;height: 38px;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat -74px -51px;text-indent: -9999px;font-size: 0px;}
 	.summary {padding-left: 10px;color: #888;padding-top: 20px;}
 	.ks-toolbar .side_b {width: 53px;height: 53px;position: relative;margin-right: 35px;margin-top: -2px;}
-	.topcy li {width: 106px;height: 38px;float: left;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) no-repeat 0px -168px;color: #666;font-size: 14px;font-family: Microsoft Yahei;}
+	.topcy li {width: 106px;height: 38px;float: left;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat 0px -168px;color: #666;font-size: 14px;font-family: Microsoft Yahei;}
 	.topcy li.on, .topcy li.out {position: relative;z-index: 100;cursor: pointer;}
-	.topcy .out a.fav, .topcy .on a.fav {float: left;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) -183px -176px no-repeat;padding-left: 22px;margin-left: 13px;margin-top: 10px;display: inline;}
-	.topcy .out a.tool, .topcy .on a.tool {float: left;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) -183px -210px no-repeat;padding-left: 22px;margin-left: 13px;margin-top: 10px;display: inline;}
-	.topcy li.save-li {background: url(../../source/plugin/tp_exam/static/images/ks-main.png) no-repeat 0px -208px;}
-	.save {float: left;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) -183px -235px no-repeat;padding-left: 22px;margin-left: 13px;margin-top: 10px;display: inline;}
-	.carry {width: 100%;height: 38px;float: left;background: url(../../source/plugin/tp_exam/static/images/ks-main.png) no-repeat 0px -425px;text-indent: -9999px;font-size: 0px;cursor: pointer;}
+	.topcy .out a.fav, .topcy .on a.fav {float: left;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) -183px -176px no-repeat;padding-left: 22px;margin-left: 13px;margin-top: 10px;display: inline;}
+	.topcy .out a.tool, .topcy .on a.tool {float: left;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) -183px -210px no-repeat;padding-left: 22px;margin-left: 13px;margin-top: 10px;display: inline;}
+	.topcy li.save-li {background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat 0px -208px;}
+	.save {float: left;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) -183px -235px no-repeat;padding-left: 22px;margin-left: 13px;margin-top: 10px;display: inline;}
+	.carry {width: 100%;height: 38px;float: left;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat 0px -425px;text-indent: -9999px;font-size: 0px;cursor: pointer;}
 
 	.exam_main .side_b.rt{display:none;}
 	.ks-subnav {width: 790px;height: auto;border: 1px solid #c0d4e2;background: #f7f7f7;padding: 10px 1px;margin-top: 40px;margin-bottom:20px;color: #888;line-height: 30px;padding-left: 0px;text-align:left;display:none;}
 	.lf {float: left;}
 	.RulesTitle {width: 680px;height: 20px;font-weight: bold;line-height: 20px;margin-top: 20px;background: #f2f2f2;float:left;padding: 10px 60px;margin-bottom:10px;}
-	.RulesTitle span.ico {width: 37px;height: 37px;float: left;position: relative;background: url(../source/plugin/tp_exam/static/images/ks-main.png) no-repeat -119px -302px;color: #fff;text-align: center;font-weight: bold;line-height: 30px;margin-left: -69px;margin-top: -10px;}
+	.RulesTitle span.ico {width: 37px;height: 37px;float: left;position: relative;background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat -119px -302px;color: #fff;text-align: center;font-weight: bold;line-height: 30px;margin-left: -69px;margin-top: -10px;}
 	.ks-tag{width:100%;height:auto;float:right;padding-bottom:5px;}
-	.tag-btn{height:31px;float:right;background:url(../source/plugin/tp_exam/static/images/ks-main.png) repeat-x 0px -681px;font-size:12px;}
+	.tag-btn{height:31px;float:right;background:url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) repeat-x 0px -681px;font-size:12px;}
 	.tag-btn .spt1 {float: left;position: relative;}
 	.tag-btn .spt1 a.dd {float: left;padding: 0px 7px 0px 25px;border: 1px solid #f3f3f3;height: 29px;line-height: 29px;color: #888;}
-	.tag-btn .error {background: url(../source/plugin/tp_exam/static/images/ks-main.png) no-repeat -181px -460px;}
-	.tag-btn .mark {background: url(../source/plugin/tp_exam/static/images/ks-main.png) no-repeat -181px -615px;}
+	.tag-btn .error {background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat -181px -460px;}
+	.tag-btn .mark {background: url(http://static.jx3pve.com/source/plugin/tp_exam/static/images/ks-main.png) no-repeat -181px -615px;}
 
 	.ks-h2{text-align:center;color:#0379a0;font-size:16px;font-family:微软雅黑;margin-top:10px;}
 	.exam_main .exam_content .mylist p strong{color:#0379a0;}
 	.cjzxks{border-bottom:1px dashed #ccc;margin-bottom:10px;clear:both;}
 	.exam_main .exam_content .mylist .cjzxks p label{line-height:26px;height:24px;vertical-align:middle;}
-	.exam_btn{width:110px;height:33px;background:url("jx3pve/bps/exam/exam_btn.png") no-repeat 0 0 ;border:none;}
-	.exam_btn:hover{width:110px;height:33px;background:url("jx3pve/bps/exam/exam_btn.png") no-repeat 0  -33px;}
+	.exam_btn{width:110px;height:33px;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/bps/exam/exam_btn.png") no-repeat 0 0 ;border:none;}
+	.exam_btn:hover{width:110px;height:33px;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/bps/exam/exam_btn.png") no-repeat 0  -33px;}
 	.exam_main .exam_content .y #tips{line-height:30px;font-family:微软雅黑;vertical-align:bottom;display:block;font-weight:bold;}
 	.exam_main .exam_content .y #tips img{position:relative;top:6px;}
 
@@ -1958,9 +1948,8 @@
 	#ct.star_bbslist img.zoom,#ct.star_bbslist ignore_js_op img{max-width:560px !important;overflow:hidden;} /*图片溢出修订*/
 
 	/*临时修订*/
-	.mn.single{padding:0 20px;}
+	/*.mn.single{padding:0 20px;}
 
-	#pt{width:1168px;margin:0 auto;}
 	#ct.wp.cl{width:1158px;margin:0 auto;}
 	.snowbbs{width:1180px;margin:0 auto;}
 	#wp #uhd{width:1178px;margin:0 auto;}
@@ -1970,7 +1959,7 @@
 	.fastre{padding-left:24px;}
 	.pk200{margin-top:15px;box-shadow:0px 0px 4px #555;display:block;border-radius:8px;}
 	td#article_content table td {line-height:26px;}
-
+*/
 
 /* =群组
 -------------------------------------------------------------- */
@@ -1985,11 +1974,11 @@
 	#nv_group  .bm_c  dl.mbm.pbm.bbda dd a:hover{background:#eee;color:#F26C4F;font-weight:bold;}
 	#nv_group .bm.fl.cl{width:100%;}
 	#nv_group .fl .bm_h{border-top:none;}
-	#doc-discuz {background: url("img/help-discuz.png") no-repeat top center;margin: 0 auto;height: 70px;}
+	#doc-discuz {background: url("http://static.jx3pve.com/cssjsimg/img/help-discuz.png") no-repeat top center;margin: 0 auto;height: 70px;}
 	#doc-discuz a {display: block;width: 240px;height: 70px;}
 	.meta-authorsky{margin-left:10px;text-align:center;}
-	.meta-authorsky a{color:#fff;background:url("img/author-label4.png") no-repeat 0 0;width:72px;height:24px;line-height:24px;display:inline-block;}
-	.meta-authorsky a:hover{color:#fff;background:url("img/author-label4.png") no-repeat 0 -24px;width:72px;height:24px;line-height:24px;display:inline-block;}
+	.meta-authorsky a{color:#fff;background:url("http://static.jx3pve.com/cssjsimg/img/author-label4.png") no-repeat 0 0;width:72px;height:24px;line-height:24px;display:inline-block;}
+	.meta-authorsky a:hover{color:#fff;background:url("http://static.jx3pve.com/cssjsimg/img/author-label4.png") no-repeat 0 -24px;width:72px;height:24px;line-height:24px;display:inline-block;}
 	#nv_group .xst{font-family:Trebuchet MS,宋体 !important;font-size:12px  !important;}
 	#nv_group .bm_c a:hover{color:#615CFF;}
 	#nv_group .t_f{}

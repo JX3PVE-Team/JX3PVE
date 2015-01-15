@@ -1,0 +1,19 @@
+
+<!-- 置顶 -->
+<a class="top" href="home.php?mod=magic&amp;mid=stick&amp;idtype=tid&amp;id={vanfon_tid}" id="a_stick" onclick="showWindow(this.id, this.href)">置顶</a> | 
+
+<!-- 高亮 -->
+<a class="color" href="home.php?mod=magic&amp;mid=highlight&amp;idtype=tid&amp;id={vanfon_tid}" id="a_stick" onclick="showWindow(this.id, this.href)">高亮</a>
+
+<!-- 帖子作者头像 -->
+<a href="home.php?mod=space&uid=$thread[authorid]" c="1"{if $groupcolor[$thread[authorid]]} style="color: $groupcolor[$thread[authorid]];"{/if}><img src="http://www.jx3pve.com/uc_server/avatar.php?uid=$thread[authorid]&size=middle" /></a>
+
+<!-- 帖子页分类信息 -->
+头像 <a href="/thread-{vanfon_tid}-1-1.html"><img src="http://www.jx3pve.com/uc_server/avatar.php?uid={vanfon_uid}&size=middle" width=136  height=136/></a>
+认证 {vanfon_verify}
+用户组 <img src={vanfon_usergroup}>
+
+<!-- 列表页分类信息 -->
+头像 <a href="{subject_url}"><img src="{vanfon_typeicon}"></a>
+认证 {author_verify}
+用户组 {vanfon_usergroup}

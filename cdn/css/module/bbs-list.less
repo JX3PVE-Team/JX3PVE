@@ -47,16 +47,25 @@
 		background-color:#f2f2f2;
 		border-radius:36px;
 		a{color:#555;}
+		tr{
+			td.num,td:last-child{
+				.none;
+			}
+			td.by{
+				.x(right);
+			}
+		}
 	}
 	//批量操作
 	#mdly label{
 		right:25px;bottom:15px;
 		top:auto;
 	}
-
+	//内容列表
 	.bm_c{
 		.pr;
 		table{
+			table-layout: fixed;
 			//每个帖子所在行包裹层
 			tbody{
 				//每个帖子所在行
@@ -65,7 +74,7 @@
 					td.icn,td.num,td:last-child{.none;}
 					//认证图标
 					td.by{
-						width:150px;.x(right);
+						width:180px;.x(right);.clip;
 						a{margin-right:2px;}
 					}
 					//当前行hover
@@ -73,6 +82,10 @@
 						th,td{
 							background-color:#f7f7f7;
 						}
+					}
+					//头像
+					.user-avt{
+						img{.size(24px,24px);vertical-align: middle;border-radius: 4px;}
 					}
 				}
 				//提示更新
