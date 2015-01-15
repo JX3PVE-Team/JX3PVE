@@ -16,9 +16,10 @@
 <link rel="stylesheet" href="http://www.jx3pve.com/cdn/css/jx3pve.css" type="text/css" media="all">
 <!-- SCRIPT -->
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://static.jx3pve.com/cdn/js/page/wp-sytax.js"></script>
-<script src="http://static.jx3pve.com/cdn/js/page/clipboard.js"></script>
-<script src="http://www.jx3pve.com/cdn/js/page/yylmacro.js"></script>
+<script src="http://static.jx3pve.com/cdn/js/wp/wp-sytax.js"></script>
+<script src="http://static.jx3pve.com/cdn/js/wp/clipboard.js"></script>
+<script src="http://www.jx3pve.com/cdn/js/wp/FixSidebar.js"></script>
+<script src="http://www.jx3pve.com/cdn/js/wp/yylmacro.js"></script>
 
 <?php //wp_head(); ?>
 

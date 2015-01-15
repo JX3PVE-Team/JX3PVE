@@ -45,6 +45,14 @@ jQuery(function($){
 			$('#dialog-important,#mask').hide();
 		});
 
+	//Sidebar
+	//------------------------------------------
+		FixSidebar('.sidebar',100);
+
+
+
+
+
 	//BBS-VIEW
 	//------------------------------------------
 		//第一篇文章的padding-top，预留快速回复
@@ -56,7 +64,7 @@ jQuery(function($){
 	//BBS-LIST
 	//------------------------------------------
 		//列表间色
-		$('.macro-list tr:odd').addClass('even');
+		//$('.macro-list tr:odd').addClass('even');
 
 
 	//ZT

@@ -218,9 +218,9 @@
 						<div class="content">
 							<script type="text/javascript">
 								(function(){
-								var url = "http://widget.weibo.com/distribution/comments.php?width=958&url=auto&border=1&fontsize=12&skin=2&appkey=2467237468&iframskin=2&dpc=1";
+								var url = "http://widget.weibo.com/distribution/comments.php?width=auto&url=auto&border=1&fontsize=12&skin=2&appkey=2467237468&iframskin=2&dpc=1";
 								url = url.replace("url=auto", "url=" + document.URL); 
-								document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:958"></iframe>');
+								document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="auto"></iframe>');
 								})();
 								</script>
 								<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>

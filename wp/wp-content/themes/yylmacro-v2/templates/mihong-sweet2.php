@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: == 糖果觅宏2 ==
+ * Template Name: == 糖果觅宏1 ==
  * @www.shadowsky.cn
  */
 get_header(); ?> 

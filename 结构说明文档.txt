@@ -1,0 +1,10 @@
+bak		临时备份文件
+cdn		css/js/img
+dz		discuz php文件+自定义模块
+log		需求/开发备忘
+misc	服务器配置/广告等
+sys		全局系统页面
+template	discuz模板
+wp		wordpress系统模板+php文件
+
+具体开发要求细则见log文件夹中对应说明文档
