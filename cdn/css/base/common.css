@@ -1,0 +1,69 @@
+/*
+* 全局布局样式
+* 全局变量声明
+* By iRuxu
+*/
+a {
+  outline: none;
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  color: #ff3399;
+  text-decoration: none;
+}
+::-moz-selection {
+  background-color: #049abf;
+  color: #fff;
+}
+::selection {
+  background-color: #049abf;
+  color: #fff;
+}
+.blue1 {
+  background-color: #fafdff;
+  border-color: #cceafe;
+  color: #049abf;
+}
+.blue2 {
+  background-color: #e3f5ff;
+  border-color: #c7ebff;
+  color: #049abf;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1421243596_263323.eot');
+  src: url('http://at.alicdn.com/t/font_1421243596_263323.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1421243596_263323.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1421243596_263323.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('http://at.alicdn.com/t/font_1421243596_263323.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'yhicon';
+  src: url('http://at.alicdn.com/t/font_1421169244_920332.eot');
+  src: url('http://at.alicdn.com/t/font_1421169244_920332.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1421169244_920332.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1421169244_920332.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('http://at.alicdn.com/t/font_1421169244_920332.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont";
+}
+.yhicon {
+  font-family: "yhicon";
+}
+.iconfont,
+.yhicon {
+  font-style: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+}
+.box {
+  margin-top: 76px;
+  -webkit-transition: margin-top 0.4s;
+  transition: margin-top 0.4s;
+}
+.box.menufolder {
+  margin-top: 38px;
+}
