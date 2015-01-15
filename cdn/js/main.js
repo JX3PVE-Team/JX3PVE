@@ -47,7 +47,7 @@ jQuery(function($){
 
 	//Sidebar
 	//------------------------------------------
-		FixSidebar('.sidebar',100);
+		FixSidebar('.sidebar-wrap',96);
 
 
 
