@@ -18,7 +18,7 @@
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://static.jx3pve.com/cdn/js/wp/wp-sytax.js"></script>
 <script src="http://static.jx3pve.com/cdn/js/wp/clipboard.js"></script>
-<script src="http://static.jx3pve.com/cdn/js/module/FixSidebar.js"></script>
+<script src="http://static.jx3pve.com/cdn/js/module/fixSidebar.js"></script>
 <script src="http://www.jx3pve.com/cdn/js/wp/yylmacro.js"></script>
 
 <?php //wp_head(); ?>

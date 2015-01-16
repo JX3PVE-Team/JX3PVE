@@ -3,39 +3,26 @@ jQuery.noConflict();
 
 jQuery(function($){
 
+	//公共
+	//------------------------------------------
+
 	//Header
 	//------------------------------------------
 		//导航
-		$('#nav-folder').click(function(event) {
+		$('#nav-folder').click(function() {
 			$(this).toggleClass('gray');
 			$('#menu').slideToggle();
 			$('.box').toggleClass('menufolder');;
 		});
-
-		//菜单
-		$('#menu-list li').hover(
-		function() {
-			$(this).children('a').addClass('cur').children('span').addClass('cur');
-		}, function() {
-			$(this).children('a').removeClass('cur').children('span').removeClass('cur');
-		});
-
 		//搜索
 		$('#bdcs').find('#bdcs-search-form-submit').val('');
 
+		//菜单
+		$('#menu-list li').cur('a');
+		$('#menu-list li a').cur('span');
+
 		//二级菜单
-		$('#menu-list').children('li').hover(
-		function() {
-			var self = $(this);
-			setTimeout(function(){
-				self.children('ul').slideDown();
-			},150);
-		}, function() {
-			var self = $(this);
-			setTimeout(function(){
-				self.children('ul').slideUp();
-			},150);
-		});
+		$('#menu-list').menu();
 
 		//警告框
 		if($('#dialog-important .content').html().length>30){
@@ -47,11 +34,7 @@ jQuery(function($){
 
 	//Sidebar
 	//------------------------------------------
-		FixSidebar('.sidebar-wrap',96);
-
-
-
-
+		fixSidebar('.sidebar-wrap',96);
 
 	//BBS-VIEW
 	//------------------------------------------
@@ -60,12 +43,10 @@ jQuery(function($){
 		//加载文档后提示
 		$('#vfastpostform').find('.fullvfastpost').addClass('tipsforfastpost');
 
-
 	//BBS-LIST
 	//------------------------------------------
 		//列表间色
 		//$('.macro-list tr:odd').addClass('even');
-
 
 	//ZT
 	//------------------------------------------

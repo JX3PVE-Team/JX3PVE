@@ -12,7 +12,7 @@ $(function() {
 		}else{$(this).show().text("- 收起").parent().parent().find(".yyl_view").show();}
 	});
 
-	FixSidebar('.sidebar',100);
+	fixSidebar('.sidebar',100);
 	
 	/*$("#yyl-title").click(function(){
 		var now_url = window.location.href;
