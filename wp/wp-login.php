@@ -56,17 +56,13 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 	if ( $shake_error_codes && $wp_error->get_error_code() && in_array( $wp_error->get_error_code(), $shake_error_codes ) )
 		add_action( 'login_head', 'wp_shake_js', 12 );
 
-	?><!DOCTYPE html>
-	<!--[if IE 8]>
-		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" <?php language_attributes(); ?>>
-	<![endif]-->
-	<!--[if !(IE 8) ]><!-->
-		<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-	<!--<![endif]-->
+	?>
+	<!DOCTYPE html>
+	<html class="yylmacro-admin" xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?> - 超级宏云管理平台</title>
-	<link rel="stylesheet" href="http://www.jx3pve.com/cssjsimg/wp.css">
+	<link rel="stylesheet" href="http://www.jx3pve.com/cdn/css/jx3pve.css">
 	<?php
 
 	//wp_admin_css( 'wp-admin', true );
@@ -521,7 +517,7 @@ case 'retrievepassword' :
 	 */
 	do_action( 'lost_password' );
 
-	login_header(__('Lost Password'), '<p class="message">' . __('<span style="font-weight:bold;">【致老用户】</span>请输入您的用户名或电子邮箱地址，新密码将发送至你的邮箱。找回密码时请将邮件中地址完整复制到地址栏，默认邮箱会误漏最后的标点符号！原账号超过15字节的将会出错，请联系管理员QQ17229398。<br /><span style="font-weight:bold;">【致新用户】</span>由于注册一律在论坛进行，请找回密码功能也请通过论坛进行，<span style="color:#cc0000;">后续此处找回密码功能将会关闭</span>，且通过论坛注册的用户此处找回功能可能无效。') . '</p>', $errors);
+	login_header(__('Lost Password'), '<p class="message">' . __('<span style="font-weight:bold;">【致老用户】</span><a href="http://www.jx3pve.com/member.php?mod=logging&action=login" target="_blank">点击此处找回密码</a>') . '</p>', $errors);
 
 	$user_login = isset($_POST['user_login']) ? wp_unslash($_POST['user_login']) : '';
 
@@ -544,10 +540,13 @@ case 'retrievepassword' :
 </form>
 
 <p id="nav">
-<div class="jx3_ac">通知：为了让大家更好地发布信息，请大家将新的宏与插件及工具等发布至新版<a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294" class="color:#0000ff">【黑科技】</a>平台！感谢一路有你！——<a href="http://www.jx3pve.com/forum.php?mod=post&action=newthread&fid=294" target="_blank">》立刻发布《</a></div>
+<div class="jx3_ac">
+	通知：为了让大家更好地发布信息，请大家将新的宏与插件及工具等发布至新版<a href="http://www.jx3pve.com/jx3/macro/" target="_blank">宏库</a>与
+	<a href="http://www.jx3pve.com/jx3/tools/" target="_blank">工具</a>栏目！
+	感谢一路有你！
+</div>
 <a href="http://www.jx3pve.com/member.php?mod=register" title="立即注册" target="_blank" style="color:#cc0000;">立即注册</a> | 
-<a href="http://www.jx3pve.com/wp-login.php" title="立即登陆" target="_blank" style="color:#cc0000;">立即登陆</a>
-
+<a href="http:​/​/​www.jx3pve.com/​member.php?mod=logging" title="找回密码" target="_blank" style="color:#cc0000;">找回密码</a>
 </p>
 
 <?php
@@ -863,12 +862,12 @@ default:
 
 <?php if ( ! $interim_login ) { ?>
 <p id="nav">
-<div class="jx3_ac">通知：为了让大家更好地发布信息，请大家将新的宏与插件及工具等发布至新版<a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=294" class="color:#0000ff">【黑科技】</a>平台！感谢一路有你！——<a href="http://www.jx3pve.com/forum.php?mod=post&action=newthread&fid=294" target="_blank">》立刻发布《</a></div>
+<div class="jx3_ac">
+	通知：为了让大家更好地发布信息，请大家将新的宏与插件及工具等发布至新版<a href="http://www.jx3pve.com/jx3/macro/" target="_blank">宏库</a>与
+	<a href="http://www.jx3pve.com/jx3/tools/" target="_blank">工具</a>栏目！感谢一路有你！
+</div>
 <a href="http://www.jx3pve.com/member.php?mod=register" title="立即注册" target="_blank" style="color:#cc0000;">立即注册</a> | 
-<a href="http://www.jx3pve.com/member.php?mod=logging&action=login&referer=http%3A%2F%2Fwww.yylmacro.com%2Fwp-login.php" title="<?php esc_attr_e( 'Password Lost and Found' ); ?>"  style="color:#cc0000;"><?php _e( 'Lost your password?' ); ?></a>
-
-
-
+<a href="http:​/​/​www.jx3pve.com/​member.php?mod=logging" title="找回密码" target="_blank" style="color:#cc0000;">找回密码</a>
 </p>
 <?php } ?>
 

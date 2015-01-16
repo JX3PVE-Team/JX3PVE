@@ -94,9 +94,8 @@
 					height:100%;line-height:@header-height;
 					//头像
 					.avt{
-						width:@header-height;height:@header-height;
-						a{.db;padding:5px;}
-						img{.full;padding:0;}
+						a{.db;}
+						img{width:@header-height - 8px;height:@header-height - 8px;padding:0;margin:2px 0 0 5px;}
 					}
 					//用户名
 					.username{
@@ -113,8 +112,8 @@
 					}
 					//消息提醒
 					.msg{
-						background-repeat:no-repeat;
-						padding-left:20px;
+						background:none;
+						//padding-left:20px;
 					}
 					//分割线
 					.pipe{color:#686666;}
@@ -126,6 +125,7 @@
 		.menu{
 			.clear;height:@header-height;background-color:#333;
 			transition:display 0.2s ease-in;
+			.wp{.pr;}
 
 			//菜单列表
 			.menu-list{
