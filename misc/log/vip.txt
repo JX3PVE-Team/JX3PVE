@@ -1,0 +1,4 @@
+积分系统，流程优化提示，支付过程是支付密码非支付宝登陆密码
+
+支付宝服务窗
+https://fuwu.alipay.com/platform/configPublicPlatform.htm

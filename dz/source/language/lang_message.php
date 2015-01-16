@@ -4,13 +4,24 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: lang_message.php 34254 2013-11-25 03:36:48Z nemohou $
+ *      $Id: lang_message.php 34503 2014-05-12 09:53:16Z nemohou $
  *
  *      This file is automatically generate
  */
 
 $lang = array (
 
+  'credits_balance_insufficient' => '抱歉，{title}不足 {minbalance}。
+   <a class="tobuy" href="http://www.jx3pve.com/home.php?mod=spacecp&amp;ac=credit&amp;op=buy" >立刻充值</a>',
+   
+  'usergroups_join_succeed' => '
+	  <div class="jh-vip">您已选择开通<b>{group}</b> ，<span class="redtips">请激活您的会员身份！</span><br/>
+	  <a class="open_vip" href="http://www.jx3pve.com/home.php?mod=spacecp&ac=usergroup&do=switch&groupid=22&gid=22&handlekey=switchgrouphk">激活<b>普通VIP</b>会员</a>
+	  <a class="open_vip"  href="http://www.jx3pve.com/home.php?mod=spacecp&ac=usergroup&do=switch&groupid=32&gid=32&handlekey=switchgrouphk">激活<b>超级VIP</b>会员</a>
+	  </div>
+  ',
+  
+   
   'undefined_action' => '未定义操作',
   'plugin_nonexistence' => '插件不存在或已关闭',
   'profile_username_protect' => '用户名包含被系统屏蔽的字符',
@@ -44,7 +55,7 @@ $lang = array (
   'thread_rate_log_nonexistence' => '抱歉，指定帖子在近一年内没有评分记录',
   'targetpost_donotbelongto_thisthread' => '目标帖子不属于本主题',
   'credits_transaction_disabled' => '抱歉，交易积分尚未启用，无法使用此功能',
-  'credits_balance_insufficient' => '抱歉，{title}不足 {minbalance}。<a href="http://www.jx3pve.com/home.php?mod=spacecp&amp;ac=credit&amp;op=buy" title="充值" _orighref="http://www.jx3pve.com/home.php?mod=spacecp&amp;ac=credit&amp;op=buy" _tkworked="true"><img style="position:relative;top:8px;" src="http://static.yylmacro.com/jx3pve/useros/vip-cre.png" alt="立刻充值"></a>',
+
   'not_loggedin' => '抱歉，您尚未登录，无法进行此操作',
   'activity_is_not_manager' => '抱歉，您不是此活动的管理者，没有权限进行此操作',
   'activity_is_not_exists' => '抱歉，指定的活动不存在',
@@ -243,6 +254,7 @@ $lang = array (
   'magicuse_object_once_limit' => '抱歉，已对该对象使用过此道具，不能重复使用',
   'magicuse_bad_object' => '尚未正确选择道具要作用的对象',
   'magicuse_has_no_valid_friend' => '抱歉，此道具仅对您的好友有效',
+  'mobile_template_no_found' => '您访问的页面无手机页面，是否进一步访问电脑版？<br /><br /><a href="{url}">继续访问</a><br /><br />',
 
   'portal_status_off' => '抱歉，门户功能尚未开启',
 
@@ -863,9 +875,7 @@ $lang = array (
   'no_privilege_upload' => '抱歉，您目前没有权限上传图片，<a href="home.php?mod=spacecp&ac=usergroup" target="_blank">点击这里查看权限</a>',
 
   'usergroups_span_invalid' => '抱歉，您至少需要支付 {minspan} 天的积分价格',
-  'usergroups_join_succeed' => '<div class="jh-vip">您已选择开通<b>{group}</b> ，<span class="redtips">请激活您的会员身份！</span><br/>
-  <a class="open_vip" href="http://www.jx3pve.com/home.php?mod=spacecp&ac=usergroup&do=switch&groupid=22&gid=22&handlekey=switchgrouphk">激活<b>普通VIP</b>会员</a>
-  <a class="open_vip"  href="http://www.jx3pve.com/home.php?mod=spacecp&ac=usergroup&do=switch&groupid=32&gid=32&handlekey=switchgrouphk">激活<b>超级VIP</b>会员</a></div> ',
+
   'usergroups_exit_succeed' => '您已退出用户组 {group}',
   'usergroup_switch_not_allow' => '您当前的用户组未到期，无法切换到其他用户组',
   'usergroups_switch_succeed' => '您已切换到用户组 {group}',

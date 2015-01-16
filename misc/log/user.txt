@@ -1,0 +1,27 @@
+节日专属特殊勋章
+
+签到
+
+门派勋章
+
+<span style="color:red;font-weight:bold;">以下信息请填写【完整真实资料】，提交后请耐心等待核查，所有认证均为免费，任何第三方收费均为欺诈！</span></br>
+<img src="http://static.yylmacro.com/data/attachment/common/c4/common_1_verify_icon.png" /> <b>认证团队（品牌团队）</b>：认证团队申请的账号名必须为团队名，非私人账号，认证需填写不少于<span style="color:red;font-weight:bold;">10</span>个团员角色名字，且通过认证的团员认证资料中所属团队一栏与本团队名称一致；认证团队在团队荣誉一栏中可填写团队获取过的五甲成绩等，每行一条（此条非必须）。</br>
+<img src="http://dz.yylmacro.com/data/attachment/common/c8/common_2_verify_icon.png" /> <b>认证团长（个人团长）</b>：认证团长认证需填写不少于<span style="color:red;font-weight:bold;">5</span>个团员角色名字，且通过认证的团员认证资料中所属团队一栏与本团队名称一致；</br>
+<img src="http://dz.yylmacro.com/data/attachment/common/ec/common_3_verify_icon.png" /> <b>美女指挥（个人团长）</b>：美女指挥认证需填写不少于<span style="color:red;font-weight:bold;">5</span>个团员角色名字，且通过认证的团员认证资料中所属团队一栏与本团队名称一致；</br>
+<img src="http://dz.yylmacro.com/data/attachment/common/a8/common_4_verify_icon.png" /> <b>认证玩家</b>：增加离线交易版可信度，可辅助团队认证（同一个认证玩家所属团队中最多填写3个）；</br>
+<b>签约作者（含所有栏目）</b>：包含宏签约作者、插件签约作者（含其他工具类）、皮肤签约作者、攻略与资料签约作者等。</br>
+*所有签约作者须保证作品的原创性（含二次修改），并承诺不会发布任何带有病毒传播等非法源码作品。</br>',
+
+
+<p style="color:#0099ff" class="paytips">付款时“请选择交易方式”请选择“<span style="color:#ff0000;font-weight:bold;">即时到账交易</span>”，否则无法自动充值。</p>
+
+
+.tobevip 成为会员
+.tobuy	 立刻充值
+
+
+顶部fix条修改 头像-》用户中心 下拉菜单&其他信息
+
+（diy+门户管理+管理中心）for 管理
+
+昵称插件
