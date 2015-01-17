@@ -1,4 +1,4 @@
-头部	header				
+头部	header				ie6 bug			
 底部	footer
 宏
 	超级宏	yylmacro
