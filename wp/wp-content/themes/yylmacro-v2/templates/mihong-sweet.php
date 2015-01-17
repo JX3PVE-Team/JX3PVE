@@ -5,13 +5,13 @@
  */
 get_header(); ?> 
 <div class="box yylmacro">
-	<div class="main souhong">
+	<div class="main">
 		<!-- 居中内容wrap -->
 		<div class="wp">
 			<!-- 头部广告 -->
 			<div class="banner souhongtop"><script type="text/javascript" src="http://www.jx3pve.com/api.php?mod=js&bid=685"></script></div>
 			<!-- 内容区 -->
-			<div class="primary">
+			<div class="mihong">
 				<!--#文章头部-->
 				<div class="cat-nav">
 					
@@ -43,30 +43,32 @@ get_header(); ?>
 
 				<div class="cat-table">
 					<?php if ( have_posts() ) : ?>
-					<div class="list-hd">	 
-						<span class="cat-cloudid2">云端ID</span>
-						<span class="cat-time2" style="text-align:center">更新日期</span>
-						<span class="cat-title2" style="text-align:center">标 题</a></span>
-						<span class="cat-author2">作 者</span>
-						<span class="cat-xunzhang2"><!--勋 章--></span>
-					</div>
+					<ul class="list-hd">
+						<li> 
+							<span class="cat-cloudid">云端ID</span>
+							<span class="cat-time">更新日期</span>
+							<span class="cat-title">标 题</a></span>
+							<span class="cat-author">作 者</span>
+						</li>	
+					</ul>
 						 
 					<ul class="list-ct">
-					<?php 
-						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-						$args=array('orderby' => 'modified','paged' => $paged,'order' => 'DESC');
-						query_posts($args);
-						while ( have_posts() ) : the_post(); ?>
-					<?php /* Start the Loop */ ?>
+						<?php 
+							$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+							$args=array('orderby' => 'modified','paged' => $paged,'order' => 'DESC');
+							query_posts($args);
+							while ( have_posts() ) : the_post(); ?>
+						<?php /* Start the Loop */ ?>
 						<li>
 							<a href="<?php the_permalink(); ?>" rel="bookmark">
 								<span class="cat-cloudid"> <?php the_ID(); ?></span>   
 								<span class="cat-time"> [ <?php the_modified_time('Ymd'); ?> ]</span>		   
-								<span class="cat-title1"> &reg; <?php the_title(); ?></span>
+								<span class="cat-title"> &reg; <?php the_title(); ?></span>
 								<span class="cat-author"> <?php the_author(); ?></span>
 							</a>
 						</li>
-					<?php endwhile;?>  
+						<?php endwhile;?>  
+					</ul>
 				</div>
 
 						<!-- 分页 -->
