@@ -20,7 +20,7 @@ get_header(); ?>
 			<div class="banner souhongtop"><script type="text/javascript" src="http://www.jx3pve.com/api.php?mod=js&bid=685"></script></div>	
 
 			<!-- 内容区 -->
-			<div class="primary">
+			<div class="mihong">
 				
 				<!--#文章头部-->
 				<div class="cat-nav">
@@ -53,13 +53,15 @@ get_header(); ?>
 						
 				<div class="cat-table">				
 					<?php if ( have_posts() ) :?>
-					<div class="list-hd">
-						<span class="cat-cloudid2">云端ID</span>
-						<span class="cat-time2" style="text-align:center">更新日期</span>
-						<span class="cat-title2" style="text-align:center">标 题</span>
-						<span class="cat-author2">作 者</span>
+					<ul class="list-hd">
+						<li>
+						<span class="cat-cloudid">云端ID</span>
+						<span class="cat-time" style="text-align:center">更新日期</span>
+						<span class="cat-title" style="text-align:center">标 题</span>
+						<span class="cat-author">作 者</span>
 						<span class="cat-xunzhang2"><!--勋 章--></span>
-					</div>
+						</li>
+					</ul>
 					
 					<ul class="list-ct">
 						<?php while ( have_posts("orderby=modified","order=DESC") ) : the_post();  ?>
@@ -68,7 +70,7 @@ get_header(); ?>
 					 		<a href="<?php the_permalink(); ?>" rel="bookmark">
 					 			<span class="cat-cloudid"><?php the_ID(); ?></span>   
 								<span class="cat-time">[ <?php the_modified_time('Ymd'); ?> ]</span>		   
-								<span class="cat-title1">&reg; <?php the_title(); ?></span>
+								<span class="cat-title">&reg; <?php the_title(); ?></span>
 								<span class="cat-author"><?php the_author(); ?></span>	
 					 		</a>
 					 	</li>
