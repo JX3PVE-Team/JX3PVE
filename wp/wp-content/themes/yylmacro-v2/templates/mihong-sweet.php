@@ -43,15 +43,15 @@ get_header(); ?>
 
 				<div class="cat-table">
 					<?php if ( have_posts() ) : ?>
-					<ul class="table-th">	 
-						<li><span class="cat-cloudid2">云端ID</span></li>
-						<li><span class="cat-time2" style="text-align:center">更新日期</span></li>
-						<li><span class="cat-title2" style="text-align:center">标 题</a></span></li>
-						<li><span class="cat-author2">作 者</span></li>	
-						<li><span class="cat-xunzhang2"><!--勋 章--></span></li>
-					</ul>
+					<div class="list-hd">	 
+						<span class="cat-cloudid2">云端ID</span>
+						<span class="cat-time2" style="text-align:center">更新日期</span>
+						<span class="cat-title2" style="text-align:center">标 题</a></span>
+						<span class="cat-author2">作 者</span>
+						<span class="cat-xunzhang2"><!--勋 章--></span>
+					</div>
 						 
-					<ul class="table-tr">
+					<ul class="list-ct">
 					<?php 
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 						$args=array('orderby' => 'modified','paged' => $paged,'order' => 'DESC');
