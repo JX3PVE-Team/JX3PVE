@@ -9,3 +9,5 @@ JS SDK
 微信插件
 
 微社区http://mp.wsq.qq.com/cp
+
+切换到PC版

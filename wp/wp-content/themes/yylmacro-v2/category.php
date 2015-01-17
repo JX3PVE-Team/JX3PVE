@@ -12,14 +12,11 @@
  */
 
 get_header(); ?>
-<!--
-<div id="pt" class="bm cl">
-<div class="z"><a href="http://www.jx3pve.com" class="nvhm" title="首页">剑网3PVE官方站</a><em>»</em><a href="http://www.jx3pve.com/cloud">云端宏</a></div><div class="clear"></div>
-</div> -->
 <div class="box">
 	<div class="main souhong">
 		<!-- 居中内容wrap -->
 		<div class="wp">
+		
 			<!-- 内容区 -->
 			<div class="primary">
 					<!--#文章头部-->
@@ -91,6 +88,7 @@ get_header(); ?>
 				<!-- 底部banner -->
 				<div class="banner souhongbot"><script type="text/javascript" src="http://www.jx3pve.com/api.php?mod=js&bid=684"></script></div>
 			</div><!-- #primary -->
+
 		</div>
 	</div>
 </div>
