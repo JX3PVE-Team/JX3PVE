@@ -1,6 +1,5 @@
 # JX3PVE
-jx3pve.com前端协同开发
-
 ======================
 
-加入团队联系 17229398@qq.com
++ 团队QQ群 387152956
++ 招募 http://www.jx3pve.com/thread-7614-1-1.html

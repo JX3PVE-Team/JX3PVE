@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="zh-CN">
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- TRANSFORM -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="renderer" content="webkit">
@@ -13,8 +13,7 @@
 <meta name="Description" content="《剑网3》超级宏官网: 剑侠情缘3/剑网三宏下载与分享，最全最新的宏网站，剑网三最新插件原创地，剑网三原创资料库，剑网三风云榜。" />
 <!-- STYLE -->
 <link rel="stylesheet" href="http://static.jx3pve.com/cdn/css/page/wp-sytax.css" />
-<!-- <link rel="stylesheet" href="http://www.jx3pve.com/cdn/css/jx3pve.css" type="text/css" media="all"> -->
-<link rel="stylesheet" href="wp-content/themes/yylmacro-v2/css/jx3pve.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.jx3pve.com/cdn/css/jx3pve.css" type="text/css" media="all">
 
 <!-- SCRIPT -->
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
