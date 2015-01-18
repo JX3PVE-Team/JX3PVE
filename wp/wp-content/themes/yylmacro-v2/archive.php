@@ -18,36 +18,35 @@
  */
 
 get_header(); ?>
+<div class="box macrotg">
+	<div class="main">
+		<div class="wp">
+			<div class="content">
 
-	<section id="primary" class="site-content">
-		<div id="content" class="macro-list" role="main">
+				<?php if ( have_posts() ) : ?>
+					<h1><?php
+						if ( is_day() ) :
+							printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
+						elseif ( is_month() ) :
+							printf( __( 'Monthly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentytwelve' ) ) . '</span>' );
+						elseif ( is_year() ) :
+							printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentytwelve' ) ) . '</span>' );
+						else :
+							_e( 'Archives', 'twentytwelve' );
+						endif;
+					?></h1>
 
-		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php
-					if ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
-					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentytwelve' ) ) . '</span>' );
-					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentytwelve' ) ) . '</span>' );
-					else :
-						_e( 'Archives', 'twentytwelve' );
-					endif;
-				?></h1>
-			</header><!-- .archive-header -->
+	            <ul>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+					<?php endwhile; ?>
+	            </ul>
+				<div class="macro-pages"><?php wp_pagenavi(); ?></div>
 
-            <ul>
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
-			<?php endwhile; ?>
-            </ul>
-			<div id="macro-list-page"><?php wp_pagenavi(); ?></div>
-
-		<?php endif; ?>
-
-		</div><!-- #content -->
-	</section><!-- #primary -->
-
+				<?php endif; ?>
+			</div><!-- #content -->
+		</div>
+	</div>
+</div>
 <?php get_footer(); ?>
