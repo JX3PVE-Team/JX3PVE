@@ -3,13 +3,9 @@
 cdn		css/js/img
 dz		discuz系统
 wp 		wordpress系统
+sys		全局系统页面
+log		产品需求/开发备忘/测试结果
 misc	其他
-	log		需求/开发备忘
-	sys		全局系统页面
-	ad		广告文案及内容
-	wp-mod	wp系统调用模块
-	dz-mod	dz系统调用模块
-	bak		临时备份文件
 
 //全局布局方案
 ------------------------------------------------

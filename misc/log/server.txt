@@ -1,7 +1,0 @@
-dz config 
-getpage config - wp
-icon -> cdn
-wp-config
-重启服务器
-
-360官网直达 http://zhanzhang.haosou.com/?m=SiteCertification&a=siteVerify
