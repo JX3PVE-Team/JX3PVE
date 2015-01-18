@@ -1,0 +1,52 @@
+/*
+* Channel : 公共顶部导航模块
+* By iRuxu
+*/
+.header{
+/* Menu
+-------------------------------------------------------------- */
+	.menu{
+		.clear;height:@header-height;background-color:#333;
+		transition:display 0.2s ease-in;
+		.wp{.pr;}
+
+		//菜单列表
+		.menu-list{
+			.fl;.hr(left);
+			li{
+				.fl;margin-right:22px;.pr;text-shadow: -1px -1px 0 #000;.pointer;.dbi;
+				a{
+					.db;transition:color 0.3s ease-in;line-height:@header-height;
+					&.cur{
+						color:@blue;
+					}
+				}
+				span{
+					margin-right:8px;
+					font-size:24px;
+					width:24px;
+					.dbi;.pointer;
+					.iconfont;
+					&.cur{
+						animation:navIcon 0.2s ease-in forwards;
+					}
+				}
+			}
+			ul{
+				.pa;top:38px;left:0;.none;
+				background-color:#333;border-radius:0 0 4px 4px;box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+				li{
+					float:none;margin:0;width:200px;border-bottom:1px solid #444;padding:0 10px;
+					&:last-child{border-radius:0 0 4px 4px;}
+					&:hover{background-color:#222;}
+				}
+			}
+		}
+
+		//搜索
+		.search{
+			.mod-search;
+		}
+
+	}
+}

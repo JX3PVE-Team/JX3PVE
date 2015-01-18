@@ -1,0 +1,232 @@
+/*
+* 论坛单页
+* By iRuxu
+*/
+
+#postlist{
+	//表格布局
+		&.bm{
+			border:none;
+		}
+		.ad{
+			.pls,.plc{background:none;}
+		}
+		&>div{
+			border-bottom:1px solid #cceafe;
+		}
+		.pls{
+			background: #fafdff;border-right: 1px solid #cceafe;
+			.avatar{
+				img{border:1px solid #ddd;box-shadow:0 0 4px #ddd;background:none;}
+			}
+			.pi{
+				padding-left:0;
+				a.xw1{width:auto;}
+			}
+		}
+		.plc{
+			.authi{
+				.authicn{width:auto;}
+			}
+		}
+
+	//分类信息
+		.bbs-view-primary{
+			background-color:#e3f5ff;
+			border:1px solid #c9eafd;
+			padding:20px;.pr;
+			margin-bottom:10px;
+			&:hover{
+				.honey{.tm(1);}
+			}
+
+			.info-list{
+				li{
+					line-height:22px;height:22px;
+					span{width:100px;}
+				}
+			}
+			.panel-list{
+				.pa;right:20px;top:20px;padding:2px 10px;border-radius:4px;
+				.gray-btn;
+
+				&:before{content:'\e62f';.iconfont;color:rgba(255,51,153,0.3);transition:all 0.3s ease-in;}
+				&:hover{&:before{color:#ff3399;}}
+				
+				a{
+					margin:0 4px;
+					transition:all 0.3s ease-in;
+					padding:0;
+				}
+				.top{
+					&:hover{
+					}
+				}
+				.color{
+					&:hover{
+					}
+				}
+			}
+			.bdsharebuttonbox{
+
+			}
+			.honey{
+				.pa;bottom:26px;right:20px;
+				.tm(0.6);transition:0.2s ease-in;
+				a{
+					padding:2px 0 2px 25px;
+					height:20px;width:auto;
+					margin-right:5px;
+					background-image:url('@{url}/bbs/bbs-view/icon.png');background-repeat:no-repeat;
+					&:hover{.tm(1);}
+				}
+				.icon-support{
+					background-position:2px -20px;
+					&:hover{color:#fe438e;}
+					span{width:24px !important;.dbi;}
+				}
+				.icon-home{
+					background-position:2px -60px;
+					&:hover{color:#7fd341;}
+				}
+				.icon-top{
+					background-position:2px -40px;
+					&:hover{color:#00ccff;}
+				}
+				.icon-color{
+					background-position:2px 0;
+					&:hover{color:#d387ff;}
+				}
+			}
+		}
+
+	//文章内容
+		.t_fsz{
+			.pr;line-height:1.5;
+			img{max-width:720px;}
+			.t_f{
+				color:#555;.fz(12px,1.8);
+			}
+
+			//快速回复
+				#vfastpostform{
+					.ct(x);top:10px;
+					.fullvfastpost{
+						border:1px solid @blue;
+						margin:0;
+						border-radius:3px;
+						box-shadow:0 0 4px rgba(0,204,255,0.5);
+						&.tipsforfastpost{
+							animation:fastpostborder 0.5s ease-in 1s 4;
+						}
+					}
+				}
+
+			//回复可见
+				.showhide,.locked{
+					border:1px dashed @bluex;
+					background-color:#fafdff;
+					font-size:12px !important;line-height:2;letter-spacing:0.5px;
+				}
+				//回复可见
+					.showhide{
+						color:#555;
+						h4{color:@bluex;border-bottom:1px solid #cceafe;line-height:26px;height:26px;
+							a{
+								.dbi;text-indent:-2000px;.pr;top:5px;margin:0 3px;
+								width:84px;height:16px;
+								background:url('@{url}/common/vip/vip.gif') no-repeat 0 0;
+							}
+						}
+					}
+
+				//需回复可见
+					.locked{
+						color:@bluex;
+						a{color:@bluex;}
+						.tobevip{
+							.dbi;text-indent:-2000px;.pr;top:5px;margin:0 3px;
+							width:84px;height:16px;
+							background:url('@{url}/common/vip/vip.gif') no-repeat 0 0;
+						}
+					}
+
+		}
+}
+
+//印戳
+	#threadstamp img{
+		.z(10);
+	}
+
+//发帖与回帖按钮
+	#newspecial,#newspecialtmp,#post_replytmp,#post_reply{
+		.shark;
+	}
+
+//点评
+.content-wrap{
+	.psth,.cm.psth{
+		background-color:#cceafe;color:@bluex;
+		
+		.icon_ring{
+			background-color:#fff ;border-color:@bluex;
+			&:hover{
+				background-color:@bluex;border-color:#fff;
+			}
+		}
+	}
+	.pstl{
+		border-bottom:1px dotted #ddd;
+		//点评a
+		.psta{
+			a:link{font-weight: normal;color:#444;}
+		}
+	}
+	.ratl{
+		.xw1 {
+			.xi1{
+				background-color:#cceafe;
+				color:@bluex;
+			}
+		}
+	} 
+}
+
+//快速下一页
+	.pgbtn{
+		margin-bottom:20px;
+		a{
+			.gray-btn;
+			color:#777;padding:0;line-height:42px;font-weight:bold;
+			&:hover{
+				background-color:#eee;
+				border:1px solid #d9d9d9;
+				color:#666;
+				box-shadow:0 0 2px #d9d9d9;
+			}
+		}
+	}
+
+//底部快速回复
+	#f_pst{
+		table{
+			.pls{background:none;border:none;
+				.avatar{
+					img{padding:5px;border:1px solid #0099ff;border-radius:4px;}
+				}
+			}
+			.plc{
+				padding:15px;
+				.cl{
+					#fastsmiliesdiv{.none;}
+				}
+				.hasfsl{
+					margin-right: 0;
+				}
+			}
+			#fastpostsubmit{
+				.blue-btn;
+			}
+		}
+	}
