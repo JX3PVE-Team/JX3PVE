@@ -9,8 +9,8 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-<div>
-	<iframe src="http://www.jx3pve.com/portal.php?mod=topic&topicid=63" height="89px" width="100%"></iframe>
+<div class="wp-footer">
+	<iframe src="http://www.jx3pve.com/jx3/iframe/footer/" height="89px" width="100%"></iframe>
 </div>
 </body>
 </html>

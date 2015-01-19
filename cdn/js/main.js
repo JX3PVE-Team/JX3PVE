@@ -5,6 +5,7 @@ jQuery(function($) {
 
 	//公共
 	//------------------------------------------
+	
 
 	//Header
 	//------------------------------------------
@@ -22,32 +23,30 @@ jQuery(function($) {
 	$('#menu-list li').cur('a');
 	$('#menu-list li a').cur('span');
 
-	//导航滑动效果
-	$('#menu-list').menu();
-
-	//警告框
-	var mask_layout = $('#dialog-important,#mask');
-	if ($('#dialog-content').html().length > 30) {
-		mask_layout.css('display', 'block');
+	//判断是否为嵌入头部
+	var is_yylheader;
+	if($('base').attr('target')=='_blank'){
+		is_yylheader = true;
+	}else{
+		is_yylheader = false;
 	}
-	$('#dialog-close').on('click', function() {
-		mask_layout.hide();
-	});
-
-	//wordpress嵌入页头部修复,app独立窗口
-	var is_yylheader = $('base').attr('target');
-	var nav_app = $('.header .nav .app').children('i');
-	if (is_yylheader == '_blank') {
-		nav_app.remove();
-	} else {
-		nav_app.click(function() {
-			return;
-			//mask_layout.show();
-			//$('#dialog-content').append(nav_app);
+	//wp系统头部效果
+	if(is_yylheader){
+		$('.header .nav .app').children('i').remove();
+	//dz系统头部效果
+	}else{
+		//导航滑动效果
+		$('#menu-list').menu();
+		//警告框
+		var mask_layout = $('#dialog-important,#mask');
+		if ($('#dialog-content').html().length > 30) {
+			mask_layout.css('display', 'block');
+		}
+		$('#dialog-close').on('click', function() {
+			mask_layout.hide();
 		});
 	}
-
-
+	
 	//Sidebar
 	//------------------------------------------
 	fixSidebar('.sidebar-wrap', 96);

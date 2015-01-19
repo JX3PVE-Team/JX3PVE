@@ -12,24 +12,26 @@
  */
 
 get_header(); ?>
-<div id="main" class="yz-main">
-	<section id="primary" class="site-content">
-		<div id="content" class="macro-list"role="main">
+<div class="box macrotg">
+	<div class="main">
+		<div class="wp">
+			<div class="content">
 
-		<?php if ( have_posts() ) : ?>
-				<h1 class="archive-title"><?php printf( __( 'About: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
+				<?php if ( have_posts() ) : ?>
+				<h1><?php printf( __( 'About: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
 
-            <ul>
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<a href="<?php the_permalink(); ?>" rel="bookmark"><li><?php the_title(); ?></li></a>
-			<?php endwhile; ?>
-            </ul>
-			<div id="macro-list-page"><?php wp_pagenavi(); ?></div>
+	            <ul>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+					<?php endwhile; ?>
+	            </ul>
+				<div class="macro-pages"><?php wp_pagenavi(); ?></div>
 
-		<?php endif; ?>
+				<?php endif; ?>
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
+			</div><!-- #content -->
+		</div>
+	</div>
 </div>
 <?php get_footer(); ?>

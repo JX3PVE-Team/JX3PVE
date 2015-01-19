@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="zh-CN">
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- TRANSFORM -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="renderer" content="webkit">
@@ -14,6 +14,7 @@
 <!-- STYLE -->
 <link rel="stylesheet" href="http://static.jx3pve.com/cdn/css/page/wp-sytax.css" />
 <link rel="stylesheet" href="http://www.jx3pve.com/cdn/css/jx3pve.css" type="text/css" media="all">
+
 <!-- SCRIPT -->
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://static.jx3pve.com/cdn/js/wp/wp-sytax.js"></script>
