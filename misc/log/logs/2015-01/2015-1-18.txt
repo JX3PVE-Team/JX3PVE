@@ -11,10 +11,9 @@
 //开发			iRuxu			[系统] css/img对应整理,header模块分离
 //开发			iRuxu			[公共] [header]ie6兼容
 //开发			iRuxu			[公共] [header]discuz公告移植顶部
-//开发			iRuxu			[副本] 修复现有bug页面
 //开发			iRuxu			[宏库] [macro]回复可见边框颜色加深
 //开发			iRuxu			[宏库] [yylamcro]超级宏顶部模块提示国服无法使用，仅作参考，侧边栏加入老论坛版块链接
-
+开发			iRuxu			[模块] 宏语法高亮，发布页新标签功能引导
 
 开发			Yuhan			[宏库] [yylmacro]插件及单页页面恢复
 
