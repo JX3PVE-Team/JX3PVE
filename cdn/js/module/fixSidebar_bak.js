@@ -2,12 +2,11 @@
 * fixSidebar v0.2
 * fix the sidebar when window scroll
 * https://github.com/iRuxu
-* update 2015.1.19
+* update 2015.1.18
 ------------------------------------------------------*/
 	//args:
 	//sidebar name: #target 
 	//[top value] : 100(top-margin-window)
-
 	(function($){ 
 		//定义
 		function fixSidebar(selector,top){
