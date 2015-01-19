@@ -60,12 +60,37 @@
 			}
 		}
 
+		.macro-author-search{
+			.vm{
+				.mini-search;
+				background-color:#fff;padding:5px;
+			}
+		}
+
 	}
 
 	//内容区
 	.content-wrap{
 		.fr;width:@wp - @sd - 20px;
 		padding:20px 0;
+
+		//心法过滤
+		.ptn.pbn.mbm{border:none !important;}
+		.tsm {margin-bottom:0;height:60px;.clip;table-layout:fixed;}
+		.tsm li{
+			width:70px;height:25px;
+			a{color:#555;.db;.full;}
+			a:hover{color:@dk-blue;}
+		}
+		#fontsearch{
+			border-radius:8px;background-color:#f2f2f2;border:none !important;
+			li{text-indent:5px;line-height:25px;
+				&:hover{background-color:@dk-blue;border-radius:6px;a{color:#fff;}}
+			}
+		}
+		#searhsort{
+			.none;
+		}
 
 		//隐藏板块名等
 		.bm.bml.pbn,#thread_types{.none;}
@@ -82,11 +107,25 @@
 			padding:20px;
 			box-shadow:0 0 4px rgba(0,0,0,0.1);
 			border:1px solid #ddd;
+
+			//version2
+			.macro-li{
+				border-bottom: 1px solid #C2D5E3;height:39px;line-height:39px;width:100%;.clear;
+				span{
+					&.info-macro-avt img{width:24px;.y;}
+					&.info-macro-role{}
+					&.info-macro-type{}
+					&.info-macro-title{}
+					&.info-macro-author{.fr;}
+				}
+			}
+
 		}
 
 		//列表
 		.macro-list{
 			width:100%;.clip;table-layout:fixed;
+			//version1
 			.item{
 				height:32px;.fz(12px,32px);border-bottom:1px dashed #ccc;
 				a:hover{color:#1b7acb;}
@@ -109,6 +148,8 @@
 					span{margin-left:5px;a{margin-left:2px;}}
 				}
 			}
+
+
 		}
 
 		//文章标题

@@ -4,7 +4,7 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: function_threadsort.php 34222 2013-11-15 09:36:18Z nemohou $
+ *      $Id: function_threadsort.php 32856 2013-03-15 03:11:50Z monkey $
  */
 
 if(!defined('IN_DISCUZ')) {
@@ -251,9 +251,7 @@ function showsorttemplate($sortid, $fid, $sortoptionarray, $templatearray, $thre
 					$sortthreadlist[$tid][$arrayoption['title']] = $_G['optionvaluelist'][$sortid][$tid][$arrayoption['identifier']]['value'] = $imgoptiondata['url'] ? "<img src=\"$imgoptiondata[url]\" onload=\"thumbImg(this)\" $maxwidth $maxheight border=\"0\">" : '';
 				} else {
 					$sortthread['value'] = '';
-					if($imgoptiondata['aid']) {
-						$sortthread['value'] = getforumimg($imgoptiondata['aid'], 0, 120, 120);
-					} elseif($imgoptiondata['url']) {
+					if($imgoptiondata['url']) {
 						$sortthread['value'] = $imgoptiondata['url'];
 					}
 					$sortthreadlist[$tid][$arrayoption['title']] = $_G['optionvaluelist'][$sortid][$tid][$arrayoption['identifier']]['value'] = $sortthread['value'] ? $sortthread['value'] : './static/image/common/nophotosmall.gif';
@@ -446,9 +444,9 @@ function threadsortshow($sortid, $tid) {
 							$optiondata[$optionid]['value'] = $option['protect']['mode'] == 1 ? '<image src="'.stringtopic($optiondata[$optionid]['value']).'">' : (!defined('IN_MOBILE') ? '<span id="sortmessage_'.$option['identifier'].'"><a href="###" onclick="ajaxget(\'forum.php?mod=misc&action=protectsort&tid='.$tid.'&optionid='.$optionid.'\', \'sortmessage_'.$option['identifier'].'\');return false;">'.lang('forum/misc', 'click_view').'</a></span>' : $optiondata[$optionid]['value']);
 							$_G['forum_option'][$option['identifier']]['value'] = $optiondata[$optionid]['value'] ? $optiondata[$optionid]['value'] : $option['defaultvalue'];
 						} elseif($option['type'] == 'textarea') {
-							$_G['forum_option'][$option['identifier']]['value'] = $optiondata[$optionid]['value'] != '' ? nl2br($optiondata[$optionid]['value']) : '';
+							$_G['forum_option'][$option['identifier']]['value'] = $optiondata[$optionid]['value'] ? nl2br($optiondata[$optionid]['value']) : '';
 						} else {
-							$_G['forum_option'][$option['identifier']]['value'] = $optiondata[$optionid]['value'] != '' ? $optiondata[$optionid]['value'] : $option['defaultvalue'];
+							$_G['forum_option'][$option['identifier']]['value'] = $optiondata[$optionid]['value'] ? $optiondata[$optionid]['value'] : $option['defaultvalue'];
 						}
 					}
 				} else {
@@ -482,6 +480,7 @@ function threadsortshow($sortid, $tid) {
 			$typetemplate = preg_replace($searchvalue, "showoption('\\1', 'value')", $typetemplate);
 			$typetemplate = preg_replace($searchunit, "showoption('\\1', 'unit')", $typetemplate);
 			$typetemplate = preg_replace($searchdownloads, "showoption('\\1', 'downloads')", $typetemplate);
+
 		}
 	}
 

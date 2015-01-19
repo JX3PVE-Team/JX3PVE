@@ -53,9 +53,11 @@
 	</div>
 	<div class="bm_c">
 		<!--{if empty($_G['forum']['picstyle']) || $_G['cookie']['forumdefstyle']}-->
-			<script type="text/javascript">var lasttime = $_G['timestamp'];var listcolspan= '{if !$_GET['archiveid'] && $_G['forum']['ismoderator']}6{else}5{/if}';</script>
+			<!--<script type="text/javascript">var lasttime = $_G['timestamp'];var listcolspan= '{if !$_GET['archiveid'] && $_G['forum']['ismoderator']}6{else}5{/if}';</script>-->
 		<!--{/if}-->
-		<div id="forumnew" style="display:none"></div>
+		<!-- <div id="forumnew" style="display:none"></div> -->
+
+		
 		<form method="post" autocomplete="off" name="moderate" id="moderate" action="forum.php?mod=topicadmin&action=moderate&fid=$_G[fid]&infloat=yes&nopost=yes">
 			<input type="hidden" name="formhash" value="{FORMHASH}" />
 			<input type="hidden" name="listextra" value="$extra" />
@@ -75,9 +77,11 @@
 						</tr>
 					</tbody>
 				<!--{/if}-->
+
 				<!--{if !$separatepos || !$_G['setting']['forumseparator']}-->
 					<tbody id="separatorline" class="emptb"><tr><td class="icn"></td><!--{if !$_GET['archiveid'] && $_G['forum']['ismoderator']}--><td class="o"></td><!--{/if}--><th></th><!--{if CURMODULE == 'guide'}--><td class="by"></td><!--{/if}--><td class="by"></td><td class="num"></td><td class="by"></td></tr></tbody>
 				<!--{/if}-->
+
 				<!--{if $_G['forum_threadcount']}-->
 					<!--{if empty($_G['forum']['picstyle']) || $_G['cookie']['forumdefstyle']}-->
 						<!--{loop $_G['forum_threadlist'] $key $thread}-->							
