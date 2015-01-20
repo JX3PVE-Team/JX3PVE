@@ -1,0 +1,84 @@
+<!--{template common/header}-->
+<!--[name] 视频专栏 list_video [/name]-->
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+		<a href="$_G[setting][navs][1][filename]">{lang portal}</a> <em>&rsaquo;</em>
+		<!--{loop $cat[ups] $value}--> <a href="{$portalcategory[$value['catid']]['caturl']}">$value[catname]</a><em>&rsaquo;</em><!--{/loop}-->
+		$cat[catname]
+	</div>
+</div>
+
+<!--{ad/text/wp a_t}-->
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="ct2 wp cl">
+	<div class="mn">
+		<!--{ad/articlelist/mbm hm/1}--><!--{ad/articlelist/mbm hm/2}-->
+		<!--[diy=listcontenttop]--><div id="listcontenttop" class="area"></div><!--[/diy]-->
+		<div class="bm">
+			<div class="bm_h cl gallery-title">
+				<!--{if $_G[setting][rssstatus] && !$_GET['archiveid']}--><a href="portal.php?mod=rss&catid=$cat[catid]" class="y xi2 rss" target="_blank" title="RSS">{lang rss_subscribe_this}</a><!--{/if}-->
+				<!--{if ($_G['group']['allowpostarticle'] || $_G['group']['allowmanagearticle'] || $categoryperm[$catid]['allowmanage'] || $categoryperm[$catid]['allowpublish']) && empty($cat['disallowpublish'])}-->
+				<a href="portal.php?mod=portalcp&ac=article&catid=$cat[catid]" class="y xi2 addnew">{lang article_publish}</a>
+				<!--{/if}-->
+				<h1 class="xs2">$cat[catname]</h1>
+			</div>
+			<!--{if $cat[subs]}-->
+			<div class="bm_c bbda">
+				{lang sub_category}:&nbsp;&nbsp;
+				<!--{eval $i = 1;}-->
+				<!--{loop $cat[subs] $value}-->
+				<!--{if $i != 1}--><span class="pipe">|</span><!--{/if}--><a href="{$portalcategory[$value['catid']]['caturl']}" class="xi2">$value[catname]</a><!--{eval $i--;}-->
+				<!--{/loop}-->
+			</div>
+			<!--{/if}-->
+			<div class="bm_c xld">
+			<dl class="bbda cl">
+			<!--{loop $list['list'] $value}-->
+				<!--{eval $highlight = article_title_style($value);}-->
+				<!--{eval $article_url = fetch_article_url($value);}-->
+				
+					
+					<dd class="xs2 cl" style="float:left;width:220px;padding: 2px;">
+						<!--{if $value[pic]}--><div class="atc"><a href="$article_url" target="_blank"><img src="$value[pic]" alt="$value[title]" title="$value[title]" class="tn" width=200 height=120 style="max-width: 200px; max-height: 120px;"/></a></div><!--{/if}-->
+					</dd>
+					
+				
+			<!--{/loop}-->
+			</dl>
+			</div>
+			<!--[diy=listloopbottom]--><div id="listloopbottom" class="area"></div><!--[/diy]-->
+		</div>
+		<!--{ad/articlelist/mbm hm/3}--><!--{ad/articlelist/mbm hm/4}-->
+		<!--{if $list['multi']}--><div class="pgs cl">{$list['multi']}</div><!--{/if}-->
+
+		<!--[diy=diycontentbottom]--><div id="diycontentbottom" class="area"></div><!--[/diy]-->
+
+	</div>
+	<div class="sd pph">
+
+		<div class="drag">
+			<!--[diy=diyrighttop]--><div id="diyrighttop" class="area"></div><!--[/diy]-->
+		</div>
+
+ 
+
+		<div class="drag">
+			<!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->
+		</div>
+
+	</div>
+</div>
+
+<div class="wp mtn">
+	<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<!--{template common/footer}-->
