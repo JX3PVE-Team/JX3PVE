@@ -1,0 +1,24 @@
+<!--{if (!empty($_G[forum][domain]) && !empty($_G['setting']['domain']['root']['forum'])) || $moderatedby || ($_G['page'] == 1 && $_G['forum']['rules'])}-->
+						<div class="bm_c cl pbn">
+							<!--{if !empty($_G[forum][domain]) && !empty($_G['setting']['domain']['root']['forum'])}-->
+								<div class="pbn">{lang forum_domain}: <a href="http://{$_G[forum][domain]}.{$_G['setting']['domain']['root']['forum']}" id="group_link">http://{$_G[forum][domain]}.{$_G['setting']['domain']['root']['forum']}</a></div>
+							<!--{/if}-->
+							<!--{if $moderatedby}--><div>{lang forum_modedby}: <span class="xi2">$moderatedby</span></div><!--{/if}-->
+							<!--{if $_G['page'] == 1 && $_G['forum']['rules']}-->
+								<div id="forum_rules_{$_G[fid]}" style="$collapse['forum_rules'];">
+									<div class="ptn xg2">$_G['forum'][rules]</div>
+								</div>
+							<!--{/if}-->
+						</div>
+					<!--{/if}-->
+
+		<div class="banzhu"><span title="{lang bbs-banzhu}">本版主编</span> $moderatedby</div>
+
+
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a>$navigation
+	</div>
+
+	<div class="banzhu"><span title="{lang bbs-banzhu}">本版主编</span> $moderatedby</div>
+</div>

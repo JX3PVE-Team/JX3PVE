@@ -3,25 +3,8 @@
 
 .ct2_a_r .mn{width:960px - 40px;}
 
-//宏单页与列表页细节
+//宏单页与列表页侧边栏
 .macro{
-	padding:20px 0;background-color:#f2f2f2;
-
-	.boardnav,.macro-view{
-		.clear;background-color:#f2f2f2;
-	}
-
-	//顶部操作条与分页
-	#modmenu.xi2.pbm,#pgt.pgs{.none;}
-
-	//页面标题
-	.title-wrap{
-		.fz(32px,60px);font-family:'微软雅黑';
-		.pr;border-bottom:2px solid #555;
-		span{.fz(18px,60px);color:#666;}
-		.iconfont{.fz(32px,60px);margin-right:5px;color:@blue;}
-	}
-
 	//侧栏板
 	.sidebar-wrap{
 		.fl;width:200px;
@@ -80,7 +63,75 @@
 			background:url('@{url}/pve/macro/btn-pub-black.png') no-repeat 0 0;
 			a{.db;.full;.size(180px,60px);}
 		}
+	}
 
+	//心法导航
+	.jx3-role-mod1{
+		.wrap{
+			.clear;width:220px;
+			padding:10px 5px;
+		}
+		li{
+			.fl;width:100px;margin-bottom:5px;.pr;
+			&:hover{
+				//.shark;
+				i{
+					//transform:rotate(360deg);transition:0.3s ease-out;
+					animation:roleshow 0.3s;
+				}
+			}
+			a{.db;.full;}
+			a:hover{color:#333;font-weight:bold;span{font-weight:normal;}}
+			span{.pa;
+				top: -25px;
+				left: 0px;
+				width: 120px;
+				background: #444;
+				border:1px solid #666;
+				box-shadow:1px 1px 0 #ddd;
+				border-radius: 4px;
+				padding: 2px 2px 2px 5px;
+				color: #ccc;
+				.tm(0);
+				.arrow(b,10,#444);
+				animation:tipsshow 3s ease-out;
+			}
+		}
+	}
+
+}
+
+//宏单页与列表页内容区
+.macro{
+	padding:20px 0;background-color:#f2f2f2;
+
+	//版主面包
+	#pt{
+		//border-bottom:1px dotted #ddd;
+		height:32px;
+		.banzhu{
+			span{
+				background: #0084ff;
+				color: #fff;
+				border-radius: 4px;
+				padding: 4px 8px;
+			}
+		}
+	}
+
+	.boardnav,.macro-view{
+		.clear;background-color:#f2f2f2;
+	}
+
+	//顶部操作条与分页
+	#modmenu.xi2.pbm,#pgt.pgs{.none;}
+
+	//页面标题
+	.title-wrap{
+		.fz(32px,60px);font-family:'微软雅黑';
+		.pr;border-bottom:2px solid #555;
+		span{.fz(18px,60px);color:#666;}
+		.iconfont{.fz(32px,60px);margin-right:5px;color:@blue;}
 	}
 
 	//内容区
@@ -207,7 +258,7 @@
 	//信息条
 	.pi{
 		border:none;background-color:#eee;border-radius:24px;padding:0 5px;height:28px;line-height:28px;
-		strong{.none;}
+		strong a{border:none;&:hover{border:none;}}
 		#fj{
 			label{height: 100%;line-height: inherit;}
 			input{height:auto;line-height:1;.pr;top:5px;}
@@ -264,25 +315,6 @@
 //宏发布页面正文
 .macro{
 	#fontsearch{.none;}
-	//心法导航
-	.jx3-role-mod1{
-		.wrap{
-			.clear;width:220px;
-			padding:10px 5px;
-		}
-		li{
-			.fl;width:100px;margin-bottom:5px;
-			&:hover{
-				//.shark;
-				i{
-					//transform:rotate(360deg);transition:0.3s ease-out;
-					animation:roleshow 0.3s;
-				}
-			}
-			a{.db;.full;}
-			a:hover{color:#333;font-weight:bold;}
-		}
-	}
 	.mn{
 		//输入框
 		input,textarea{

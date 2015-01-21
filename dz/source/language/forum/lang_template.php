@@ -10,6 +10,7 @@
  */
 
 $lang = array (
+  'bbs-banzhu' => '如遇到任何疑问或异议可私信主编咨询,或至站务反馈版块进行投诉',
   'jx3pve-post' => '发布信息',
   'jx3pve' => 'JX3PVE.COM',
   'jx3snow' => '小雪读条官网',

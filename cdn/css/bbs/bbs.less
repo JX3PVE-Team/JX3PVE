@@ -25,7 +25,7 @@
 	#pt{width:@wp;margin:0 auto;}
 	//primary中
 	#pt{
-		width:auto;margin:0 auto;background:none;border:none;
+		width:auto;margin:0 auto;background:none;border:none;.pr;
 	}
 	//专题单页
 	.pg_topic,.pg_index,.pg_space,.pg_spacecp{
@@ -47,6 +47,13 @@
 		}
 	}
 
+//版主
+	//版主
+	.banzhu{
+		.pa;right:2px;top:0;
+		span{cursor:help;}
+	}
+
 //板块信息
 	.mn{
 		.bm.bml.pbn{.none;}
@@ -59,12 +66,13 @@
 			.gray-btn;
 
 			&:before{content:'\e62f';.iconfont;color:rgba(255,51,153,0.3);transition:all 0.3s ease-in;}
-			&:hover{color:@pink;&:before{color:@pink;}}
+			&:hover{&:before{color:@pink;} box-shadow:0 0 3px #ddd;}
 			
 			a{
 				margin:0 4px;
 				transition:all 0.3s ease-in;
 				padding:0;
+				&:hover{color:@pink;}
 			}
 			.top{
 				&:hover{

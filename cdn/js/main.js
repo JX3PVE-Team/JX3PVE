@@ -3,16 +3,31 @@ jQuery.noConflict();
 
 jQuery(function($){
 
-	//宏高亮
+	//宏页面
 	//------------------------------------------
 		if($('.macro-ct').length!=0){
-			var data_simple= $('#macro-ct1').text().trim();
-			//console.log(data_simple);
-			new Sytax("#macro-ct1",data_simple);
 
+			//宏语法高亮
+			var data_simple= $('#macro-ct1').text().trim();
+			new Sytax("#macro-ct1",data_simple);
 			var data_full = $('#macro-ct2').text().trim();
-			//console.log(data_full);
 			new Sytax("#macro-ct2",data_full);
+
+			//辅助工具
+			var macro_tools_link = $('#macro_tools').attr('href');
+			if(macro_tools_link==''){
+				$('#macro_tools').attr('href','http://www.jx3pve.com/jx3/tools/keypress/');
+			}
+
+			//非必填字段为空隐藏
+			$('.role-info').each(function(i,item){
+				var content_length = $(this).children('.content').html().trim();
+				if(content_length==''){
+					$(this).remove();
+				}
+			})
+
+
 		}
 
 	//Header
