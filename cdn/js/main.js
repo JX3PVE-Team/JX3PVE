@@ -1,11 +1,19 @@
 //清除冲突
 jQuery.noConflict();
 
-jQuery(function($) {
+jQuery(function($){
 
-	//公共
+	//宏高亮
 	//------------------------------------------
-	
+		if($('.macro-ct').length!=0){
+			var data_simple= $('#macro-ct1').text().trim();
+			//console.log(data_simple);
+			new Sytax("#macro-ct1",data_simple);
+
+			var data_full = $('#macro-ct2').text().trim();
+			//console.log(data_full);
+			new Sytax("#macro-ct2",data_full);
+		}
 
 	//Header
 	//------------------------------------------
@@ -54,7 +62,7 @@ jQuery(function($) {
 	//BBS-VIEW
 	//------------------------------------------
 		//第一篇文章的padding-top，预留快速回复
-		$('#postlist').children('div').eq(0).find('.t_fsz').find('.t_f').css('padding-top', '80px');
+		//$('#postlist').children('div').eq(0).find('.t_fsz').find('.t_f').css('padding-top', '80px');
 		//加载文档后提示
 		$('#vfastpostform').find('.fullvfastpost').addClass('tipsforfastpost');
 
@@ -78,7 +86,5 @@ jQuery(function($) {
 			e.preventDefault();
 			$(this).parent('span').siblings('h4,div').slideToggle();
 		})
-
-
 
 })
