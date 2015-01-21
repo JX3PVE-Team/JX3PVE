@@ -118,7 +118,7 @@
 						});
 					}
 				}else{
-					top_margin = -(sidebarHeight-screenHeight);
+					top_margin = -(sidebarHeight-screenHeight+90);
 					if(scrollHeight+screenHeight>sidebarHeight){
 						$(selector).css({
 							'position':'fixed',
