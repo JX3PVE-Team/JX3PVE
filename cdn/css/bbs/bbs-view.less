@@ -47,37 +47,6 @@
 					span{.dbi;width:60px;}
 				}
 			}
-			.bdsharebuttonbox{
-				//.pa;top:70px;right:20px;
-			}
-			.honey{
-				.pa;bottom:26px;right:20px;
-				.tm(0.6);transition:0.2s ease-in;
-				a{
-					padding:2px 0 2px 25px;
-					height:20px;width:auto;
-					margin-right:5px;
-					background-image:url('@{url}/bbs/bbs-view/icon.png');background-repeat:no-repeat;
-					&:hover{.tm(1);}
-				}
-				.icon-support{
-					background-position:2px -20px;
-					&:hover{color:#fe438e;}
-					span{width:24px !important;.dbi;}
-				}
-				.icon-home{
-					background-position:2px -60px;
-					&:hover{color:#7fd341;}
-				}
-				.icon-top{
-					background-position:2px -40px;
-					&:hover{color:#00ccff;}
-				}
-				.icon-color{
-					background-position:2px 0;
-					&:hover{color:#d387ff;}
-				}
-			}
 		}
 
 	//文章内容
@@ -103,6 +72,7 @@
 						input,input:focus{box-shadow:none;border:none;}
 					}
 				}
+
 
 			//回复可见
 				.showhide,.locked{
@@ -134,6 +104,15 @@
 					}
 
 		}
+
+	//底部杂项
+		//默认的分享
+			.tshare{
+				a{color:#777;}
+				.tm(0.5);
+				&:hover{.tm(1);}
+			}
+
 }
 
 //印戳

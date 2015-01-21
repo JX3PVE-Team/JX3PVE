@@ -204,8 +204,9 @@ $postshowavatars = !($_G['setting']['bannedmessages'] & 2 && ($post['memberstatu
 				<!--{/if}-->
 
 				<!-- add new author info -->
+				<a href="home.php?mod=space&uid=$post['authorid']" target="_blank" class="xw1"{if $post[groupcolor]} style="color: $post[groupcolor]"{/if}>
 				<span class="bbsview-author-avt">$post[avatar]</span> 
-				<span class="bbsview-author-name">$post[author]</span> 
+				<span class="bbsview-author-name">$post[author]</span></a> 
 				<span class="bbsview-author-verf">$authorverifys</span>
 
 				<!--{if $post['authorid'] && !$post['anonymous']}-->

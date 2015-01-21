@@ -5,12 +5,12 @@
 			<li><span>作者名称:</span>{macro_author_value}</li>
 			<li><span>适用心法:</span>{macro_role_value}</li>
 			<li><span>更新时间:</span></li>
-			<li><span>辅助工具:</span><a href="{macro_tool_value}" class="down" target="_blank">点击查看</a></li>
+			<li><span>辅助工具:</span><a id="macro_tools" href="{macro_tool_value}" class="down" target="_blank">点击查看</a></li>
 		</ul>
 	</div>
 
 	<div class="important">
-		<h3>重要说明 <span>Important</span></h3>
+		<h3>重要说明 <span>!important</span></h3>
 		<div class="content">
 			{macro_ac_value}
 		</div>
@@ -56,6 +56,7 @@
 
 	<div class="macro-more macro-frag">
 		<h3>多段宏</h3>
+		<span id="macro-copy-tips">绿色部分为注释说明,请勿复制到宏中</span>
 		<div id="macro-ct2" class="macro-ct">
 			{macro_ct2_value}
 		</div>
@@ -85,3 +86,4 @@
 	</div>
 
 </div>
+	
