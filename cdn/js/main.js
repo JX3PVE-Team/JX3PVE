@@ -3,7 +3,7 @@ jQuery.noConflict();
 
 jQuery(function($){
 
-	//宏页面
+	//宏库单页
 	//------------------------------------------
 		if($('.macro-ct').length!=0){
 
@@ -21,14 +21,66 @@ jQuery(function($){
 
 			//非必填字段为空隐藏
 			$('.role-info').each(function(i,item){
-				var content_length = $(this).children('.content').html().trim();
+				if($(this).children('.content').length!=0){
+					var content_length = $(this).children('.content').html().trim();
+				}
 				if(content_length==''){
 					$(this).remove();
 				}
 			})
-
-
 		}
+
+	//工具单页
+	//------------------------------------------
+		if($('.tool-info-primary').length!=0){
+			//非必填字段为空隐藏
+			$('.tool-info').each(function(i,item){
+				if($(this).children('.content').length!=0){
+					var content_length = $(this).children('.content').html().trim();
+				}
+				if(content_length==''){
+					$(this).remove();
+				}
+			})
+			//下载地址写入
+			$('.down_url').each(function(i,item){
+				var url_from = $(this).text();
+				//需回复可见
+				if( url_from.indexOf('回复可见') !=-1){
+					$('.down').eq(i).click(function(e) {
+						e.preventDefault();
+						alert('本地址需要回复可见');
+					});
+					return;
+				}else{
+				//正常下载地址
+					$('.down').eq(i).attr('href',url_from);
+				}
+			})
+
+			//-----修改dialog样式,for vip
+			//-----回复后再次点击时弹窗空白bug，提示请刷新
+
+			//打开方式
+			$('.down').click(function(){
+				var url = $(this).attr('href').trim();
+				var url_to = $(this).is('a[href^="http://www.jx3pve.com"]');
+				if(url==''){
+					//没有下载地址
+					$(this).click(function(e){
+						e.preventDefault();
+						alert('作者未填写此条快速下载地址！');
+					})
+				}else if(url_to){
+					//站内地址
+					$(this).attr('target','_self');
+				}else{
+					//站外地址
+					return;
+				}
+			})
+		}
+	
 
 	//Header
 	//------------------------------------------
