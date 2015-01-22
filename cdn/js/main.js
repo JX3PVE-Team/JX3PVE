@@ -3,6 +3,27 @@ jQuery.noConflict();
 
 jQuery(function($){
 
+	//常用操作函数封装
+	//------------------------------------------
+		//开启对话框
+		function loadDialog(seletor){
+			var ele = $(seletor);
+			ele.show();
+			$('#dialog-content').html('').append(ele);
+			$('#dialog,#mask').show();
+		}
+
+		function loadDialogs(string){
+			$('#dialog-content').html('').append(string);
+			$('#dialog,#mask').show();
+		}
+
+		//关闭对话框
+		$('#dialog-close').on('click', function() {
+			$('#dialog,#mask').hide();
+		});
+
+
 	//宏库单页
 	//------------------------------------------
 		if($('.macro-ct').length!=0){
@@ -33,6 +54,7 @@ jQuery(function($){
 	//工具单页
 	//------------------------------------------
 		if($('.tool-info-primary').length!=0){
+
 			//非必填字段为空隐藏
 			$('.tool-info').each(function(i,item){
 				if($(this).children('.content').length!=0){
@@ -42,43 +64,41 @@ jQuery(function($){
 					$(this).remove();
 				}
 			})
+
 			//下载地址写入
 			$('.down_url').each(function(i,item){
-				var url_from = $(this).text();
+				var url_data = $(this).text().trim();
+				if(url_data == ''){
+				//地址未填
+					$('.down').eq(i).attr('href',0);
+				}else if( url_data.indexOf('回复可见') != -1){
 				//需回复可见
-				if( url_from.indexOf('回复可见') !=-1){
-					$('.down').eq(i).click(function(e) {
-						e.preventDefault();
-						alert('本地址需要回复可见');
-					});
-					return;
+					$('.down').eq(i).attr('href',1);
 				}else{
 				//正常下载地址
-					$('.down').eq(i).attr('href',url_from);
+					$('.down').eq(i).attr('href',url_data);
 				}
 			})
 
-			//-----修改dialog样式,for vip
-			//-----回复后再次点击时弹窗空白bug，提示请刷新
-
-			//打开方式
-			$('.down').click(function(){
-				var url = $(this).attr('href').trim();
-				var url_to = $(this).is('a[href^="http://www.jx3pve.com"]');
-				if(url==''){
-					//没有下载地址
-					$(this).click(function(e){
-						e.preventDefault();
-						alert('作者未填写此条快速下载地址！');
-					})
-				}else if(url_to){
-					//站内地址
-					$(this).attr('target','_self');
+			//下载事件绑定
+			$('.down').click(function(e){
+				var url = $(this).attr('href');
+				if(url==0){
+					e.preventDefault();
+					loadDialogs('抱歉，作者太懒了，没有填写此条快速下载地址！请在文中寻找。^^');
+				}else if(url==1){
+					e.preventDefault();
+					loadDialog('#dialog-vip')
 				}else{
-					//站外地址
-					return;
+					//打开方式
+					var url_to = $(this).is('a[href^="http://www.jx3pve.com"]');
+					if(url_to){
+						//站内地址
+						$(this).attr('target','_self');
+					}
 				}
 			})
+
 		}
 	
 
@@ -113,30 +133,25 @@ jQuery(function($){
 				//导航滑动效果
 				$('#menu-list').menu();
 				//警告框
-				var mask_layout = $('#dialog-important,#mask');
-				if ($('#dialog-content').html().length > 30) {
-					mask_layout.css('display', 'block');
+				if ($('#dialog-important').html().length > 2) {
+					$('#dialog-content').html('').append($('#dialog-important'));
+					$('#dialog-important').show();
+					$('#dialog,#mask').show();
 				}
-				$('#dialog-close').on('click', function() {
-					mask_layout.hide();
-				});
 			}
 	
 	//Sidebar
 	//------------------------------------------
 		fixSidebar('.sidebar-wrap', 96);
 
-	//BBS-VIEW
+	//BBS
 	//------------------------------------------
 		//第一篇文章的padding-top，预留快速回复
 		//$('#postlist').children('div').eq(0).find('.t_fsz').find('.t_f').css('padding-top', '80px');
 		//加载文档后提示
 		$('#vfastpostform').find('.fullvfastpost').addClass('tipsforfastpost');
-
-	//BBS-LIST
-	//------------------------------------------
-	//列表间色
-	//$('.macro-list tr:odd').addClass('even');
+		//列表间色
+		//$('.macro-list tr:odd').addClass('even');
 
 	//ZT
 	//------------------------------------------

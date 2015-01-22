@@ -32,15 +32,19 @@
 
 	<!-- dialog + mask-->
 	<div class="mask" id="mask" style="display:none"></div>
-	<div class="dialog-wrap" id="dialog-important" style="display:none">
-		<div class="dialog-important">
+	<div class="dialog-wrap" id="dialog" style="display:none">
+		<div class="dialog-primary">
 			<h2>提示</h2>
-			<span class="close" id="dialog-close"></span>
-			<div class="content" id="dialog-content">
-				<!--{block/985}-->
-			</div>
+			<span class="close" id="dialog-close">关闭</span>
+			<div class="content" id="dialog-content"></div>
 		</div>
 	</div>
+
+	<!-- dialog content-->
+	<div id="dialog-important" style="display:none"><!--{block/985}--></div>
+	<div id="dialog-vip" style="display:none"><!--{block/998}--></div>
+
+
 
  	
 	<div id="append_parent"></div><div id="ajaxwaitid"></div>
