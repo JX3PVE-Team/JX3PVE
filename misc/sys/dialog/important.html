@@ -17,8 +17,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimal-ui"/>
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-<link rel="stylesheet" href="../cdn/css/jx3pve.css" type="text/css"/>
-<script src="../cdn/js/main.js"></script>
+<link rel="stylesheet" href="../../../cdn/css/jx3pve.css" type="text/css"/>
+<script src="../../../cdn/js/main.js"></script>
 
 <script>
 	if( /Android|webOS| iPhone | iPad | iPod |BlackBerry|opera mini|opera mobile|appleWebkit.*mobile|mobile/i.test(navigator.userAgent) ) {
@@ -28,12 +28,23 @@
 </head>
 <body>
 <div class="mask" id="mask"></div>
-<div class="dialog-wrap" id="dialog-important" style="display:none">
-	<div class="dialog-important">
+<div class="dialog-wrap" id="dialog-important">
+	<div class="dialog-vip dialog-primary">
 		<h2>提示</h2>
-		<span class="close" id="dialog-close"></span>
+		<span class="close" id="dialog-close">关闭</span>
 		<div class="content">
-			<!--{block/985}-->
+			<div class="dialog-vip-btn">
+				<a class="btn1" title="购买会员" href="http://www.jx3pve.com/home.php?mod=spacecp&ac=usergroup&do=list" target="_blank"><i></i></a>
+				<a class="btn2" title="立即充值" href="http://www.jx3pve.com/home.php?mod=spacecp&ac=credit&op=buy"  target="_blank"><i></i></a>
+			</div>
+			<div class="dialog-vip-des">
+				<div class="dialog-vip-buy">成为
+					<a href="http://www.jx3pve.com/home.php?mod=spacecp&ac=usergroup&do=list" target="_blank">VIP会员</a>
+					即可享有众多特权,免下载限制。
+				</div>
+				<div class="dialog-vip-more">本附件需要回复可见，回复后需要刷新页面。</div>
+				<!--{block/985}-->
+			</div>
 		</div>
 	</div>
 </div>
