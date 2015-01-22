@@ -1,0 +1,88 @@
+.tool-info-primary{
+	color:#555;line-height:24px;font-size:12px;
+	div{margin-bottom:20px;}
+	.span-mod{.dbi;width:70px; height:24px; border-radius:24px;background-color:#eee;.x;}
+	.tool-info-base{
+		.clear;
+		.information{
+			.fl; width:30%;
+			ul{
+				li{
+					.fz(12px,24px);padding:8px 12px;.clip;height:26px;
+					border:1px solid #eee; border-radius:5px; margin:5px;
+					span{.span-mod;}
+				}
+			}
+		}
+		.correlation{
+			.fl; width:60%;.clear; margin-bottom:0;
+			.download{
+				height:150px; width:100%; text-align:center; margin-bottom:0;
+				a{
+					.dbi; width:200px; height:70px;
+					&.down1{background:url('@{url}/pve/tool/btn-down-red.png') no-repeat 0 0;}
+					&.down2{background:url('@{url}/pve/tool/btn-down-black.png') no-repeat 0 0;}
+				}
+			}
+			.contact{
+				.fz(12px,24px);padding:8px 12px;.clip;height:26px; width:43%; .fl;
+					border:1px solid #eee; border-radius:5px;
+				p{
+					span{.span-mod;}
+				}
+			}
+			.sponsor{
+				.fz(12px,24px);padding:8px 12px;.clip;height:26px; width:43%; .fl;
+					border:1px solid #eee; border-radius:5px;
+				p{
+					span{.span-mod;}
+				}
+			}
+		}
+	}
+	.tool_important{
+		.pr;
+		h3{
+			color:#aba6a6;letter-spacing:1px;
+			span{margin-left:10px;font-family:Verdana;}
+		}
+		.content{
+			background:#f7f7f7;border-radius:4px;
+			border:1px solid #ddd;
+			margin:10px 0 0 0;
+			padding:10px;
+		}
+	}
+	.tool_settings{
+		.pr;
+		&:before{content:'';.db;width:85%;height:1px;background-color:#ddd;.pa;right:0;top:10px;}
+		h3{
+			.dbi;width:100px; height:24px; border-radius:24px;background-color:@basecolor;;.x;
+			color:#fff;
+		}
+		.content{
+			.min-height(60);padding:10px;
+		}
+	}
+	.tool_faq{
+		.pr;
+		&:before{content:'';.db;width:85%;height:1px;background-color:#ddd;.pa;right:0;top:10px;}
+		h3{
+			.dbi;width:100px; height:24px; border-radius:24px;background-color:@basecolor;.x;
+			color:#fff;
+		}
+		.content{
+			.min-height(60);padding:10px;
+		}
+	}
+	.tool_log{
+		.pr;
+		&:before{content:'';.db;width:90%;height:1px;background-color:#ddd;.pa;right:0;top:10px;}
+		h3{
+			.span-mod;
+		}
+		.content{
+			.min-height(60);padding:10px;
+		}
+	}
+}
