@@ -93,6 +93,7 @@ jQuery(function($){
 					$(this).remove();
 				}
 			})
+
 		}
 
 	//工具单页
@@ -108,6 +109,9 @@ jQuery(function($){
 					$(this).remove();
 				}
 			})
+
+			//显示查看次数
+			$('.macro-views').show();
 		}
 	
 

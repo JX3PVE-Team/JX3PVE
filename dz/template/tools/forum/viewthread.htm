@@ -46,6 +46,10 @@
 					<a href="forum.php?mod=viewthread&tid=$_G[tid]" title="$_G[forum_thread][short_subject]">$_G[forum_thread][short_subject]</a>
 				</h1>
 
+				<div class="macro-views">
+					<span>累计下载次数</span> $_G[forum_thread][views]
+				</div>
+
 				<!--顶部翻页-->
 				<div id="pgt" class="pgs mbm cl {if $modmenu['thread']}pbm bbs{/if}">
 					<div class="pgt">$multipage</div>

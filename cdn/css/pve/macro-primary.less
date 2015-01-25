@@ -3,7 +3,35 @@
 
 //列表页样式
 .macro-info-primary{
-	
+	.macro-info-primary-list{
+		li{
+			border:1px solid #ddd;margin:20px 0 40px 0;.pr;line-height:24px;
+			.title{
+				.pa;top:-16px;left:90px;.dbi;background-color:#fff;color:#555;font-weight:normal;font-size:12px;margin:0;
+				.acolor(#155493,#cc0000);
+			}
+			.meta{
+				padding:20px 10px 10px 10px;
+				li{
+					border:none;margin:0;
+					.dbi;.y;height:28px;line-height:28px;margin-right:20px;overflow:hidden;.nobreak;
+					span{
+						.dbi;width:70px; height:24px;line-height:24px;border-radius:4px;background-color:#eee;.x;margin-right:20px;
+					}
+					img{width:24px;height:24px;border-radius:4px;.y;margin-right:5px;}
+					&.for-role{.pa;top:-16px;left:20px;line-height:32px;height:32px;background-color:#fff;.dbi;width:70px;.x;}
+					&.author{width:180px;span{background-color:@basecolor;color:#fff;}}
+					&.date{width:160px;}
+					&.views{width:160px;}
+					&.reply{width:160px;}
+					&.more{width:90px;}
+				}
+			}
+			.des{
+				padding:0 10px 0 10px;color:#777;height:50px;.clip;.none;
+			}
+		}
+	}
 }
 
 
@@ -74,8 +102,17 @@
 			}*/
 		}
 		.macro-ct{
-			ol{list-style-position:inside;}
-			li{border-bottom:1px dashed #eee;}
+			ol{
+				padding: 1px 1px 0 40px;
+				background: #eee;
+				border-radius: 8px;
+				margin-top: 10px;
+			}
+			li{
+				border-bottom:1px solid #eee;
+				padding-left:10px;
+				background-color:#fff;
+			}
 		}
 	}
 }
