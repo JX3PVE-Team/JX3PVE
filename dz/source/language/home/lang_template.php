@@ -11,11 +11,15 @@
 
 $lang = array (
   'ivip' => 'VIP会员',
+  'mynicname' => '修改昵称',
   'useros-xz' => '勋章中心',
   'memcp_medal_yz' => '勋章中心',
   'memcp_magic_yz' => '道具中心',
+  'memcp_task_yz' => '任务中心',
   'memcp_credit_yz' => '积分充值',
   'memcp_verify_yz' => '认证中心', 
+  'memcp_home_yz' => '个人空间', 
+  'memcp_fav_yz' => '我的收藏', 
   'useros-myxz' => '我的勋章',
   'useros' => '用户中心',
   'myos' => '个人中心',

@@ -27,46 +27,44 @@ jQuery(function($){
 			$('#dialog,#mask').hide();
 		});
 
-
 	//下载模块
 	//------------------------------------------
-	if($('#mod-down').length!=0){
+		if($('#mod-down').length!=0){
 
-		//下载地址写入
-		$('.down_url').each(function(i,item){
-			var url_data = $(this).text().trim();
-			if(url_data == ''){
-			//地址未填
-				$('.down').eq(i).attr('href',0);
-			}else if( url_data.indexOf('回复可见') != -1){
-			//需回复可见
-				$('.down').eq(i).attr('href',1);
-			}else{
-			//正常下载地址
-				$('.down').eq(i).attr('href',url_data);
-			}
-		})
-
-		//下载事件绑定
-		$('.down').click(function(e){
-			var url = $(this).attr('href');
-			if(url==0){
-				e.preventDefault();
-				loadDialogs('抱歉，作者太懒了，没有填写此条快速下载地址！请在文中寻找。^^');
-			}else if(url==1){
-				e.preventDefault();
-				loadDialog('#dialog-vip')
-			}else{
-				//打开方式
-				var url_to = $(this).is('a[href^="http://www.jx3pve.com"]');
-				if(url_to){
-					//站内地址
-					$(this).attr('target','_self');
+			//下载地址写入
+			$('.down_url').each(function(i,item){
+				var url_data = $(this).text().trim();
+				if(url_data == ''){
+				//地址未填
+					$('.down').eq(i).attr('href',0);
+				}else if( url_data.indexOf('回复可见') != -1){
+				//需回复可见
+					$('.down').eq(i).attr('href',1);
+				}else{
+				//正常下载地址
+					$('.down').eq(i).attr('href',url_data);
 				}
-			}
-		})
-	}
+			})
 
+			//下载事件绑定
+			$('.down').click(function(e){
+				var url = $(this).attr('href');
+				if(url==0){
+					e.preventDefault();
+					loadDialogs('抱歉，作者太懒了，没有填写此条快速下载地址！请在文中寻找。^^');
+				}else if(url==1){
+					e.preventDefault();
+					loadDialog('#dialog-vip')
+				}else{
+					//打开方式
+					var url_to = $(this).is('a[href^="http://www.jx3pve.com"]');
+					if(url_to){
+						//站内地址
+						$(this).attr('target','_self');
+					}
+				}
+			})
+		}
 
 	//宏库单页
 	//------------------------------------------
@@ -114,6 +112,28 @@ jQuery(function($){
 			$('.macro-views').show();
 		}
 	
+	//用户中心
+	//------------------------------------------
+		$('.appl .tbn ul li').hover(
+		function(){
+			var height = $(this).height(),
+				index = $(this).index(),
+				pos = index*height;
+			$('.appl .tbn #slide').css({
+				'transform':'translateY('+pos+'px)'
+			}); 
+		},function(){
+			var height = $(this).height(),
+				current = $('.appl .tbn ul li.a').index(),
+				c_pos = current*height;
+			$('.appl .tbn #slide').css({
+				'transform':'translateY('+c_pos+'px)'
+			}); 
+		})
+
+		$('#os-side-more').click(function(event) {
+			$(this).next('.more').slideToggle();
+		});
 
 	//Header
 	//------------------------------------------
