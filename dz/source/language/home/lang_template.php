@@ -15,6 +15,7 @@ $lang = array (
   'useros-xz' => '勋章中心',
   'memcp_medal_yz' => '勋章中心',
   'memcp_magic_yz' => '道具中心',
+  'memcp_vipcenter_vf' => 'VIP会员',
   'memcp_task_yz' => '任务中心',
   'memcp_credit_yz' => '积分充值',
   'memcp_verify_yz' => '认证中心', 
@@ -1568,7 +1569,6 @@ $lang = array (
   'freeze_email_tips' => '您当前的帐号已经太长时间未登录网站已经被冻结，必须验证邮箱后才能解除冻结状态 <a href="home.php?mod=spacecp&ac=profile&op=password&resend=1" class="xi2">重新接收验证邮件</a>',
   'freeze_reason' => '申诉理由',
   'freeze_reason_comment' => '如果您无法通过邮箱验证，请填写申诉理由',
-  'memcp_vipcenter_vf' => '会员中心',
   
 );
 ?>

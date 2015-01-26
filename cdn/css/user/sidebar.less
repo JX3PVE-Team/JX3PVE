@@ -25,13 +25,14 @@
 			&.a{
 				//border-left: 4px solid #0088ff;
 				background:none;
-				margin:0;padding:0 10px;
-				a{color:@basecolor;}//font-weight:normal;
+				margin:0;padding:0 10px;font-weight:bold;
+				a{color:@basecolor;font-weight:bold;}
 			}
 			&:hover{
 				color:@basecolor;font-weight:bold;
-				a{color:@basecolor;}
+				a{color:@basecolor;font-weight:bold;}
 			}
+			a.vip{color:#ff0000;}
 		}
 
 		#os-side-more{cursor:pointer;}
@@ -42,4 +43,29 @@
 	}
 
 
+}
+
+
+.pg_space{
+	.appl{
+		.tbn{
+			ul{
+				li{
+					&.a{
+						border:1px solid #ddd;
+						a{color:#555;}
+					}
+				}
+			}
+		}
+	}
+}
+
+.pg_spacecp{
+	.appl{
+		h2{.none;}
+		.tbn{
+			margin-top:5px;
+		}
+	}
 }
