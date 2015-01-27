@@ -16,18 +16,56 @@
 //顶部
 .user-os-header{
 	.user-os-profile{
-		border-bottom:1px solid #ddd;
-		li{
-			height:32px;line-height:32px;
-			label{width:60px;letter-spacing:2px;color:#666;}
-			&.username{}
-			&.usergroup{}
-			&.cre{
+
+		border-bottom:1px dotted #ddd;
+
+		.base-info{
+			background-color:#f2f2f2;height:54px;padding:10px;border-radius:8px;.clear;.pr;
+			.useravt{
+				.fl;margin-right:10px;
+				a{.db;height:54px;}
+				img{width:48px;height:48px;border-radius:4px;padding:2px;background-color:#fff;border:1px solid #ddd;}
+			}
+			.username{
+				b{.fz(16px,1.5);}
+				i{color:@yel;.fz(12px,2.5);}
+			}
+			.usermail{
+				//a{color:#777;}
+			}
+			.user-important{
+				.pa;right:20px;top:20px;
+				.btn-govip{
+					.gray-btn;
+				}
+			}
+		}
+
+		.extend-info{
+			.clear;padding:5px;
+
+			li{
+				.fl;.dbi;.y;.nobreak;height:28px;line-height:28px;margin-right:60px;
+				label{background-color:#f2f2f2;border-radius:3px;padding: 5px 8px;}
+			}
+
+			.verf{
+				label{letter-spacing:4px;}
+				span{.dbi;}
+				img{margin-right:5px;}
+			}
+
+			.cre{
 				label{letter-spacing:4px;}
 				span{.bold;color:#ff0000;}
 			}
-			&.verf{label{letter-spacing:4px;}}
+
+			.usergroup{
+
+			}
 		}
+
+
 	}
 }
 

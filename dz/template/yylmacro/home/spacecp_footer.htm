@@ -1,6 +1,6 @@
 <h2 class="mt bbda">{lang useros}</h2>
 
-<div class="tbn user-nav">
+<div class="tbn user-nav" id="user-nav">
 	<!-- <em id="slide"></em> -->
 	<h3 class="user-nav-os">
 		<a $actives[jx3] href="home.php?mod=spacecp&ac=jx3">导航首页</a>
@@ -10,7 +10,7 @@
 		<li$actives[password]><a href="home.php?mod=spacecp&ac=profile&op=password">修改密码</a></li>
 		<li$actives[avatar]><a href="home.php?mod=spacecp&ac=avatar">设置头像</a></li>
 		<li$actives[profile]><a href="home.php?mod=spacecp&ac=profile">详细资料</a></li>
-		<li$actives[credit]><a href="home.php?mod=spacecp&ac=credit">充  值</a></li>
+		<li$actives[credit]><a class="buy" href="home.php?mod=spacecp&ac=credit&op=buy">充  值</a></li>
 		<li{if ($_GET['mod']=="spacecp" && $_GET['ac']=="usergroup")} class="a"{/if} ><a class="vip" href="home.php?mod=spacecp&ac=usergroup&do=list">VIP会员</a></li>
 	</ul>
 
@@ -28,7 +28,7 @@
 	<h3>社区资料</h3>
 	<ul>
 		<li><a href="home.php?mod=space" target="_blank">个人空间</a></li>
-		<li><a href="forum.php?mod=guide&view=my">我的帖子</a></li>
+		<li><a href="forum.php?mod=guide&view=my"  target="_blank">我的帖子</a></li>
 		<li><a href="home.php?mod=space&do=favorite&view=me">我的收藏</a></li>
 		<li><a href="home.php?mod=space&do=pm">我的消息</a></li>
 		<li><a href="home.php?mod=space&do=friend">我的好友</a></li>

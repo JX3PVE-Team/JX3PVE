@@ -118,7 +118,7 @@ jQuery(function($){
 	
 	//用户中心
 	//------------------------------------------
-		$('.appl .tbn ul li').hover(
+		/*$('.appl .tbn ul li').hover(
 		function(){
 			var height = $(this).height(),
 				index = $(this).index(),
@@ -133,11 +133,29 @@ jQuery(function($){
 			$('.appl .tbn #slide').css({
 				'transform':'translateY('+c_pos+'px)'
 			}); 
-		})
+		})*/
 
-		$('#os-side-more').click(function(event) {
-			$(this).next('.more').slideToggle();
-		});
+		if($('#nv_home').length !=0){
+		
+			$('#user-nav h3').click(function(event) {
+				$(this).next('ul').slideToggle();
+			});
+
+			$('.user-os-profile .verf a').each(function(i,item){
+				if( $(this).children('img').length == 0){
+					$(this).remove();
+				}
+			})
+
+			var user_email_status = $('#user-email-status').text().trim().indexOf('已验证') != -1;
+			if(user_email_status){
+				$('#user-email-status').css('color','green');
+			}else{
+				$('#user-email-status').css('color','#777');
+				$('#user-email-status').wrap('<a href="http://www.jx3pve.com/home.php?mod=spacecp&ac=profile&op=password"></a>');
+			}
+
+		}
 
 	//Header
 	//------------------------------------------
