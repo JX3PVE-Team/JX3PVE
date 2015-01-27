@@ -71,11 +71,15 @@ jQuery(function($){
 		if($('.macro-ct').length!=0){
 
 			//宏语法高亮
-			var data_simple= $('#macro-ct1').text().trim();
-			new Sytax("#macro-ct1",data_simple);
+			var data_simple = $('#macro-ct1').text().trim();
+			if(data_simple.indexOf('回复可见') == -1){
+				new Sytax("#macro-ct1",data_simple);
+			}
 			var data_full = $('#macro-ct2').text().trim();
-			new Sytax("#macro-ct2",data_full);
-
+			if(data_full.indexOf('回复可见') == -1){
+				new Sytax("#macro-ct2",data_full);
+			}
+			
 			//辅助工具
 			var macro_tools_link = $('#macro_tools').attr('href');
 			if(macro_tools_link==''){

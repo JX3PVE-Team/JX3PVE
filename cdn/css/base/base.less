@@ -18,6 +18,7 @@ https://github.com/iRuxu/iruxucss
     //Need unit! px/em/%/1.x
         .fz(@size,@line:1){font-size:@size;line-height:@line;}
         .size(@width,@height){width:@width;height:@height;}
+        .bold{font-weight:bold;}
         .full{width:100%;height:100%;}
         .half{width:50%;height:50%;}
 
@@ -30,7 +31,7 @@ https://github.com/iRuxu/iruxucss
         .clip{overflow:hidden;*zoom:1;}
         .fl{float: left;*display: inline;}
         .fr{float: right;*display: inline;}
-        .pr{position: relative;*zoom:1;}
+        .pr{position: relative;}
         .pa{position: absolute;}
         .ps{position: static;}
 
@@ -150,7 +151,7 @@ https://github.com/iRuxu/iruxucss
 //Interface
 //--------------------------------------------------------------
     //cursor
-        .pointer{&:hover{cursor:pointer;}}
+        .pointer{cursor:pointer;&:hover{cursor:pointer;}}
 
 
 //Effect

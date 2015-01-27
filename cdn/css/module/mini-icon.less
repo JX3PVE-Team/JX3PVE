@@ -1,9 +1,17 @@
 
+//vip提示
+.tobevip-tips{
+	border:1px dashed #f0ea8e;
+	padding:5px;
+	margin:10px 0;
+	background: #fffddf;
+}
+
 
 //vip图标
 .tobevip{
 	.dbi;.size(84px,16px);
-	.indent;
+	.indent;.y;
 	top: 5px;margin: 0 3px;
 	background: url('@{url}/common/vip/vip.gif') no-repeat 0 0;
 }
@@ -26,4 +34,19 @@
 .user-icon-nichen{
 	background:url('@{url}/user/icon/editnic.png') no-repeat 0 0;
 	.user-icon-old;
+}
+
+
+.btn-cre-size{width:73px;height:28px;.dbi;margin:0 2px;.y;}
+//充值
+.btn-cre{
+	.btn-cre-size;
+	background:url('@{url}/user/icon/cre1.png') no-repeat 0 0;
+	&:hover{
+		background:url('@{url}/user/icon/cre2.png') no-repeat 0 0;
+	}
+}
+
+.icon-groupicon{
+	width:84px;height:16px;.dbi;margin:0 2px;.y;
 }

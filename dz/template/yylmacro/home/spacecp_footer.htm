@@ -1,34 +1,21 @@
 <h2 class="mt bbda">{lang useros}</h2>
 
-<div class="tbn">
-	<em id="slide"></em>
+<div class="tbn user-nav">
+	<!-- <em id="slide"></em> -->
+	<h3 class="user-nav-os">
+		<a $actives[jx3] href="home.php?mod=spacecp&ac=jx3">导航首页</a>
+	</h3>
+	<h3>账号设置</h3>
 	<ul>
-		<li$actives[jx3]><a href="home.php?mod=spacecp&ac=jx3">{lang myos}</a></li>
-		<li$actives[password]><a href="home.php?mod=spacecp&ac=profile&op=password">{lang myjx3pass}</a></li>
-		<li$actives[avatar]><a href="home.php?mod=spacecp&ac=avatar">{lang memcp_avatar}</a></li>
-		<li$actives[profile]><a href="home.php?mod=spacecp&ac=profile">{lang myjx3info}</a></li>
-		<li><a href="home.php?mod=space" target="_blank">{lang memcp_home_yz}</a></li>
-		<li><a href="home.php?mod=space&do=favorite&view=me">{lang memcp_fav_yz}</a></li>
-		
-		<li$actives[credit]><a href="home.php?mod=spacecp&ac=credit">{lang memcp_credit_yz}</a></li>
-		<li{if ($_GET['mod']=="spacecp" && $_GET['ac']=="usergroup")} class="a"{/if} ><a class="vip" href="home.php?mod=spacecp&ac=usergroup&do=list">{lang memcp_vipcenter_vf}</a></li>
-		<li$actives[verify]><a href="{if $_G['setting']['verify']['enabled']}home.php?mod=spacecp&ac=profile&op=verify{else}home.php?mod=spacecp&ac=videophoto{/if}">{lang memcp_verify_yz}</a></li>
-		<li{if ($_GET['mod']=="medal")} class="a"{/if}><a href="home.php?mod=medal">{lang memcp_medal_yz}</a></li>
-		<li{if ($_GET['mod']=="magic")} class="a"{/if}><a href="home.php?mod=magic">{lang memcp_magic_yz}</a></li>
-		<li{if ($_GET['mod']=="task")} class="a"{/if}><a href="home.php?mod=task">{lang memcp_task_yz}</a></li>
+		<li$actives[password]><a href="home.php?mod=spacecp&ac=profile&op=password">修改密码</a></li>
+		<li$actives[avatar]><a href="home.php?mod=spacecp&ac=avatar">设置头像</a></li>
+		<li$actives[profile]><a href="home.php?mod=spacecp&ac=profile">详细资料</a></li>
+		<li$actives[credit]><a href="home.php?mod=spacecp&ac=credit">充  值</a></li>
+		<li{if ($_GET['mod']=="spacecp" && $_GET['ac']=="usergroup")} class="a"{/if} ><a class="vip" href="home.php?mod=spacecp&ac=usergroup&do=list">VIP会员</a></li>
+	</ul>
 
-		<!--{if $_G['setting']['sendmailday']}--><li$actives[sendmail]><a href="home.php?mod=spacecp&ac=sendmail">{lang memcp_sendmail}</a></li><!--{/if}-->
-
-		<li$actives[privacy]><a href="home.php?mod=spacecp&ac=privacy">{lang memcp_privacy}</a></li>
-			
-		<!--{if $_G['setting']['creditspolicy']['promotion_visit'] || $_G['setting']['creditspolicy']['promotion_register']}-->
-		<li$actives[promotion]><a href="home.php?mod=spacecp&ac=promotion">{lang memcp_promotion}</a></li>
-		<!--{/if}-->
-
-		<li id="os-side-more">
-			应用扩展
-		</li>
-		<div class="more">
+	<h3>账号绑定</h3>
+	<ul>
 		<!--{if !empty($_G['setting']['plugins']['spacecp'])}-->
 			<!--{loop $_G['setting']['plugins']['spacecp'] $id $module}-->
 				<!--{if !$module['adminid'] || ($module['adminid'] && $_G['adminid'] > 0 && $module['adminid'] >= $_G['adminid'])}-->
@@ -36,7 +23,28 @@
 				<!--{/if}-->
 			<!--{/loop}-->
 		<!--{/if}-->
-		</div>
-
 	</ul>
+
+	<h3>社区资料</h3>
+	<ul>
+		<li><a href="home.php?mod=space" target="_blank">个人空间</a></li>
+		<li><a href="forum.php?mod=guide&view=my">我的帖子</a></li>
+		<li><a href="home.php?mod=space&do=favorite&view=me">我的收藏</a></li>
+		<li><a href="home.php?mod=space&do=pm">我的消息</a></li>
+		<li><a href="home.php?mod=space&do=friend">我的好友</a></li>
+		<!--{if $_G['setting']['sendmailday']}--><li$actives[sendmail]><a href="home.php?mod=spacecp&ac=sendmail">{lang memcp_sendmail}</a></li><!--{/if}-->
+		<li$actives[privacy]><a href="home.php?mod=spacecp&ac=privacy">{lang memcp_privacy}</a></li>
+	</ul>
+
+	<h3>扩展中心</h3>
+	<ul>
+		<li$actives[verify]><a href="{if $_G['setting']['verify']['enabled']}home.php?mod=spacecp&ac=profile&op=verify{else}home.php?mod=spacecp&ac=videophoto{/if}">{lang memcp_verify_yz}</a></li>
+		<li{if ($_GET['mod']=="medal")} class="a"{/if}><a href="home.php?mod=medal">{lang memcp_medal_yz}</a></li>
+		<li{if ($_GET['mod']=="magic")} class="a"{/if}><a href="home.php?mod=magic">{lang memcp_magic_yz}</a></li>
+		<li{if ($_GET['mod']=="task")} class="a"{/if}><a href="home.php?mod=task">{lang memcp_task_yz}</a></li>
+		<!--{if $_G['setting']['creditspolicy']['promotion_visit'] || $_G['setting']['creditspolicy']['promotion_register']}-->
+		<li$actives[promotion]><a href="home.php?mod=spacecp&ac=promotion">{lang memcp_promotion}</a></li>
+		<!--{/if}-->
+	</ul>
+
 </div>

@@ -1,10 +1,6 @@
 //侧边栏
 .appl{
-
-	h2.mt{
-		margin-bottom:5px;
-	}
-
+	h2.mt{margin-bottom:5px;}
 	.tbn{
 		.pr;
 
@@ -13,38 +9,10 @@
 			background-color:@basecolor;
 			.pa;top:0;left:0;.z(-1);
 			transition:0.3s ease-out;
-		}
-
-		ul{}
-
-		li{
-			border:none;//border-left:4px solid transparent;
-			line-height:33px;
-			margin:0;padding:0 10px;
-			//line-height:24px;height:24px;margin:0 0 8px 0;
-			&.a{
-				//border-left: 4px solid #0088ff;
-				background:none;
-				margin:0;padding:0 10px;font-weight:bold;
-				a{color:@basecolor;font-weight:bold;}
-			}
-			&:hover{
-				color:@basecolor;font-weight:bold;
-				a{color:@basecolor;font-weight:bold;}
-			}
-			a.vip{color:#ff0000;}
-		}
-
-		#os-side-more{cursor:pointer;}
-
-		.more{
 			.none;
 		}
 	}
-
-
 }
-
 
 .pg_space{
 	.appl{
@@ -64,8 +32,44 @@
 .pg_spacecp{
 	.appl{
 		h2{.none;}
+
 		.tbn{
 			margin-top:5px;
 		}
+	}
+}
+
+//用户中心侧边栏
+.user-nav{
+	h3{
+		font-weight:bold;border-bottom:1px solid #ccc;
+		line-height:32px;height:32px;color:@bluex;a{color:@bluex;}
+		&:nth-child(1){
+			&:before{content:'\e613';.iconfont;font-size:20px;line-height:32px;font-weight:normal;width:32px;.pa;}
+		}
+		a{.db;.full;text-indent:30px;
+			&:hover{color:#cc0000;}
+		}
+		/*&:nth-child(2){
+			&:before{content:'\e637';.iconfont;font-size:18px;line-height:35px;font-weight:normal;width:32px;}
+		}
+		&:nth-child(3){
+			&:before{content:'\e615';.iconfont;font-size:20px;line-height:35px;font-weight:normal;width:32px;}
+		}
+		&:nth-child(4){
+			&:before{content:'\e62b';.iconfont;font-size:20px;line-height:35px;font-weight:normal;width:32px;}
+		}
+		&:nth-child(5){
+			&:before{content:'\e620';.iconfont;font-size:20px;line-height:35px;font-weight:normal;width:32px;}
+		}*/
+	}
+	ul{
+
+	}
+	li{
+		height:28px;line-height:28px;font-size:12px;
+		&:before{content:'\e622';.iconfont;color:#777;font-size:10px;.pa;line-height:32px;}
+		a{text-indent:18px;}
+		&:hover{a{color:@bluex;}&:before{color:@bluex;}}
 	}
 }

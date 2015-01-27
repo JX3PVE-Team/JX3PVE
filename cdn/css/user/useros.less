@@ -1,7 +1,52 @@
-/* 个人中心
--------------------------------------------------------------- */
-	.user-os{width:100%;float:left;margin-bottom:20px;font-size:12px;line-height:32px;letter-spacing:2px;}
-	.user-os-1{float:left;height:400px;width:740px;}
+//个人中心
+.user-os{
+	width:100%;padding:0 10px;.clear;
+	.user-os-content{
+		width:@wp - 140px - 200px - 80px;
+		.fl;
+	}
+
+	//侧边栏
+	.user-os-sidebar{
+		width:200px;
+		.fr;
+	}
+}
+
+//顶部
+.user-os-header{
+	.user-os-profile{
+		border-bottom:1px solid #ddd;
+		li{
+			height:32px;line-height:32px;
+			label{width:60px;letter-spacing:2px;color:#666;}
+			&.username{}
+			&.usergroup{}
+			&.cre{
+				label{letter-spacing:4px;}
+				span{.bold;color:#ff0000;}
+			}
+			&.verf{label{letter-spacing:4px;}}
+		}
+	}
+}
+
+//内容
+.user-os-primary{
+
+}
+
+//底部
+.user-os-footer{
+
+}
+
+//侧边
+.user-os-sidebar{
+
+}
+
+
 	.user-os-name{font-weight:bold;}
 	.user-os-editnic{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nic1.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
 	.user-os-editnic:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nic2.png") no-repeat ;width:78px;height:24px;display:inline-block;position:relative;top:8px;}
@@ -36,9 +81,6 @@
 	.useros-nav8{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/8.png") no-repeat ;width:181px;height:75px;display:inline-block;}
 	.useros-nav8:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/8a.png") no-repeat ;width:181px;height:75px;display:inline-block;}
 
-	/*.cre-tips{display:block;padding:10px;background:#fafdff;border:1px solid #aad3ea;border-top:none;}
-	.redtips{font-weight:bold;color:#ff0000 !important;}*/
-
 	.user-os-sidebar{float:right;width:200px;height:auto;min-height:300px;line-height:24px;letter-spacing:1px;}
 	.useros-help{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/useros/nav2/help.png") no-repeat top center;padding-top:44px;padding-bottom:10px;border-bottom:1px dashed #ccc;margin-bottom:10px;}
 	.useros-help ul li{}
@@ -56,16 +98,3 @@
 	.magiclogs.tb a{border:none;background:none;}
 
 
-
-	/*.umh.umn h3{font-weight:normal;font-size:12px;color:#369;}
-
-	#tr_idcardtype{display:none;} 
-	li.xi1.cl {color:#66cc00;font-size:16px;border-bottom:1px dotted #ccc;font-family:Tahoma,'Microsoft YaHei' !important;font-weight:bold;margin-bottom:10px;}
-	li.xi1.cl  a{color:#ff0000;}
-	.mbm.pbn.bbda.cl{display:none;}
-	#paybox{margin-top:10px;}
-	#paybox>td.pns>input#addfundamount{}
-	#paybox>td.pns>span#desamount {color:#ff0000;font-weight:bold;position:relative;top:-3px;}
-	#paybox>td.pns {width:168px;}
-	#paybox>td.d{color:#66cc00;}
-*/
