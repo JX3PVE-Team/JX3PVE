@@ -98,6 +98,7 @@
 								</div>
 							<!--{/if}-->
 							<div class="long-logo mbw">
+								<!--{block/1004}-->
 								<ul>
 								<!--{if $_G[setting][ec_ratio] && $_G[setting][ec_account]}-->
 									<li class="z"><!----$ecchecked--->
@@ -116,7 +117,7 @@
 					<tr id="paybox" style="{if ($_G[setting][ec_tenpay_bargainor] || $_G[setting][ec_tenpay_opentrans_chnid] || $_G[setting][ec_account]) && empty($ecchecked) }display:;{else}display:none;{/if}">
 						<th>{lang memcp_credits_addfunds}</th>
 						<td colspan="2" class="pns">
-							<input type="text" size="5" class="px" style="width: auto;" id="addfundamount" name="addfundamount" value="2000" onkeyup="addcalcredit()" />
+							<input type="text" size="5" class="px" style="width: auto;" id="addfundamount" name="addfundamount" value="0" onkeyup="addcalcredit()" />
 							&nbsp;{$_G[setting][extcredits][$_G[setting][creditstrans]][title]}&nbsp;
 							{lang credits_need}{lang memcp_credits_addfunds_caculate_radio}
 							<p class="chongzhitips">

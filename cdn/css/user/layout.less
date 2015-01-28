@@ -14,42 +14,13 @@
 	}
 }
 
-//空间布局
-#nv_home{
-
-	//去掉中央边框
-	.ct2_a, .ct3_a{border:none;background:none;}
-
-	//与分页拉开间距
-	.xld{margin-bottom:10px;}
-
-	//头像设置
-	.tfm{
-		h2.xs2{
-			.fz(12px,2) !important;border-bottom:1px dashed #ddd;margin-bottom:10px;.bold;
-		}
-	}
-} 
-
-
-//充值页面
-#nv_home{
-	//积分页面顶部说明
-	.user-credit-ac{
-		line-height:24px;padding:10px;
-		border:1px solid #ccc;border-top:none;
-	}
-
-	#addfundsform{
-		//临时隐藏财付通
-		.mbm{
-			.none;
-		}
-		//选择label与银行卡
-		.vm{margin-right:2px;}
-	}
+//用户信息卡颜色
+.card_gender_2{
+	background-color: #eae6f4 !important;
 }
-
+.bui{
+	box-shadow:0 0 4px #eee;border-radius:4px;
+}
 
 //认证页面
 #nv_home{
@@ -64,3 +35,49 @@
 	}
 }
 
+
+//道具记录
+#nv_home{
+	.magiclogs{
+		background:#eee;border-radius:20px;margin-top:10px !important;border-bottom:none;
+	}
+	.magiclogs.tb a{
+		border:none;background:none;
+	}
+}
+
+
+//签到系统
+.pg_ljdaka{
+	.box{
+		background-color:#f2f2f2;
+	}
+	.bm{
+		padding:10px;
+		.notice{
+			.none;
+		}
+		.tb_h{
+			background:none;
+		}
+		.tb_h a{
+			border:1px solid #ccc;border-bottom:1px solid #fff;
+		}
+	}
+	.bm_h{
+		border:none;
+		border-radius:24px;
+		height:24px;
+		line-height:24px;
+	}
+	.bm_c{
+		line-height:24px;
+	}
+	.pg{
+		padding:5px 0;
+	}
+	.sd{
+		.bm:last-child{.none;}
+	}
+
+}
