@@ -39,15 +39,15 @@
 	}
 }
 
-//用户中心侧边栏
+//默认左侧边栏
 .user-nav{
 	h3{
 		font-weight:bold;border-bottom:1px solid #ccc;
 		line-height:32px;height:32px;color:@bluex;a{color:@bluex;}
 		cursor:pointer;
-		&:nth-child(1){
+		/*&:nth-child(1){
 			&:before{content:'\e613';.iconfont;font-size:20px;line-height:32px;font-weight:normal;width:32px;.pa;}
-		}
+		}*/
 		a{.db;.full;text-indent:30px;
 			&:hover{color:#cc0000;}
 		}
@@ -75,6 +75,29 @@
 		&.a{a{color:#cc0000;.bold;}}
 
 		a{text-indent:18px;}
-		a.vip{background:~"url('@{url}/user/icon/vip2.gif') no-repeat 68% 40% / auto 50%";/*color:#cc0000;.bold;*/}
+		a.vip{background:~"url('@{url}/user/icon/vip2.gif') no-repeat 78% 40% / auto 50%";/*color:#cc0000;.bold;*/}
 	}
 }
+
+
+//默认右侧边栏
+.user-sd{
+	.bm_c{
+		.pbg{
+			height:16px;
+		}
+		p{
+			a{color:@bluex;}
+		}
+	}
+	.bm{
+		.bm_h{
+			border:none;border-radius:24px;height:26px;line-height:26px;
+		}
+	}
+}
+
+//右侧边栏顶部自定义
+.user-os-sidebar{}
+
+.applwrap{.fl;}

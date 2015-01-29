@@ -1,109 +1,200 @@
-//群组栏目
-
-#nv_group{
-	//面包屑
-	#pt{
-		width:@wp;margin:0 auto;
-		border-bottom:1px dotted #ddd;
-		margin-bottom:10px;
-	}
-}
-
-
-#g_commend{.none;}
-
-
-
-/* =群组
--------------------------------------------------------------- */
-
 /* 群组栏目
 -------------------------------------------------------------- */
-	#nv_group .mn #diycontenttop {display:none;}
-	#nv_group .mn,#nv_group .sd {float:right;}
-	#nv_group .bm .bm_c .mbm.pbm.bbda dd a {width:22%;}
 
-	.zGroup{background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eig057upj1j21hc0fgn83.jpg") no-repeat top center;}
+	#nv_group.pg_viewthread{
+		.box{
+			padding:10px 0;
+		}
+		#pt{
+			width:@wp;margin:0 auto 10px auto;border-bottom:1px dotted #ddd;
+		}
+	}
 
-	.zGroupTop{width:1080px;margin:0 auto;}
-	.zBackGroup{padding-top:60px;}
-	.zBackGroup a {display:block;width:330px;height:150px;}
-	.zGroupMain #ct.ct2.wp.cl {width:1078px !important;margin-top:40px !important;}
+	.zGroup{
+		background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eig057upj1j21hc0fgn83.jpg") #f7f7f7 no-repeat top center;padding-bottom:20px;
 
-	.zMyGroup {padding-top:10px;margin-left:35px;line-height:34px;}
-	.zMyGroup a {display:block;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_my.png") no-repeat;height:34px;width:200px;color:#ffffff;line-height:34px;text-align:center;letter-spacing:2px;}
-	.zMyGroup a:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_my.png") no-repeat 0 -34px;color:#ffffff;}
-	.zGroup .sd #create_group_btn {display:block;background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_add.png") no-repeat;height:42px;width:210px;}
-	.zGroup .sd #create_group_btn:hover {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_add.png") no-repeat 0 -42px;}
-	.zGroup .sd #create_group_btn img {display:none;}
+		//顶部
+		.zGroupTop{width:@wp;margin:0 auto;
+			//logo
+			.zBackGroup{padding-top:60px;
+				 a {display:block;width:330px;height:150px;}
+			}
 
-	.zGroupMain .mn .bm.fl.cl{width:760px !important;}
+			.zMyGroup {
+			//快捷按钮
+				padding-top:10px;margin-left:40px;line-height:34px;
+				a {.dbi;background:url("@{url}/pve/group/g_my2.png") no-repeat;
+				height:34px;width:130px;color:#ffffff;line-height:34px;text-align:center;letter-spacing:2px;margin-right:20px;}
+				a:hover{background:url("@{url}/pve/group/g_my2.png") no-repeat 0 -34px;color:#ffffff;}
+			}
+		}
 
-	.zGroup .fl_tb {width:100%;}
-	.zGroup .fl_row td {border-top:1px dashed #cdcdcd;}
-	.zGroup .fl_tb td {padding:10px 0;}
-	.zGroup .fl_g {vertical-align:top;}
-	.zGroup .fl_icn_g {width:48px;float:left;}
-	.zGroup .fl_g dl {margin-left:20px;padding:0 5px;}
-	.zGroup .fl_g dt {font-weight:700;}
-	.zGroup .tl .th {margin-top:1px;padding:0;border-bottom:1px solid #cdcdcd;background:#f2f2f2;}
-	.zGroup .tl .th table {border:none;}
-	.zGroup .tl table {width:100%;table-layout:fixed;border-collapse:separate;}
-	.zGroup .tl .th td,.zGroup .tl .th th {height:20px;border:none;vertical-align:baseline;}
-	.zGroup .tl .icn {padding-left:5px;width:25px;text-align:left;}
-	.zGroup .tl th,.zGroup .tl td {padding:5px 0;}
-	.zGroup .tl th,.zGroup .tl td.fn {padding-right:1.5em;zoom:1;}
-	.zGroup .tl .by {width:105px;line-height:14px;}
-	.zGroup .tl .num {width:60px;line-height:14px;}
-	.zGroup .tl .bm_c {padding-top:0;}
-	.zGroup .tl cite,.zGroup .tl .num em {display:block;}
-	.zGroup .tl td em,.zGroup .tl td em a {color:#999;}
-	.zGroup .tl td em {font-size:11px;font-family:Arial,Psimsun,sans-serif;}
-	.zGroup .ttp {margin-bottom:5px;padding-top:10px;border-width:2px 0 0;background:transparent;}
-	.zGroup .ttp li {float:left;padding-bottom:5px;}
-	#gh img {width:778px;}
+		//内容
+		.zGroupMain{
+				width:@wp;margin:20px auto 0 auto;padding:10px 0;background-color:#fff;border-radius:8px;border:1px solid #ddd;.clip;
 
-	.zGroup .fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
-	.zGroup .fa_rss {background-image:url("http://static.jx3pve.com/static/image/common//feed.gif")}
-	.zGroup .fa_ivt {background-image:url("http://static.jx3pve.com/static/image/common//user_add.gif")}
-	.zGroup .fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
-	.zGroup .fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
+			//面包屑
+			#pt{
+				padding-left:20px;border-bottom:1px dotted #ddd;margin-bottom:5px;
+				.acolor(#555,@bluex);
+			}
 
-	.zGroup .fl_tb {width:100%;}
-	.zGroup .fl_row td {border-top:1px dashed #cdcdcd;}
-	.zGroup .fl_tb td {padding:10px 0;}
-	.zGroup .fl_g {vertical-align:top;}
-	.zGroup .fl_icn_g {width:48px;float:left;}
-	.zGroup .fl_g dl {margin-left:20px;padding:0 5px;}
-	.zGroup .fl_g dt {font-weight:700;}
-	.zGroup .tl .th {margin-top:1px;padding:0;border-bottom:1px solid #cdcdcd;background:#f2f2f2;}
-	.zGroup .tl .th table {border:none;}
-	.zGroup .tl table {width:100%;table-layout:fixed;border-collapse:separate;}
-	.zGroup .tl .th td,.zGroup .tl .th th {height:20px;border:none;vertical-align:baseline;}
-	.zGroup .tl .icn {padding-left:5px;width:25px;text-align:left;}
-	.zGroup .tl th,.zGroup .tl td {padding:5px 0;}
-	.zGroup .tl th,.zGroup .tl td.fn {padding-right:1.5em;zoom:1;}
-	.zGroup .tl .by {width:105px;line-height:14px;}
-	.zGroup .tl .num {width:60px;line-height:14px;}
-	.zGroup .tl .bm_c {padding-top:0;}
-	.zGroup .tl cite,.zGroup .tl .num em {display:block;}
-	.zGroup .tl td em,.zGroup .tl td em a {color:#999;}
-	.zGroup .tl td em {font-size:11px;font-family:Arial,Psimsun,sans-serif;}
-	.zGroup .ttp {margin-bottom:5px;padding-top:10px;border-width:2px 0 0;background:transparent;}
-	.zGroup .ttp li {float:left;padding-bottom:5px;}
-	#gh img {width:778px;}
+			//标题头
+			.bm_h.cl{height:26px;background:@bluex;color:#fff;border-radius:18px !important;border:none;line-height:26px !important;}
+			.bml .bm_h,.bm_h.cl{padding-top:0;padding-bottom:0;margin:10px 0;}
+			.bm_h.cl h2{line-height:26px;}
+			.bm{border:none;background:none;}
+
+			//中央
+			#ct {
+				padding:0 10px;width:@wp - 20px;
+
+				//内容
+				.mn{
+					width:@wp - 220px - 20px - 40px;.fr;
+
+					//海报图
+					#gh{
+						border:none;
+						.bm_h{background-color:@bluex;}
+						img{width:940px;height:220px;}
+					}
+
+					//加入按钮
+					.ptm{
+						button{background:url("@{url}/pve/group/g_join.png") no-repeat 0 0;width:144px;height:39px;line-height:39px;border:none;}
+						button:hover{background:url("@{url}/pve/group/g_join.png") no-repeat 0 -39px;}
+					}
+
+					
+					//首页
+					#diycommendtop{.none;}//群组焦点
+					#g_commend{.none;}//推荐群组
+
+					//群组一览
+					.bm_c{
+						padding:0;
+						.pbn{
+							color:#666;border-bottom: 1px dotted #ddd;line-height:32px;margin-bottom:10px;
+							.xs2 a{color:@bluex;.bold;font-size:12px;}
+							.xi2 {.acolor(#777,@bluex);}
+						}
+						dd{
+							.clear;
+							a{.dbi;width:22%;height:28px;line-height:28px;.clip;.y(top);}
+							.acolor(#555,@bluex);
+						}
+						.bbda{
+							border-bottom:none;
+						}
+					}
+
+					//无海报群组
+					.xlda{
+						dd.cl{
+							line-height:28px;
+							.y{float:none;
+								a{width:auto;}
+							}
+						}
+					}
+
+
+
+					.fl .bm_h{background:none;border:none;}
+					.zgrolistop{.none;}
+
+
+				
+					.tl .bm_c,#threadlist{
+						font-family:'宋体';font-size:12px;
+						a{font-family:'宋体';font-size:12px;}
+					}
+
+				}
+
+				//侧边栏
+				.sd{
+					.fl;
+					#create_group_btn {
+						display:block;background:url("@{url}/pve/group/g_add.png") no-repeat;height:42px;width:210px;
+						.none;
+						img {display:none;}
+						&:hover {background:url("@{url}/pve/group/g_add.png") no-repeat 0 -42px;}
+					}
+
+					.tb_h{
+						background-color:@bluex;border-radius:28px;line-height:28px;color:#fff;border:none;
+						li{margin:0;}
+						li a{background:none;border:none;color:#fff;}
+						li:first-child{background-color:#27b6d9;border-radius:28px 0 0 28px;}
+						li.a{a{text-shadow:1px 1px 0px #0f84a1;}}
+					}
+					/*.bm_c{
+						ul{
+							li{
+								line-height:24px;height:24px;
+							}
+						}
+					}*/
+
+					.g_creatmore{.none;}
+				}
+
+			}
+
+			
+
+			
+
+			
+			
+
+		}
+
+
+	}
+
+	
+/*.zGroup{
+	.fl_icn_g{margin-right:10px;}
+	.fl_tb {width:100%;}
+	.fl_row td {border-top:1px dashed #cdcdcd;}
+	.fl_tb td {padding:10px 0;}
+	.fl_g {vertical-align:top;color:#777; a{color:#555;}}
+	.fl_icn_g {width:48px;float:left;}
+	.fl_g dl {margin-left:20px;padding:0 5px;}
+	.fl_g dt {font-weight:700;}
+	.tl .th {margin-top:1px;padding:0;border-bottom:1px solid #cdcdcd;background:#f2f2f2;}
+	.tl .th table {border:none;}
+	.tl table {width:100%;table-layout:fixed;border-collapse:separate;}
+	.tl .th td,.zGroup .tl .th th {height:20px;border:none;vertical-align:baseline;}
+	.tl .icn {padding-left:5px;width:25px;text-align:left;}
+	.tl th,.zGroup .tl td {padding:5px 0;}
+	.tl th,.zGroup .tl td.fn {padding-right:1.5em;zoom:1;}
+	.tl .by {width:105px;line-height:14px;}
+	.tl .num {width:60px;line-height:14px;}
+	.tl .bm_c {padding-top:0;}
+	.tl cite,.zGroup .tl .num em {display:block;}
+	.tl td em,.zGroup .tl td em a {color:#999;}
+	.tl td em {font-size:11px;font-family:Arial,Psimsun,sans-serif;}
+	.ttp {margin-bottom:5px;padding-top:10px;border-width:2px 0 0;background:transparent;}
+	.ttp li {float:left;padding-bottom:5px;}
+
 	.fa_fav_0,.fa_fav,.fa_rss,.fa_achv,.fa_bin,.fa_ivt {padding-left:20px;background-repeat:no-repeat;background-position: 0 50%;}
-	.zGroup .fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
-	.zGroup .fa_rss {background-image:url("http://static.jx3pve.com/static/image/common//feed.gif")}
-	.zGroup .fa_ivt {background-image:url("http://static.jx3pve.com/static/image/common//user_add.gif")}
-	.zGroup .fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
-	.zGroup .fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
+	.fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
+	.fa_rss {background-image:url("http://static.jx3pve.com/static/image/common//feed.gif")}
+	.fa_ivt {background-image:url("http://static.jx3pve.com/static/image/common//user_add.gif")}
+	.fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
+	.fa_fav {background-image:url("http://static.jx3pve.com/static/image/common//fav.gif")}
+}*/
 
-	#nv_group .zGroup .ct2 .mn{width:800px;}
-	#nv_group .mn{padding:10px 20px 0 20px;}
-	#nv_group #gh{clear:both;}
-	.zGroup .sd .drag{padding:0 10px;}
-	#nv_group .bm_h.cl{height:26px;}
+/*#nv_group .mn #diycontenttop {display:none;}
+	#nv_group .mn,#nv_group .sd {float:right;}
+	#nv_group .bm .bm_c .mbm.pbm.bbda dd a {width:22%;}*/
+/*	#nv_group #gh{clear:both;}*/
+	/*.zGroup .sd .drag{padding:0 10px;}*/
+/*	
 	#nv_group .mn .bm {}
 	.groupbtn.xi2{cursor:pointer;}
 	#nv_group .zGroup .tl .bm_c {padding:0;}
@@ -114,15 +205,11 @@
 	#nv_group .zGroupMain #pt{display:none;}
 	#nv_group .zGroupMain #ct{border-radius:6px;}
 	.g_creatmore{text-align:right;background:#f2f2f2;height:24px;line-height:24px;display:block;text-decoration:underline;}
-	#nv_group .zGroup .ptm.pbm button.pn,#nv_group .zGroup .xi1 button.pn{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_join.png") no-repeat 0 0;width:144px;height:39px;line-height:39px;border:none;}
-	#nv_group .zGroup .ptm.pbm button.pn:hover,#nv_group .zGroup .xi1 button.pn:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/group/g_join.png") no-repeat 0 -39px;}
+	*/
 
 
-	#nv_group .sd{padding-top:10px;}
-	#nv_group .bm.bmw  .bm_h.cl,#nv_group #g_commend .bm_h.cl{display:none;}
-	#nv_group .bm_h.cl{background:#eee;border-radius:18px !important;border:none;line-height:26px !important;}
-	#nv_group .bml .bm_h,#nv_group .bm_h.cl{padding-top:0;padding-bottom:0;margin:10px 0;}
-	#nv_group .bm_h.cl h2{line-height:26px;}
+	/*#nv_group .bm.bmw  .bm_h.cl,#nv_group #g_commend .bm_h.cl{display:none;}
+
 	#nv_group .pbn .xs2 a{font-size:12px;color:#F26C4F;}
 	#nv_group  .bm_c  dl.mbm.pbm.bbda dd a{width:18%;display:inline-block;line-height:30px;text-indent:5px;}
 	#nv_group  .bm_c  dl.mbm.pbm.bbda dd a:hover{background:#eee;color:#F26C4F;font-weight:bold;}
@@ -135,4 +222,4 @@
 	.meta-authorsky a:hover{color:#fff;background:url("http://static.jx3pve.com/cssjsimg/img/author-label4.png") no-repeat 0 -24px;width:72px;height:24px;line-height:24px;display:inline-block;}
 	#nv_group .xst{font-family:Trebuchet MS,宋体 !important;font-size:12px  !important;}
 	#nv_group .bm_c a:hover{color:#615CFF;}
-	#nv_group .t_f{}
+	#nv_group .t_f{}*/

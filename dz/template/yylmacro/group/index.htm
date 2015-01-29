@@ -1,4 +1,22 @@
 <!--{template common/header}-->
+<div class="zGroup">
+
+	
+	<div class="zGroupTop">
+		<div class="zBackGroup">
+			<a href="http://www.jx3pve.com/group.php"></a>
+		</div>
+	
+		<div class="zMyGroup">
+			<a href="http://www.jx3pve.com/group.php?mod=my">我的群组</a>
+			<a href="http://www.jx3pve.com/forum.php?mod=group&action=create">创建群组</a>
+		</div>
+	</div>
+
+	<div class="zGroupMain">
+	
+
+
 	<div id="pt" class="bm cl">
 		<div class="z">
 			<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="group.php">{$_G[setting][navs][3][navname]}</a>$navigation
@@ -13,7 +31,7 @@
 		<div class="mn">
 			<!--[diy=diycontenttop]--><div id="diycontenttop" class="area"></div><!--[/diy]-->
 			<div class="bm bmw">
-				<div class="bm_h cl">
+				<div class="bm_h cl none">
 					<span class="y xw1"><a href="group.php?mod=my">{lang my_group} &rsaquo;</a></span>
 					<h2>{lang group_focus}</h2>
 				</div>
@@ -38,6 +56,10 @@
 
 			<!--[diy=diycategorytop]--><div id="diycategorytop" class="area"></div><!--[/diy]-->
 			<!--{hook/index_top}-->
+			
+			
+			
+			
 			<div class="bm">
 				<div class="bm_h cl">
 					<h2>{lang group_categories}</h2>
@@ -63,13 +85,23 @@
 		</div>
 
 		<div class="sd">
+		
+			<div class="zGroupDiy">
+			<!--[diy=diy1060]-->
+			<div id="diy1060" class="area"><!--{block/898}--></div>
+			<!--[/diy]-->
+			</div>
+		
+		
 			<div class="drag">
 				<!--[diy=diysidetop]--><div id="diysidetop" class="area"></div><!--[/diy]-->
 			</div>
+			
+				
 			<!--{hook/index_side_top}-->
 			<!--{if helper_access::check_module('group')}-->
 				<!--{if empty($gid) && empty($sgid)}-->
-					<div class="bm">
+					<div class="bm none">
 						<div class="bm_h cl">
 							<h2>{lang create_group_step}</h2>
 						</div>
@@ -111,6 +143,12 @@
 				</div>
 			<!--{/if}-->
 			<div class="drag">
+				<div class="bm_h cl">
+					<h2>广告</h2>
+				</div>
+				
+				<!--{block/900}-->
+				
 				<!--[diy=diysidebottom]--><div id="diysidebottom" class="area"></div><!--[/diy]-->
 			</div>
 			<!--{hook/index_side_bottom}-->
@@ -119,6 +157,7 @@
 
 <div class="wp mtn">
 	<!--[diy=diy4]--><div id="diy4" class="area"></div><!--[/diy]-->
+	</div>
+	</div>
 </div>
-
-<!--{template common/footer}-->
+<!--{template common/footer}

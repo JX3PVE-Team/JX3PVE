@@ -1,97 +1,140 @@
-//个人中心
+//用户中心中央
 .user-os{
-	width:100%;padding:0 10px;.clear;
-	.user-os-content{
-		width:@wp - 140px - 200px - 80px;
-		.fl;
-	}
+	width:@wp;margin:0 auto;
+	
+	//主体区
+	.user-os-main{
+		width:@wp - 140px - 220px - 40px;
 
-	//侧边栏
-	.user-os-sidebar{
-		width:200px;
-		.fr;
+		//顶部
+		.user-os-header{
+			.user-os-profile{
 
-		.user-os-feedback{
-			.gray-btn;width:80%;
-			margin:2px 0 10px 0;
-		}
-	}
-}
+				border-bottom:1px dotted #ddd;
 
-//顶部
-.user-os-header{
-	.user-os-profile{
+				.base-info{
+					background-color:#f2f2f2;height:54px;padding:10px;border-radius:8px;.clear;.pr;
+					.useravt{
+						.fl;margin-right:10px;
+						a{.db;height:54px;}
+						img{width:48px;height:48px;border-radius:4px;padding:2px;background-color:#fff;border:1px solid #ddd;}
+					}
+					.username{
+						b{.fz(16px,1.5);}
+						i{color:@yel;.fz(12px,2.5);}
+						a{color:@bluex;&:hover{color:#cc0000;border-bottom:1px dotted #ddd;}}
+					}
+					.usermail{
+						text-indent:24px;
+						&.novalidate{background:url('@{url}/user/icon/mail_inactive.png') no-repeat 65px 0;}
+						&.validate{background:url('@{url}/user/icon/mail_active.png') no-repeat 65px 0;}
+					}
+					.user-important{
+						.pa;right:20px;top:20px;
+						.btn-govip{
+							.gray-btn;padding:2px 10px 2px 5px;
+							a{
+								background: url('@{url}/user/icon/vip2.gif') no-repeat 0 0;
+								padding-left:30px;height:26px;.db;line-height:26px;
+							}
+						}
+					}
+				}
 
-		border-bottom:1px dotted #ddd;
+				.extend-info{
+					.clear;padding:5px;letter-spacing:1px;
 
-		.base-info{
-			background-color:#f2f2f2;height:54px;padding:10px;border-radius:8px;.clear;.pr;
-			.useravt{
-				.fl;margin-right:10px;
-				a{.db;height:54px;}
-				img{width:48px;height:48px;border-radius:4px;padding:2px;background-color:#fff;border:1px solid #ddd;}
-			}
-			.username{
-				b{.fz(16px,1.5);}
-				i{color:@yel;.fz(12px,2.5);}
-				a{color:@bluex;&:hover{color:#cc0000;border-bottom:1px dotted #ddd;}}
-			}
-			.usermail{
-				text-indent:24px;
-				&.novalidate{background:url('@{url}/user/icon/mail_inactive.png') no-repeat 65px 0;}
-				&.validate{background:url('@{url}/user/icon/mail_active.png') no-repeat 65px 0;}
-			}
-			.user-important{
-				.pa;right:20px;top:20px;
-				.btn-govip{
-					.gray-btn;padding:2px 10px 2px 5px;
-					a{
-						background: url('@{url}/user/icon/vip2.gif') no-repeat 0 0;
-						padding-left:30px;height:26px;.db;line-height:26px;
+					li{
+						.fl;.dbi;.y;.nobreak;height:28px;line-height:28px;margin-right:60px;
+						label{background-color:#f2f2f2;border-radius:3px;padding: 5px 8px;}
+					}
+
+					.verf{
+						label{}//letter-spacing:4px;
+						span{.dbi;}
+						img{margin-right:5px;}
+					}
+
+					.cre{
+						label{}//letter-spacing:4px;
+						span{.bold;color:#ff0000;}
+					}
+
+					.usergroup{
+
 					}
 				}
 			}
+
+			.banner{
+			}
 		}
 
-		.extend-info{
-			.clear;padding:5px;letter-spacing:1px;
-
-			li{
-				.fl;.dbi;.y;.nobreak;height:28px;line-height:28px;margin-right:60px;
-				label{background-color:#f2f2f2;border-radius:3px;padding: 5px 8px;}
+		//自己动态
+		.user-active-me{
+			margin:10px 0 20px 0;font-size:12px !important;
+			table{width:100%;}
+			th{.none;}
+			td{h3{.none;}}
+			#mood_mystatus{color:#777 !important;line-height:2;}
+			#moodfm{
+				.moodfm_input{
+					width:680px;background:none;border:1px solid #ddd;border-radius:4px;
+					textarea{width:98%;margin:0 auto;.db;padding:5px;}
+				}
+				.moodfm_btn{
+						background:none;padding:0 0 0 10px;
+					button{
+						opacity:1;background:none;border:none;color:#fff;.fz(18px,62px);
+						.blue-btn;border-radius:3px;box-shadow:0 0 4px #666;height:62px;width:88px;
+						font-family:'微软雅黑';letter-spacing:5px;
+					}
+				}
 			}
 
-			.verf{
-				label{}//letter-spacing:4px;
-				span{.dbi;}
-				img{margin-right:5px;}
-			}
+		}
 
-			.cre{
-				label{}//letter-spacing:4px;
-				span{.bold;color:#ff0000;}
-			}
+		//网站导航
+		.user-os-primary{
+			margin-top:10px;
+		}
 
-			.usergroup{
-
-			}
+		//底部
+		.user-os-footer{
+			margin-top:10px;
 		}
 
 
 	}
-}
-
-//内容
-.user-os-primary{
 
 }
 
-//底部
-.user-os-footer{
 
+//记录页面
+#moodfm{
+	margin-bottom:10px;
 }
 
-//侧边
-.user-os-sidebar{
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
