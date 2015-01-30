@@ -509,7 +509,7 @@ https://github.com/iRuxu/iruxucss
   text-align: center;
 }
 .wrap .main .pvx-cont .turn-page .page-list a {
-  padding: 4px 10px;
+  padding: 5px 10px;
   margin: 4px;
   border: #b7b7b7 1px solid;
   color: #333;
@@ -531,16 +531,31 @@ https://github.com/iRuxu/iruxucss
   background-position: 90% 50%;
   padding-right: 25px;
 }
-.wrap .main .pvx-cont .turn-page .page-list strong {
-  padding: 4px 10px;
+.wrap .main .pvx-cont .turn-page .page-list strong,
+.wrap .main .pvx-cont .turn-page .page-list span {
+  padding: 5px 10px;
   margin: 4px;
   color: #333;
+  border: #b7b7b7 1px solid;
 }
-.wrap .main .pvx-cont .turn-page .page-list strong.current {
+.wrap .main .pvx-cont .turn-page .page-list strong.current,
+.wrap .main .pvx-cont .turn-page .page-list span.current {
   background-color: #cecece;
   color: #393939;
   font-weight: bold;
-  border: #b7b7b7 1px solid;
+}
+.wrap .main .pvx-cont .turn-page .page-list strong input.px,
+.wrap .main .pvx-cont .turn-page .page-list span input.px {
+  background: #e3e3e3;
+  width: 25px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0;
+  color: #5a5a5a;
+  border: 1px solid #c9c7c8;
+  -moz-box-shadow: 1px 1px 1px #787878 inset;
+  -webkit-box-shadow: 1px 1px 1px #787878 inset;
+  box-shadow: 1px 1px 1px #787878 inset;
 }
 /* 
 * PVX专栏-pet
