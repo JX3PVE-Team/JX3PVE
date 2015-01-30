@@ -1,0 +1,145 @@
+/* 
+* PVX专栏公共布局-通用
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+
+.wrap {
+  background: url("@{base-url}/bgx.png");
+  .main {
+    .tab {
+      padding: 300px 0 0 0;
+      clear: both;
+      ul {
+        width: 1180px;
+        margin: auto;
+        li {
+          display: inline-block;
+          width: 289px;
+          img {
+            display: block;
+            width: 224px;
+            height: 116px;
+            overflow: hidden;
+            margin: auto;
+            transition: All 0.3s ease-in-out;
+            -webkit-transition: All 0.3s ease-in-out;
+            -moz-transition: All 0.3s ease-in-out;
+            -o-transition: All 0.3s ease-in-out;
+            &:hover {
+              transform: translate(0, -10px) scale(1.1);
+              -webkit-transform: translate(0, -10px) scale(1.1);
+              -moz-transform: translate(0, -10px) scale(1.1);
+              -o-transform: translate(0, -10px) scale(1.1);
+              -ms-transform: translate(0, -10px) scale(1.1);
+            }
+          }
+          span {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-indent: -99999px;
+          }
+        }
+      }
+    }
+    //.tab end
+    .nav {
+      width: 100%;
+      height: 50px;
+      margin: 20px 0 0 0;
+      padding: 0 0 20px 0;
+      background: url("@{base-url}/navbg.png") top center no-repeat;
+      ul {
+        width: 980px;
+        height: 50px;
+        margin: auto;
+        li {
+          display: inline-block;
+          width: 120px;
+          line-height: 50px;
+          &.on {
+            a {
+              background: url("@{base-url}/nav-on.png") left no-repeat;
+            }
+          }
+          &.back {
+            float: right;
+            a {
+              width: 120px;
+              padding: 0;
+              color: #ccc;
+              font-size: 12px;
+              text-align: right;
+              &:hover {
+                background: none;
+                color: #fff;
+              }
+            }
+          }
+          a {
+            display: block;
+            width: 90px;
+            padding: 0 0 0 30px;
+            color: #fff;
+            font-size: 14px;
+            &:hover {
+              background: url("@{base-url}/nav-on.png") left no-repeat;
+            }
+          }
+        }
+      }
+    }
+    //.nav end
+    .pvx-cont {
+      width: 1180px;
+      margin: auto;
+      padding: 0 0 20px 0;
+      .turn-page {
+        padding: 10px 0 0 0;
+        .page-list{
+          padding: 3px;
+          margin: 3px;
+          text-align: center;
+          a {
+            padding: 4px 10px;
+            margin: 4px;
+            border: #b7b7b7 1px solid;
+            color: #333;
+            text-decoration: none;
+            &:hover, &:active {
+              background: #cecece;
+              color: #393939;
+              border: #666 1px solid;
+            }
+            &.back {
+              background: url("http://static.jx3pve.com/static/image/common//arw_l.gif") no-repeat;
+              background-position: 10px 50%;
+              padding-left: 25px;
+            }
+            &.next {
+              background: url("http://static.jx3pve.com/static/image/common//arw_r.gif") no-repeat;
+              background-position: 90% 50%;
+              padding-right: 25px;
+            }
+          }
+          strong {
+            padding: 4px 10px;
+            margin: 4px;
+            color: #333;
+            &.current {
+              background-color: #cecece;
+              color: #393939;
+              font-weight: bold;
+              border: #b7b7b7 1px solid;
+            }
+
+          }
+        }
+      }
+      //.turn-page end
+    }
+    //.pvx-cont end
+  }
+}

@@ -1,0 +1,92 @@
+/* 
+* PVX专栏-video
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+
+.video {
+  .main {
+    background: url("@{base-url}/video/bg.jpg") top center no-repeat;
+    .tab {
+      ul {
+        li {
+          span {
+            &.story {
+              background: url("@{base-url}/textpic/story.png") center no-repeat;
+            }
+            &.music {
+              background: url("@{base-url}/textpic/music.png") center no-repeat;
+            }
+            &.official {
+              background: url("@{base-url}/textpic/official.png") center no-repeat;
+            }
+            &.other {
+              background: url("@{base-url}/textpic/other.png") center no-repeat;
+            }
+
+          }
+        }
+      }
+    }
+    //.tab end
+    .pvx-cont {
+      .cont-box {
+        padding:  0 0 20px 0;
+        background: url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_hr.png") bottom no-repeat;
+        .ul-title {
+          line-height: 36px;
+          * {
+            display: inline-block;
+          }
+          span {
+            width: 7%;
+            font-size: 16px;
+            color: #000000;
+            text-align: center;
+          }
+          b {
+            background: url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/tool_raw.png") left no-repeat;
+            width: 8%;
+            font-size: 16px;
+            text-align: center;
+          }
+          hr {
+            width: 84%;
+            margin: 0 0 3px 0;
+            border: 1px dashed #000;
+            color: blue;
+          }
+        }
+        //.ul-title end
+        ul {
+          padding: 10px 0 0 0;
+          li {
+            display: inline-block;
+            width: 24.5%;
+            padding: 0 0 10px 0;
+            img {
+              display: block;
+              width: 258px;
+              height: 134px;
+              margin: auto;
+              border-radius: 15px;
+            }
+            span {
+              display: block;
+              width: 100%;
+              height: 50px;
+              line-height: 50px;
+              overflow: hidden;
+              &:hover {
+                color: #93f;
+              }
+            }
+          }
+        }
+        //ul内容 end
+      }
+      //.cont-box end
+    }
+    //.pvx-cont end
+  }
+}
