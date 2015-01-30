@@ -465,7 +465,7 @@ https://github.com/iRuxu/iruxucss
 }
 .wrap .main .nav ul li {
   display: inline-block;
-  width: 120px;
+  width: 110px;
   line-height: 50px;
 }
 .wrap .main .nav ul li.on a {
@@ -475,7 +475,7 @@ https://github.com/iRuxu/iruxucss
   float: right;
 }
 .wrap .main .nav ul li.back a {
-  width: 120px;
+  width: 110px;
   padding: 0;
   color: #ccc;
   font-size: 12px;
@@ -499,6 +499,10 @@ https://github.com/iRuxu/iruxucss
   width: 1180px;
   margin: auto;
   padding: 0 0 20px 0;
+}
+.wrap .main .pvx-cont .cont-box {
+  padding: 0 0 20px 0;
+  background: url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_hr.png") bottom no-repeat;
 }
 .wrap .main .pvx-cont .turn-page {
   padding: 10px 0 0 0;
@@ -562,6 +566,76 @@ https://github.com/iRuxu/iruxucss
 * By 子璇
 * 2015.1.29
 -------------------------------------------------------------- */
+.pet .main {
+  background: url("../img/pvx/pet/bg.jpg") top center no-repeat;
+}
+.pet .main .tab ul li span.aqua {
+  background: url("../img/pvx/textpic/aqua.png") center no-repeat;
+}
+.pet .main .tab ul li span.beast {
+  background: url("../img/pvx/textpic/beast.png") center no-repeat;
+}
+.pet .main .tab ul li span.bird {
+  background: url("../img/pvx/textpic/bird.png") center no-repeat;
+}
+.pet .main .tab ul li span.machine {
+  background: url("../img/pvx/textpic/machine.png") center no-repeat;
+}
+.pet .main .pvx-cont .cont-box ul {
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+.pet .main .pvx-cont .cont-box ul li {
+  display: inline-block;
+  width: 378px;
+  padding: 0 0 20px 10px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-left {
+  float: left;
+  background: #fff;
+  width: 170px;
+  height: 270px;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-left:hover {
+  background: #ffddf5;
+  -webkit-box-shadow: inset 0 0 1px 2px #ffffff;
+  -moz-box-shadow: inset 0 0 1px 2px #ffffff;
+  box-shadow: inset 0 0 1px 2px #ffffff;
+}
+.pet .main .pvx-cont .cont-box ul li .box-left img {
+  display: block;
+  width: 160px;
+  height: 254px;
+  margin: 8px 8px 12px 8px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right {
+  padding: 10px 0 0 190px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right a {
+  display: block;
+  background: url("../img/pvx/pet/more.png") no-repeat;
+  width: 142px;
+  height: 36px;
+  margin: 20px 0 0 0;
+  line-height: 36px;
+  color: #fff;
+  text-indent: 35px;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right a:hover {
+  background: url("../img/pvx/pet/more-after.png") no-repeat;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right span {
+  display: block;
+  padding: 20px 0 0 0;
+  color: #777;
+  text-shadow: 1px 1px 0 #fff;
+}
 /* 
 * PVX专栏-video
 * By 子璇
@@ -581,10 +655,6 @@ https://github.com/iRuxu/iruxucss
 }
 .video .main .tab ul li span.other {
   background: url("../img/pvx/textpic/other.png") center no-repeat;
-}
-.video .main .pvx-cont .cont-box {
-  padding: 0 0 20px 0;
-  background: url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_hr.png") bottom no-repeat;
 }
 .video .main .pvx-cont .cont-box .ul-title {
   line-height: 36px;
@@ -640,3 +710,75 @@ https://github.com/iRuxu/iruxucss
 * By 子璇
 * 2015.1.29
 -------------------------------------------------------------- */
+.face .main {
+  background: url("../img/pvx/face/bg.jpg") top center no-repeat;
+}
+.face .main .tab ul li span.man {
+  background: url("../img/pvx/textpic/man.png") center no-repeat;
+}
+.face .main .tab ul li span.boy {
+  background: url("../img/pvx/textpic/boy.png") center no-repeat;
+}
+.face .main .tab ul li span.lady {
+  background: url("../img/pvx/textpic/lady.png") center no-repeat;
+}
+.face .main .tab ul li span.loli {
+  background: url("../img/pvx/textpic/loli.png") center no-repeat;
+}
+.face .main .pvx-cont .cont-box ul {
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+.face .main .pvx-cont .cont-box ul li {
+  display: inline-block;
+  width: 378px;
+  padding: 0 0 20px 10px;
+}
+.face .main .pvx-cont .cont-box ul li .box-left {
+  float: left;
+  background: #fff;
+  width: 136px;
+  height: 190px;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+.face .main .pvx-cont .cont-box ul li .box-left:hover {
+  background: #ffddf5;
+  -webkit-box-shadow: inset 0 0 1px 2px #ffffff;
+  -moz-box-shadow: inset 0 0 1px 2px #ffffff;
+  box-shadow: inset 0 0 1px 2px #ffffff;
+}
+.face .main .pvx-cont .cont-box ul li .box-left img {
+  display: block;
+  width: 120px;
+  height: 170px;
+  margin: 8px 8px 12px 8px;
+  box-shadow: 1px 1px 2px #666;
+}
+.face .main .pvx-cont .cont-box ul li .box-right {
+  width: 212px;
+  height: 90px;
+  padding: 50px 0 50px 166px;
+}
+.face .main .pvx-cont .cont-box ul li .box-right a {
+  display: block;
+  background: url("../img/pvx/face/down.png") no-repeat;
+  width: 127px;
+  height: 25px;
+  line-height: 25px;
+  color: #555;
+  text-align: center;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+}
+.face .main .pvx-cont .cont-box ul li .box-right a:hover {
+  background: url("../img/pvx/face/down-after.png") no-repeat;
+}
+.face .main .pvx-cont .cont-box ul li .box-right span {
+  display: block;
+  padding: 15px 0 0 0;
+  color: #777;
+  text-shadow: 1px 1px 0 #fff;
+}
