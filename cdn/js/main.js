@@ -4,29 +4,6 @@ jQuery.noConflict();
 jQuery(function($){
 
 
-
-
-
-	//对话框模块
-	//------------------------------------------
-		//开启对话框
-		function loadDialog(seletor){
-			var ele = $(seletor);
-			ele.show();
-			$('#dialog-content').html('').append(ele);
-			$('#dialog,#mask').show();
-		}
-
-		function loadDialogs(string){
-			$('#dialog-content').html('').append(string);
-			$('#dialog,#mask').show();
-		}
-
-		//关闭对话框
-		$('#dialog-close').on('click', function() {
-			$('#dialog,#mask').hide();
-		});
-
 	//下载模块
 	//------------------------------------------
 		if($('#mod-down').length!=0){
@@ -118,23 +95,6 @@ jQuery(function($){
 	
 	//用户中心
 	//------------------------------------------
-		/*$('.appl .tbn ul li').hover(
-		function(){
-			var height = $(this).height(),
-				index = $(this).index(),
-				pos = index*height;
-			$('.appl .tbn #slide').css({
-				'transform':'translateY('+pos+'px)'
-			}); 
-		},function(){
-			var height = $(this).height(),
-				current = $('.appl .tbn ul li.a').index(),
-				c_pos = current*height;
-			$('.appl .tbn #slide').css({
-				'transform':'translateY('+c_pos+'px)'
-			}); 
-		})*/
-
 		if($('#nv_home').length !=0){
 		
 			$('#user-nav h3').click(function(event) {
@@ -199,7 +159,12 @@ jQuery(function($){
 	
 	//Sidebar
 	//------------------------------------------
-		fixSidebar('.sidebar-wrap', 96);
+		if($('.macro').length!=0){
+			fixSidebar('.sidebar-wrap',96,96,100);
+		}
+		if($('.zTD').length!=0){
+			fixSidebar('.sidebar-wrap',96,96,250);
+		}
 
 	//BBS
 	//------------------------------------------

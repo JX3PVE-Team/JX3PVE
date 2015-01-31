@@ -3,15 +3,29 @@
 
 	#nv_group.pg_viewthread{
 		.box{
-			padding:10px 0;
+			padding:254px 0 10px 0;
+			background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eig057upj1j21hc0fgn83.jpg") #f7f7f7 no-repeat top center;
 		}
 		#pt{
 			width:@wp;margin:0 auto 10px auto;border-bottom:1px dotted #ddd;
+		}
+		#ct{
+			background:#fff;box-shadow:0 0 4px #ddd;padding:20px;border:1px solid #ddd;
 		}
 	}
 
 	.zGroup{
 		background:url("http://ww2.sinaimg.cn/large/bcc700eegw1eig057upj1j21hc0fgn83.jpg") #f7f7f7 no-repeat top center;padding-bottom:20px;
+
+		//群组设置
+		.banner-tips{
+			b{color:@bluex;.bold;}
+		}
+		.group-img-tips{
+			color:#cc0000;
+			a{.bold;color:@bluex;}
+		}
+
 
 		//顶部
 		.zGroupTop{width:@wp;margin:0 auto;
@@ -32,6 +46,7 @@
 		//内容
 		.zGroupMain{
 				width:@wp;margin:20px auto 0 auto;padding:10px 0;background-color:#fff;border-radius:8px;border:1px solid #ddd;.clip;
+				box-shadow:0 0 4px #ddd;
 
 			//面包屑
 			#pt{
@@ -57,7 +72,7 @@
 					#gh{
 						border:none;
 						.bm_h{background-color:@bluex;}
-						img{width:940px;height:220px;}
+						img{max-width:900px;max-height:220px;_width:900px;_height:220px;}
 					}
 
 					//加入按钮
@@ -103,6 +118,15 @@
 
 					.fl .bm_h{background:none;border:none;}
 					.zgrolistop{.none;}
+					//分类页
+					.fl_row{
+						.fl_g{
+							dd{
+								height:24px;line-height:24px;
+								a{width:auto;line-height:24px;}
+							}
+						}
+					}
 
 
 				

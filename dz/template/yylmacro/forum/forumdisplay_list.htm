@@ -42,7 +42,7 @@
 					<!--{/if}-->
 				<td class="by">{lang author}</td>
 				<td class="num">{lang replies}</td>
-				<td class="by">{lang lastpost}</td>
+				<td class="by by2">{lang lastpost}</td>
 				<!--{else}-->
 				<td class="by" colspan="3">
 					<a{if empty($_G['cookie']['forumdefstyle'])} href="forum.php?mod=forumdisplay&fid=$_G[fid]&forumdefstyle=yes" class="chked"{else} href="forum.php?mod=forumdisplay&fid=$_G[fid]&forumdefstyle=no" class="unchk"{/if} title="{lang view_thread_imagemode}{lang view_thread}">{lang view_thread_imagemode}</a>
@@ -73,13 +73,13 @@
 								<em>$announcement[starttime]</em>
 							</td>
 							<td class="num">&nbsp;</td>
-							<td class="by">&nbsp;</td>
+							<td class="by by2">&nbsp;</td>
 						</tr>
 					</tbody>
 				<!--{/if}-->
 
 				<!--{if !$separatepos || !$_G['setting']['forumseparator']}-->
-					<tbody id="separatorline" class="emptb"><tr><td class="icn"></td><!--{if !$_GET['archiveid'] && $_G['forum']['ismoderator']}--><td class="o"></td><!--{/if}--><th></th><!--{if CURMODULE == 'guide'}--><td class="by"></td><!--{/if}--><td class="by"></td><td class="num"></td><td class="by"></td></tr></tbody>
+					<tbody id="separatorline" class="emptb"><tr><td class="icn"></td><!--{if !$_GET['archiveid'] && $_G['forum']['ismoderator']}--><td class="o"></td><!--{/if}--><th></th><!--{if CURMODULE == 'guide'}--><td class="by"></td><!--{/if}--><td class="by"></td><td class="num"></td><td class="by by2"></td></tr></tbody>
 				<!--{/if}-->
 
 				<!--{if $_G['forum_threadcount']}-->
@@ -237,7 +237,8 @@
 										<!--{hook/forumdisplay_author $key}-->
 										<cite>
 										<!--{if $thread['authorid'] && $thread['author']}-->
-											<a href="home.php?mod=space&uid=$thread[authorid]" c="1"{if $groupcolor[$thread[authorid]]} style="color: $groupcolor[$thread[authorid]];"{/if}>$thread[author]</a> <!-- <!--{if !empty($verify[$thread['authorid']])}--> $verify[$thread[authorid]]<!--{/if}--> -->
+											<a href="home.php?mod=space&uid=$thread[authorid]" c="1"{if $groupcolor[$thread[authorid]]} style="color: $groupcolor[$thread[authorid]];"{/if}>$thread[author]</a> $verify[$thread[authorid]]
+											<!-- <!--{if !empty($verify[$thread['authorid']])}--> $verify[$thread[authorid]]<!--{/if}--> -->
 										<!--{else}-->
 											$_G[setting][anonymoustext]
 										<!--{/if}-->
@@ -245,7 +246,7 @@
 										<em><span{if $thread['istoday']} class="xi1"{/if}>$thread[dateline]</span></em>
 									</td>
 									<td class="num"><a href="forum.php?mod=viewthread&tid=$thread[tid]&extra=$extra" class="xi2">$thread[allreplies]</a><em><!--{if $thread['isgroup'] != 1}-->$thread[views]<!--{else}-->{$groupnames[$thread[tid]][views]}<!--{/if}--></em></td>
-									<td class="by">
+									<td class="by by2">
 										<cite><!--{if $thread['lastposter']}--><a href="{if $thread[digest] != -2}home.php?mod=space&username=$thread[lastposterenc]{else}forum.php?mod=viewthread&tid=$thread[tid]&page={echo max(1, $thread[pages]);}{/if}" c="1">$thread[lastposter]</a><!--{else}-->$_G[setting][anonymoustext]<!--{/if}--></cite>
 										<em><a href="{if $thread[digest] != -2 && !$thread[ordertype]}forum.php?mod=redirect&tid=$thread[tid]&goto=lastpost$highlight#lastpost{else}forum.php?mod=viewthread&tid=$thread[tid]{if !$thread[ordertype]}&page={echo max(1, $thread[pages]);}{/if}{/if}">$thread[lastpost]</a></em>
 									</td>
