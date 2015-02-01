@@ -3,6 +3,26 @@ jQuery.noConflict();
 
 jQuery(function($){
 
+	//对话框模块
+	//------------------------------------------
+		//开启对话框
+		function loadDialog(seletor){
+			var ele = $(seletor);
+			ele.show();
+			$('#dialog-content').html('').append(ele);
+			$('#dialog,#mask').show();
+		}
+
+		function loadDialogs(string){
+			$('#dialog-content').html('').append(string);
+			$('#dialog,#mask').show();
+		}
+
+		//关闭对话框
+		$('#dialog-close').on('click', function() {
+			$('#dialog,#mask').hide();
+		});
+
 
 	//下载模块
 	//------------------------------------------
