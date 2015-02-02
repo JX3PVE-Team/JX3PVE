@@ -23,6 +23,52 @@ jQuery(function($){
 			$('#dialog,#mask').hide();
 		});
 
+	//Header
+	//------------------------------------------
+		//导航fix控制
+		$('#nav-folder').click(function() {
+			$(this).toggleClass('gray');
+			$('#menu').slideToggle();
+			$('.box').toggleClass('menufolder');;
+		});
+
+		//百度搜索文字隐藏
+		$('#bdcs').find('#bdcs-search-form-submit').val('');
+
+		//菜单图标动画
+		$('#menu-list li').cur('a');
+		$('#menu-list li a').cur('span');
+
+		//判断是否为嵌入头部
+			var is_yylheader;
+			if($('base').attr('target')=='_blank'){
+				is_yylheader = true;
+			}else{
+				is_yylheader = false;
+			}
+			//wp系统头部效果
+			if(is_yylheader){
+				$('.header .nav .app').children('i').remove();
+			//dz系统头部效果
+			}else{
+				//导航滑动效果
+				$('#menu-list').menu();
+				//警告框
+				if ($('#dialog-important').html().length > 2) {
+					$('#dialog-content').html('').append($('#dialog-important'));
+					$('#dialog-important').show();
+					$('#dialog,#mask').show();
+				}
+			}
+	
+	//Sidebar
+	//------------------------------------------
+		if($('.macro').length!=0){
+			fixSidebar('.sidebar-wrap',96,96,100);
+		}
+		if($('.zTD').length!=0){
+			fixSidebar('.sidebar-wrap',96,96,250);
+		}
 
 	//下载模块
 	//------------------------------------------
@@ -139,52 +185,15 @@ jQuery(function($){
 
 		}
 
-	//Header
+	//Raid
 	//------------------------------------------
-		//导航fix控制
-		$('#nav-folder').click(function() {
-			$(this).toggleClass('gray');
-			$('#menu').slideToggle();
-			$('.box').toggleClass('menufolder');;
-		});
-
-		//百度搜索文字隐藏
-		$('#bdcs').find('#bdcs-search-form-submit').val('');
-
-		//菜单图标动画
-		$('#menu-list li').cur('a');
-		$('#menu-list li a').cur('span');
-
-		//判断是否为嵌入头部
-			var is_yylheader;
-			if($('base').attr('target')=='_blank'){
-				is_yylheader = true;
-			}else{
-				is_yylheader = false;
+		$('#raid-sp').on('click',function(e){
+			var raid_url = $(this).attr('href');
+			if(raid_url == '' || raid_url.indexOf('http')==-1){
+				e.preventDefault();
+				loadDialogs('该团队未创建团队专栏');
 			}
-			//wp系统头部效果
-			if(is_yylheader){
-				$('.header .nav .app').children('i').remove();
-			//dz系统头部效果
-			}else{
-				//导航滑动效果
-				$('#menu-list').menu();
-				//警告框
-				if ($('#dialog-important').html().length > 2) {
-					$('#dialog-content').html('').append($('#dialog-important'));
-					$('#dialog-important').show();
-					$('#dialog,#mask').show();
-				}
-			}
-	
-	//Sidebar
-	//------------------------------------------
-		if($('.macro').length!=0){
-			fixSidebar('.sidebar-wrap',96,96,100);
-		}
-		if($('.zTD').length!=0){
-			fixSidebar('.sidebar-wrap',96,96,250);
-		}
+		})
 
 	//BBS
 	//------------------------------------------
