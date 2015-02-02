@@ -1,0 +1,90 @@
+/* 
+* PVX专栏-pet
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.pet .main .pet-page .cont-box {
+  background: none !important;
+  border-bottom: 1px solid #cceafe;
+}
+.pet .main .pet-page .cont-box h1 {
+  height: 30px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #cceafe;
+}
+.pet .main .pet-page .cont-box h1 span {
+  line-height: 30px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+.pet .main .pet-page .cont-box h1 a {
+  display: block;
+  float: right;
+  width: 42px;
+  height: 28px;
+  line-height: 28px;
+  background: url("http://static.jx3pve.com/static/image/common/fav.gif") no-repeat 10px 50%;
+  padding: 0 10px 0 30px;
+  border: 1px solid #bbb;
+}
+.pet .main .pet-page .cont-box .pet-box {
+  width: 90%;
+  padding: 30px 0 0 0;
+  margin: auto;
+  color: #333;
+  text-shadow: 1px 1px 0 #fff;
+}
+.pet .main .pet-page .cont-box .pet-box .pet-img {
+  width: 324px;
+  height: 514px;
+  float: left;
+}
+.pet .main .pet-page .cont-box .pet-box ul {
+  width: 50%;
+  height: 514px;
+  padding: 0 0 0 360px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li {
+  width: 100%;
+  padding: 0;
+  line-height: 40px;
+  border-bottom: 1px dotted #aaa;
+  word-wrap: break-word;
+}
+.pet .main .pet-page .cont-box .pet-box ul li b {
+  padding: 0 10px 0 0;
+  font-weight: normal;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-name {
+  padding: 0 0 10px 0;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  border: none;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-name span {
+  padding: 0 15px 0 0;
+  line-height: 36px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-name span img {
+  width: 36px;
+  height: 36px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw * {
+  float: left;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .editp {
+  background: url("http://static.jx3pve.com/static/image/common//edit.gif") no-repeat 4px 50%;
+  padding: 5px 10px 5px 25px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .pet-share {
+  width: 184px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .pet_my {
+  display: block;
+  background: url("http://static.jx3pve.com/cssjsimg/pet/pet_show.png") no-repeat 0 0;
+  width: 193px;
+  height: 34px;
+}
