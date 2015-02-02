@@ -349,6 +349,23 @@ function showsortmodetemplate($sortid, $fid, $sortoptionarray, $templatearray, $
 		$replaces['{subject_url}'] = $rewriteviewthread ? rewriteoutput('forum_viewthread', 1, '', $thread['tid']) : 'forum.php?mod=viewthread&amp;tid='.$thread['tid'];
 		$replaces['{lastpost_url}'] = 'forum.php?mod=redirect&tid='.$thread['tid'].'&goto=lastpost#lastpost';
 		$replaces['{lastpost_url}'] = 'forum.php?mod=redirect&tid='.$thread['tid'].'&goto=lastpost#lastpost';
+		
+		$sql = "SELECT m.groupid,g.icon FROM ".DB::table('common_member')." m ,".DB::table('common_usergroup')." g WHERE m.uid =".$thread['authorid']." and m.groupid=g.groupid LIMIT 0, 1";
+		$query = DB::query($sql);
+		$vanfon_usergroup=0;
+		while($result = DB::fetch($query)) {
+		$vanfon_usergroup=$result['icon'] ;
+		}
+		$replaces['{vanfon_usergroup}'] =$vanfon_usergroup?'<img src='.$vanfon_usergroup.' />':'<img src=http://static.yylmacro.com/jx3pve/groupicon/LV0.png >';
+
+		$sql = "SELECT c.icon FROM ".DB::table('forum_threadclass')." c ,".DB::table('forum_thread')." t WHERE t.tid =".$thread['tid']." and t.typeid=c.typeid LIMIT 0, 1";
+		$query = DB::query($sql);
+		$vanfon_typeicon=0;
+		while($result = DB::fetch($query)) {
+		$vanfon_typeicon=$result['icon'] ;
+		}
+
+		$replaces['{vanfon_typeicon}'] =$vanfon_typeicon?$vanfon_typeicon:'';
 		$replaces['{avatar_small}'] = avatar($thread['authorid'], 'small', true);
 		$replaces['{typename_url}'] = 'forum.php?mod=forumdisplay&fid='.$fid.'&filter=typeid&typeid='.$thread['tid'];
 		$replaces['{attachment}'] = ($thread['attachment'] == 2 ? '<img src="'.STATICURL.'image/filetype/image_s.gif" align="absmiddle" />' :
@@ -385,6 +402,50 @@ function threadsortshow($sortid, $tid) {
 	$sortoptionarray = $_G['cache']['threadsort_option_'.$sortid];
 	$templatearray = $_G['cache']['threadsort_template_'.$sortid];
 	$threadsortshow = $optiondata = $searchtitle = $searchvalue = $searchunit = $memberinfofield = $_G['forum_option'] = array();
+
+
+	$sql = "SELECT p.pid,p.fid,p.authorid FROM ".DB::table('forum_post')." p WHERE p.tid =".$tid." and p.position=1 LIMIT 0, 1";
+			$query = DB::query($sql);
+			$vanfon_tid=0;
+			$vanfon_fid=0;
+			$vanfon_uid=0;
+			while($result = DB::fetch($query)) {
+			$vanfon_tid=$result['pid'] ;
+			$vanfon_fid=$result['fid'] ;
+			$vanfon_uid=$result['authorid'] ;
+			
+			}		
+			$vanfon_verify='';
+			
+			$verifyuids= array();
+			$verifyuids[$vanfon_uid]=$vanfon_uid;
+			foreach(C::t('common_member_verify')->fetch_all($verifyuids) as $value) {
+				 
+			foreach($_G['setting']['verify'] as $vid => $vsetting) {
+			if($vsetting['available'] && $vsetting['showicon'] && $value['verify'.$vid] == 1) {
+				$srcurl = '';
+					if(!empty($vsetting['icon'])) {
+						$srcurl = $vsetting['icon'];
+					}
+				$vanfon_verify .= "<a href=\"home.php?mod=spacecp&ac=profile&op=verify&vid=$vid\" target=\"_blank\">".(!empty($srcurl) ? '<img src="'.$srcurl.'" class="vm" alt="'.$vsetting['title'].'" title="'.$vsetting['title'].'" />' : $vsetting['title']).'</a>';
+			}else {
+				/*$srcurl = '';
+				$srcurl =   $vsetting['unverifyicon'];
+					$vanfon_verify .= "<a href=\"home.php?mod=spacecp&ac=profile&op=verify&vid=$vid\" target=\"_blank\">".(!empty($srcurl) ? '<img src="'.$srcurl.'" class="vm" alt="'.$vsetting['title'].'" title="'.$vsetting['title'].'" />' : $vsetting['title']).'</a>';*/
+			  
+			}
+			}
+
+			}
+
+			$sql = "SELECT m.groupid,g.icon FROM ".DB::table('common_member')." m ,".DB::table('common_usergroup')." g WHERE m.uid =".$vanfon_uid." and m.groupid=g.groupid LIMIT 0, 1";
+			$query = DB::query($sql);
+			$vanfon_usergroup=0;
+			while($result = DB::fetch($query)) {
+			$vanfon_usergroup=$result['icon'] ;
+			}
+
+
 	if($sortoptionarray) {
 
 		foreach(C::t('forum_typeoptionvar')->fetch_all_by_tid_optionid($tid) as $option) {
@@ -480,6 +541,13 @@ function threadsortshow($sortid, $tid) {
 			$typetemplate = preg_replace($searchvalue, "showoption('\\1', 'value')", $typetemplate);
 			$typetemplate = preg_replace($searchunit, "showoption('\\1', 'unit')", $typetemplate);
 			$typetemplate = preg_replace($searchdownloads, "showoption('\\1', 'downloads')", $typetemplate);
+
+			$typetemplate =str_replace("{vanfon_uid}", $vanfon_uid, $typetemplate);
+			$typetemplate =str_replace("{vanfon_pid}", $vanfon_tid, $typetemplate);
+			$typetemplate =str_replace("{vanfon_tid}", $tid, $typetemplate);
+			$typetemplate =str_replace("{vanfon_fid}", $vanfon_fid, $typetemplate);
+			$typetemplate =str_replace("{vanfon_verify}", $vanfon_verify, $typetemplate);
+			$typetemplate =str_replace("{vanfon_usergroup}", $vanfon_usergroup, $typetemplate);
 
 		}
 	}

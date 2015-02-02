@@ -4,7 +4,7 @@
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
  *
- *      $Id: forum_forumdisplay.php 34350 2014-03-19 03:16:35Z hypowang $
+ *      $Id: forum_forumdisplay.php 33966 2013-09-10 05:45:11Z nemohou $
  */
 
 if(!defined('IN_DISCUZ')) {
@@ -67,6 +67,7 @@ if($_G['forum']['archive']) {
 		}
 	}
 }
+
 
 $forum_up = $_G['cache']['forums'][$_G['forum']['fup']];
 if($_G['forum']['type'] == 'forum') {
@@ -594,9 +595,11 @@ if($_G['forum']['picstyle']) {
 		$stickycount = $showsticky = 0;
 	}
 }
-//Per page
+/*threads per page*/
 if($_G['fid']==92)
 	$_G['tpp'] = 18;
+else if($_G['fid']==67)
+	$_G['tpp'] = 6;
 else if($_G['fid']==283)
 	$_G['tpp'] = 12;
 if($filter != 'hot' && @ceil($_G['forum_threadcount']/$_G['tpp']) < $page) {
@@ -617,7 +620,6 @@ $extra = rawurlencode(!IS_ROBOT ? 'page='.$page.($forumdisplayadd['page'] ? '&fi
 
 $separatepos = 0;
 $_G['forum_threadlist'] = $threadids = array();
-//Highlight Color
 $_G['forum_colorarray'] = array('', '#ff0000', '#83da02', '#9900ff', '#ff9900', '#00ccff', '#ff00cc', '#ff640f', '#0033ff');
 
 $filterarr['sticky'] = 4;
@@ -630,7 +632,7 @@ if($filter !== 'hot') {
 		if($filterarr['digest']) {
 			$indexadd = " FORCE INDEX (digest) ";
 		}
-	} elseif($showsticky && is_array($stickytids) && $stickytids[0]) {
+	} elseif($showsticky && $stickytids && is_array($stickytids)) {
 		$filterarr1 = $filterarr;
 		$filterarr1['inforum'] = '';
 		$filterarr1['intids'] = $stickytids;
@@ -668,7 +670,7 @@ $_G['ppp'] = $_G['forum']['threadcaches'] && !$_G['uid'] ? $_G['setting']['postp
 $page = $_G['page'];
 $todaytime = strtotime(dgmdate(TIMESTAMP, 'Ymd'));
 
-$verify = $verifyuids = $authorids = $grouptids = $rushtids = array();
+$groupicon = $verify = $verifyuids = $authorids = $grouptids = $rushtids = array();
 
 $thide = !empty($_G['cookie']['thide']) ? explode('|', $_G['cookie']['thide']) : array();
 $_G['showrows'] = $_G['hiddenexists'] = 0;
@@ -807,6 +809,15 @@ foreach($threadlist as $thread) {
 	if(isset($_G['setting']['verify']['enabled']) && $_G['setting']['verify']['enabled']) {
 		$verifyuids[$thread['authorid']] = $thread['authorid'];
 	}
+
+		$vsql = "SELECT m.groupid,g.icon FROM ".DB::table('common_member')." m ,".DB::table('common_usergroup')." g WHERE m.uid =".$thread['authorid']." and m.groupid=g.groupid LIMIT 0, 1";
+		$vquery = DB::query($vsql);
+		$vicon='';
+		while($vresult = DB::fetch($vquery)) {
+		$vicon=$vresult['icon'] ;
+		}
+			 
+	$groupicon[$thread['authorid']] = '<img src='.$vicon.'>';
 	$authorids[$thread['authorid']] = $thread['authorid'];
 	$thread['mobile'] = base_convert(getstatus($thread['status'], 13).getstatus($thread['status'], 12).getstatus($thread['status'], 11), 2, 10);
 	$thread['rushreply'] = getstatus($thread['status'], 3);
@@ -854,9 +865,22 @@ if(!empty($threadids)) {
 	}
 }
 
-$verify = array();
+				
+	
+				
 if($_G['setting']['verify']['enabled'] && $verifyuids) {
-	$verify = forumdisplay_verify_author($verifyuids);
+	foreach(C::t('common_member_verify')->fetch_all($verifyuids) as $value) {
+		foreach($_G['setting']['verify'] as $vid => $vsetting) {
+			if($vsetting['available'] && $vsetting['showicon'] && $value['verify'.$vid] == 1) {
+				$srcurl = '';
+					if(!empty($vsetting['icon'])) {
+						$srcurl = $vsetting['icon'];
+					}
+				$verify[$value['uid']] .= "<a href=\"home.php?mod=spacecp&ac=profile&op=verify&vid=$vid\" target=\"_blank\">".(!empty($srcurl) ? '<img src="'.$srcurl.'" class="vm" alt="'.$vsetting['title'].'" title="'.$vsetting['title'].'" />' : $vsetting['title']).'</a>';
+			}
+		}
+
+	}
 }
 if($authorids) {
 	loadcache('usergroups');
@@ -971,16 +995,4 @@ if(!defined('IN_ARCHIVER')) {
 	include loadarchiver('forum/forumdisplay');
 }
 
-function forumdisplay_verify_author($ids) {
-	foreach(C::t('common_member_verify')->fetch_all($ids) as $value) {
-		foreach($_G['setting']['verify'] as $vid => $vsetting) {
-			if($vsetting['available'] && $vsetting['showicon'] && $value['verify'.$vid] == 1) {
-				$srcurl = !empty($vsetting['icon']) ? $vsetting['icon'] : '';
-				$verify[$value['uid']] .= "<a href=\"home.php?mod=spacecp&ac=profile&op=verify&vid=$vid\" target=\"_blank\">".(!empty($srcurl) ? '<img src="'.$srcurl.'" class="vm" alt="'.$vsetting['title'].'" title="'.$vsetting['title'].'" />' : $vsetting['title']).'</a>';
-			}
-		}
-
-	}
-	return $verify;
-}
 ?>
