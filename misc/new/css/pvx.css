@@ -874,6 +874,7 @@ https://github.com/iRuxu/iruxucss
   background: url("../img/pvx/pet/show.png") no-repeat;
   width: 193px;
   height: 34px;
+  margin: 10px 0;
   transition: background 1s;
   -moz-transition: background 1s;
   -webkit-transition: background 1s;
