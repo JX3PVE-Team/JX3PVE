@@ -1,0 +1,38 @@
+<div id="threadlist" class="bm bmw"{if $_G['uid']} style="position: relative;"{/if}>
+	<!--{if $quicksearchlist && !$_GET['archiveid']}-->
+		<!--{subtemplate forum/search_sortoption}-->
+	<!--{/if}-->
+
+<div class="zTDList">
+	<p>
+					<a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=67&filter=sortid&sortid=9" 
+					class="{if $_GET['sortid']==9}raidtype-sel{/if}">招募信息</a>
+					╱
+					<a href="http://www.jx3pve.com/forum.php?mod=forumdisplay&fid=67&filter=sortid&sortid=13" 
+					class="{if $_GET['sortid']==13}raidtype-sel{/if}">团员信息</a>
+	</p>
+</div>
+
+	$sorttemplate['header']
+	<form method="post" autocomplete="off" name="moderate" id="moderate" action="forum.php?mod=topicadmin&action=moderate&fid=$_G[fid]&infloat=yes&nopost=yes">
+		$sorttemplate['body']
+		<!--{if $_G['forum']['ismoderator'] && $_G['forum_threadcount']}-->
+			<!--{template forum/topicadmin_modlayer}-->
+		<!--{/if}-->
+	</form>
+	$sorttemplate['footer']
+</div>
+
+<div class="bm bw0 pgs cl">
+	$multipage
+	<span {if $_G[setting][visitedforums]}id="visitedforumstmp" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'21'})"{/if} class="pgb y"><a href="forum.php">{lang return_index}</a></span>
+	
+	
+	<!--<!--{if !$_GET['archiveid']}--><a href="javascript:;" id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"{if !$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle'])} onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=$_G[fid]')"{else} onclick="location.href='forum.php?mod=post&action=newthread&fid=$_G[fid]';return false;"{/if} title="{lang send_posts}"><img src="{IMGDIR}/pn_post.png" alt="{lang send_posts}" /></a><!--{/if}-->-->
+<!--	<div class="raidlist-pub">
+					<a href="http://www.jx3pve.com/forum.php?mod=post&action=newthread&fid=67&extra=" class="raid-kt" title="我是团长,发布开团信息"> </a>
+					<a href="http://www.jx3pve.com/forum.php?mod=post&action=newthread&sortid=13&fid=67&cedit=yes&extra=" class="raid-zt"  title="我是团员,发布找团信息"> </a>
+	</div>
+-->
+	<!--{hook/forumdisplay_postbutton_bottom}-->
+</div>

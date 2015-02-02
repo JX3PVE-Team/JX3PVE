@@ -597,8 +597,6 @@ if($_G['forum']['picstyle']) {
 //Per page
 if($_G['fid']==92)
 	$_G['tpp'] = 18;
-else if($_G['fid']==67)
-	$_G['tpp'] = 6;
 else if($_G['fid']==283)
 	$_G['tpp'] = 12;
 if($filter != 'hot' && @ceil($_G['forum_threadcount']/$_G['tpp']) < $page) {

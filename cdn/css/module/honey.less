@@ -27,3 +27,20 @@
 		&:hover{color:#d387ff;}
 	}
 }
+
+
+//道具操作
+.panel-list{
+	padding:2px 10px;border-radius:4px;
+	.gray-btn;
+
+	&:before{content:'\e62f';.iconfont;color:rgba(255,51,153,0.3);transition:all 0.3s ease-in;}
+	&:hover{&:before{color:@pink;} box-shadow:0 0 3px #ddd;}
+	
+	a{
+		margin:0 4px;
+		transition:all 0.3s ease-in;
+		padding:0;
+		&:hover{color:@pink;}
+	}
+}
