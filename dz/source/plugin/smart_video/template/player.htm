@@ -12,11 +12,11 @@
     });
 </script>
 {elseif $num==1&& $ext=='swf'}
-<div id="swfplayer" style=" width:1020px; height:560px" style="z-index:1;">
+<div id="swfplayer" style="height:{$height}px" style="z-index:1;">
   {eval echo get_smart_player($first_url)}
   </div>
 {else}
-<div id="smart_video" style="width:1020px; height:560px;">
+<div id="smart_video" style="height:{$height}px;">
 {if $ext=='swf'}
 {eval echo get_smart_player($first_url)}
 {else}

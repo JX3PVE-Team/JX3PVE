@@ -12,7 +12,9 @@
 #reply_list ul li .reply_mes p a{ color:#3399e0;}
 #reply_list ul li .reply_mes p .reply{ margin-left:10px;}
 #reply_list ul li .reply_mes p img{ display:inline; vertical-align:middle;}
-
+{if $is_wide}
+#reply_list ul li .reply_mes{width:800px;}
+{/if}
 </style>
 <div class="ab_banner ad_banner ab_cmt" style="display: block; height:inherit;">{$smart[v_ad2]}</div>
 <div class="comments" id="comments">
@@ -78,7 +80,7 @@ jQuery(function(){
 		});	
 		jQuery(document).delegate(".delete",'click',function(){
 		pid=jQuery(this).attr('value');
-		jQuery.get('plugin.php?id=smart_video:ajax&type=delete&dsubmit=1&formhash={FORMHASH}&pid='+pid,function(){jQuery('#smart_reply_'+pid).hide(500);setTimeout(jQuery('#smart_reply_'+pid).remove(),600);});	
+		jQuery.get('plugin.php?id=smart_video:ajax&type=delete&dsubmit=1&inajax=1&formhash={FORMHASH}&pid='+pid,function(){jQuery('#smart_reply_'+pid).hide(500);setTimeout(jQuery('#smart_reply_'+pid).remove(),600);});	
 		});		
 	})
 function fucCheckLength() 
