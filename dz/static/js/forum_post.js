@@ -75,8 +75,8 @@ function validate(theform) {
 	if(($('postsubmit').name != 'replysubmit' && !($('postsubmit').name == 'editsubmit' && !isfirstpost) && theform.subject.value == "") || !sortid && !special && trim(message) == "") {
 		showError('抱歉，您尚未输入标题或内容');
 		return false;
-	} else if(mb_strlen(theform.subject.value) > 180) {
-		showError('您的标题超过 180 个字符的限制');
+	} else if(mb_strlen(theform.subject.value) > 80) {
+		showError('您的标题超过 80 个字符的限制');
 		return false;
 	}
 	if(in_array($('postsubmit').name, ['topicsubmit', 'editsubmit'])) {
@@ -573,7 +573,7 @@ function updatesortattach(aid, url, attachurl, identifier) {
 function updatefaceattach(aid, url, attachurl, identifier) {
 	$('sortaid_' + identifier).value = aid;
 	$('sortattachurl_' + identifier).value = attachurl + '/' + url;
-	$('sortattach_face_' + identifier).innerHTML = '<p style="color:#9acd32;font-weight:bold;">上传成功!</p>';
+	$('sortattach_face_' + identifier).innerHTML = '<font color=#9acd32><b>上传成功</b></font>';
 	ATTACHORIMAGE = 1;
 }
 function switchpollm(swt) {
