@@ -1,0 +1,168 @@
+//反馈建议
+
+//列表页&查看页
+.pg_forumdisplay,.pg_viewthread{
+	.faq{
+		padding:20px 0;
+		#pt{border-bottom:1px dotted #ccc;margin-bottom:20px;}
+		#ct{padding:20px;box-shadow:0 0 4px #ddd;border:1px solid #ccc !important;border-radius:6px;width:auto;}
+	}
+}
+
+//发布页
+.pg_post{
+
+.faq{
+	padding:40px 0;background-color:#f2f2f2;
+	
+	#pt{.none}
+	.wp{width:100%;}
+	
+	.main{
+		background-color:#fff;width:880px;margin:0 auto;padding:10px;border-radius:6px;box-shadow:0 0 4px #ccc;.clip;
+
+		.faq-header{
+			.pr;
+			h1{.fz(18px,3);font-family:'微软雅黑';.x;font-weight: bold;border-bottom: 1px dotted #ddd;margin-bottom:20px;}
+			.des{
+				.pa;.clear;top:40px;width:100%;
+				b{
+					.fz(12px,3);.x(right);color:#555;
+					.pa;.db;right:20px;top:30px;
+					border-radius:4px;box-shadow: 1px 1px 0px #ccc;
+					width:100px;padding:0 20px 0 30px;
+					background:url('@{url}/bbs/misc/time3.png') #eee no-repeat 5px center;
+				}
+				span{
+					.fl;.fz(16px,32px);
+					font-family: Verdana;letter-spacing:2px;color:#ddd;
+					background-color:#fff;
+				}
+			}
+		}
+
+		#ct{
+			//隐藏帖子tab分类
+			.mbw{.none;}
+			#postbox{
+				
+				@input-height:40px;
+				.faq-input{
+					border:1px solid #ccc;
+					box-shadow:0 0 4px fade(#eee,80%) inset;
+					background:none;
+					border-radius:6px;
+					width:480px;height:@input-height;line-height:@input-height;
+					&:focus{
+						box-shadow: 0 0 8px fade(@bluex,50%) inset;
+						border: 1px solid @bluex;
+					}
+				}
+				//标题
+				.pbt{
+					margin:0;
+					.z{
+						line-height:40px;font-family:'微软雅黑';font-size:14px;
+						.label-title{width:80px;left:0;.pr;.bold;color:#2A7FB3;}
+						span{.dbi;.y(top);left:-4px;.pr;}
+						height:@input-height;padding:5px 20px;margin-bottom:5px;
+						#subject{.faq-input}
+					}
+				}
+				.exfm{
+					background:none;border:none;padding:0;margin:0;
+					line-height:40px;font-family:'微软雅黑';font-size:14px;
+					.faq-primary{
+						ul{
+							li{
+								span.fb{margin-right:20px;}
+								span{width:80px;.dbi;.y(top);}
+								span:first-child{.bold;color:#2A7FB3;}
+								min-height:@input-height;padding:5px 20px;margin-bottom:5px;
+								p{
+									color:#777;text-indent:80px;
+									b{color:#cc0000;.bold;}
+									.acolor(@bluex,#cc0000);
+								}
+							}
+							#typeoption_faq_url,#typeoption_faq_uid{.faq-input;}
+						}
+					}
+				}
+				#post_extra{.none;}
+				.pnpost{
+					span{.none;}
+					#adddynamicspan,.y{.none;}
+					.pn{
+						width:160px;height:40px;border:1px solid #0064cd;
+						span{display:inline;}
+					}
+				}
+
+			}
+		}
+
+	}
+
+}
+
+}
+
+//常用问题页
+.pg_faq{
+	#ct{
+		border:none;background:none;
+		.mn{
+			.pr;overflow:visible;
+			.bm .pns{.pa;top:-43px;right:0;.z(2);}
+			h1{background-color:#f2f2f2;border-radius:24px;line-height:24px;font-size:12px;padding:0 10px;}
+			//列表
+			.lum{
+				color:#555;
+				h2{.bold;border-bottom:1px dotted #ddd;font-size:12px;line-height:24px;a{color:@bluex;}}
+				ul{
+					border-bottom:none;margin-bottom:10px;
+					li{line-height:20px;list-style:square;}
+				}
+			}
+			//详细
+			.umh{
+				h3{font-size:12px;color:@bluex;.bold;}
+				&.umn{
+					h3{color:#555;font-weight:normal;}
+				}
+			}
+			.um{
+				border:1px dotted #ddd;padding:10px;
+				background:#f7f7f7;
+			}
+		}
+
+		.appl{
+			h2{.none;}
+			li:before {
+				content: '\e622';
+				font-family: "iconfont";
+				font-style: normal;
+				display: inline-block;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: .2px;
+				color: #777;
+				font-size: 10px;
+				position: absolute;
+				line-height: 32px;
+			}
+			li:hover{
+				&:before{color:@bluex;}
+			}
+			li.a{
+				a{color:@bluex};.bold;
+				&:before{color:@bluex;}
+			}
+			a{
+				font-size:12px;
+				padding-left:20px;
+			}
+		}
+	}
+}

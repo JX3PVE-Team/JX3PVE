@@ -101,10 +101,10 @@ if($_GET['action'] == 'checkpatch') {
 		$lastipConvert = process_ipnotice($lastipConvert);
 		$nowipConvert = process_ipnotice($nowipConvert);
 
-		if($lastipConvert != $nowipConvert && stripos($lastipConvert, $nowipConvert) == false && stripos($nowipConvert, $lastipConvert) == false) {
+		/*if($lastipConvert != $nowipConvert && stripos($lastipConvert, $nowipConvert) == false && stripos($nowipConvert, $lastipConvert) == false) {
 			$lang = lang('forum/misc');
 			include template('common/ipnotice');
-		}
+		}*/
 	}
 	include template('common/footer_ajax');
 	exit;
