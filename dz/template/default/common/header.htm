@@ -172,13 +172,13 @@
 			
 				<!-- panel -->
 				<div class="panel">
+					<div class="sp"><!--{hook/global_cpnav_extra2}--></div>
 					<!--{template common/header_userstatus}-->
 				</div>
 
 				<!-- diy -->
-				<div class="y diytop">
+				<div class="y diytop sp">
 				<!--<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="{lang switch_blind}" class="switchblind">{lang switch_blind}</a>-->
-				<!--{hook/global_cpnav_extra2}-->
 				<!--{loop $_G['setting']['topnavs'][1] $nav}-->
 					<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
 				<!--{/loop}-->
