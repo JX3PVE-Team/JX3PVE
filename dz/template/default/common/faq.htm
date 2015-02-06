@@ -44,14 +44,20 @@
 							<p class="umh_cb" onclick="toggle_collapse('messageid$faq[id]', 1, 1);">[ {lang open} ]</p>
 						</div>
 					</div>
-					<div class="um" id="messageid$faq[id]" style="{if $messageid != $faq[id]} display: none {/if}">$faq[message]</div>
+					<div class="um" id="messageid$faq[id]" style="{if $messageid != $faq[id]} display: none {/if}">
+						$faq[message]
+						<div class="help-more"><!--{block/1008}--></div>
+					</div>
 				<!--{/loop}-->
 			<!--{elseif $_GET[action] == 'search'}-->
 				<h1 class="mt mbm">{lang keyword_faq}</h1>
 				<!--{if $faqlist}-->
 					<!--{loop $faqlist $faq}-->
 						<div class="umh schfaq"><h3>$faq[title]</h3></div>
-						<div class="um">$faq[message]</div>
+						<div class="um">
+							$faq[message]
+							<div class="help-more"><!--{block/1008}--></div>
+						</div>
 					<!--{/loop}-->
 				<!--{else}-->
 					<p class="emp">{lang faq_search_nomatch}</p>
