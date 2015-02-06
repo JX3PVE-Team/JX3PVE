@@ -22,7 +22,7 @@ $lang = array
 
 	'get_passwd_subject' =>		'取回密码说明',
 	'get_passwd_message' =>		'
-<p>{username}，
+<p><strong>{username}</strong>，
 这封信是由 {bbname} 发送的。</p>
 
 <p>您收到这封邮件，是由于这个邮箱地址在 {bbname} 被登记为用户邮箱，
@@ -60,7 +60,7 @@ $lang = array
 
 	'email_verify_subject' =>	'Email 地址验证',
 	'email_verify_message' =>	'<br />
-<p>{username}，<br />
+<p><strong>{username}</strong>，<br />
 这封信是由 {bbname} 发送的。</p>
 
 <p>您收到这封邮件，是由于在 {bbname} 进行了新用户注册，或用户修改 Email 使用

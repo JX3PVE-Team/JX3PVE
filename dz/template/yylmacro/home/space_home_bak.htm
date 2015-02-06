@@ -362,21 +362,7 @@
 
 								<li class="verf">
 									<label>认 证</label> 
-									<span>
-									<!--{if $_G['setting']['verify']['enabled']}-->
-									<!--{loop $_G['setting']['verify'] $vid $verify}-->
-										<!--{if $verify['available']}-->
-
-			<!--{if $space['verify'.$vid] == 1}-->
-				<a href="home.php?mod=spacecp&ac=profile&op=verify&vid=$vid" target="_blank"><!--{if $verify['icon']}--><img src="$verify['icon']" class="vm" alt="$verify[title]" title="$verify[title]" /><!--{else}-->$verify[title]<!--{/if}--></a>
-			<!--{elseif !empty($verify['unverifyicon'])}-->
-				<a href="home.php?mod=spacecp&ac=profile&op=verify&vid=$vid" target="_blank"><!--{if $verify['unverifyicon']}--><img src="$verify['unverifyicon']" class="vm" alt="$verify[title]" title="$verify[title]" /><!--{/if}--></a>
-			<!--{/if}-->
-
-		<!--{/if}-->
-	<!--{/loop}-->
-
-<!--{/if}--></span>
+									<span>$verify</span>
 								</li>
 
 						</ul>

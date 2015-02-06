@@ -46,14 +46,6 @@
 					&.gray{color:#888;}
 				}
 			}
-			//签到
-			.sp{
-				.fl;height:@header-height;
-				.user-qiandao{
-					background:url('@{url}/user/icon/qiandao2.png') no-repeat center center;
-					.db;width:78px;height:@header-height;padding:0 5px;.y;.indent;
-				}
-			}
 			//微信
 			.app{
 				.none;
@@ -79,10 +71,10 @@
 
 			//用户控制板
 			.panel{
-				.fr;height:100%;_position: absolute;_right:0;_top:0;
+				.fr;height:100%;_position: absolute;_right:0;_top:0;white-space:nowrap;
 				//未登录
 				.nologin{
-					line-height:@header-height;height:100%;
+					line-height:@header-height;height:100%;white-space:nowrap;
 					p{.fl;}
 					.login-qc{
 						.fl;height:100%;
@@ -96,9 +88,17 @@
 						margin-left:20px;
 					}
 				}
+				//签到
+				.sp{
+					height:@header-height;.dbi;.y(top);
+					.user-qiandao{
+						background:url('@{url}/user/icon/qiandao2.png') no-repeat center center;
+						.db;width:78px;height:@header-height;padding:0 5px;.y;.indent;
+					}
+				}
 				//已登录
 				.onlogin{
-					height:100%;line-height:@header-height;
+					height:100%;line-height:@header-height;.dbi;.y(top);
 					.pipe{margin: 0 3px 0 0px;}
 					//头像
 					.avt{
