@@ -176,10 +176,10 @@ jQuery(function($){
 			var user_email_status = $('#user-email-status').text().trim().indexOf('已验证') != -1;
 			if(user_email_status){
 				$('.user-os-profile .usermail').addClass('validate');
-				$('#user-email-status').css('color','green');
+				$('#user-email-status a').css('color','green');
 			}else{
 				$('.user-os-profile .usermail').addClass('novalidate');
-				$('#user-email-status').css('color','#777');
+				$('#user-email-status a').css('color','#777');
 				$('#user-email-status').wrap('<a href="http://www.jx3pve.com/home.php?mod=spacecp&ac=profile&op=password"></a>');
 			}
 
