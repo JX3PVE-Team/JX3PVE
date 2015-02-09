@@ -1,7 +1,6 @@
 <script type="text/javascript" src="source/plugin/smart_video/static/jwplayer/jwplayer.js"></script>
 {if $num==1&& $ext!='swf'}
-<div id="video">
-</div>
+<div id="video"></div>
 <script type="text/javascript">
     jwplayer("video").setup({
         file: "{$first_url}",
@@ -12,11 +11,11 @@
     });
 </script>
 {elseif $num==1&& $ext=='swf'}
-<div id="swfplayer" style="height:{$height}px" style="z-index:1;">
+<div id="swfplayer" style="z-index:1;">
   {eval echo get_smart_player($first_url)}
-  </div>
+</div>
 {else}
-<div id="smart_video" style="height:{$height}px;">
+<div id="smart_video">
 {if $ext=='swf'}
 {eval echo get_smart_player($first_url)}
 {else}

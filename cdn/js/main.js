@@ -195,11 +195,16 @@ jQuery(function($){
 			}
 		})
 
-	//反馈系统
+	//反馈帮助
 	//------------------------------------------
 		if($('.faq-primary').length != 0){
 			$('#postsubmit span').text('提交');
 		}
+		if($('.pg_faq').length !=0){
+			$('.umh').first().addClass('umn');
+			$('.um').first().css('display','none');
+		}
+
 
 	//BBS
 	//------------------------------------------
