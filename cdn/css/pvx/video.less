@@ -3,6 +3,7 @@
 * By 子璇
 * 2015.1.28
 -------------------------------------------------------------- */
+//全局
 .video{
 	//主题背景
 	background:url("http://www.jx3pve.com/cdn/img/pvx/video/bg.jpg") no-repeat top center;
@@ -32,6 +33,7 @@
 	.nav ul{width:@wp - 80px !important;}
 }
 
+//列表
 .video{
 	//首页
 	.video-cat-ul{
@@ -106,133 +108,122 @@
 	#pt{
 		//border-radius:24px;line-height:24px;border:1px solid #ccc;box-shadow:1px 1px 0 #fff;
 	}
-
 }
 
-
-.video{
 //单页
+.video{
 	.video-player{
 		width:1180px;height:660px;
 		#swfplayer,#smart_video{
 			width:100%;height:100%;
 		}
 	}
+	//描述信息
 	.video-info{
 		.clear;background-color:#f7f7f7;border:1px solid #ccc;
 		box-shadow: 0 0 4px #ccc;border-radius:4px;
-		padding:10px;line-height:24px;
+		padding:10px;line-height:24px;margin:10px 0 ;
 
 		.video-des{
-			.fl;
+			h2{.bold;border-bottom:1px dashed #ddd;margin-bottom:5px;line-height:2.2;}
+			width:@wp - 300px;border-right:1px solid #ddd;padding-right:10px;
 		}
 		.video-ping{
-			.fr;
+			.fr;width:240px;padding:0 10px;
+			.smart_ping{
+				width:240px;.clear;
+				.smart_des{.hr(left);.fl;line-height:28px;font-weight:bold;color:@yel;}
+				ul{
+					width:190px;height:28px;.fl;line-height:28px;
+					li{
+						width:24px;height:28px;.dbi;background:url('@{url}/pvx/video/ping.png') no-repeat 0 0;
+					}
+					.hover,.hover_le{ background-position:0 -26px;}
+					.smart_grade{.fl;width:40px;.db;}
+				}
+			}
+			
 		}
 		.video-share{
-			.fr;.hr(right);
+			.fr;.hr(right);.pr;right:24px;
 		}
 	}
-
-
-
+	.video-cmt{
+		.clear;
+		//侧边推荐
+		.video-cmt-sd{
+			.fr;width:250px;padding: 10px;background: #fff;box-shadow: 0 0 4px #ccc;border-radius: 4px;
+			.relative{
+				ul{
+					li{
+						.pic{
+							.pack_clipImg{width:100%;height:120px;}
+							.ico,.vtime{.none;}
+							.vtime em{.none;}
+						}
+						.txt{
+							color:#777;line-height:26px;border-bottom:1px dotted #ccc;margin-bottom:5px;
+							a{color:#777;}
+							h6{}
+							.owner,.playtimes{.dbi;margin-right:10px;}
+						}
+					}
+				}
+			}
+			.rel_pl{.none;}
+		}
+		//评论内容
+		.video-cmt-ct{
+			.fl;width:@wp - 250px - 20px - 10px;
+			.add_cmt{
+				.ta textarea{width:880px;height:80px;padding:10px;}
+				.submit_post{.fr;.blue-btn;width:120px;height:40px;cursor:pointer;color:#fff;margin: 5px 0 0 0;border:1px solid #0064cd;}
+			}
+			#reply_list{
+				background-color:#f2f2f2;
+				width: 890px;
+				padding: 5px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-shadow: 0 0 2px #ccc inset;
+				margin: 10px 0 0 0;
+				li{width:100%;margin-bottom: 10px;}
+				.userimg{width:60px;height:60px;padding-top:0;}
+				.userimg img{border-radius:4px;border:1px solid #ccc;}
+				.reply_mes{width:820px;float:none;margin-left:60px;}
+				.reply-time{.x(right);}
+			}
+		}
+	}
 }
 
-
-
-
-
-
-
-
-
-
-/*	.v_star{margin:5px 0;padding:5px 0;border-bottom:1px dashed #ccc;}
-	.smart_ping_have{clear:right;}
-	.smart_des{clear:left;padding-top:4px;}
-	.smart_ping{width:500px; margin:2px 2px 2px 1px; display:inline-block;}
-	.smart_ping ul,.smart_ping ul li{ float:left; height:24px; font-size:20px;}
-	.smart_ping ul{ width:160px;}
-	.smart_ping ul .smart_x{ width:24px; background:0 0 no-repeat url("http://static.jx3pve.com/cssjsimg/jx3pve/video/ping.png");}
-	.smart_ping:after{clear:both;}
-	.smart_ping ul .hover{ background-position:0 -26px;}
-	.smart_ping ul .hover_le{background-position:0 -26px;}
-	.smart_ping .smart_grade{ font-size:12px;float:left; width:40px;height:24px; margin-top:4px;}
-	.smart_ping .smart_des{float:left; height:24px; font-size:12px; margin-top:3px;}
-
-	.s_col{padding-right:10px;}
-	.selectbox .handle.current{background:#06a7e1 !important;padding:0 5px !important;}
-	.selectbox .handle,.yk-filter .yk-filter-panel .item label, .yk-filter .yk-filter-panel .item a, .yk-filter .yk-filter-panel .item span,.yk-sort-label,.yk-filter label,.yk-filter,.yk-filter a,.p-meta-title a{font-family:宋体 !Important;font-size:12px !important;}
-	.video-pipe .z {width:600px;overflow:hidden;white-space:nowrap;}
-	.b_bg{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/b_bg.png") repeat top left;}
-	.video-page{padding:20px 0;background:url("http://ww3.sinaimg.cn/large/bcc700eegw1eib4am2hi8j21hc18gkjl.jpg") no-repeat top center;min-height:1080px;}
-	.video-pipe{width:1040px;margin:0 auto;color:#76adc1;background:#fff;border-radius:6px; margin-top:0 !important;height:30px;padding:1px 10px 2px 10px;font-family:Helvetica,宋体;}
-	.video-pipe .z{word-spacing:10px;height:30px;}
-	.video-pipe .z em {padding:0 5px;width: 20px;line-height: 30px;overflow: hidden;}
-	.video-pipe a{color:#444;}
-	.video-pipe .smart_form input{border:1px solid #ccc;border-radius:20px;width:180px;padding:0 10px;margin-top:2px;}
-	.video-pipe .smart_search_ico,.video-pipe .smart_search_ico:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_search.png") no-repeat left top;width:29px;height:30px;margin-right:10px;margin-top:2px;}
-	.video-pipe a:hover{text-decoration:none;cursor:pointer;}
-	.video-pipe .smart_add_ico{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_pub.png") no-repeat 0 0;width:98px;height:24px;}
-	.video-pipe .smart_add_ico:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_pub.png") no-repeat 0 -24px;width:98px;height:24px;}
-	.smart_form{padding-top:3px;}
-
-	.ap .tl a{color:#555 !important;}
-	.h {height: 26px !important;width:680px;}
-	.s_col .h{width:100%;}
-	.m_col .h .ap, .h_col .h .ap {top:0 !important;}
-	.v_index_l .h h2 {background:#eee none !important;height:26px !important;line-height:26px !important;padding: 0 10px !important;border-radius:20px;margin-top:10px;}
-	.v_index_l .h h2 a{line-height:26px !important;}
-	.ap ul li{line-height:26px;}
-	.m_col .c{width:680px !Important;}
-	.pack .caption {white-space:nowrap;}
-	.pack_video_card .txt, .pack_plist_card .txt{width:140px !important;}
-	.v_author{color:#8F8F8F !important;}
-	.pack.pack_video_card{margin-bottom:10px;}
-
-	.page_wrap{width:1040px;margin:10px auto;background:#fff;padding:20px 10px;border-radius:8px;}
-	.video-content {}
-	.programs .con_player,.programs .player{width:1020px !important;height:560px !important;float:none !important;clear:both;margin:0 auto !important;position:normal;}
-	.auto{width:1040px !important;}
-	.action_panels{position:static !important;height:114px !important; display:none !important;}
-	.v_sg .con_main{float:left;padding-left:10px;width:700px !important;}
-	.v_sg #reply_list ul li {border-bottom:1px dotted #ccc;}
-	.v_sg #reply_list ul li .reply_mes{width:640px;padding:5px 0 0 0;}
-	.v_bd_share{padding:10px 0 0 5px;}
-	.v_sg .txt h6 a{font-size:12px !important;font-family:'宋体';}
-	.v_sg .rel_pl{display:none;}
-	.v_sg .relative, .v_sg .promotion {}
-	.v_sg .relative .pack .txt, .v_sg .promotion .pack .txt{}
-	.v_sg{padding-top:10px;}
-	.v_des{padding:5px;border:1px dashed #ccc;line-height:24px;}
-	.v_des span{display:block;text-align:right;border-top:1px dotted #ccc;width:95%;margin:10px auto;}
-
-	.m_col{width:700px !important;padding-left:10px;}
-	.m_col .focus {width:680px !important;right:0;}
-	.focus .pic ul{width:680px !important;}
-	.focus .pic, .focus .pic img{width:680px !important;}
-	.m_col .b{width:680px !important;}
-	.s_col .h{border:none !important;border-radius:20px;height:26px !important;}
-	.s_col .h h2{background:none !important;font-weight:bold;line-height:26px !important;}
-	.pack a{color:#444 !important;}
-	.pack a:hover{color:#fe8005;}
-	.s_col .mod_forecast{display:none;}
-	.s_col .l  ul li {height:26px;width:260px;}
-
-	#coverimg{border:1px solid #ccc;}
-	.v_add{display:block;width:120px;height:22px;background:#06a8cb;border:1px solid #067992;color:#fff;line-height:22px;text-align:center;}
-	.v_add:hover{color:#fff;}
-	.v_del{color:#fff;background:#ff0000;line-height:22px;padding:0 5px;}
-
-	.pg_smart_video .video-page .page_wrap{position:relative;}
-	.zVideoNav {position:absolute;left:1060px;top:60px;}
-	.zVideoNav ul {background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab1.png") no-repeat;width:70px;height:238px;}
-	.zVideoNav ul li {height:36px;width:70px;padding-top:3px;}
-	.zVideoNav ul li a {display:block;color:#444;text-align:center;line-height:36px;font-weight:bold;font-family:"SimSun","Trebuchet MS";text-decoration:none;}
-	.zVideoNav1:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab2.png") no-repeat 0 -3px;}
-	.zVideoNav2:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab2.png") no-repeat 0 -42px;}
-	.zVideoNav3:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab2.png") no-repeat 0 -81px;}
-	.zVideoNav4:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab2.png") no-repeat 0 -120px;}
-	.zVideoNav5:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab2.png") no-repeat 0 -159px;}
-	.zVideoNav6:hover{background:url("http://static.jx3pve.com/cssjsimg/jx3pve/video/v_tab2.png") no-repeat 0 -198px;}
-*/
+//发布
+.video{
+	.video-pub-primary{
+		min-height:600px;
+		line-height:24px;
+		table td{padding:4px 6px;}
+		input[type='text'],input.px{height:25px;line-height:25px;border: 1px solid #ccc;background: #fff;}
+		.video-img-size{color:#cc0000;.bold;}
+	}
+	.video-post-type{
+		.clear;margin:10px 0;border-bottom:1px solid #fff;
+		li{
+			.fl;margin-right:10px !important;background:#fff;
+			.gray-btn;border:1px solid #bbb;border-bottom:none;border-radius:4px 4px 0 0 ;
+			height: 30px;line-height: 30px;width: 120px;text-align: center;
+			a{color:#555;.full;.db;}
+			&.current{
+				.blue-btn;a{color:#fff;}
+			}
+		}
+	}
+	.video-pub-btn,.addtr,.deleterow{
+		width:120px;height:30px;.blue-btn;border:1px solid #0064cd;.db;
+		color:#fff;.x;
+		&:hover{color:#fff;}
+	}
+	.video-upload{
+		.gray-btn;width:120px;height:18px;.dbi;.y;.x;line-height:18px;
+	}
+}

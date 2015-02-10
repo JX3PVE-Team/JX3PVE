@@ -8,7 +8,7 @@
 
 <div id="pt" class="bm cl">
     <div class="z">
-        <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&rsaquo;&rsaquo;</em><a>PVX专栏</a><em>&rsaquo;&rsaquo;</em><a href="plugin.php?id=smart_video">{$smart['title']}</a>
+        <a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&rsaquo;&rsaquo;</em><a>PVX专栏</a><em>&rsaquo;&rsaquo;</em><a href="plugin.php?id=smart_video">{$smart['title']}</a><em>&rsaquo;&rsaquo;</em>$navtitle
     </div>
     <div class="video-search">
         {template smart_video:search}
@@ -46,7 +46,7 @@
 				
 				<div class="video-ping">{template smart_video:ping}</div>
 				<div class="video-share">{$smart[share]}</div>
-				<div class="video-des">$mes</div>
+				<div class="video-des"><h2>$navtitle</h2>$mes</div>
 				
 
 			</div>

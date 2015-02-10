@@ -1,14 +1,3 @@
-<style>
-.smart_ping{height:24px; width:500px; margin:2px 2px 2px 1px; display:inline-block;}
-.smart_ping ul,.smart_ping ul li{ float:left; height:24px; font-size:20px;}
-.smart_ping ul{ width:160px;}
-.smart_ping ul .smart_x{ width:24px; background:0 0 no-repeat url(source/plugin/smart_video/static/images/ping.png);}
-.smart_ping:after{clear:both;}
-.smart_ping ul .hover{ background-position:0 -26px;}
-.smart_ping ul .hover_le{background-position:0 -26px;}
-.smart_ping .smart_grade{ font-size:14px;float:left; width:40px;height:24px; margin-top:4px;}
-.smart_ping .smart_des{float:left; height:24px; font-size:14px; margin-top:3px;}
-</style>
 {if !$svalue}
 <script type="text/javascript">
 jQuery(function(){
@@ -41,7 +30,7 @@ function smart_ping(cindex){
 </script>
 {/if}
 <div class="smart_ping" align="center">
-<div class="smart_des">&#x8BC4;&#x5206;:</div>
+<div class="smart_des">平均:</div>
 <ul id="smart_ping_have">
 {loop array(1,2,3,4,5) $v}
 {if $v<=$thread[grade]}
@@ -50,10 +39,10 @@ function smart_ping(cindex){
 <li class="smart_x"></li>
 {/if}
 {/loop}
-<div class="smart_grade"><font  color="#FF0000">{$thread[grade]}</font>&#x5206;</div>
+<div class="smart_grade">{$thread[grade]}&#x5206;</div>
 </ul>
-<div class="smart_des" style="margin-left:50px;">
-{if $svalue}&#x4F60;&#x7684;&#x8BC4;&#x5206;{else}&#x6211;&#x8981;&#x8BC4;&#x5206;{/if}:</div>
+<div class="smart_des">
+{if $svalue}评分{else}评分{/if}:</div>
 <ul id="smart_ping">
 {loop array(1,2,3,4,5) $v}
 {if $v<=$svalue}
@@ -62,6 +51,6 @@ function smart_ping(cindex){
 <li class="smart_x"></li>
 {/if}
 {/loop}
-<div class="smart_grade"><font  color="#FF0000" id="grade_value">{$svalue}</font>&#x5206;</div>
+<div class="smart_grade"><font id="grade_value">{$svalue}</font>&#x5206;</div>
 </ul>
 </div>

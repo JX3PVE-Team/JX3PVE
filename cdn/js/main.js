@@ -205,7 +205,40 @@ jQuery(function($){
 			$('.um').first().css('display','none');
 		}
 
-
+	//视频
+	//------------------------------------------
+	if($('.video').length != 0){
+		var video_cat = getRequest('fcid');
+		//console.log(video_cat);
+		switch(video_cat){
+			case '1':
+				$('.video .nav li').eq(0).removeClass('on');
+				$('.video .nav li').eq(1).addClass('on');
+				break;
+			case '3':
+				$('.video .nav li').eq(0).removeClass('on');
+				$('.video .nav li').eq(2).addClass('on');
+				break;
+			case '2':
+				$('.video .nav li').eq(0).removeClass('on');
+				$('.video .nav li').eq(3).addClass('on');
+				break;
+			case '7':
+				$('.video .nav li').eq(0).removeClass('on');
+				$('.video .nav li').eq(4).addClass('on');
+				break;
+			default:
+				$('.video .nav li').eq(0).removeClass('on');
+				$('.video .nav li').eq(0).addClass('on');
+		}
+		var video_page = getRequest('mod');
+		//console.log(video_page);
+		if(video_page == 'p'){
+			$('.video .nav li').eq(0).removeClass('on');
+			$('.video .nav li').eq(6).addClass('on');
+		}
+	}
+	
 	//BBS
 	//------------------------------------------
 		//第一篇文章的padding-top，预留快速回复
