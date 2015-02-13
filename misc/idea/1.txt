@@ -1,10 +1,15 @@
 1.导航分为PVE  PVX
-2.跳转到链接改为nginx配置不再发跳转，老的修正
-3.视频单页加广告
 4.出售的主题测试
-5.宠物、视频、捏脸兼容测试，视频捏脸宠物4格current关联
 6.各页面添加高亮与置顶快捷方法
 7.底部性能改为注释
 8.最新团队招募侧边bug与断行
 9.顶部导航current关联
 10.云端软件整理
+
+
+http://www.hitao.com/wap/zhaopin?from=singlemessage&isappinstalled=0
+
+http://treedom.cn/job/mobile/?nsukey=%2FoahAtKLpTnBbs2G3SyxHM2A%2BYd8rhFgKvTtS%2BfjzFcYI%2FbPwUOqCbW%2BDwQL%2BHtg4fogIPtWr%2F8aO%2FJpZuTeYA%3D%3D
+
+
+

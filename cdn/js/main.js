@@ -247,6 +247,18 @@ jQuery(function($){
 			}
 		}
 	
+	//捏脸
+	//------------------------------------------
+		if($('.face').length != 0){
+			var pg_type = getRequest('mod'),
+				pg_fid = getRequest('fid');
+			if(pg_type=='post' && pg_fid=='92'){
+				$('.face .nav li').eq(0).removeClass('on');
+				$('.face .nav li').eq(3).addClass('on');
+			}
+		}
+
+
 	//BBS
 	//------------------------------------------
 		//第一篇文章的padding-top，预留快速回复
