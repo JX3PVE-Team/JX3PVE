@@ -179,19 +179,27 @@ jQuery(function($){
 				$('#user-email-status a').css('color','green');
 			}else{
 				$('.user-os-profile .usermail').addClass('novalidate');
-				$('#user-email-status a').css('color','#777');
+				$('#user-email-status a').css('color','#FF7D00');
 				$('#user-email-status').wrap('<a href="http://www.jx3pve.com/home.php?mod=spacecp&ac=profile&op=password"></a>');
 			}
 
 		}
 
-	//Raid
+	//副本团队招募
 	//------------------------------------------
 		$('#raid-sp').on('click',function(e){
 			var raid_url = $(this).attr('href');
 			if(raid_url == '' || raid_url.indexOf('http')==-1){
 				e.preventDefault();
 				loadDialogs('该团队未创建团队专栏');
+			}
+		})
+
+		$('#fam-primary a').on('click',function(e){
+			var fam_url = $(this).attr('href');
+			if(fam_url == '' || fam_url.indexOf('http')==-1){
+				e.preventDefault();
+				loadDialogs('作者遗忘填写或未创建');
 			}
 		})
 
@@ -207,37 +215,37 @@ jQuery(function($){
 
 	//视频
 	//------------------------------------------
-	if($('.video').length != 0){
-		var video_cat = getRequest('fcid');
-		//console.log(video_cat);
-		switch(video_cat){
-			case '1':
+		if($('.video').length != 0){
+			var video_cat = getRequest('fcid');
+			//console.log(video_cat);
+			switch(video_cat){
+				case '1':
+					$('.video .nav li').eq(0).removeClass('on');
+					$('.video .nav li').eq(1).addClass('on');
+					break;
+				case '3':
+					$('.video .nav li').eq(0).removeClass('on');
+					$('.video .nav li').eq(2).addClass('on');
+					break;
+				case '2':
+					$('.video .nav li').eq(0).removeClass('on');
+					$('.video .nav li').eq(3).addClass('on');
+					break;
+				case '7':
+					$('.video .nav li').eq(0).removeClass('on');
+					$('.video .nav li').eq(4).addClass('on');
+					break;
+				default:
+					$('.video .nav li').eq(0).removeClass('on');
+					$('.video .nav li').eq(0).addClass('on');
+			}
+			var video_page = getRequest('mod');
+			//console.log(video_page);
+			if(video_page == 'p'){
 				$('.video .nav li').eq(0).removeClass('on');
-				$('.video .nav li').eq(1).addClass('on');
-				break;
-			case '3':
-				$('.video .nav li').eq(0).removeClass('on');
-				$('.video .nav li').eq(2).addClass('on');
-				break;
-			case '2':
-				$('.video .nav li').eq(0).removeClass('on');
-				$('.video .nav li').eq(3).addClass('on');
-				break;
-			case '7':
-				$('.video .nav li').eq(0).removeClass('on');
-				$('.video .nav li').eq(4).addClass('on');
-				break;
-			default:
-				$('.video .nav li').eq(0).removeClass('on');
-				$('.video .nav li').eq(0).addClass('on');
+				$('.video .nav li').eq(6).addClass('on');
+			}
 		}
-		var video_page = getRequest('mod');
-		//console.log(video_page);
-		if(video_page == 'p'){
-			$('.video .nav li').eq(0).removeClass('on');
-			$('.video .nav li').eq(6).addClass('on');
-		}
-	}
 	
 	//BBS
 	//------------------------------------------
