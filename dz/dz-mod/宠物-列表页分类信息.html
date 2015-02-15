@@ -1,0 +1,47 @@
+<div class="pet-list-primary">
+	<ul>
+	[loop]
+		<li>
+			<a class="pet-short" href="{subject_url}"><span><img src="{pet_img_value}" alt=""></span></a>
+			<div class="info">
+				<p class="details">
+					<span>名称：{pet_name_value}</span>
+					<span>种族：{pet_type_value}</span>
+					<span>途径：{pey_from_value}</span>
+					<span>星级：<img src="http://static.jx3pve.com/cdn/img/pvx/pet/pet_star{pet_star_value}.png"  height="14" /></span>
+					<span>分数：{pet_dot_value}</span>
+				</p>
+				<a class="pet-more" href="{subject_url}">查看捕获途径</a>
+			</div>
+		</li>
+	[/loop]
+	</ul>
+</div>
+
+<div class="pet-view-primary">
+	<div class="pet_img"><img src="{pet_img_value}"></div>
+	<div class="pet_info">
+		<h1><img src="{pet_icon_value}" onload="thumbImg(this)"   border="0"><span class="zPetName">{pet_name_value}</span></h1>
+		<ul>
+			<li><span>种族：</span>{pet_type_value}</li>
+			<li><span>获取途径：</span>{pey_from_value}</li>
+			<li><span>星级：</span><img src="http://static.jx3pve.com/cssjsimg/pet/pet_star{pet_star_value}.png"  height="14" /></li>
+			<li><span>分数：</span>{pet_dot_value}</li>
+			<li><span>描述：</span>{pet_intro_value}</li>
+			<li><span>来源地图：</span>{pet_map_value}</li>
+			<li><span>宠物技能：</span>{pet_skill_value}</li>
+			<li><span>特殊说明：</span></li>
+		</ul>
+		<div class="pet_dw">
+		<!-- 编辑 -->
+		<a class="editp" style="padding: 5px 10px 5px 25px;" href="forum.php?mod=post&amp;action=edit&amp;fid={vanfon_fid}&amp;tid={vanfon_tid}&amp;pid={vanfon_pid}&amp;page=1">编辑</a> |  
+		<!-- 分享 -->
+		<div class="bdsharebuttonbox pet_share"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a href="#" class="bds_print" data-cmd="print" title="分享到打印"></a></div>
+		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+		<!-- 晒我的 -->
+		<a class="fastre pet_my" href="forum.php?mod=post&action=reply&fid={vanfon_fid}&tid={vanfon_tid}" onclick="showWindow('reply', this.href)"></a>
+		</div>
+	</div>
+</div>
+
+

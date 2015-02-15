@@ -1,27 +1,55 @@
 右边定位的横屏后重绘BUG 左定位！
+
 原点
-绝对定位 避免重排
+绝对定位 
+避免重排
+
 圆点
+
 
 
 音乐库控制与笔记
 
 
+
 PNG工具
+
 VPN2
+
 
 背景替换的图应在html中加载图片预加载一次
 
 
+
 界面改为移动
 整理CSS移动相关属性
+
 640×1130
 
 
 安卓下横屏判定输入法问题
+
+
 
 1.那个问题的原因是只有android下有，和安卓输入法出现的方式有关。总之就是因为判定了横屏样式，因为设置了横屏时，内容全部隐藏导致的。把横屏的判定直接去掉了。
 王善武(王善武) 02-12 21:04:02
 好的 
 曹源(曹源) 02-12 21:04:21
 2.优化了一下选项那里，加大了label的大小，方便有些宽屏用户，点到没有文字的地方也能直接选
+
+
+10.云端软件整理
+
+
+
+
+
+http://www.hitao.com/wap/zhaopin?from=singlemessage&isappinstalled=0
+
+http://treedom.cn/job/mobile/?nsukey=%2FoahAtKLpTnBbs2G3SyxHM2A%2BYd8rhFgKvTtS%2BfjzFcYI%2FbPwUOqCbW%2BDwQL%2BHtg4fogIPtWr%2F8aO%2FJpZuTeYA%3D%3D
+
+
+
+
+
+gui   git config --global user.email "17229398@qq.com
