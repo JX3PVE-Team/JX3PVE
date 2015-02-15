@@ -1,0 +1,140 @@
+//用户中心中央
+.user-os{
+	width:@wp;margin:0 auto;
+	
+	//主体区
+	.user-os-main{
+		width:@wp - 140px - 220px - 40px;
+
+		//顶部
+		.user-os-header{
+			.user-os-profile{
+
+				border-bottom:1px dotted #ddd;
+
+				.base-info{
+					background-color:#f2f2f2;height:54px;padding:10px;border-radius:8px;.clear;.pr;
+					.useravt{
+						.fl;margin-right:10px;
+						a{.db;height:54px;}
+						img{width:48px;height:48px;border-radius:4px;padding:2px;background-color:#fff;border:1px solid #ddd;}
+					}
+					.username{
+						b{.fz(16px,1.5);}
+						i{color:@yel;.fz(12px,2.5);}
+						a{color:@bluex;&:hover{color:#cc0000;border-bottom:1px dotted #ddd;}}
+					}
+					.usermail{
+						text-indent:24px;
+						&.novalidate{background:url('@{url}/user/icon/mail_inactive.png') no-repeat 65px 0;}
+						&.validate{background:url('@{url}/user/icon/mail_active.png') no-repeat 65px 0;}
+					}
+					.user-important{
+						.pa;right:20px;top:20px;
+						.btn-govip{
+							.gray-btn;padding:2px 10px 2px 5px;
+							a{
+								background: url('@{url}/user/icon/vip2.gif') no-repeat 0 0;
+								padding-left:30px;height:26px;.db;line-height:26px;
+							}
+						}
+					}
+				}
+
+				.extend-info{
+					.clear;padding:5px;letter-spacing:1px;
+
+					li{
+						.fl;.dbi;.y;.nobreak;height:28px;line-height:28px;margin-right:60px;
+						label{background-color:#f2f2f2;border-radius:3px;padding: 5px 8px;}
+					}
+
+					.verf{
+						label{}//letter-spacing:4px;
+						span{.dbi;}
+						img{margin-right:5px;}
+					}
+
+					.cre{
+						label{}//letter-spacing:4px;
+						span{.bold;color:#ff0000;}
+					}
+
+					.usergroup{
+
+					}
+				}
+			}
+
+			.banner{
+			}
+		}
+
+		//自己动态
+		.user-active-me{
+			margin:10px 0 20px 0;font-size:12px !important;
+			table{width:100%;}
+			th{.none;}
+			td{h3{.none;}}
+			#mood_mystatus{color:#777 !important;line-height:2;}
+			#moodfm{
+				.moodfm_input{
+					width:680px;background:none;border:1px solid #ddd;border-radius:4px;
+					textarea{width:98%;margin:0 auto;.db;padding:5px;}
+				}
+				.moodfm_btn{
+						background:none;padding:0 0 0 10px;
+					button{
+						opacity:1;background:none;border:none;color:#fff;.fz(18px,62px);
+						.blue-btn;border-radius:3px;box-shadow:0 0 4px #666;height:62px;width:88px;
+						font-family:'微软雅黑';letter-spacing:5px;
+					}
+				}
+			}
+
+		}
+
+		//网站导航
+		.user-os-primary{
+			margin-top:10px;
+		}
+
+		//底部
+		.user-os-footer{
+			margin-top:10px;
+		}
+
+
+	}
+
+}
+
+
+//记录页面
+#moodfm{
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

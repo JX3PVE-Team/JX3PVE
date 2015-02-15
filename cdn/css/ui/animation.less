@@ -1,0 +1,148 @@
+/*
+* 动画文件
+* By iRuxu
+*/
+
+//微信图标
+@keyframes slideDown{
+    from{
+    	opacity:0;
+    	transform:translate3D(0,-60%,0);
+    }
+    to{
+    	opacity:1;
+    	transform:translate3D(0,30%,0);
+    }
+}
+
+//导航图标
+@keyframes navIcon{
+	49%{transform:translateY(-50%)}
+	50%{opacity:.3;transform:translateY(40%)}
+	51%{opacity:1}
+    100%{color:#00ccff;}
+}
+
+//搜索框
+@keyframes goUp{
+    49%{transform:translateY(-100%)}
+    50%{opacity:.3;transform:translateY(40%)}
+    51%{opacity:1}
+}
+
+//掠光
+.shark{
+    position:relative;overflow:hidden;
+    &:hover i{
+        left: 150%;
+        transition: .5s;
+        -o-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+    }
+    i{position: absolute;
+        left: -150%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: skewx(-25deg);
+        -o-transform: skewx(-25deg);
+        -moz-transform: skewx(-25deg);
+        -webkit-transform: skewx(-25deg);
+        background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));
+    }
+}
+
+//快速回复框提示边框闪动
+@keyframes fastpostborder{
+    0%{
+        border-color:rgba(0,204,255,1);
+    }
+    50%{
+        border-color:rgba(0,204,255,0.3);
+    }
+    100%{
+        border-color:rgba(0,204,255,1);
+    }
+}
+
+//404页面提示
+@keyframes sharkborder{
+    from{
+        transform:scale3D(0.9,0.9,0.9);
+    }
+    to{
+        transform:scale3D(1,1,1);
+    }
+}
+
+//警告框关闭
+@keyframes closeit{
+    from{
+        
+    }
+    to{
+        transform:scale(1.1) rotate(180deg);
+    }
+}
+
+//宏库职业图标来个圈圈啥的吧
+@keyframes roleshow{
+    0%{opacity:1;transform:rotate(0);}
+    50%{opacity:0.6;transform:rotate(180deg);}
+    100%{opacity:1;transform:rotate(360deg);}
+}
+
+
+//
+@keyframes tipsshow{
+    0%{opacity:0;}
+    15%{opacity:0.8;transform:translate3d(0,5%,0);}
+    40%{opacity:1;transform:translate3d(0,0,0);}
+    100%{opacity:0;transform:translate3d(0,0,0);}
+}
+
+
+//arrow button
+@keyframes buybutton{
+    0{transform:translate3D(0,0,0);opacity:1;}
+    50%{transform:translate3D(0,10%,0);opacity:0.8;}
+    100%{transform:translate3D(0,0,0);opacity:1;}
+}
+
+
+@keyframes flip {
+    0% { opacity: 0;
+        transform: perspective(500px) rotateY(0);
+        animation-timing-function: ease-out; }
+    40% {
+        transform: perspective(500px) translateZ(150px) rotateY(170deg);
+        animation-timing-function: ease-out; }
+    50% {
+        transform: perspective(500px) translateZ(150px) rotateY(190deg) scale(1);
+        animation-timing-function: ease-in; }
+    80% {
+        transform: perspective(500px) rotateY(360deg) scale(.95);
+        animation-timing-function: ease-in; }
+    100% {
+        opacity: 1;
+        transform: perspective(500px) scale(1);
+        animation-timing-function: ease-in; }
+}
+
+//捏脸图效
+.clop{
+    .pr;.clip;.db;
+    &:before{
+        content:'';.db;width:100%;height:200%;background-color:rgba(255,255,255,0.3);transform:rotate(45deg);
+        .pa;top:-100%;left:-70%;
+    }
+    &:after{
+        content:'';.db;width:100%;height:200%;background-color:rgba(255,255,255,0.3);transform:rotate(45deg);
+        .pa;bottom:-100%;right:-70%;
+    }
+    &:hover{
+        &:before{transform:translateX(-100%);transition:0.4s ease-in-out;}
+        &:after{transform:translateX(100%);transition:0.4s ease-in-out;}
+    }
+}

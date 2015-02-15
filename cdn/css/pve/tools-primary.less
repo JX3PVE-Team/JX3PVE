@@ -1,0 +1,91 @@
+//工具分类信息布局
+
+//工具列表页
+.tool-info-primary{
+
+	
+}
+
+//工具单页
+.tool-info-primary{
+	color:#555;line-height:24px;font-size:12px;.pr;
+	div{margin-bottom:20px;}
+	.span-mod{.dbi;width:70px; height:24px;line-height:24px; border-radius:24px;background-color:#eee;.x;}
+	.tool-h3{.dbi;width:90px; height:24px; border-radius:24px;background-color:#0084ff;.x;color:#fff;}
+	.tool-info-base{
+		.clear;div{margin-bottom:0;}
+		.information{
+			.fl;width:75%;
+			ul{
+				li{
+					@tool-table-height:36px;
+					border-bottom:1px dotted #eee;height:@tool-table-height;line-height:@tool-table-height;
+					span{.span-mod;.y;line-height:24px;margin-right:15px;}
+				}
+			}
+		}
+		.go{
+			.fl;
+			.download{
+				a{
+					&.down{.db;width:210px;height:80px;background-position:0 0;background-repeat:no-repeat;}
+					&.down1{background-image:url('@{url}/pve/tool/btn-down-red.png');}
+					&.down2{background-image:url('@{url}/pve/tool/btn-down-black.png');}
+				}
+				em{
+					.none;
+				}
+			}
+		}
+	}
+	.introduction{
+		.pr;
+		h3{
+			color:#aba6a6;letter-spacing:1px;
+			span{margin-left:10px;font-family:Verdana;}
+		}
+		.content{
+			background:#f7f7f7;border-radius:4px;
+			border:1px solid #ddd;
+			margin:10px 0 0 0;
+			padding:10px;
+		}
+		.tool-share{
+			.pa;right:40px;top:0;
+		}
+	}
+	.tool-info{
+		.pr;
+		&:before{content:'';.db;width:88%;height:1px;background-color:#ddd;.pa;right:0;top:10px;}
+		h3{
+			.span-mod;
+		}
+		.content{
+			.min-height(60);padding:10px;
+		}
+	}
+	.tool-frag{
+		h3{
+			.tool-h3;
+		}
+	}
+}
+
+
+//下载次数
+.macro-view{
+	.macro-views{
+		.none;
+		.pa;margin: 205px 0 0 720px;
+		border:1px solid #ddd;line-height:24px;height:24px;padding:0 5px 0 0;background-color:#f2f2f2;
+		span{background-color:@basecolor;color:#fff;.dbi;height:24px;padding:0 5px;}
+	}
+}
+
+//回帖奖励
+.macro{
+	#pl_top{
+		.none;
+		//.pa;.x(right);right:0;top:-50px;
+	}
+}

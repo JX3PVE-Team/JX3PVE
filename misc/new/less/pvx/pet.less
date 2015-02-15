@@ -1,0 +1,96 @@
+/* 
+* PVX专栏-pet
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.pet {
+  .main {
+    background: url("@{base-url}/pet/bg.jpg") top center no-repeat;
+    .tab {
+      ul {
+        li {
+          span {
+            &.aqua {
+              background: url("@{base-url}/textpic/aqua.png") center no-repeat;
+            }
+            &.beast {
+              background: url("@{base-url}/textpic/beast.png") center no-repeat;
+            }
+            &.bird {
+              background: url("@{base-url}/textpic/bird.png") center no-repeat;
+            }
+            &.machine {
+              background: url("@{base-url}/textpic/machine.png") center no-repeat;
+            }
+
+          }
+        }
+      }
+    }
+    //.tab end
+    .pvx-cont {
+      .cont-box {
+        ul {
+          width: 100%;
+          padding: 10px 0 0 0;
+          li {
+            display: inline-block;
+            width: 378px;
+            padding: 0 0 20px 10px;
+            .box-left {
+              float: left;
+              background: #fff;
+              width: 170px;
+              height: 270px;
+              border: 1px solid #acacac;
+              border-radius: 5px;
+              &:hover {
+                background: #ffddf5;
+                -webkit-box-shadow: inset 0 0 1px 2px rgba(255, 255, 255,1);
+                -moz-box-shadow: inset 0 0 1px 2px rgba(255, 255, 255,1);
+                box-shadow: inset 0 0 1px 2px rgba(255, 255, 255,1);
+              }
+              img {
+                display: block;
+                width: 160px;
+                height: 254px;
+                margin: 8px 8px 12px 8px;
+              }
+            }
+            //.box-left end
+            .box-right {
+              padding: 10px 0 0 190px;
+              a {
+                display: block;
+                background:url("@{base-url}/pet/more.png") no-repeat;
+                width: 142px;
+                height: 36px;
+                margin: 20px 0 0 0;
+                line-height: 36px;
+                color: #fff;
+                text-indent: 35px;
+                transition:background 1s;
+                -moz-transition:background 1s;
+                -webkit-transition:background 1s;
+                -o-transition:background 1s;
+                &:hover {
+                  background:url("@{base-url}/pet/more-after.png") no-repeat;
+                }
+              }
+              span {
+                display: block;
+                padding: 20px 0 0 0;
+                color: #777;
+                text-shadow: 1px 1px 0 #fff;
+              }
+            }
+            //.box-right end
+          }
+        }
+        //ul内容 end
+      }
+      //.cont-box end
+    }
+    //.pvx-cont end
+  }
+}

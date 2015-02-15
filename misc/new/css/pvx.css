@@ -1,0 +1,890 @@
+/*
+* pvx
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+/*
+* Reset.less v0.8 - [2015.1.5]
+* https://github.com/iRuxu/iruxucss
+*/
+@charset "utf-8";
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body,
+header,
+footer,
+hgroup,
+menu,
+nav,
+section,
+article,
+aside,
+details,
+figcaption,
+figure,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+legend,
+button,
+input,
+textarea,
+form,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+blockquote,
+q {
+  quotes: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul {
+  list-style: none outside none;
+}
+fieldset,
+iframe {
+  border: none;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0 none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+input {
+  padding: 0;
+  margin: 0;
+}
+input[type='button'],
+button {
+  cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+input:-ms-clear {
+  display: none;
+}
+button,
+input[type=button],
+input[type=submit],
+input[type='reset'] {
+  cursor: pointer;
+  *overflow: visible;
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+button::-moz-focus-outer,
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+input[type=search] {
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+:focus {
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+b,
+strong {
+  font-weight: normal;
+}
+address,
+cite,
+dfn,
+em,
+var,
+i {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: consolas, 'Courier New', monospace, serif;
+}
+small {
+  font-size: 80%;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+abbr[title],
+acronym[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+/*
+Base.less v1.6 - [2015.1.4]
+https://github.com/iRuxu/iruxucss
+*/
+.nobreak {
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.break {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.refont {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.indent {
+  text-indent: -100%;
+  overflow: hidden;
+}
+.bold {
+  font-weight: bold;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+.half {
+  width: 50%;
+  height: 50%;
+}
+.db {
+  display: block;
+}
+.dbi {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.none {
+  display: none;
+}
+.hide {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
+.clip {
+  overflow: hidden;
+  *zoom: 1;
+}
+.fl {
+  float: left;
+  *display: inline;
+}
+.fr {
+  float: right;
+  *display: inline;
+}
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.ps {
+  position: static;
+}
+.ct {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.cell {
+  display: table-cell;
+  *display: inline-block;
+}
+.iblock {
+  font-size: 0;
+  white-space: nowrap;
+}
+.iblock li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  font-size: 12px;
+  white-space: normal;
+}
+.clear {
+  *zoom: 1;
+}
+.clear:after {
+  content: "\200B";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.border {
+  border-width: 1px 0px;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAKTWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVN3WJP3Fj7f92UPVkLY8LGXbIEAIiOsCMgQWaIQkgBhhBASQMWFiApWFBURnEhVxILVCkidiOKgKLhnQYqIWotVXDjuH9yntX167+3t+9f7vOec5/zOec8PgBESJpHmomoAOVKFPDrYH49PSMTJvYACFUjgBCAQ5svCZwXFAADwA3l4fnSwP/wBr28AAgBw1S4kEsfh/4O6UCZXACCRAOAiEucLAZBSAMguVMgUAMgYALBTs2QKAJQAAGx5fEIiAKoNAOz0ST4FANipk9wXANiiHKkIAI0BAJkoRyQCQLsAYFWBUiwCwMIAoKxAIi4EwK4BgFm2MkcCgL0FAHaOWJAPQGAAgJlCLMwAIDgCAEMeE80DIEwDoDDSv+CpX3CFuEgBAMDLlc2XS9IzFLiV0Bp38vDg4iHiwmyxQmEXKRBmCeQinJebIxNI5wNMzgwAABr50cH+OD+Q5+bk4eZm52zv9MWi/mvwbyI+IfHf/ryMAgQAEE7P79pf5eXWA3DHAbB1v2upWwDaVgBo3/ldM9sJoFoK0Hr5i3k4/EAenqFQyDwdHAoLC+0lYqG9MOOLPv8z4W/gi372/EAe/tt68ABxmkCZrcCjg/1xYW52rlKO58sEQjFu9+cj/seFf/2OKdHiNLFcLBWK8ViJuFAiTcd5uVKRRCHJleIS6X8y8R+W/QmTdw0ArIZPwE62B7XLbMB+7gECiw5Y0nYAQH7zLYwaC5EAEGc0Mnn3AACTv/mPQCsBAM2XpOMAALzoGFyolBdMxggAAESggSqwQQcMwRSswA6cwR28wBcCYQZEQAwkwDwQQgbkgBwKoRiWQRlUwDrYBLWwAxqgEZrhELTBMTgN5+ASXIHrcBcGYBiewhi8hgkEQcgIE2EhOogRYo7YIs4IF5mOBCJhSDSSgKQg6YgUUSLFyHKkAqlCapFdSCPyLXIUOY1cQPqQ28ggMor8irxHMZSBslED1AJ1QLmoHxqKxqBz0XQ0D12AlqJr0Rq0Hj2AtqKn0UvodXQAfYqOY4DRMQ5mjNlhXIyHRWCJWBomxxZj5Vg1Vo81Yx1YN3YVG8CeYe8IJAKLgBPsCF6EEMJsgpCQR1hMWEOoJewjtBK6CFcJg4Qxwicik6hPtCV6EvnEeGI6sZBYRqwm7iEeIZ4lXicOE1+TSCQOyZLkTgohJZAySQtJa0jbSC2kU6Q+0hBpnEwm65Btyd7kCLKArCCXkbeQD5BPkvvJw+S3FDrFiOJMCaIkUqSUEko1ZT/lBKWfMkKZoKpRzame1AiqiDqfWkltoHZQL1OHqRM0dZolzZsWQ8ukLaPV0JppZ2n3aC/pdLoJ3YMeRZfQl9Jr6Afp5+mD9HcMDYYNg8dIYigZaxl7GacYtxkvmUymBdOXmchUMNcyG5lnmA+Yb1VYKvYqfBWRyhKVOpVWlX6V56pUVXNVP9V5qgtUq1UPq15WfaZGVbNQ46kJ1Bar1akdVbupNq7OUndSj1DPUV+jvl/9gvpjDbKGhUaghkijVGO3xhmNIRbGMmXxWELWclYD6yxrmE1iW7L57Ex2Bfsbdi97TFNDc6pmrGaRZp3mcc0BDsax4PA52ZxKziHODc57LQMtPy2x1mqtZq1+rTfaetq+2mLtcu0W7eva73VwnUCdLJ31Om0693UJuja6UbqFutt1z+o+02PreekJ9cr1Dund0Uf1bfSj9Rfq79bv0R83MDQINpAZbDE4Y/DMkGPoa5hpuNHwhOGoEctoupHEaKPRSaMnuCbuh2fjNXgXPmasbxxirDTeZdxrPGFiaTLbpMSkxeS+Kc2Ua5pmutG003TMzMgs3KzYrMnsjjnVnGueYb7ZvNv8jYWlRZzFSos2i8eW2pZ8ywWWTZb3rJhWPlZ5VvVW16xJ1lzrLOtt1ldsUBtXmwybOpvLtqitm63Edptt3xTiFI8p0in1U27aMez87ArsmuwG7Tn2YfYl9m32zx3MHBId1jt0O3xydHXMdmxwvOuk4TTDqcSpw+lXZxtnoXOd8zUXpkuQyxKXdpcXU22niqdun3rLleUa7rrStdP1o5u7m9yt2W3U3cw9xX2r+00umxvJXcM970H08PdY4nHM452nm6fC85DnL152Xlle+70eT7OcJp7WMG3I28Rb4L3Le2A6Pj1l+s7pAz7GPgKfep+Hvqa+It89viN+1n6Zfgf8nvs7+sv9j/i/4XnyFvFOBWABwQHlAb2BGoGzA2sDHwSZBKUHNQWNBbsGLww+FUIMCQ1ZH3KTb8AX8hv5YzPcZyya0RXKCJ0VWhv6MMwmTB7WEY6GzwjfEH5vpvlM6cy2CIjgR2yIuB9pGZkX+X0UKSoyqi7qUbRTdHF09yzWrORZ+2e9jvGPqYy5O9tqtnJ2Z6xqbFJsY+ybuIC4qriBeIf4RfGXEnQTJAntieTE2MQ9ieNzAudsmjOc5JpUlnRjruXcorkX5unOy553PFk1WZB8OIWYEpeyP+WDIEJQLxhP5aduTR0T8oSbhU9FvqKNolGxt7hKPJLmnVaV9jjdO31D+miGT0Z1xjMJT1IreZEZkrkj801WRNberM/ZcdktOZSclJyjUg1plrQr1zC3KLdPZisrkw3keeZtyhuTh8r35CP5c/PbFWyFTNGjtFKuUA4WTC+oK3hbGFt4uEi9SFrUM99m/ur5IwuCFny9kLBQuLCz2Lh4WfHgIr9FuxYji1MXdy4xXVK6ZHhp8NJ9y2jLspb9UOJYUlXyannc8o5Sg9KlpUMrglc0lamUycturvRauWMVYZVkVe9ql9VbVn8qF5VfrHCsqK74sEa45uJXTl/VfPV5bdra3kq3yu3rSOuk626s91m/r0q9akHV0IbwDa0b8Y3lG19tSt50oXpq9Y7NtM3KzQM1YTXtW8y2rNvyoTaj9nqdf13LVv2tq7e+2Sba1r/dd3vzDoMdFTve75TsvLUreFdrvUV99W7S7oLdjxpiG7q/5n7duEd3T8Wej3ulewf2Re/ranRvbNyvv7+yCW1SNo0eSDpw5ZuAb9qb7Zp3tXBaKg7CQeXBJ9+mfHvjUOihzsPcw83fmX+39QjrSHkr0jq/dawto22gPaG97+iMo50dXh1Hvrf/fu8x42N1xzWPV56gnSg98fnkgpPjp2Snnp1OPz3Umdx590z8mWtdUV29Z0PPnj8XdO5Mt1/3yfPe549d8Lxw9CL3Ytslt0utPa49R35w/eFIr1tv62X3y+1XPK509E3rO9Hv03/6asDVc9f41y5dn3m978bsG7duJt0cuCW69fh29u0XdwruTNxdeo94r/y+2v3qB/oP6n+0/rFlwG3g+GDAYM/DWQ/vDgmHnv6U/9OH4dJHzEfVI0YjjY+dHx8bDRq98mTOk+GnsqcTz8p+Vv9563Or59/94vtLz1j82PAL+YvPv655qfNy76uprzrHI8cfvM55PfGm/K3O233vuO+638e9H5ko/ED+UPPR+mPHp9BP9z7nfP78L/eE8/sl0p8zAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAcSURBVHjaBMEBDQAADMMgckv1r20H1WxzoNoPAER9BjAKc4kUAAAAAElFTkSuQmCC") 2 0 stretch;
+  -webkit-border-image: url("data:image/png;base64,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") 2 0 stretch;
+}
+/*
+* 全局布局样式
+* 全局变量声明
+* By iRuxu
+*/
+a {
+  outline: none;
+  text-decoration: none;
+  color: #444;
+}
+a:hover {
+  color: #049abf;
+  text-decoration: none;
+}
+::selection {
+  background-color: #049abf;
+  color: #fff;
+}
+.blue1 {
+  background-color: #fafdff;
+  border-color: #cceafe;
+  color: #049abf;
+}
+.blue2 {
+  background-color: #e3f5ff;
+  border-color: #c7ebff;
+  color: #049abf;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1421243596_263323.eot');
+  src: url('http://at.alicdn.com/t/font_1421243596_263323.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1421243596_263323.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1421243596_263323.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */ url('http://at.alicdn.com/t/font_1421243596_263323.svg#iconfont') format('svg');
+  
+  /* IE9 */
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'yhicon';
+  src: url('http://at.alicdn.com/t/font_1421169244_920332.eot');
+  src: url('http://at.alicdn.com/t/font_1421169244_920332.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1421169244_920332.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1421169244_920332.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */ url('http://at.alicdn.com/t/font_1421169244_920332.svg#iconfont') format('svg');
+  
+  /* IE9 */
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont";
+}
+.yhicon {
+  font-family: "yhicon";
+}
+.iconfont,
+.yhicon {
+  font-style: normal;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+}
+body {
+  font-size: 12px;
+  font-family: Consolas, '宋体', "\5FAE\8F6F\96C5\9ED1", 'Trebuchet MS', Verdana, Helvetica, Arial, Sans-serif;
+}
+.box {
+  margin-top: 76px;
+  transition: margin-top 0.4s;
+}
+.box.menufolder {
+  margin-top: 38px;
+}
+.wp {
+  min-width: 1180px;
+  margin: 0 auto;
+}
+.widthauto .wp {
+  width: 98%;
+}
+.col2-ct {
+  width: 960px;
+}
+.col2-sd {
+  width: 200px;
+}
+/*
+UI.less v0.1 - [2014.12.6]
+https://github.com/iRuxu/iruxucss
+*/
+/* 
+* PVX专栏公共布局-通用
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.wrap {
+  background: url("../img/pvx/bgx.png");
+}
+.wrap .main .tab {
+  padding: 300px 0 0 0;
+  clear: both;
+}
+.wrap .main .tab ul {
+  width: 1180px;
+  margin: auto;
+}
+.wrap .main .tab ul li {
+  display: inline-block;
+  width: 289px;
+}
+.wrap .main .tab ul li img {
+  display: block;
+  width: 224px;
+  height: 116px;
+  overflow: hidden;
+  margin: auto;
+  transition: All 0.3s ease-in-out;
+  -webkit-transition: All 0.3s ease-in-out;
+  -moz-transition: All 0.3s ease-in-out;
+  -o-transition: All 0.3s ease-in-out;
+}
+.wrap .main .tab ul li img:hover {
+  transform: translate(0, -10px) scale(1.1);
+  -webkit-transform: translate(0, -10px) scale(1.1);
+  -moz-transform: translate(0, -10px) scale(1.1);
+  -o-transform: translate(0, -10px) scale(1.1);
+  -ms-transform: translate(0, -10px) scale(1.1);
+}
+.wrap .main .tab ul li span {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-indent: -99999px;
+}
+.wrap .main .nav {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 0 0;
+  padding: 0 0 20px 0;
+  background: url("../img/pvx/navbg.png") top center no-repeat;
+}
+.wrap .main .nav ul {
+  width: 980px;
+  height: 50px;
+  margin: auto;
+}
+.wrap .main .nav ul li {
+  display: inline-block;
+  width: 110px;
+  line-height: 50px;
+}
+.wrap .main .nav ul li.on a {
+  background: url("../img/pvx/nav-on.png") left no-repeat;
+}
+.wrap .main .nav ul li.back {
+  float: right;
+}
+.wrap .main .nav ul li.back a {
+  width: 110px;
+  padding: 0;
+  color: #ccc;
+  font-size: 12px;
+  text-align: right;
+}
+.wrap .main .nav ul li.back a:hover {
+  background: none;
+  color: #fff;
+}
+.wrap .main .nav ul li a {
+  display: block;
+  width: 90px;
+  padding: 0 0 0 30px;
+  color: #fff;
+  font-size: 14px;
+}
+.wrap .main .nav ul li a:hover {
+  background: url("../img/pvx/nav-on.png") left no-repeat;
+}
+.wrap .main .pvx-cont {
+  width: 1180px;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+.wrap .main .pvx-cont .cont-box {
+  padding: 0 0 20px 0;
+  background: url("http://static.jx3pve.com/cssjsimg/jx3pve/face/face_hr.png") bottom no-repeat;
+}
+.wrap .main .pvx-cont .turn-page {
+  padding: 10px 0 0 0;
+}
+.wrap .main .pvx-cont .turn-page .page-list {
+  padding: 3px;
+  margin: 3px;
+  text-align: center;
+}
+.wrap .main .pvx-cont .turn-page .page-list a {
+  padding: 5px 10px;
+  margin: 4px;
+  border: #b7b7b7 1px solid;
+  color: #333;
+  text-decoration: none;
+}
+.wrap .main .pvx-cont .turn-page .page-list a:hover,
+.wrap .main .pvx-cont .turn-page .page-list a:active {
+  background: #cecece;
+  color: #393939;
+  border: #666 1px solid;
+}
+.wrap .main .pvx-cont .turn-page .page-list a.back {
+  background: url("http://static.jx3pve.com/static/image/common//arw_l.gif") no-repeat;
+  background-position: 10px 50%;
+  padding-left: 25px;
+}
+.wrap .main .pvx-cont .turn-page .page-list a.next {
+  background: url("http://static.jx3pve.com/static/image/common//arw_r.gif") no-repeat;
+  background-position: 90% 50%;
+  padding-right: 25px;
+}
+.wrap .main .pvx-cont .turn-page .page-list strong,
+.wrap .main .pvx-cont .turn-page .page-list span {
+  padding: 5px 10px;
+  margin: 4px;
+  color: #333;
+  border: #b7b7b7 1px solid;
+}
+.wrap .main .pvx-cont .turn-page .page-list strong.current,
+.wrap .main .pvx-cont .turn-page .page-list span.current {
+  background-color: #cecece;
+  color: #393939;
+  font-weight: bold;
+}
+.wrap .main .pvx-cont .turn-page .page-list strong input.px,
+.wrap .main .pvx-cont .turn-page .page-list span input.px {
+  background: #e3e3e3;
+  width: 25px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0;
+  color: #5a5a5a;
+  border: 1px solid #c9c7c8;
+  -moz-box-shadow: 1px 1px 1px #787878 inset;
+  -webkit-box-shadow: 1px 1px 1px #787878 inset;
+  box-shadow: 1px 1px 1px #787878 inset;
+}
+/* 
+* PVX专栏-pet
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.pet .main {
+  background: url("../img/pvx/pet/bg.jpg") top center no-repeat;
+}
+.pet .main .tab ul li span.aqua {
+  background: url("../img/pvx/textpic/aqua.png") center no-repeat;
+}
+.pet .main .tab ul li span.beast {
+  background: url("../img/pvx/textpic/beast.png") center no-repeat;
+}
+.pet .main .tab ul li span.bird {
+  background: url("../img/pvx/textpic/bird.png") center no-repeat;
+}
+.pet .main .tab ul li span.machine {
+  background: url("../img/pvx/textpic/machine.png") center no-repeat;
+}
+.pet .main .pvx-cont .cont-box ul {
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+.pet .main .pvx-cont .cont-box ul li {
+  display: inline-block;
+  width: 378px;
+  padding: 0 0 20px 10px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-left {
+  float: left;
+  background: #fff;
+  width: 170px;
+  height: 270px;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-left:hover {
+  background: #ffddf5;
+  -webkit-box-shadow: inset 0 0 1px 2px #ffffff;
+  -moz-box-shadow: inset 0 0 1px 2px #ffffff;
+  box-shadow: inset 0 0 1px 2px #ffffff;
+}
+.pet .main .pvx-cont .cont-box ul li .box-left img {
+  display: block;
+  width: 160px;
+  height: 254px;
+  margin: 8px 8px 12px 8px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right {
+  padding: 10px 0 0 190px;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right a {
+  display: block;
+  background: url("../img/pvx/pet/more.png") no-repeat;
+  width: 142px;
+  height: 36px;
+  margin: 20px 0 0 0;
+  line-height: 36px;
+  color: #fff;
+  text-indent: 35px;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right a:hover {
+  background: url("../img/pvx/pet/more-after.png") no-repeat;
+}
+.pet .main .pvx-cont .cont-box ul li .box-right span {
+  display: block;
+  padding: 20px 0 0 0;
+  color: #777;
+  text-shadow: 1px 1px 0 #fff;
+}
+/* 
+* PVX专栏-video
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.video .main {
+  background: url("../img/pvx/video/bg.jpg") top center no-repeat;
+}
+.video .main .tab ul li span.story {
+  background: url("../img/pvx/textpic/story.png") center no-repeat;
+}
+.video .main .tab ul li span.music {
+  background: url("../img/pvx/textpic/music.png") center no-repeat;
+}
+.video .main .tab ul li span.official {
+  background: url("../img/pvx/textpic/official.png") center no-repeat;
+}
+.video .main .tab ul li span.other {
+  background: url("../img/pvx/textpic/other.png") center no-repeat;
+}
+.video .main .pvx-cont .cont-box .ul-title {
+  line-height: 36px;
+}
+.video .main .pvx-cont .cont-box .ul-title * {
+  display: inline-block;
+}
+.video .main .pvx-cont .cont-box .ul-title span {
+  width: 7%;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+.video .main .pvx-cont .cont-box .ul-title b {
+  background: url("http://static.jx3pve.com/cssjsimg/jx3pve/index/2014/tool_raw.png") left no-repeat;
+  width: 8%;
+  font-size: 16px;
+  text-align: center;
+}
+.video .main .pvx-cont .cont-box .ul-title hr {
+  width: 84%;
+  margin: 0 0 3px 0;
+  border: 1px dashed #000;
+  color: blue;
+}
+.video .main .pvx-cont .cont-box ul {
+  padding: 10px 0 0 0;
+}
+.video .main .pvx-cont .cont-box ul li {
+  display: inline-block;
+  width: 24.5%;
+  padding: 0 0 10px 0;
+}
+.video .main .pvx-cont .cont-box ul li img {
+  display: block;
+  width: 258px;
+  height: 134px;
+  margin: auto;
+  border-radius: 15px;
+}
+.video .main .pvx-cont .cont-box ul li span {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+.video .main .pvx-cont .cont-box ul li span:hover {
+  color: #93f;
+}
+/* 
+* PVX专栏-face
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.face .main {
+  background: url("../img/pvx/face/bg.jpg") top center no-repeat;
+}
+.face .main .tab ul li span.man {
+  background: url("../img/pvx/textpic/man.png") center no-repeat;
+}
+.face .main .tab ul li span.boy {
+  background: url("../img/pvx/textpic/boy.png") center no-repeat;
+}
+.face .main .tab ul li span.lady {
+  background: url("../img/pvx/textpic/lady.png") center no-repeat;
+}
+.face .main .tab ul li span.loli {
+  background: url("../img/pvx/textpic/loli.png") center no-repeat;
+}
+.face .main .pvx-cont .cont-box ul {
+  width: 100%;
+  padding: 10px 0 0 0;
+}
+.face .main .pvx-cont .cont-box ul li {
+  display: inline-block;
+  width: 378px;
+  padding: 0 0 20px 10px;
+}
+.face .main .pvx-cont .cont-box ul li .box-left {
+  float: left;
+  background: #fff;
+  width: 136px;
+  height: 190px;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+.face .main .pvx-cont .cont-box ul li .box-left:hover {
+  background: #ffddf5;
+  -webkit-box-shadow: inset 0 0 1px 2px #ffffff;
+  -moz-box-shadow: inset 0 0 1px 2px #ffffff;
+  box-shadow: inset 0 0 1px 2px #ffffff;
+}
+.face .main .pvx-cont .cont-box ul li .box-left img {
+  display: block;
+  width: 120px;
+  height: 170px;
+  margin: 8px 8px 12px 8px;
+  box-shadow: 1px 1px 2px #666;
+}
+.face .main .pvx-cont .cont-box ul li .box-right {
+  width: 212px;
+  height: 90px;
+  padding: 50px 0 50px 166px;
+}
+.face .main .pvx-cont .cont-box ul li .box-right a {
+  display: block;
+  background: url("../img/pvx/face/down.png") no-repeat;
+  width: 127px;
+  height: 25px;
+  line-height: 25px;
+  color: #555;
+  text-align: center;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+}
+.face .main .pvx-cont .cont-box ul li .box-right a:hover {
+  background: url("../img/pvx/face/down-after.png") no-repeat;
+}
+.face .main .pvx-cont .cont-box ul li .box-right span {
+  display: block;
+  padding: 15px 0 0 0;
+  color: #777;
+  text-shadow: 1px 1px 0 #fff;
+}
+/* 
+* PVX专栏-pet
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.pet .main .pet-page .cont-box {
+  background: none !important;
+  border-bottom: 1px solid #cceafe;
+}
+.pet .main .pet-page .cont-box h1 {
+  height: 30px;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #cceafe;
+}
+.pet .main .pet-page .cont-box h1 span {
+  line-height: 30px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+.pet .main .pet-page .cont-box h1 a {
+  display: block;
+  float: right;
+  width: 42px;
+  height: 28px;
+  line-height: 28px;
+  background: url("http://static.jx3pve.com/static/image/common/fav.gif") no-repeat 10px 50%;
+  padding: 0 10px 0 30px;
+  border: 1px solid #bbb;
+}
+.pet .main .pet-page .cont-box .pet-box {
+  width: 90%;
+  padding: 30px 0 0 0;
+  margin: auto;
+  color: #333;
+  text-shadow: 1px 1px 0 #fff;
+}
+.pet .main .pet-page .cont-box .pet-box .pet-img {
+  width: 324px;
+  height: 514px;
+  float: left;
+}
+.pet .main .pet-page .cont-box .pet-box ul {
+  width: 50%;
+  height: 514px;
+  padding: 0 0 0 360px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li {
+  width: 100%;
+  padding: 0;
+  line-height: 40px;
+  border-bottom: 1px dotted #aaa;
+  word-wrap: break-word;
+}
+.pet .main .pet-page .cont-box .pet-box ul li b {
+  padding: 0 10px 0 0;
+  font-weight: normal;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-name {
+  padding: 0 0 10px 0;
+  font-family: "Microsoft Yahei", "微软雅黑";
+  border: none;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-name span {
+  padding: 0 15px 0 0;
+  line-height: 36px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-name span img {
+  width: 36px;
+  height: 36px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw * {
+  float: left;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw span {
+  padding: 5px 10px 5px 0px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .editp {
+  background: url("http://static.jx3pve.com/static/image/common//edit.gif") no-repeat 4px 50%;
+  padding: 5px 10px 5px 25px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .pet-share {
+  width: 184px;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .pet_my {
+  display: block;
+  background: url("../img/pvx/pet/show.png") no-repeat;
+  width: 193px;
+  height: 34px;
+  margin: 10px 0;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+}
+.pet .main .pet-page .cont-box .pet-box ul li.pet-dw .pet_my:hover {
+  background: url("../img/pvx/pet/show-after.png") no-repeat;
+}
+.pet .main .pet-page .cont-box .pet-cont {
+  background: url("http://static.jx3pve.com/cssjsimg/pet/pet_ct.png") no-repeat top center;
+  padding: 60px 0 0 0;
+  margin: 20px 0 0 0;
+}

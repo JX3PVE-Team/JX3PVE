@@ -1,0 +1,121 @@
+/* 
+* PVX专栏-pet
+* By 子璇
+* 2015.1.29
+-------------------------------------------------------------- */
+.pet {
+  .main {
+    .pet-page {
+      .cont-box {
+        background: none !important;
+        border-bottom: 1px solid #cceafe;
+        h1 {
+          height: 30px;
+          padding: 0 0 10px 0;
+          border-bottom: 1px solid #cceafe;
+          span {
+            line-height: 30px;
+            color: #333;
+            font-size: 15px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #fff;
+          }
+          a {
+            display: block;
+            float: right;
+            width: 42px;
+            height: 28px;
+            line-height: 28px;
+            background: url("http://static.jx3pve.com/static/image/common/fav.gif") no-repeat 10px 50%;
+            padding: 0 10px 0 30px;
+            border: 1px solid #bbb;
+          }
+        }
+        //h1 end
+        .pet-box {
+          width: 90%;
+          padding: 30px 0 0 0;
+          margin: auto;
+          color: #333;
+          text-shadow: 1px 1px 0 #fff;
+          .pet-img {
+            width: 324px;
+            height: 514px;
+            float: left;
+          }
+          ul {
+            width: 50%;
+            height: 514px;
+            padding: 0 0 0 360px;
+            li {
+              width: 100%;
+              padding: 0;
+              line-height: 40px;
+              border-bottom: 1px dotted #aaa;
+              word-wrap: break-word;
+              b {
+                padding: 0 10px 0 0;
+                font-weight: normal;
+              }
+              &.pet-name {
+                padding: 0 0 10px 0;
+                font-family: "Microsoft Yahei", "微软雅黑";
+                border: none;
+                span {
+                  padding: 0 15px 0 0;
+                  line-height: 36px;
+                  font-size: 25px;
+                  font-weight: 800;
+                  img {
+                    width: 36px;
+                    height: 36px;
+                  }
+                }
+              }
+              //.pet-name  end
+              &.pet-dw {
+                * {
+                  float: left;
+                }
+                span {
+                  padding: 5px 10px 5px 0px;
+                }
+                .editp {
+                  background: url("http://static.jx3pve.com/static/image/common//edit.gif") no-repeat 4px 50%;
+                  padding: 5px 10px 5px 25px;
+                }
+                .pet-share {
+                  width: 184px;
+                }
+                .pet_my {
+                  display: block;
+                  background: url("@{base-url}/pet/show.png") no-repeat;
+                  width: 193px;
+                  height: 34px;
+                  margin: 10px 0;
+                  transition: background 1s;
+                  -moz-transition: background 1s;
+                  -webkit-transition: background 1s;
+                  -o-transition: background 1s;
+                  &:hover {
+                    background: url("@{base-url}/pet/show-after.png") no-repeat;
+                  }
+                }
+              }
+              //.pet-dx end
+            }
+          }
+        }
+        //.pet-box end
+        .pet-cont {
+          background: url("http://static.jx3pve.com/cssjsimg/pet/pet_ct.png") no-repeat top center;
+          padding: 60px 0 0 0;
+          margin: 20px 0 0 0;
+        }
+        //pet-cont end
+      }
+      //.cont-box end
+    }
+    //.pvx-cont end
+  }
+}

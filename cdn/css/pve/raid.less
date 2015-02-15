@@ -1,0 +1,219 @@
+/* 团队栏目
+-------------------------------------------------------------- */
+
+	.zTD{
+		background:url("http://ww3.sinaimg.cn/large/bcc700eegw1eiaxxgb5byj21hc0le79q.jpg") no-repeat top center;
+		.zTDMain{
+			width:@wp;margin:0 auto;padding-left:2px;padding-bottom:40px;.clear;
+
+			//顶部
+			.zTDTop{
+				padding:35px 0;
+				.zTDTopa{display:block;height:182px;width:360px;}
+			}
+
+			//侧边栏
+			.zTDLeft{
+				width:220px;.fl;
+				//发布按钮
+				.zTDRelease{
+					background:url("@{url}/pve/raid/raid_pub.png") no-repeat;
+					height:175px;margin-left:2px;
+					ul li{
+						margin-bottom:12px;
+						a{
+							display:block;width:206px;height:81px;.pr;.clip;
+							&:hover{
+								&:before{
+									transform:translateY(0);
+								}
+							}
+							&:before{
+								content:'';.db;width:100%;height:50px;.pa;
+								background-color:rgba(255,255,255,0.3);
+								transform:translateY(-100%);transition:0.1s ease-out;
+							}
+						}
+					}
+				}
+				//推荐工会
+				.zTDRecommend{
+					//标题
+					.zTDRecH{
+						background:url("@{url}/pve/raid/raid_gh.png") no-repeat;
+						height:38px;margin-top:20px;
+					}
+					//列表
+					.zTDRecList{
+						background:#fff;width:204px;border-radius:4px;margin-top:8px;
+						h2{
+							color: #666;
+							border-bottom: 1px dashed #ddd;
+							line-height: 24px;
+							text-indent: 25px;
+							margin-bottom: 5px;
+							.bold;
+						}
+						.leader_title{
+							background:url('@{url}/common/verficon/raidl.png') no-repeat 5px 50%;//color:#cc0000;
+							cursor:help;
+						}
+						.leader{
+
+						}
+						.team_title{
+							background:url('@{url}/common/verficon/raid.png') no-repeat 5px 50%;//color:#135CA5;
+						}
+						.team{
+							.raidts{padding:0 5px;}
+							.raidts li{line-height:24px;clear:both;border-bottom:1px dotted #ccc;display:block;}
+							.raidts li a{}
+							.raidts_fwq{color:#777;float:right;letter-spacing:1px;}
+						}
+						.raid-sd-more{
+							.none;
+							a{
+								.db;
+								background:url('@{url}/pve/raid/raid_set.png') no-repeat 0 0;
+								width:185px;height:70px;
+								margin:5px auto;padding:1px;
+							}
+						}
+					}
+				}
+				//群组
+				.zTDRaid-us{
+					background:url("@{url}/pve/raid/raid_us.png") no-repeat;
+					height:155px;margin-top:15px;
+				}
+			}
+	
+			//列表页内容区
+			.zTDRight{
+				.fr;
+				background:rgba(255,255,255,0.5);
+				background:#f2f2f2 \9;
+				width:@wp - 220px - 20px;border:1px solid #ccc;
+				.zTDRig{
+					padding:12px 12px 11px 14px;overflow:hidden;
+					//面包屑
+					#pt{
+						a:hover{color:#cc0000;}
+					}
+					//内容
+					#ct{
+						width:100%;background-color:#fff;
+						border:1px solid #ddd !important;
+						border-top:none !important;
+						//过滤
+						#fontsearch{
+							th{width:15%;}
+							td{padding:0;
+								ul{
+									li{
+										width:120px;height:26px;line-height:26px;
+										.acolor(#555,#cc0000);
+									}
+									li.a{
+										a{color:#cc0000;}
+									}
+								}
+							}
+						}
+
+						//上面翻页
+						#pgt{.none;}
+
+						//tab卡
+						#thread_types{
+							background:url('@{url}/pve/raid/raid_trt.png') no-repeat 0 0;
+							border:none;height:31px;line-height:31px;
+							padding:0 0 0 160px;
+							li{
+								padding:0;height:31px;line-height:31px;
+								a{
+									padding:0 10px;height:31px;line-height:31px;
+									border:none;background:none;
+								}
+								&.a{
+									a{
+										color:#cc0000;
+									}
+								}
+							}
+						}
+
+						//搜索表单
+						//#searhsort{.none;}
+
+						//发帖按钮
+						#newspecial,#newspecialtmp{.none;}
+						.pgs{padding:0 5px;}
+
+					}
+
+
+
+
+				}
+			}
+			//单页内容区
+			.zTDRight{
+				//顶部管理操作
+				#modmenu{.none;}
+				//底部管理操作
+				.pbm{padding:10px;a{color:#777;}}
+				//隐藏侧边栏
+				#postlist{
+					//标题样式
+					.vwthd{
+						padding:0 80px 0 0 !important;height:31px;line-height:31px;
+						background:url('@{url}/pve/raid/raid_trt2.png') no-repeat 0 0;
+						h1{padding-left:160px;font-size:12px;font-weight:normal;font-family:'宋体';}
+					}
+					//侧边隐藏
+					.pls{
+						.none;
+					}
+					//底部边框
+					&>div{
+						border:none;
+					}
+					.plc{
+						.pob{
+							.showmenu{
+								.panel-list;
+							}
+						}
+					}
+				}
+				//信息条
+				.pi{
+					border:none;background-color:#eee;border-radius:24px;padding:0 5px;height:28px;line-height:28px;margin-top:10px;
+					strong a{border:none;padding:0px 6px;margin-top:0;&:hover{border:none;}}
+					#fj{
+						label{height: 100%;line-height: inherit;}
+						input{height:auto;line-height:1;.pr;top:5px;}
+					}
+				}
+				.bbsview-author-avt{.y;.dbi;img{width:20px;height:20px;border-radius:4px;.y;.pr;top:-2px;}}
+				.bbsview-author-name{}
+				.bbsview-author-verf{margin-top:-4px;}
+
+				//相关帖子隐藏
+				.mtw.mbw{.none;}
+			}
+			//发布页
+			.zTDRight{
+				.raid-post-title{
+					background:url('@{url}/pve/raid/raid_trt3.png') no-repeat 0 0;height:31px;
+				}
+				#postform{
+					padding:10px;background-color:#fff;border:1px solid #ddd;border-top:none;
+					#ct{border:none !important;}
+				}
+			}
+
+		}
+	}
+	

@@ -1,0 +1,26 @@
+<div class="raidlist">
+	<ul>
+	[loop]
+		<li class="raidlist-tr">
+			<!-- 团队LOGO-->
+			<div class="raidlist-logo">
+				<a href="{subject_url}"><img src="{raidlogo_value}" width="180px" height="100px"/></a>
+			</div>
+
+			<!-- 帖子标题-->
+			<div class="raidlist-title">
+				<a href="{subject_url}">{subject}</a> 
+			</div>
+			<div class="raidlist-info">
+				<span class="raidlist-mydaqu">服务器 : {mydaqu_value} - {fuwuqi_value}</span>
+				<span  class="raidlist-myverf"><em>认证 : </em>{author_verify}</span>
+			</div>
+			<div class="raidlist-info">
+				<span><em>{raidnature} : </em>{raidnature_value}</span>
+				<span><em>{raidtime} : </em>{raidtime_value}</span>
+				<span><em>{raidyy} : </em>{raidyy_value}</span>
+			</div>		
+		</li>
+		[/loop]
+	</ul>
+</div>

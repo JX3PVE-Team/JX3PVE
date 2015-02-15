@@ -1,0 +1,94 @@
+//列表页
+.zTD{
+	.zTDMain{
+		//团队招募
+		.raidlist{
+			a{
+				color:#5878ef;
+				&:hover{color:#fbb803;text-decoration:none;}
+			}
+			.raidlist-tr{
+				.clear;
+				border-bottom:1px dotted #ccc;padding:10px;
+				&:hover{background:#fafdff;}
+			}
+			.raidlist-logo{
+				width:180px;height:100px;padding:5px;border:1px solid #ccc;margin-left:10px;.fl;margin-right:20px;
+			}
+			.raidlist-title{text-align:left;height:28px;line-height:28px;.nobreak;
+				.acolor(#555,#cc0000);
+			}
+			.raidlist-avt{
+				width:80px;height:80px;padding:5px;border:1px solid #ccc;.fl;margin-right:20px;
+			}
+			.raidlist-info{
+				color:#777;height:28px;line-height:28px;width:550px;.nobreak;
+				span{padding-right:20px;}
+				.raidlist-mydaqu{border-radius:18px;border:1px solid #ccc;width:auto;padding:3px 10px;text-align:center;margin-right:10px;width:160px;overflow:hidden;}
+				.raidlist-myverf a{padding-right:2px;}
+			}
+		}
+	}
+}
+
+//单页
+.zTD{
+	.zTDMain{
+		.raid-info-primary{
+			.clear;
+			.raid-info-sidebar{
+				.fl;margin-right:20px;.clip;
+				.logo{width:180px;height:100px;padding:5px;border:1px solid #ddd;}
+				.avt{width:80px;height:80px;padding:5px;border:1px solid #ddd;border-radius:4px;}
+				.raid-sp{
+					.db;background:url('@{url}/pve/raid/btn-sp.png') no-repeat 0 0;margin-top:6px;
+					color:#836603;letter-spacing:10px;height:27px;line-height:27px;text-indent:75px;.bold;
+				}
+				p{
+					.nobreak;width:192px;color:#555;background-color:#f2f2f2;border-radius:4px;
+					span{
+						.dbi;padding:2px 8px;margin-right:6px;color:#777;
+					}
+				}
+			}
+			.raid-info-content{
+				.fl;width:@wp - 220px - 20px - 60px - 180px - 40px;
+				&.personal{width:@wp - 220px - 20px - 60px - 80px - 40px;}
+				ul{
+					li{
+						.lh(28px);border-bottom:1px solid #eee;
+						span{.dbi;width:80px;color:#777;}
+					}
+				}
+			}
+		}
+		.raid-info-title{
+			margin:10px 0;text-align:center;height:27px;
+			background:url("@{url}/pve/raid/raid_teamname.png") no-repeat center top;
+			color:#8c5e06;font-weight:bold;letter-spacing:2px;line-height:26px;
+		}
+	}
+}
+
+//发布页
+.zTD{
+	.raid-pub-primary{
+		ul{
+			li{
+				border-bottom:1px dashed #ddd;
+				line-height:32px;
+				padding:5px;
+				span{.dbi;width:100px;}
+				b{color:#ff0000;}
+				input[type="text"]{width:50%;}
+				p{text-indent:100px;color:#666;
+					a{color:#cc0000;}
+					a:hover{color:#ff0000;}
+				}
+			}
+		}
+	}
+}
+	
+	
+	

@@ -1,0 +1,22 @@
+<!--{template common/header}-->
+<!--[name]YYLMACRO Iframe[/name]-->
+<style id="diy_style" type="text/css"></style>
+
+<div id="ct" class="ct2 wp cl">
+<!--[diy=diy1]--><div id="diy1" class="area">
+<script type="text/javascript" language="javascript">
+function iFrameHeight() {
+var ifm= document.getElementById("iframepage");
+var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;
+if(ifm != null && subWeb != null) {
+ifm.height = subWeb.body.scrollHeight;
+}
+}
+</script>
+
+<iframe src="http://www.jx3pve.com/cloud/3556" id="iframepage" name="iframepage" frameBorder=0 scrolling=no width="100%" onLoad="iFrameHeight()" ></iframe>
+
+</div><!--[/diy]-->
+</div>
+
+<!--{template common/footer}-->

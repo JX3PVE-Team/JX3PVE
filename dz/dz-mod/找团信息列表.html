@@ -1,0 +1,26 @@
+<div class="raidlist">
+	<ul>
+		[loop]
+		<li class="raidlist-tr">
+			<!-- 头像 -->
+			<div class="raidlist-avt">
+				<a href="{subject_url}"><img src="http://www.jx3pve.com/uc_server/avatar.php?uid={authorid}&size=middle" width="80px" height="80px"/></a>
+			</div>
+
+			<!-- 帖子标题-->
+			<div class="raidlist-title">
+				<a href="{subject_url}">{subject}</a>
+			</div>
+			<div class="raidlist-info">
+				<span class="raidlist-mydaqu">{mydaqu_value} - {fuwuqi_value}</span>
+				<span class="raidlist-myverf"><em>认证 : </em>{author_verify}</span>
+			</div>
+			<div class="raidlist-info">
+				<span><em>{mytime}:</em>{mytime_value}</span>
+				<span><em>{myrole}:</em>{myrole_value}</span>
+				<span><em>{baotuan4}:</em>{baotuan4_value}</span>
+			</div>		
+		</li>
+		[/loop]
+	</ul>
+</div>

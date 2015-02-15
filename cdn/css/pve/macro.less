@@ -1,0 +1,340 @@
+//云端宏
+//2014.12.17 - By iRuxu
+
+.ct2_a_r .mn{width:960px - 40px;}
+
+//宏单页与列表页侧边栏
+.macro{
+	//侧栏板
+	.sidebar-wrap{
+		.fl;width:200px;
+
+		h3{
+			height:28px;margin:10px 0;
+			.fz(14,2);border-bottom:1px dotted #ccc;
+		}
+
+		ul{
+			//职业导航
+			&.role-nav{
+
+				background-color:#444;.clear;border-radius:4px;padding:10px;
+
+				li{
+					float:left;width:33%;height:26px;line-height:26px;.x;
+					transition:background 0.2s ease-in;
+					text-shadow:1px 1px 0 #000;
+					&:hover{background-color:#333;border-radius:4px;}
+				}
+				
+				a{color:#eee;.db;.full;}
+				.star_1{color:#ffff00;}
+				.star_2{color:#ff9ce0;}
+				.star_3{color:#d5adfe;}
+				.star_4{color:#93a1fb;}
+				.star_5{color:#fc8585;}
+				.star_6{color:#fca882;}
+				.star_7{color:#fad1b0;}
+				.star_8{color:#84f0fd;}
+				.star_9{color:#a5f482;}
+				.star_10{color:#fee16f;}
+				.star_11{color:#d0ea69;}
+				.star_12{color:#ffffff;}
+			}
+		}
+
+		//常用工具
+		.qc-tools{
+			li{
+				.gray-btn;margin-bottom:5px;
+				a{.db;.full;}
+				&:hover{a{color:#049abf;}}
+			}
+		}
+
+		//作者搜索
+		.macro-author-search{
+			.vm{
+				.mini-search;
+				background-color:#fff;padding:5px;
+			}
+		}
+
+		//发布按钮
+		.macro-pub-my{
+			background:url('@{url}/pve/macro/btn-pub-black.png') no-repeat 0 0;
+			a{.db;.full;.size(180px,60px);}
+		}
+	}
+
+	//心法导航
+	.jx3-role-mod1{
+		.wrap{
+			.clear;width:220px;
+			padding:10px 5px;
+			background:none;
+		}
+		li{
+			.fl;width:100px;margin-bottom:5px;.pr;
+			&:hover{
+				//.shark;
+				i{
+					//transform:rotate(360deg);transition:0.3s ease-out;
+					//animation:roleshow 0.3s;
+				}
+			}
+			a{.db;.full;}
+			a:hover{color:#333;font-weight:bold;span{font-weight:normal;}}
+			span{.pa;
+				top: -25px;
+				left: 0px;
+				width: 120px;
+				background: #444;
+				border:1px solid #666;
+				box-shadow:1px 1px 0 #ddd;
+				border-radius: 4px;
+				padding: 2px 2px 2px 5px;
+				color: #ccc;
+				.tm(0);
+				.arrow(b,10,#444);
+				animation:tipsshow 3s ease-out;
+			}
+		}
+	}
+
+}
+
+//宏单页与列表页内容区
+.macro{
+	padding:20px 0;background-color:#f2f2f2;
+
+	//版主面包
+	#pt{
+		//border-bottom:1px dotted #ddd;
+		height:32px;
+		.banzhu{
+			span{
+				background: #0084ff;
+				color: #fff;
+				border-radius: 4px;
+				padding: 4px 8px;
+			}
+		}
+	}
+
+	.boardnav,.macro-view{
+		.clear;background-color:#f2f2f2;
+	}
+
+	//顶部操作条与分页
+	#modmenu.xi2.pbm,#pgt.pgs{.none;}
+
+	//页面标题
+	.title-wrap{
+		.fz(32px,60px);font-family:'微软雅黑';
+		.pr;border-bottom:2px solid #555;
+		span{.fz(18px,60px);color:#666;}
+		.iconfont{.fz(32px,60px);margin-right:5px;color:@blue;}
+	}
+
+	//内容区
+	.content-wrap{
+		.fr;width:@wp - @sd - 20px;
+		padding:20px 0;
+
+		//心法过滤
+		.ptn.pbn.mbm{border:none !important;}
+		.tsm {margin-bottom:0;height:60px;.clip;table-layout:fixed;}
+		.tsm li{
+			width:70px;height:25px;
+			a{color:#555;.db;.full;}
+			a:hover{color:@dk-blue;}
+		}
+		#fontsearch{
+			border-radius:8px;background-color:#f2f2f2;border:none !important;
+			li{text-indent:5px;line-height:25px;
+				&:hover{background-color:@dk-blue;border-radius:6px;a{color:#fff;}}
+			}
+		}
+		#searhsort{
+			.none;
+		}
+
+		//隐藏板块名等
+		.bm.bml.pbn,#thread_types{.none;}
+
+		//翻页
+		#pgt{
+
+		}
+
+		//内容整区
+		.mn{
+			background-color:#fff;
+			border-radius:4px;
+			padding:20px;
+			box-shadow:0 0 4px rgba(0,0,0,0.1);
+			border:1px solid #ddd;
+
+			//version2
+			.macro-li{
+				border-bottom: 1px solid #C2D5E3;height:39px;line-height:39px;width:100%;.clear;
+				span{
+					&.info-macro-avt img{width:24px;.y;}
+					&.info-macro-role{}
+					&.info-macro-type{}
+					&.info-macro-title{}
+					&.info-macro-author{.fr;}
+				}
+			}
+
+			.t_fsz{
+				.t_f{
+					padding:0 10px;
+				}
+			}
+
+		}
+
+		//列表
+		.macro-list{
+			width:100%;.clip;table-layout:fixed;
+			//version1
+			.item{
+				height:32px;.fz(12px,32px);border-bottom:1px dashed #ccc;
+				a:hover{color:#1b7acb;}
+				&:hover{background-color:#e4f3ff;}
+				&.even{background-color:#f7f7f7;
+					&:hover{background-color:#e4f3ff;}
+				}
+				.item-avt{width:40px;
+					img{border-radius:3px;}
+				}
+				.role{width:40px;color:#777;padding-left:2px;}
+				.atitle{
+					width:716px !important;.nobreak;
+					a{font-weight:normal;}
+					.downcord{font-size:12px;color:#cc0000;font-weight:normal;background: url("@{url}/page/bbs-list/star_i1.png") no-repeat 0 2px;padding-left:20px;}
+				}
+				.author{
+					width:140px;.nobreak;.x(right);padding-right:2px;
+					a{color:#777;}
+					span{margin-left:5px;a{margin-left:2px;}}
+				}
+			}
+
+		}
+
+		//文章标题
+		.macro-title{
+			.fz(14px,2.5);font-family:"微软雅黑";font-weight:bold;//text-indent:20px;
+			width:100%;.nobreak;margin-bottom:10px;
+			border-bottom:1px dashed #ddd;
+			//border: none;background-color: #f2f2f2;border-radius: 36px;
+			span{font-weight:normal;font-family:"宋体";font-size:12px;}
+		}
+
+		.macro-share{
+			.pa;right:20px;top:20px;//.none;
+		}
+	}
+}
+
+//宏单页布局修改
+.macro{
+	//隐藏侧边栏
+	#postlist{
+		//侧边隐藏
+		.pls{
+			.none;
+		}
+		//底部边框
+		&>div{
+			border:none;
+		}
+		.plc{
+			.pob{
+				.showmenu{
+					
+				}
+			}
+		}
+	}
+	//信息条
+	.pi{
+		border:none;background-color:#eee;border-radius:24px;padding:0 5px;height:28px;line-height:28px;
+		strong a{border:none;padding:0px 6px;margin-top:0;&:hover{border:none;}}
+		#fj{
+			label{height: 100%;line-height: inherit;}
+			input{height:auto;line-height:1;.pr;top:5px;}
+		}
+	}
+	.bbsview-author-avt{.y;.dbi;img{width:20px;height:20px;border-radius:4px;.y;.pr;top:-2px;}}
+	.bbsview-author-name{}
+	.bbsview-author-verf{margin-top:-4px;}
+
+	//相关帖子隐藏
+	.mtw.mbw{.none;}
+
+}
+
+//宏发布页面侧边
+.macro{
+	.macro-grammar{
+		margin-top:20px;
+		border:1px solid #222;padding:2px 5px;background-color:#444;.x;
+		span{
+			font-weight:bold;line-height:2;
+			&.macro-mg-action{color:#00ccff;}
+			&.macro-mg-if{color:#ff3399;}
+			&.macro-mg-do{color:#00ff00;}
+		}
+	}
+	.macro-mg-des{
+		li{
+			line-height:1.8;
+			border-bottom:1px dashed #ddd;
+			&:before{
+				content: '\e622';
+				.iconfont;
+			}
+		}
+	}
+	.macro-mg-table{
+		border-radius:4px;
+		tr:first-child td{
+			background-color:#555;
+			color:#ccc;
+		}
+		td{
+			font-family: Verdana;
+			border:1px solid #ddd;
+			padding: 3px 6px;
+			background: #fff;
+			color: #666;
+			letter-spacing: 0.5px;
+		}
+	}
+}
+
+//宏发布页面正文
+.macro{
+	#fontsearch{.none;}
+	.mn{
+		//输入框
+		input,textarea{
+			box-shadow:0 0 2px #ddd;border:1px solid #ccc;border-radius:3px;background:#fff;
+		}
+		input:focus,textarea:focus{
+			box-shadow:0 0 2px #00ccff;
+		}
+		//标题输入框
+		#subject.px {
+			width:35em !important;height:28px;line-height:28px;border-radius:3px;
+		}
+		//textarea输入框
+		.bbda textarea{
+			width:80%;height:200px;
+		}
+	}
+}
