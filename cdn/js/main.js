@@ -209,8 +209,11 @@ jQuery(function($){
 			$('#postsubmit span').text('提交');
 		}
 		if($('.pg_faq').length !=0){
-			$('.umh').first().addClass('umn');
-			$('.um').first().css('display','none');
+			var is_faq_listpage = getRequest('messageid')==undefined;
+			if(is_faq_listpage){
+				$('.umh').first().addClass('umn');
+				$('.um').first().css('display','none');
+			}
 		}
 
 	//视频

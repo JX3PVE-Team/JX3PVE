@@ -13,3 +13,6 @@ http://treedom.cn/job/mobile/?nsukey=%2FoahAtKLpTnBbs2G3SyxHM2A%2BYd8rhFgKvTtS%2
 
 
 
+
+
+gui   git config --global user.email "17229398@qq.com"
