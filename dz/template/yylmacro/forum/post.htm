@@ -1,5 +1,5 @@
 <!--{template common/header}-->
-
+<div class="bbs-wrap">
 <script type="text/javascript">
 	var allowpostattach = parseInt('{$_G['group']['allowpostattach']}');
 	var allowpostimg = parseInt('$allowpostimg');
@@ -424,5 +424,5 @@
 <!--{if ($_GET['action'] == 'newthread' || $_GET['action'] == 'reply' || $_GET['action'] == 'edit') && $_G['group']['allowat']}-->
 <script type="text/javascript" src="{$_G['setting']['jspath']}at.js?{VERHASH}"></script>
 <!--{/if}-->
-
+</div>
 <!--{template common/footer}-->

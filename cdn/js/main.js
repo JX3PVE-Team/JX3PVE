@@ -239,8 +239,7 @@ jQuery(function($){
 					$('.video .nav li').eq(4).addClass('on');
 					break;
 				default:
-					$('.video .nav li').eq(0).removeClass('on');
-					$('.video .nav li').eq(0).addClass('on');
+					break;
 			}
 			var video_page = getRequest('mod');
 			//console.log(video_page);
@@ -258,6 +257,40 @@ jQuery(function($){
 			if(pg_type=='post' && pg_fid=='92'){
 				$('.face .nav li').eq(0).removeClass('on');
 				$('.face .nav li').eq(3).addClass('on');
+			}
+		}
+
+	//宠物
+	//------------------------------------------
+		if($('.pet').length != 0){
+			var pet_from = getRequest('pey_from');
+			switch(pet_from){
+				case '1':
+					$('.pet .nav li').eq(0).removeClass('on');
+					$('.pet .nav li').eq(1).addClass('on');
+					break;
+				case '4':
+					$('.pet .nav li').eq(0).removeClass('on');
+					$('.pet .nav li').eq(2).addClass('on');
+					break;
+				case '2':
+					$('.pet .nav li').eq(0).removeClass('on');
+					$('.pet .nav li').eq(3).addClass('on');
+					break;
+				case '3':
+					$('.pet .nav li').eq(0).removeClass('on');
+					$('.pet .nav li').eq(4).addClass('on');
+					break;
+				case '5':
+					$('.pet .nav li').eq(0).removeClass('on');
+					$('.pet .nav li').eq(5).addClass('on');
+					break;
+				case '6':
+					$('.pet .nav li').eq(0).removeClass('on');
+					$('.pet .nav li').eq(6).addClass('on');
+					break;
+				default:
+					break;
 			}
 		}
 
