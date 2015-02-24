@@ -69,6 +69,8 @@ jQuery(function($){
 		if($('.zTD').length!=0){
 			fixSidebar('.sidebar-wrap',96,96,250);
 		}
+		$('#threadlist .by2').css('display','none');
+		console.log($('#threadlist .by2'));
 
 	//下载模块
 	//------------------------------------------
@@ -263,6 +265,13 @@ jQuery(function($){
 	//宠物
 	//------------------------------------------
 		if($('.pet').length != 0){
+
+			$('#map').on('click',function(e){
+				e.preventDefault();
+				loadDialogs('正在开发中,即将上线,敬请关注!');
+			})
+
+			//菜单关联
 			var pet_from = getRequest('pey_from');
 			switch(pet_from){
 				case '1':
@@ -294,6 +303,81 @@ jQuery(function($){
 			}
 		}
 
+	//副本
+	//------------------------------------------
+		if($('.fam').length!=0){
+			var famzt_po = 0;
+			var famzt_length = $('#fam-zt-list li').length-3;
+			$('#fam-zt-prev').on('click',function(){
+				if(famzt_po==0){
+					alert('逗比亲,已是最前!');
+					return;
+				}
+				famzt_po += 210;
+				$('#fam-zt-list').css({'transform':'translateY('+ famzt_po +'px)'},400);
+			}) 
+			$('#fam-zt-next').on('click',function(){
+				if(Math.abs(famzt_po)>famzt_length*66){
+					alert('逗比亲,已是最后!');
+					return;
+				}
+				famzt_po -= 210;
+				$('#fam-zt-list').css({'transform':'translateY('+ famzt_po +'px)'},400);
+			})
+		}
+
+	//旧副本专题背景图
+	//------------------------------------------
+		if($('.oldfb').length!=0){
+			var fbzt_id = getRequest('topicid');
+			switch(fbzt_id){
+				case '34':
+					$('.box').addClass('fb-old-mjmd');
+					break;
+				case '21':
+					$('.box').addClass('fb-old-dmg');
+					break;
+				case '25':
+					$('.box').addClass('fb-old-zbjxk');
+					break;
+				case '28':
+					$('.box').addClass('fb-old-nzhg');
+					break;	
+				case '26':
+					$('.box').addClass('fb-old-hztm');
+					break;
+				case '27':
+					$('.box').addClass('fb-old-cghyl');
+					break;
+				case '22':
+					$('.box').addClass('fb-old-zld');
+					break;
+				case '24':
+					$('.box').addClass('fb-old-lyz');
+					break;
+				case '31':
+					$('.box').addClass('fb-old-dhsd');
+					break;
+				case '30':
+					$('.box').addClass('fb-old-dhdk');
+					break;
+				case '32':
+					$('.box').addClass('fb-old-dhhs');
+					break;
+				case '33':
+					$('.box').addClass('fb-old-cgtwd');
+					break;
+				case '29':
+					$('.box').addClass('fb-old-gzswyj');
+					break;
+				case '23':
+					$('.box').addClass('fb-old-zbjl');
+					break;
+				default:
+					break;
+			}
+		}
+	
 
 	//BBS
 	//------------------------------------------

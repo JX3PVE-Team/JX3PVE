@@ -125,9 +125,6 @@
 							'top':top_margin,
 							'left':side_margin
 						});
-						console.log(scrollHeight);
-						console.log(screenHeight);
-						console.log(sidebarHeight);
 					}else{
 						$(selector).css({
 							'position':'static'

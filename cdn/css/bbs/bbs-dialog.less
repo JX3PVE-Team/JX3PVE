@@ -17,5 +17,42 @@
 	padding:60px 0;
 	.f_c{
 		margin:0 auto;
+		&.altw{
+			.alert_right{
+				#succeedmessage{
+					color:#cc0000;font-weight:bold;
+				}
+				#succeedlocation{
+					.acolor(@bluex,#cc0000);
+				}
+			}
+		}
+	}
+}
+
+//消息列表页
+.pm_o{
+	width:auto !important;
+}
+
+//新窗口打开
+#atarget{
+	.pr;
+	&:before{
+		content: '勾选这里可让帖子全在新窗口打开哟:)';
+		display: block;
+		width: 100px;
+		padding: 5px 10px;
+		z-index: 11;
+		background-color: fade(#00ccff, 50%);
+		border: 1px solid #00ccff;
+		border-radius: 5px;
+		position: absolute;
+		left: 0px;
+		top: 20px;
+		color:#000;
+		animation:tipsshow 3s ease-out;
+		.tm(0);
+		display:none \9;
 	}
 }

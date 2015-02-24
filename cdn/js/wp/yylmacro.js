@@ -47,7 +47,7 @@ $(function() {
 			$("#ajaxuse").text(data.use);
 			if(_IE === undefined){
 				$("#yyl-content-title").zclip({
-					path: "http://static.jx3pve.com/cdn/js/page/ZeroClipboard.swf",
+					path: "http://static.jx3pve.com/cdn/js/wp/ZeroClipboard.swf",
 					copy:function(){
 						return data.content+data.net;
 					},
