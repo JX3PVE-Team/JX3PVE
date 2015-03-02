@@ -70,7 +70,6 @@ jQuery(function($){
 			fixSidebar('.sidebar-wrap',96,96,250);
 		}
 		$('#threadlist .by2').css('display','none');
-		console.log($('#threadlist .by2'));
 
 	//下载模块
 	//------------------------------------------
@@ -184,8 +183,9 @@ jQuery(function($){
 				$('#user-email-status a').css('color','#FF7D00');
 				$('#user-email-status').wrap('<a href="http://www.jx3pve.com/home.php?mod=spacecp&ac=profile&op=password"></a>');
 			}
-
 		}
+
+			$("#register-tips").eq(0).siblings('input').eq(0).attr('placeholder','www.jx3pve.com');
 
 	//副本团队招募
 	//------------------------------------------
