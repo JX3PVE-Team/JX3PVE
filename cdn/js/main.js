@@ -185,7 +185,7 @@ jQuery(function($){
 			}
 		}
 
-			$("#register-tips").eq(0).siblings('input').eq(0).attr('placeholder','www.jx3pve.com');
+			//$("#register-tips").eq(0).siblings('input').eq(0).attr('placeholder','www.jx3pve.com');
 
 	//副本团队招募
 	//------------------------------------------
