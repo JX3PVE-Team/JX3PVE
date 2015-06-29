@@ -1,5 +1,5 @@
 //Macro systax
-
+define(function(){
 	if ( ![].indexOf ){
 		Array.prototype.indexOf = function( value ){
 			var j = -1;
@@ -135,6 +135,6 @@
 	Sytax.prototype.install = function(){
 		this.splits();
 	}
-
+})
 
 

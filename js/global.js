@@ -3,13 +3,11 @@ require([
 	'plugin/responsive',
 	'plugin/fixSidebar',
 	'plugin/getRequest',
-	'plugin/macroSytax',
-	'mod/cur',
-	'mod/menu'
+	'plugin/macroSytax'
 ], function($) {
-    //console.log($)
     $(function(){
-    	//对话框模块
+
+    //对话框模块
 	//------------------------------------------
 		//开启对话框
 		function loadDialog(seletor){
@@ -42,8 +40,8 @@ require([
 		$('#bdcs').find('#bdcs-search-form-submit').val('');
 
 		//菜单图标动画
-		$('#menu-list li').cur('a');
-		$('#menu-list li a').cur('span');
+		/*$('#menu-list li').cur('a');
+		$('#menu-list li a').cur('span');*/
 
 		//判断是否为嵌入头部
 			var is_yylheader;
@@ -58,7 +56,7 @@ require([
 			//dz系统头部效果
 			}else{
 				//导航滑动效果
-				$('#menu-list').menu();
+				//$('#menu-list').menu();
 				//警告框
 				if ($('#dialog-important').html().length > 2) {
 					$('#dialog-content').html('').append($('#dialog-important'));

@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: 'http://static.jx3pve.com/js/',
+    baseUrl: 'http://www.jx3pve.com/js/',
     paths: {
         'jquery': ['http://libs.baidu.com/jquery/1.10.2/jquery.min','lib/jquery-1-10-2']
     }
