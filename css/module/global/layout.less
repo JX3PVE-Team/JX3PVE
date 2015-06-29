@@ -1,0 +1,52 @@
+/*
+ * Template: *
+ * Style: layout.less
+ * Description: 公共布局
+ * Creat: iRuxu 2014
+ * Update : iRuxu 2015.6.28
+ */
+
+
+/*DOM 结构
+---------------------------------------------------*/
+ //内容区
+.box {
+    margin-top: 76px;
+    transition: margin-top 0.4s;
+    &.menufolder {
+        margin-top: 38px;
+    }
+}
+//平铺背景层
+.wrap {
+}
+//背景层
+.main {
+}
+//中央控制包裹层
+.wp {
+    width: 1180px;
+    margin: 0 auto;
+}
+.widthauto {
+    .wp {
+        width: 98%;
+    }
+}
+
+/*尺寸变量
+---------------------------------------------------*/
+@header-height: 38px;
+@wp: 1180px;
+@primary: 960px;
+@sd: 200px;
+
+
+//layout方案
+//--------------------------------------------------------
+.col2-ct {
+    width: 960px;
+}
+.col2-sd {
+    width: 200px;
+}
