@@ -9,8 +9,8 @@
  */
 
 
-@import url("module/import.less");
-@import url("module/user/user-pay.less");
+@import url("../../module/import.less");
+@import url("../../module/user/user-pay.less");
 
 .invitecode-box{
 	padding:20px 0;
@@ -52,16 +52,42 @@
 					margin-top:15px;
 				}
 			}
+			//购买成功
+			.invitecode-success{
+				//代码文本域
+				.invitecode-codebox{
+					background: #f2f2f2;
+					border: 1px solid #ddd;
+					font-size: 24px;
+					font-family: Consolas;
+					line-height: 40px;
+					height: 40px;
+					color: #4D9342;
+					padding: 10px;
+					border-radius: 4px;
+					margin: 10px 0;
+				}
+				//复制代码
+				.copy-code{
+					a{.color(#777,@basecolor);}
+				}
+				//邮箱
+				.u-msg-success{
+					.fz(16px);
+					.xi1{
+						font-family: Arial;
+						.bold;
+					}
+				}
+			}
+			//按钮
 			.u-btn-ok{
 				.size(160px,40px);
-				.fz(14px,40px);.bold;
+				.fz(16px,40px);
 				font-family: '微软雅黑';
 				letter-spacing: 1px;
 				.u-btn-blue(a);
-				transition:.2s ease-in-out;
-				&:hover{
-					font-size:16px;
-				}
+				//transition:.2s ease-in-out;
 			}
 		}
 	}

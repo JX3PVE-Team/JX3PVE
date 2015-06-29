@@ -5,7 +5,8 @@
 * update 2015.1.16
 ------------------------------------------------------*/
 	//arg : delay time
-	(function($) {
+	//(function($) {
+	require(['jquery-private'], function($) {
 		$.fn.extend({
 			'menu': function(delay) {
 				var wrap = this;
@@ -28,4 +29,5 @@
 				return this;
 			}
 		})
-	})(jQuery);
+	})
+	//})(jQuery);

@@ -8,7 +8,8 @@
 //selector: #target 
 //top + bottom: margin to window for fix header or footer
 //triggerScroll : while scroll distance bigger than this and trigger the fix state
-(function($){ 
+//(function($){ 
+require(['jquery-private'], function($) {
 	//定义
 	function fixSidebar(selector,top,bottom,triggerScroll){
 
@@ -79,5 +80,6 @@
 	})
 
 	window.fixSidebar = fixSidebar;
+})
+//})(jQuery);
 
-})(jQuery);

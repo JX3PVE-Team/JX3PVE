@@ -6,7 +6,8 @@
 ------------------------------------------------------*/
 	//arg==null -> self
 	//arg!=null -> self + childrenselector[just children]
-	(function($) {
+	//(function($) {
+	require(['jquery-private'], function($) {
 		$.fn.extend({
 			'cur': function(childrenselector) {
 				if (childrenselector == undefined) {
@@ -27,4 +28,5 @@
 				return this;
 			}
 		})
-	})(jQuery);
+	})
+	//})(jQuery);

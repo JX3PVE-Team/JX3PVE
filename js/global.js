@@ -1,8 +1,15 @@
-require(['jquery','responsive','macroSytax','fixSidebar','urlParam','menu','cur','test'],function(jQuery){
-
-	jQuery.noConflict();
-	jQuery(function($){
-		//对话框模块
+require([
+	'jquery-private',
+	'plugin/responsive',
+	'plugin/fixSidebar',
+	'plugin/getRequest',
+	'plugin/macroSytax',
+	'mod/cur',
+	'mod/menu'
+], function($) {
+    //console.log($)
+    $(function(){
+    	//对话框模块
 	//------------------------------------------
 		//开启对话框
 		function loadDialog(seletor){
@@ -401,7 +408,5 @@ require(['jquery','responsive','macroSytax','fixSidebar','urlParam','menu','cur'
 			e.preventDefault();
 			$(this).parent('span').siblings('h4,div').slideToggle();
 		})
-	})
-
-})
-
+    });
+});

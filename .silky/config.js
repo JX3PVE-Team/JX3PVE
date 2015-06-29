@@ -19,14 +19,14 @@ module.exports = {
     //路由
     routers: [
         //如果希望访问目录直接访问index.html，则可以启用下面的路由
-        /*{
+        {
             //path: 原路径，to: 替换后的路径，next：是否继承执行下一个路由替换，static：是否为静态文件，静态文件直接返回
             //path: /^\/$/, to: 'index.html', next: true, static: false
-        }*/
+        }
     ],
     //插件的配置
     plugins: {
-        "autoprefix":{}
+        /*"autoprefix":{}*/
         /*
         //为插件指定目录，可以指定特殊目录的插件
         "specific_plugin": {
@@ -42,7 +42,9 @@ module.exports = {
         //将要复制的文件目录，直接复制到目标
         copy: [/^images(\-demo)?$/i],
         //完全忽略处理的文件
-        ignore: [/^template\/module$/i, /^css\/module$/i, /^JX3PVE\-Pub$/i, /(^|\/)\.(.+)$/, /\.(log)$/i],
+        /*ignore: [/^template\/module$/i, /^css\/module$/i, /^css\/bak$/i, /^css\/temp$/i, /^__idea$/i, /^cdn$/i,  /^getpage$/i, /^source$/i, /^static$/i, /^wp\-content$/i,/(^|\/)\.(.+)$/, /\.(log)$/i],*/
+        //windows localhost
+        ignore: [/^template.module$/i,/^template.\w+$/i, /^css.module$/i, /^css.bak$/i, /^js$/i, /^__idea$/i, /^cdn$/i,  /^getpage$/i, /^source$/i, /^static$/i, /^wp\-content$/i,/(^|\/)\.(.+)$/, /\.(log)$/i,/\.(css)$/i],
         //重命名
         rename: [
             {
